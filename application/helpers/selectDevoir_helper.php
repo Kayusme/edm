@@ -1,9 +1,14 @@
 <?php
-if (!function_exists('selectDevoir')){
-    function selectDevoir($idClass){
-        global $db;
-        $q = $db->prepare("SELECT * FROM devoir,matiere,classe WHERE(devoir.idClass = classe.id AND devoir.idCours = matiere.id)AND classe.id =?");
+if (!function_exists('selectDevoir')) {
+    function selectDevoir($idClass)
+    {
+        $bdd = new PDO('mysql:host=localhost;dbname=edm', 'root', '');
+        $q = $bdd->prepare("SELECT * FROM devoir,matiere,classe WHERE(devoir.idClass = classe.id AND devoir.idCours = matiere.id)AND classe.id =?");
         $q->execute([$idClass]);
-        $cours = $q->fetch();
-        return $cours;
+        $devoirs = [];
+        while ($d = $q->fetchAll()) {
+            $devoirs[] = $d;
+        }
+        return $devoirs;
     }
+}

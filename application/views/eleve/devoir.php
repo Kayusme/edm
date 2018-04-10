@@ -1,12 +1,30 @@
 <?php
+$idclass=1;
+$resultats = selectDevoir($idclass);
+//var_dump($resultats);die();
 ?>
 
-<div class="page-wrapper">
-    <div class="col-md-12 graphs">
-        <div class="widget_head">Devoirs</div>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Aliquam asperiores dolor impedit modi pariatur perferendis praesentium quam, sapiente! Amet aperiam cum deserunt eos esse expedita, ipsam quas quibusdam rerum voluptate?
-        </p>
+<div id="page-wrapper">
+    <div class="graphs">
+        <h2 class="text-center">Devoir</h2>
+        <div class="container-fluid">
+            <?php
+                $idclass=1;
+                $resultats = selectDevoir($idclass);
+                foreach ($resultats as $resultat) {
+            ?>
+            <div class="row">
+                <h3><?= $resultat['matiere.nom']?></h3><br /><br />
+                <div class="col-md-3">
+                    <p>Du <?= $resultat['devoir.date_debut']?> Au <?= $resultat['devoir.date_depot']?></p>
+                </div>
+                <div class="col-md-9">
+                    <p><?= $resultat['devoir.questionnaire']?></p>
+                    <p><?= $resultat['devoir.link']?></p>
+                </div>
+            </div>
+            </br>
+            <?php }?>
     </div>
-</div>
+
+
