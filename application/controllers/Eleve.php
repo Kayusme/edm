@@ -5,19 +5,28 @@ class Eleve  extends CI_Controller
 {
     public function index()
     {
-        //if (!empty($_SESSION['auth']['admin'])){
+        if (isset($_SESSION['user'])){
             $data['title'] = "Page d'administration";
             $this->load->view("eleve/_global/header",$data);
             $this->load->view("eleve/_global/nav");
             $this->load->view("eleve/index",$data);
             $this->load->view("eleve/_global/footer");
-        /*}else{
-            redirect("eduqueadmin/login");
-        }*/
+        }else{
+            redirect("eleve/login");
+        }
 
     }
-
     public function login()
+    {
+        if (!isset($_SESSION['user'])){
+            $data['title'] = "Login";
+            $this->load->view("eleve/login",$data);
+        }else{
+            redirect("eleve/index");
+        }
+    }
+
+    public function bulletin()
     {
         $data['title'] = "Resultat";
         $this->load->view("eleve/_global/header",$data);

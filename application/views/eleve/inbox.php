@@ -93,8 +93,9 @@
                                 messe à l'Esprit Saint
                             </td>
                             <td>
+                                <i class="fa fa-paperclip"></i>
                             </td>
-                            <td class="hidden-xs">
+                            <td class="">
                                 22 septembre 2018
                             </td>
                         </tr>
@@ -103,14 +104,13 @@
                             	<input type="checkbox" class="checkbox">
                             </td>
                             <td class="hidden-xs">
+                                Objet du message
                             </td>
-                            <td class="hidden-xs">
+                            <td class="">
                                 Visite des anciens finalistes
                             </td>
                             <td>
-
-                            </td>
-                            <td>
+                                <i class="fa fa-paperclip"></i>
                             </td>
                             <td>
                                 26 septembre 2018
@@ -121,12 +121,10 @@
                                 <input type="checkbox" class="checkbox">
                             </td>
                             <td class="hidden-xs">
+                                Objet du message
                             </td>
-                            <td class="hidden-xs">
+                            <td class="">
                                 Recollection des profs
-                            </td>
-                            <td>
-                                ...
                             </td>
                             <td>
                                 <i class="fa fa-paperclip"></i>
@@ -140,12 +138,10 @@
                                 <input type="checkbox" class="checkbox">
                             </td>
                             <td class="hidden-xs">
+                                Objet du message
                             </td>
-                            <td class="hidden-xs">
+                            <td class="">
                                 Inauguration des nouveaux locaux
-                            </td>
-                            <td>
-
                             </td>
                             <td>
                                 <i class="fa fa-paperclip"></i>

@@ -18,121 +18,127 @@
 
             <table class="table">
                 <tbody>
+                <?php
+                $idclass=1;
+                $resultats = selectHoraire($idclass);
+                foreach ($resultats as $resultat) {
+                ?>
                 <tr class="unread checked">
                     <td class="hidden-xs">
                         <i class="fa fa-star icon-state-warning"></i>
                     </td>
-                    <td class="hidden-xs">
-                        Lundi
+                    <td class="">
+                        <?= $resultat['jour.nom']?>
                     </td>
                     <td>
-                        6h de cours : de 7h 30 à 12h 50
+                        De <?= $resultat['horaire.heureDebut']?> à <?= $resultat['horaire.heureFin']?>
                     </td>
                     <td>
                     </td>
                     <td>
-                        12 septembre
+                        <?= $resultat['horaire.date']?>
                     </td>
                 </tr>
-                <tr class="unread checked">
-                    <td class="hidden-xs">
-                        <i class="fa fa-star icon-state-warning"></i>
-                    </td>
-                    <td class="hidden-xs">
-                        Mardi
-                    </td>
-                    <td>
-                        6h de cours : de 7h 30 à 12h 50
-                    </td>
-                    <td>
-                    </td>
-                    <td>
-                        13 septembre
-                    </td>
-                </tr>
-                <tr class="unread checked">
-                    <td class="hidden-xs">
-                        <i class="fa fa-star icon-state-warning"></i>
-                    </td>
-                    <td class="hidden-xs">
-                        Mercrei
-                    </td>
-                    <td>
-                        6h de cours : de 7h 30 à 12h 50
-                    </td>
-                    <td>
-                        <i class="fa fa-paperclip"></i>
-                    </td>
-                    <td>
-                        14 septembre
-                    </td>
-                </tr>
-                <tr class="unread checked">
-                    <td class="hidden-xs">
-                        <i class="fa fa-star icon-state-warning"></i>
-                    </td>
-                    <td class="hidden-xs">
-                        jeudi
-                    </td>
-                    <td>
-                        6h de cours : de 7h 30 à 12h 50
-                    </td>
-                    <td>
-                        <i class="fa fa-paperclip"></i>
-                    </td>
-                    <td>
-                        15 septembre
-                    </td>
-                </tr>
-                <tr class="unread checked">
-                    <td class="hidden-xs">
-                        <i class="fa fa-star icon-state-warning"></i>
-                    </td>
-                    <td class="hidden-xs">
-                        Vendredi
-                    </td>
-                    <td>
-                        6h de cours : de 7h 30 à 12h 50
-                    </td>
-                    <td>
-                    </td>
-                    <td>
-                        16 septembre
-                    </td>
-                </tr>
-                <tr class="unread checked">
-                    <td class="hidden-xs">
-                        <i class="fa fa-star icon-state-warning"></i>
-                    </td>
-                    <td class="hidden-xs">
-                        Samedi
-                    </td>
-                    <td>
-                        3h de cours : de 7h 30 à 10h
-                    </td>
-                    <td>
-                    </td>
-                    <td>
-                        17 septembre
-                    </td>
-                </tr>
-                <tr class="unread checked">
-                    <td class="hidden-xs">
-                        <i class="fa fa-star icon-state-warning"></i>
-                    </td>
-                    <td class="hidden-xs">
-                        Dimanche
-                    </td>
-                    <td>
-                        Activitées parascolaires
-                    </td>
-                    <td>
-                        <i class="fa fa-paperclip"></i>
-                    </td>
-                    <td>
-                        18 septembre
-                    </td>
-                </tr>
+                <?php }?>
+<!--                <tr class="unread checked">-->
+<!--                    <td class="hidden-xs">-->
+<!--                        <i class="fa fa-star icon-state-warning"></i>-->
+<!--                    </td>-->
+<!--                    <td class="">-->
+<!--                        Mardi-->
+<!--                    </td>-->
+<!--                    <td>-->
+<!--                        6h de cours : de 7h 30 à 12h 50-->
+<!--                    </td>-->
+<!--                    <td>-->
+<!--                    </td>-->
+<!--                    <td>-->
+<!--                        13 septembre-->
+<!--                    </td>-->
+<!--                </tr>-->
+<!--                <tr class="unread checked">-->
+<!--                    <td class="hidden-xs">-->
+<!--                        <i class="fa fa-star icon-state-warning"></i>-->
+<!--                    </td>-->
+<!--                    <td class="">-->
+<!--                        Mercrei-->
+<!--                    </td>-->
+<!--                    <td>-->
+<!--                        6h de cours : de 7h 30 à 12h 50-->
+<!--                    </td>-->
+<!--                    <td>-->
+<!--                        <i class="fa fa-paperclip"></i>-->
+<!--                    </td>-->
+<!--                    <td>-->
+<!--                        14 septembre-->
+<!--                    </td>-->
+<!--                </tr>-->
+<!--                <tr class="unread checked">-->
+<!--                    <td class="hidden-xs">-->
+<!--                        <i class="fa fa-star icon-state-warning"></i>-->
+<!--                    </td>-->
+<!--                    <td class="">-->
+<!--                        jeudi-->
+<!--                    </td>-->
+<!--                    <td>-->
+<!--                        6h de cours : de 7h 30 à 12h 50-->
+<!--                    </td>-->
+<!--                    <td>-->
+<!--                        <i class="fa fa-paperclip"></i>-->
+<!--                    </td>-->
+<!--                    <td>-->
+<!--                        15 septembre-->
+<!--                    </td>-->
+<!--                </tr>-->
+<!--                <tr class="unread checked">-->
+<!--                    <td class="hidden-xs">-->
+<!--                        <i class="fa fa-star icon-state-warning"></i>-->
+<!--                    </td>-->
+<!--                    <td class="">-->
+<!--                        Vendredi-->
+<!--                    </td>-->
+<!--                    <td>-->
+<!--                        6h de cours : de 7h 30 à 12h 50-->
+<!--                    </td>-->
+<!--                    <td>-->
+<!--                    </td>-->
+<!--                    <td>-->
+<!--                        16 septembre-->
+<!--                    </td>-->
+<!--                </tr>-->
+<!--                <tr class="unread checked">-->
+<!--                    <td class="hidden-xs">-->
+<!--                        <i class="fa fa-star icon-state-warning"></i>-->
+<!--                    </td>-->
+<!--                    <td class="">-->
+<!--                        Samedi-->
+<!--                    </td>-->
+<!--                    <td>-->
+<!--                        3h de cours : de 7h 30 à 10h-->
+<!--                    </td>-->
+<!--                    <td>-->
+<!--                    </td>-->
+<!--                    <td>-->
+<!--                        17 septembre-->
+<!--                    </td>-->
+<!--                </tr>-->
+<!--                <tr class="unread checked">-->
+<!--                    <td class="hidden-xs">-->
+<!--                        <i class="fa fa-star icon-state-warning"></i>-->
+<!--                    </td>-->
+<!--                    <td class="">-->
+<!--                        Dimanche-->
+<!--                    </td>-->
+<!--                    <td>-->
+<!--                        Activitées parascolaires-->
+<!--                    </td>-->
+<!--                    <td>-->
+<!--                        <i class="fa fa-paperclip"></i>-->
+<!--                    </td>-->
+<!--                    <td>-->
+<!--                        18 septembre-->
+<!--                    </td>-->
+<!--                </tr>-->
 
                 </tbody>
             </table>
