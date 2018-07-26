@@ -40,6 +40,8 @@ class Ecole  extends CI_Controller
     }
     public function courses()
     {
+        $this->load->helper('selectClass');
+        $data['classes'] = selectClass();
         $data['title'] = 'Cours';
         $this->load->view('ecole/_global/header2',$data);
         $this->load->view('ecole/courses',$data);

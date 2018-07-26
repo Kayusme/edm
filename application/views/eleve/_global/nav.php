@@ -144,7 +144,10 @@
 <!--                        </li>-->
                         <li>
 <!--                            <a href="login.html">Login</a>-->
-                            <?=anchor("eleve/login","Résultat")?>
+                            <?=anchor("eleve/bulletin","Résultat")?>
+                        </li>
+                        <li>
+                            <?=anchor("eleve/statistics","Statistiques")?>
                         </li>
                     </ul>
                     <!-- /.nav-second-level -->

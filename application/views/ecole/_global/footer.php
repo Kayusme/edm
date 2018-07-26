@@ -1,5 +1,5 @@
 <!--start-footer-->
-<div class="footer">
+<div class="footer fixed-bottom">
     <div class="container">
         <div class="footer-main">
             <div class="col-md-6 footer-left">

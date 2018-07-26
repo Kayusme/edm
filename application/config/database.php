@@ -76,8 +76,10 @@ $query_builder = TRUE;
 $db['default'] = array(
 	'dsn'	=> 'mysql:host=localhost;dbname=edm',
 	'hostname' => 'localhost',
-	'username' => 'eduqueMe',
-	'password' => 'JusteUnPassWord',
+//	'username' => 'eduqueMe',
+	'username' => 'root',
+//	'password' => 'JusteUnPassWord',
+	'password' => '',
 	'database' => 'edm',
 	'dbdriver' => 'pdo',
 	'dbprefix' => '',
