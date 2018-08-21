@@ -25,6 +25,8 @@ class Eleve_model extends CI_Model
             // else{
             //     print_r("***Mot de passe non-Concordants(password_verify failed)*** ");
             // }
+
         }
+        return null;
     }
 }
