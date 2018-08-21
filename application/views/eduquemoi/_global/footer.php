@@ -16,7 +16,7 @@
                 <div class="clearfix"></div>
             </div>
             <div class="col-md-2 footer-grids w3l-agileits">
-                <h3>Menu</h3>
+                <h3>Menu</h3> 
                 <ul class="b-nav">
                     <li><a href="<?=site_url('eduquemoi/index')?>">Accueil</a></li>
                     <li><a href="<?=site_url('eduquemoi/about')?>">A Propos</a></li>
