@@ -75,7 +75,7 @@ $config['url_suffix'] = '.html';
 | than english.
 |
 */
-$config['language']	= 'english';
+$config['language']	= 'french';
 
 /*
 |--------------------------------------------------------------------------
@@ -402,8 +402,8 @@ $config['sess_regenerate_destroy'] = FALSE;
 $config['cookie_prefix']	= 'edm_';
 $config['cookie_domain']	= '.eduquemoi.org';
 $config['cookie_path']		= '/';
-$config['cookie_secure']	= FALSE;
-$config['cookie_httponly'] 	= FALSE;
+$config['cookie_secure']	= TRUE;
+$config['cookie_httponly'] 	= TRUE;
 
 /*
 |--------------------------------------------------------------------------
