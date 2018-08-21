@@ -14,28 +14,10 @@ class Assets extends CI_Controller
         redirect(base_url());
     }
 
-    public function css()
+    public function statics(string $first = null, string $second = null,string $third = null)
     {
-        
-    }
-
-    public function js()
-    {
-        
-    }
-
-    public function images()
-    {
-        
-    }
-
-    public function fonts()
-    {
-        
-    }
-
-    public function media()
-    {
-        
+        $this->load->helper("file");
+        header("Content-type: ".get_mime_by_extension($second));
+        $this->load->view($first."/".$second."/".$third);
     }
 }
