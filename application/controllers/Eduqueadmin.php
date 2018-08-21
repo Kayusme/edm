@@ -10,5 +10,5 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Eduqueadmin  extends CI_Controller
 {
-
+    //TODO: Create a method for retrieve logs
 }
