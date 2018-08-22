@@ -31,10 +31,10 @@
 				<div class="profile-agile">
 					<h2>Profile Widget</h2>
 					<div class="profile-w3">
-						<img src="<?=base_url("assets/tuteur/images/bgp.jpg")?>" alt="">
+						<img src="<?=base_url("assets/statics/tuteur/images/bgp.jpg")?>" alt="">
 					</div>
 					<div class="w3layouts"> 
-						<img src="<?=base_url("assets/tuteur/images/pro.jpg")?>" alt=" " />
+						<img src="<?=base_url("assets/statics/tuteur/images/pro.jpg")?>" alt=" " />
 						<h3>Lisa Kristina</h3>
 						<label class="line"></label>
 						<p>Maecenas khnt loream. </p>

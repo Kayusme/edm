@@ -16,7 +16,7 @@
 			<a href="single.php" class="button-w3layouts hvr-rectangle-out">Lire plus</a>
 			<div class="blog-btm-w3">
 				<div class="blog-left-w3ls">
-					<img src="../assets/eduquemoi/images/circle1.jpg" alt="image">
+					<img src="../assets/statics/eduquemoi/images/circle1.jpg" alt="image">
 					<a href="single.php">Emmanuel</a>
 				</div>
 				<div class="blog-right-w3ls">
@@ -26,7 +26,7 @@
 			</div>
 		</div>
 			<div class="blog-image-agileits-w3layouts">
-				<a href="#" data-toggle="modal" data-target="#myModal1"><img src="../assets/eduquemoi/images/b1.jpg" alt="image"></a>
+				<a href="#" data-toggle="modal" data-target="#myModal1"><img src="../assets/statics/eduquemoi/images/b1.jpg" alt="image"></a>
 			</div>
 	</div>
 	<div class="col-md-4 blog-w3ls-mid">
@@ -43,7 +43,7 @@
 			<a href="<?=site_url('eduquemoi/single')?>" class="button-w3layouts hvr-rectangle-out">Lire plus</a>
 			<div class="blog-btm-w3">
 				<div class="blog-left-w3ls">
-					<img src="../assets/eduquemoi/images/circle2.jpg" alt="image">
+					<img src="../assets/statics/eduquemoi/images/circle2.jpg" alt="image">
 					<a href="<?=site_url('eduquemoi/single')?>">Roland</a>
 				</div>
 				<div class="blog-right-w3ls">
@@ -53,7 +53,7 @@
 			</div>
 		</div>
 			<div class="blog-image-agileits-w3layouts">
-				<a href="#" data-toggle="modal" data-target="#myModal3"><img src="../assets/eduquemoi/images/b3.jpg" alt="image"></a>
+				<a href="#" data-toggle="modal" data-target="#myModal3"><img src="../assets/statics/eduquemoi/images/b3.jpg" alt="image"></a>
 			</div>
 	</div>
 	<div class="clearfix"></div>

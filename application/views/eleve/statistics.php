@@ -78,9 +78,9 @@
   </script>
   </div>
 </div>
-<link href="<?=base_url("assets/eleve/css/custom.css")?>" rel="stylesheet">
+<link href="<?=base_url("assets/statics/eleve/css/custom.css")?>" rel="stylesheet">
 <!-- Metis Menu Plugin JavaScript -->
-<script src="<?=base_url("assets/eleve/js/metisMenu.min.js")?>"></script>
-<script src="<?=base_url("assets/eleve/js/custom.js")?>"></script>
-<script src="<?=base_url("assets/eleve/js/bootstrap.min.js")?>"></script>
+<script src="<?=base_url("assets/statics/eleve/js/metisMenu.min.js")?>"></script>
+<script src="<?=base_url("assets/statics/eleve/js/custom.js")?>"></script>
+<script src="<?=base_url("assets/statics/eleve/js/bootstrap.min.js")?>"></script>
     

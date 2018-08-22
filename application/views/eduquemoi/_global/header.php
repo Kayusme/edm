@@ -38,15 +38,15 @@
 
     echo meta($meta).
     '<!-- Bootstrap-CSS -->'."\n".
-        link_tag("assets/eduquemoi/css/bootstrap.css").
+        link_tag("assets/statics/eduquemoi/css/bootstrap.css").
     '<!-- Font-awesome-CSS -->'."\n".
-        link_tag("assets/eduquemoi/css/font-awesome.css").
+        '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>'."\n".
     '<!-- Flex-slider-CSS -->'."\n".
-        link_tag("assets/eduquemoi/css/flexslider.css").
+        link_tag("assets/statics/eduquemoi/css/flexslider.css").
     '<!-- Owl-carousel-CSS -->'."\n".
-        link_tag("assets/eduquemoi/css/owl.carousel.css").
+        link_tag("assets/statics/eduquemoi/css/owl.carousel.css").
     '<!-- Index-Page-CSS -->'."\n".
-        link_tag("assets/eduquemoi/css/style.css").
+        link_tag("assets/statics/eduquemoi/css/style.css").
     '<!-- //Custom-Stylesheet-Links -->'."\n".
     '<!--web-fonts-->'."\n".
     '<!-- Headings-font -->'."\n".

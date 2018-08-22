@@ -73,7 +73,7 @@
 				<div class="media">
 				  <div class="media-left">
 					<a href="#">
-					  <img class="media-object" src="<?=base_url("assets/eduquemoi/images/co1.jpg")?>" alt="">
+					  <img class="media-object" src="<?=base_url("assets/statics/eduquemoi/images/co1.jpg")?>" alt="">
 					</a>
 				  </div>
 				  <div class="media-body">
@@ -84,7 +84,7 @@
 				<div class="media in-media">
 				  <div class="media-left">
 					<a href="#">
-					  <img class="media-object" src="<?=base_url("assets/eduquemoi/images/co2.jpg")?>" alt="">
+					  <img class="media-object" src="<?=base_url("assets/statics/eduquemoi/images/co2.jpg")?>" alt="">
 					</a>
 				  </div>
 				   <div class="media-body">
@@ -95,7 +95,7 @@
 				<div class="media">
 				  <div class="media-left">
 					<a href="#">
-					  <img class="media-object" src="<?=base_url("assets/eduquemoi/images/co3.jpg")?>" alt="">
+					  <img class="media-object" src="<?=base_url("assets/statics/eduquemoi/images/co3.jpg")?>" alt="">
 					</a>
 				  </div>
 				  <div class="media-body">

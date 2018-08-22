@@ -29,13 +29,13 @@
                                     <h3>San Francisco, CA</h3>
                                 </div>
                                 <div class="san-img">
-                                    <img src="<?=base_url("assets/parents/images/weth1.png")?>">
+                                    <img src="<?=base_url("assets/statics/parents/images/weth1.png")?>">
                                 </div>
                                 <div class="clearfix"></div>
                             </div>
                             <div class="wether-middle">
                                 <div class="weth-img">
-                                    <img src="<?=base_url("assets/parents/images/weth2.png")?>">
+                                    <img src="<?=base_url("assets/statics/parents/images/weth2.png")?>">
                                 </div>
                                 <div class="weth-text">
                                     <h4>Thursday,23rd</h4>
@@ -49,7 +49,7 @@
                                 <h5>Friday, 24th</h5>
                             </div>
                             <div class="date1">
-                                <h5>28° <img src="<?=base_url("assets/parents/images/sun.png")?>"></h5>
+                                <h5>28° <img src="<?=base_url("assets/statics/parents/images/sun.png")?>"></h5>
                             </div>
                             <div class="clearfix"></div>
                         </div>
@@ -121,9 +121,9 @@
                     <div class="col-md-6 feli-left">
                         <div class="feli-grid1">
                             <div class="feli-img">
-                                <img src="<?=base_url("assets/parents/images/img1.jpg")?>" class="img-responsive" alt="">
+                                <img src="<?=base_url("assets/statics/parents/images/img1.jpg")?>" class="img-responsive" alt="">
                                 <div class="feli-img1">
-                                    <img src="<?=base_url("assets/parents/images/img2.png")?>">
+                                    <img src="<?=base_url("assets/statics/parents/images/img2.png")?>">
                                 </div>
                             </div>
                             <div class="smoak">
@@ -133,13 +133,13 @@
                             </div>
                             <div class="icon-grids">
                                 <div class="col-md-4 icon1">
-                                    <a href="#"><h5><img src="<?=base_url("assets/parents/images/eye.png")?>"> 808</h5></a>
+                                    <a href="#"><h5><img src="<?=base_url("assets/statics/parents/images/eye.png")?>"> 808</h5></a>
                                 </div>
                                 <div class="col-md-4 icon2">
-                                    <a href="#"><h5><img src="<?=base_url("assets/parents/images/heart.png")?>"> 228</h5></a>
+                                    <a href="#"><h5><img src="<?=base_url("assets/statics/parents/images/heart.png")?>"> 228</h5></a>
                                 </div>
                                 <div class="col-md-4 icon1">
-                                    <a href="#"><h5><img src="<?=base_url("assets/parents/images/mess.png")?>"> 144</h5></a>
+                                    <a href="#"><h5><img src="<?=base_url("assets/statics/parents/images/mess.png")?>"> 144</h5></a>
                                 </div>
                                 <div class="clearfix"></div>
                             </div>
@@ -209,7 +209,7 @@
                                     <div class="button2">
                                         <a href="#" class="button3 hvr-shutter-out-horizontal">Ashley</a>
                                         <a href="#" class="button4 hvr-shutter-out-horizontal1">Emily</a>
-                                        <a href="#"><img src="<?=base_url("assets/parents/images/round.png")?>"></a>
+                                        <a href="#"><img src="<?=base_url("assets/statics/parents/images/round.png")?>"></a>
                                     </div>
                                 </div>
                                 <div class="sub">
@@ -240,28 +240,28 @@
                                         <article style="position: absolute; width: 100%; opacity: 0;">
                                             <div class="banner-wrap">
                                                 <div class="banner_center">
-                                                    <img src="<?=base_url("assets/parents/images/img3.jpg")?>" class="img-responsive" alt="">
+                                                    <img src="<?=base_url("assets/statics/parents/images/img3.jpg")?>" class="img-responsive" alt="">
                                                 </div>
                                             </div>
                                         </article>
                                         <article style="position: relative; width: 100%; opacity: 1;">
                                             <div class="banner-wrap">
                                                 <div class="banner_center">
-                                                    <img src="<?=base_url("assets/parents/images/img4.jpg")?>" class="img-responsive" alt="">
+                                                    <img src="<?=base_url("assets/statics/parents/images/img4.jpg")?>" class="img-responsive" alt="">
                                                 </div>
                                             </div>
                                         </article>
                                         <article style="position: absolute; width: 100%; opacity: 0;">
                                             <div class="banner-wrap">
                                                 <div class="banner_center">
-                                                    <img src="<?=base_url("assets/parents/images/img5.jpg")?>" class="img-responsive" alt="">
+                                                    <img src="<?=base_url("assets/statics/parents/images/img5.jpg")?>" class="img-responsive" alt="">
                                                 </div>
                                             </div>
                                         </article>
                                     </div>
 
                                 </div>
-                                <script src="<?=base_url("assets/parents/js/jquery.wmuSlider.js")?>"></script>
+                                <script src="<?=base_url("assets/statics/parents/js/jquery.wmuSlider.js")?>"></script>
                                 <script>
                                     $('.example1').wmuSlider();
                                 </script>
@@ -271,7 +271,7 @@
                     <div class="clearfix"></div>
                     <div class="bottom-audio">
                         <div class="au-img">
-                            <a href="#"><img src="<?=base_url("assets/parents/images/au.jpg")?>" class="img-responsive" alt=""></a>
+                            <a href="#"><img src="<?=base_url("assets/statics/parents/images/au.jpg")?>" class="img-responsive" alt=""></a>
                         </div>
                         <div class="audio-top">
                             <div class="audio-grid">
@@ -318,7 +318,7 @@
                                 <h3>Mini Timer</h3>
                             </div>
                             <div class="time-img">
-                                <img src="<?=base_url("assets/parents/images/time.png")?>">
+                                <img src="<?=base_url("assets/statics/parents/images/time.png")?>">
                             </div>
                             <div class="clearfix"></div>
                         </div>
@@ -351,7 +351,7 @@
                                     </div>
                                     <div class="map-column">
                                         <div class="map-column1">
-                                            <img class="img-responsive" src="<?=base_url("assets/parents/images/img6.jpg")?>" alt="">
+                                            <img class="img-responsive" src="<?=base_url("assets/statics/parents/images/img6.jpg")?>" alt="">
                                         </div>
                                         <div class="map-column2">
                                             <div class="top-on1">
@@ -364,7 +364,7 @@
                                     </div>
                                     <div class="map-column">
                                         <div class="map-column1">
-                                            <img class="img-responsive" src="<?=base_url("assets/parents/images/img7.jpg")?>" alt="">
+                                            <img class="img-responsive" src="<?=base_url("assets/statics/parents/images/img7.jpg")?>" alt="">
                                         </div>
                                         <div class="map-column2">
                                             <div class="top-on1">
@@ -377,7 +377,7 @@
                                     </div>
                                     <div class="map-column">
                                         <div class="map-column1">
-                                            <img class="img-responsive" src="<?=base_url("assets/parents/images/img8.jpg")?>" alt="">
+                                            <img class="img-responsive" src="<?=base_url("assets/statics/parents/images/img8.jpg")?>" alt="">
                                         </div>
                                         <div class="map-column2">
                                             <div class="top-on1">
@@ -390,7 +390,7 @@
                                     </div>
                                     <div class="map-column">
                                         <div class="map-column1">
-                                            <img class="img-responsive" src="<?=base_url("assets/parents/images/img6.jpg")?>" alt="">
+                                            <img class="img-responsive" src="<?=base_url("assets/statics/parents/images/img6.jpg")?>" alt="">
                                         </div>
                                         <div class="map-column2">
                                             <div class="top-on1">
@@ -403,7 +403,7 @@
                                     </div>
                                     <div class="map-column">
                                         <div class="map-column1">
-                                            <img class="img-responsive" src="<?=base_url("assets/parents/images/img7.jpg")?>" alt="">
+                                            <img class="img-responsive" src="<?=base_url("assets/statics/parents/images/img7.jpg")?>" alt="">
                                         </div>
                                         <div class="map-column2">
                                             <div class="top-on1">
@@ -416,7 +416,7 @@
                                     </div>
                                     <div class="map-column">
                                         <div class="map-column1">
-                                            <img class="img-responsive" src="<?=base_url("assets/parents/images/img8.jpg")?>" alt="">
+                                            <img class="img-responsive" src="<?=base_url("assets/statics/parents/images/img8.jpg")?>" alt="">
                                         </div>
                                         <div class="map-column2">
                                             <div class="top-on1">

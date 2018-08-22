@@ -5,7 +5,7 @@
 			<div class="col-md-6 col-sm-6 gallery-grids agileits w3layouts gallery-grids1 wow slideInLeft">
 				<div class="gallery-grid-images agileits w3layouts">
                     <?php
-                    $resultats = imgFromDir("eduquemoi/images/a");
+                    $resultats = imgFromDir("images/a");
                     foreach ($resultats as $resultat) {
                     ?>
 					<div class="col-md-4 col-sm-4 gallery-grid gallery-grid-1 history-grid-image">
@@ -95,7 +95,7 @@
                          $i=0;
                          $nom[]="Ben Sulumu"; $nom[]="Noemie Campbell";
                          $details[]='Parent d\'eleves'; $details[]='Encadreur';
-                         $resultats = imgFromDir("eduquemoi/images/testimonials");
+                         $resultats = imgFromDir(__DIR__."eduquemoi/images/testimonials");
                          foreach ($resultats as $resultat) {
                          ?>
 							<div class="agile">
@@ -124,7 +124,7 @@
 <!--										<span></span>-->
 <!--									</div>	-->
 <!--									<div class="col-md-4 test-grid2">-->
-<!--                                        <img src="--><?//=base_url("assets/eduquemoi/images/t2.jpg")?><!--" alt="" class="img-r">-->
+<!--                                        <img src="--><?//=base_url("assets/statics/eduquemoi/images/t2.jpg")?><!--" alt="" class="img-r">-->
 <!--									</div>-->
 <!--								</div>	-->
 <!--								<div class="clearfix"></div>-->
@@ -138,7 +138,7 @@
 <!--										<span></span>-->
 <!--									</div>	-->
 <!--									<div class="col-md-4 test-grid2">-->
-<!--                                        <img src="--><?//=base_url("assets/eduquemoi/images/t3.jpg")?><!--" alt="" class="img-r">-->
+<!--                                        <img src="--><?//=base_url("assets/statics/eduquemoi/images/t3.jpg")?><!--" alt="" class="img-r">-->
 <!--									</div>-->
 <!--								</div>	-->
 <!--								<div class="clearfix"></div>-->
@@ -152,7 +152,7 @@
 <!--										<span>Lorem Ipsum</span>-->
 <!--									</div>	-->
 <!--									<div class="col-md-4 test-grid2">-->
-<!--                                        <img src="--><?//=base_url("assets/eduquemoi/images/t4.jpg")?><!--" alt="" class="img-r">-->
+<!--                                        <img src="--><?//=base_url("assets/statics/eduquemoi/images/t4.jpg")?><!--" alt="" class="img-r">-->
 <!--									</div>-->
 <!--								</div>	-->
 <!--								<div class="clearfix"></div>-->

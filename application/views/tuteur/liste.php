@@ -4,10 +4,10 @@
         <h2>Listes Eleves</h2>
 <!--        <label class="lineb"></label>-->
 <!--        <div class="profile-w3">-->
-<!--            <img src="--><?//=base_url("assets/tuteur/images/bgp.jpg")?><!--" alt="">-->
+<!--            <img src="--><?//=base_url("assets/statics/tuteur/images/bgp.jpg")?><!--" alt="">-->
 <!--        </div>-->
         <div class="w3layouts right">
-<!--            <img src="--><?//=base_url("assets/tuteur/images/pro.jpg")?><!--" alt=" " />-->
+<!--            <img src="--><?//=base_url("assets/statics/tuteur/images/pro.jpg")?><!--" alt=" " />-->
             <?php for ($i=0;$i<=5;$i++){?>
                 <a href="<?=site_url("tuteur/accueil")?>"><label class="lineb"></label>
                     <h5 style="color: darkgrey">Jonathan YOMBO</h5>

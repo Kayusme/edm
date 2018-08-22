@@ -6,8 +6,8 @@
     </div>
 </div>
 <!----start time ------>
-<script src="<?=base_url("assets/parents/js/jquery.countdown.js")?>"></script>
-<script src="<?=base_url("assets/parents/js/script.js")?>"></script>
+<script src="<?=base_url("assets/statics/parents/js/jquery.countdown.js")?>"></script>
+<script src="<?=base_url("assets/statics/parents/js/script.js")?>"></script>
 <!----End time -------->
 </body>
 </html>

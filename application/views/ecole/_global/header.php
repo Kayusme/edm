@@ -33,13 +33,13 @@
         )
     );
     echo meta($meta).
-        link_tag("assets/ecole/css/bootstrap.css").
-        link_tag("assets/ecole/css/style.css").
+        link_tag("assets/statics/ecole/css/bootstrap.css").
+        link_tag("assets/statics/ecole/css/style.css").
         link_tag("http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800");
     ?>
 
-    <script src="<?=base_url("assets/ecole/js/jquery.min.js")?>"></script>
-    <script type="text/javascript" src="<?=base_url("assets/ecole/js/jquery.mixitup.min.js")?>"></script>
+    <script src="<?=base_url("assets/statics/ecole/js/jquery.min.js")?>"></script>
+    <script type="text/javascript" src="<?=base_url("assets/statics/ecole/js/jquery.mixitup.min.js")?>"></script>
     <script type="text/javascript">
         $(function () {
 
@@ -85,7 +85,7 @@
         });
     </script>
     <!---- start-smoth-scrolling---->
-    <script type="text/javascript" src="<?=base_url("assets/ecole/js/move-top.js")?>"></script>
+    <script type="text/javascript" src="<?=base_url("assets/statics/ecole/js/move-top.js")?>"></script>
     <script type="text/javascript">
         jQuery(document).ready(function($) {
             $(".scroll").click(function(event){
@@ -96,16 +96,16 @@
     </script>
 
     <!---- start-smoth-scrolling---->
-    <script type="text/javascript" src="<?=base_url("assets/ecole/js/jquery.mousewheel.js")?>"></script>
-    <script type="text/javascript" src="<?=base_url("assets/ecole/js/jquery.contentcarousel.js")?>"></script>
-    <script type="text/javascript" src="<?=base_url("assets/ecole/js/easing.js")?>"></script>
+    <script type="text/javascript" src="<?=base_url("assets/statics/ecole/js/jquery.mousewheel.js")?>"></script>
+    <script type="text/javascript" src="<?=base_url("assets/statics/ecole/js/jquery.contentcarousel.js")?>"></script>
+    <script type="text/javascript" src="<?=base_url("assets/statics/ecole/js/easing.js")?>"></script>
 </head>
 <body>
 <div class="banner" id="home">
     <div class="container">
         <div class="header">
             <div class="menu">
-                <a class="toggleMenu" href="#"><img src="<?=base_url("assets/ecole/images/menu-icon.png")?>" alt="" /> </a>
+                <a class="toggleMenu" href="#"><img src="<?=base_url("assets/statics/ecole/images/menu-icon.png")?>" alt="" /> </a>
                 <ul class="nav" id="nav">
                     <li class="active"><?=anchor("ecole/index","Accueil")?></a></li>
                     <li><?=anchor("ecole/about","A Propos")?></li>
@@ -115,7 +115,7 @@
                     <li><?=anchor("ecole/contact","Contact")?></li>
                 </ul>
                 <!----start-top-nav-script---->
-                <script type="text/javascript" src="<?=base_url("assets/ecole/js/responsive-nav.js")?>"></script>
+                <script type="text/javascript" src="<?=base_url("assets/statics/ecole/js/responsive-nav.js")?>"></script>
                 <script type="text/javascript">
                     jQuery(document).ready(function($) {
                         $(".scroll").click(function(event){
@@ -135,7 +135,7 @@
                     <article style="position: absolute; width:64%; opacity: 0;">
                         <div class=" cont span_2_of_3 client-main">
                             <div class="logo">
-                                <a href="#"><img src="<?=base_url("assets/ecole/images/logo.png")?>" alt=""></a>
+                                <a href="#"><img src="<?=base_url("assets/statics/ecole/images/logo.png")?>" alt=""></a>
                             </div>
                             <div class="slide-text">
                                 <p>Suspendisse commodo tempor sagittis! In justo est, sollicitudin eu scelerisque pretium, placerat.</p>
@@ -147,7 +147,7 @@
                     <article style="position: absolute; width:64%; opacity: 0;">
                         <div class=" cont span_2_of_3  client-main">
                             <div class="logo">
-                                <a href="#"><img src="<?=base_url('assets/ecole/images/logo.png')?>" alt=""></a>
+                                <a href="#"><img src="<?=base_url('assets/statics/ecole/images/logo.png')?>" alt=""></a>
                             </div>
                             <div class="slide-text">
                                 <p>Suspendisse eget lobortis lacus, et elementum tortor. Praesent metus ligula, lacinia eu sodales sed,</p>
@@ -159,7 +159,7 @@
                     <article style="position: absolute; width:64%; opacity: 0;">
                         <div class="cont span_2_of_3  client-main">
                             <div class="logo">
-                                <a href="#"><img src="<?=base_url('assets/ecole/images/logo.png')?>" alt=""></a>
+                                <a href="#"><img src="<?=base_url('assets/statics/ecole/images/logo.png')?>" alt=""></a>
                             </div>
                             <div class="slide-text">
                                 <p>Vitae pellentesque nec, pharetra a orci. Praesent nunc nunc, egestas eget elementum sed; rutrum!</p>
@@ -169,7 +169,7 @@
                         </div>
                     </article>
 
-                    <script src="<?=base_url('assets/ecole/js/jquery.wmuSlider.js')?>"></script>
+                    <script src="<?=base_url('assets/statics/ecole/js/jquery.wmuSlider.js')?>"></script>
                     <script>
                         $('.example1').wmuSlider();
                     </script>
