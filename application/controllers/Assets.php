@@ -2,22 +2,11 @@
 /**
  * Created by PhpStorm.
  * User: ITOT
- * Date: 21/08/2018
- * Time: 22:29 PM
+ * Date: 22/08/2018
+ * Time: 01:25 AM
  */
-defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Assets extends CI_Controller
+class Assets
 {
-    public function index()
-    {
-        redirect(base_url());
-    }
 
-    public function statics(string $first = null, string $second = null,string $third = null)
-    {
-        $this->load->helper("file");
-        header("Content-type: ".get_mime_by_extension($second));
-        $this->load->view($first."/".$second."/".$third);
-    }
 }
