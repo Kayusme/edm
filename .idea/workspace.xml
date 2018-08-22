@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed339959-b02a-44c3-8cbe-57240f17c553" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f38e6b50-a646-4264-909a-d8cba532a287.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/config/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/autoload.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Eduquemoi.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Eduquemoi.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Assets.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Assets.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/helpers/imgFromDir_helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/helpers/imgFromDir_helper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/eduquemoi/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/eduquemoi/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,41 +36,47 @@
     <session id="-1314606400">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.29" value="1" />
           <entry key="project.open.time.37" value="1" />
           <entry key="project.open.time.41" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.50" value="1" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="css" value="2" />
           <entry key="gitignore" value="51" />
           <entry key="htaccess" value="95" />
-          <entry key="php" value="554" />
+          <entry key="php" value="1506" />
           <entry key="txt" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="554" />
+          <entry key="CSS" value="2" />
+          <entry key="PHP" value="1506" />
           <entry key="PLAIN_TEXT" value="54" />
           <entry key="htaccess" value="95" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="css" value="1" />
           <entry key="gitignore" value="2" />
-          <entry key="htaccess" value="2" />
-          <entry key="php" value="13" />
+          <entry key="htaccess" value="5" />
+          <entry key="php" value="43" />
           <entry key="sql" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PHP" value="13" />
+          <entry key="CSS" value="1" />
+          <entry key="PHP" value="43" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="Scratch" value="1" />
-          <entry key="htaccess" value="2" />
+          <entry key="htaccess" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
@@ -80,7 +86,7 @@
       </usages-collector>
       <usages-collector id="statistics.php.new.class">
         <counts>
-          <entry key="PHP Class.type" value="1" />
+          <entry key="PHP Class.type" value="2" />
         </counts>
       </usages-collector>
     </session>
@@ -92,73 +98,33 @@
     <fileColor scope="Non-Project Files (Material Palenight)" color="2f2e43" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/Assets.php">
+        <entry file="file://$PROJECT_DIR$/application/helpers/imgFromDir_helper.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-125">
-              <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
-              <folding>
-                <element signature="e#6#89#0#PHP" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/config/autoload.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="91" column="46" selection-start-line="91" selection-start-column="46" selection-end-line="91" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/config/config.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4715">
-              <caret line="226" selection-start-line="226" selection-end-line="226" />
-              <folding>
-                <element signature="e#71#870#0#PHP" />
-              </folding>
+            <state relative-caret-position="391">
+              <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/eduquemoi/index.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/Eduquemoi.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" column="42" lean-forward="true" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+            <state relative-caret-position="260">
+              <caret line="97" column="80" selection-start-line="97" selection-start-column="80" selection-end-line="97" selection-end-column="80" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/ecole/_global/header.php">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/controllers/Assets.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="38" column="6" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/Epsp.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/Eleve.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="1" column="58" selection-start-line="1" selection-end-line="1" selection-end-column="63" />
+            <state relative-caret-position="207">
+              <caret line="20" column="28" lean-forward="true" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+              <folding>
+                <element signature="e#6#89#0#PHP" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -175,15 +141,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Wanna</find>
-      <find>post</find>
-      <find>call</find>
-      <find>cal</find>
-      <find>text</find>
-      <find>input</find>
-      <find>blog</find>
-      <find>pie</find>
-      <find>comment</find>
       <find>3</find>
       <find>--&gt;</find>
       <find>$tel</find>
@@ -205,13 +162,27 @@
       <find>[a-z]*/css</find>
       <find>[a-z]*/css|[a-z]*/js</find>
       <find>ecole/css</find>
+      <find>js</find>
+      <find>assets/</find>
+      <find>eot</find>
+      <find>font-awesome.css</find>
+      <find>link_tag(assets/statics/[a-z]*/css/font-awesome.css</find>
+      <find>css/font-awesome.css</find>
+      <find>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://use.fontawesome.com/releases/v5.2.0/css/all.css&quot; integrity=&quot;sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ&quot; crossorigin=&quot;anonymous&quot;&gt;</find>
+      <find>/v5.2.0/css/all.css&quot; *[a-z]*</find>
+      <find>imgFromDir</find>
     </findStrings>
     <replaceStrings>
-      <replace />
       <replace>css/[a-z]*|js/[a-z]*</replace>
+      <replace />
+      <replace>assets/statics/</replace>
+      <replace>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&quot;&gt;</replace>
     </replaceStrings>
     <dirStrings>
       <dir>C:\xampp7\ci\application</dir>
+      <dir>C:\xampp7\htdocs</dir>
+      <dir>C:\xampp7\ci</dir>
+      <dir>C:\xampp7\ci\application\views</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -226,14 +197,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../htdocs/assets/eduquemoi/css/style.css" />
-        <option value="$PROJECT_DIR$/application/views/eduquemoi/contact.php" />
-        <option value="$PROJECT_DIR$/application/views/eduquemoi/liens.php" />
-        <option value="$PROJECT_DIR$/application/views/eleve/blog.php" />
-        <option value="$PROJECT_DIR$/application/views/eduquemoi/_global/footer.php" />
-        <option value="$PROJECT_DIR$/application/views/eduquemoi/single.php" />
-        <option value="$PROJECT_DIR$/application/views/eduquemoi/about.php" />
-        <option value="$PROJECT_DIR$/application/views/parents/_global/navbar.php" />
         <option value="$PROJECT_DIR$/application/views/parents/index.php" />
         <option value="$PROJECT_DIR$/../htdocs/g2_sms/sms_genie_logiciel.php" />
         <option value="$PROJECT_DIR$/../htdocs/g2_sms/assets/css/style.css" />
@@ -258,7 +221,6 @@
         <option value="$PROJECT_DIR$/application/views/eleve/basic_tables.php" />
         <option value="$PROJECT_DIR$/application/helpers/selectDevoir_helper.php" />
         <option value="$PROJECT_DIR$/application/config/database.php" />
-        <option value="$PROJECT_DIR$/application/views/eduquemoi/_global/header.php" />
         <option value="$PROJECT_DIR$/application/views/eleve/horaire.php" />
         <option value="$PROJECT_DIR$/application/helpers/selectCours_helper.php" />
         <option value="$PROJECT_DIR$/application/views/eleve/cours.php" />
@@ -266,17 +228,26 @@
         <option value="$PROJECT_DIR$/application/views/ecole/courses.php" />
         <option value="$PROJECT_DIR$/application/helpers/selectAllCours_helper.php" />
         <option value="$PROJECT_DIR$/application/models/eleve_login.php" />
-        <option value="$PROJECT_DIR$/application/models/eleve_model.php" />
         <option value="$PROJECT_DIR$/application/controllers/Eleve.php" />
-        <option value="$PROJECT_DIR$/application/views/eleve/login.php" />
-        <option value="$PROJECT_DIR$/application/config/config.php" />
         <option value="$PROJECT_DIR$/../htdocs/.gitignore" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/../htdocs/.htaccess" />
         <option value="$PROJECT_DIR$/application/views/ecole/_global/header.php" />
-        <option value="$PROJECT_DIR$/application/controllers/Assets.php" />
-        <option value="$PROJECT_DIR$/application/controllers/Eduquemoi.php" />
         <option value="$PROJECT_DIR$/application/config/autoload.php" />
+        <option value="$PROJECT_DIR$/application/controllers/Eduqueadmin.php" />
+        <option value="$PROJECT_DIR$/application/config/config.php" />
+        <option value="$PROJECT_DIR$/../htdocs/index.php" />
+        <option value="$PROJECT_DIR$/application/models/eleve_model.php" />
+        <option value="$PROJECT_DIR$/application/controllers/Eduquemoi.php" />
+        <option value="$PROJECT_DIR$/application/views/eduquemoi/css/font-awesome.css" />
+        <option value="$PROJECT_DIR$/application/views/eduquemoi/_global/header.php" />
+        <option value="$PROJECT_DIR$/application/views/eleve/login.php" />
+        <option value="$PROJECT_DIR$/../htdocs/.htaccess" />
+        <option value="$PROJECT_DIR$/application/views/eleve/_global/header.php" />
+        <option value="$PROJECT_DIR$/application/views/tuteur/_global/header.php" />
+        <option value="$PROJECT_DIR$/application/views/eduquemoi/_global/header2.php" />
+        <option value="$PROJECT_DIR$/application/helpers/imgFromDir_helper.php" />
+        <option value="$PROJECT_DIR$/application/views/eduquemoi/index.php" />
+        <option value="$PROJECT_DIR$/application/controllers/Assets.php" />
       </list>
     </option>
   </component>
@@ -298,288 +269,277 @@
   </component>
   <component name="ProjectUserFactors">
     <factor id="binaryFeature:liftShorter">
-      <dailyData date="21-08-2018">
-        <observation name="false" value="50,0" />
+      <dailyData date="22-08-2018">
+        <observation name="false" value="45,0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:liftShorterClasses">
-      <dailyData date="21-08-2018">
-        <observation name="UNDEFINED" value="50,0" />
+      <dailyData date="22-08-2018">
+        <observation name="UNDEFINED" value="45,0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:middleMatching">
-      <dailyData date="21-08-2018">
-        <observation name="false" value="50,0" />
+      <dailyData date="22-08-2018">
+        <observation name="false" value="45,0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:nonGeneric">
-      <dailyData date="21-08-2018">
-        <observation name="UNDEFINED" value="50,0" />
+      <dailyData date="22-08-2018">
+        <observation name="UNDEFINED" value="45,0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:prox_inResolveScope">
-      <dailyData date="21-08-2018">
-        <observation name="UNDEFINED" value="31,0" />
-        <observation name="false" value="19,0" />
+      <dailyData date="22-08-2018">
+        <observation name="UNDEFINED" value="4,0" />
+        <observation name="false" value="41,0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:prox_openedInEditor">
-      <dailyData date="21-08-2018">
-        <observation name="UNDEFINED" value="31,0" />
-        <observation name="false" value="12,0" />
-        <observation name="true" value="7,0" />
+      <dailyData date="22-08-2018">
+        <observation name="UNDEFINED" value="4,0" />
+        <observation name="false" value="19,0" />
+        <observation name="true" value="22,0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:prox_sameDirectory">
-      <dailyData date="21-08-2018">
-        <observation name="UNDEFINED" value="31,0" />
-        <observation name="false" value="12,0" />
-        <observation name="true" value="7,0" />
+      <dailyData date="22-08-2018">
+        <observation name="UNDEFINED" value="4,0" />
+        <observation name="false" value="19,0" />
+        <observation name="true" value="22,0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:prox_sameLogicalRoot">
-      <dailyData date="21-08-2018">
-        <observation name="UNDEFINED" value="31,0" />
-        <observation name="false" value="19,0" />
+      <dailyData date="22-08-2018">
+        <observation name="UNDEFINED" value="4,0" />
+        <observation name="false" value="41,0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:prox_sdkOrLibrary">
-      <dailyData date="21-08-2018">
-        <observation name="UNDEFINED" value="31,0" />
-        <observation name="false" value="19,0" />
+      <dailyData date="22-08-2018">
+        <observation name="UNDEFINED" value="4,0" />
+        <observation name="false" value="41,0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:templates">
-      <dailyData date="21-08-2018">
-        <observation name="false" value="44,0" />
-        <observation name="true" value="6,0" />
+      <dailyData date="22-08-2018">
+        <observation name="false" value="45,0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:accessible">
-      <dailyData date="21-08-2018">
-        <observation name="UNDEFINED" value="50,0" />
+      <dailyData date="22-08-2018">
+        <observation name="UNDEFINED" value="45,0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:expectedType">
-      <dailyData date="21-08-2018">
-        <observation name="UNDEFINED" value="50,0" />
+      <dailyData date="22-08-2018">
+        <observation name="UNDEFINED" value="45,0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:kind">
-      <dailyData date="21-08-2018">
-        <observation name="UNDEFINED" value="50,0" />
+      <dailyData date="22-08-2018">
+        <observation name="UNDEFINED" value="45,0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:prox_groovyReferenceListWeigher">
-      <dailyData date="21-08-2018">
-        <observation name="UNDEFINED" value="50,0" />
+      <dailyData date="22-08-2018">
+        <observation name="UNDEFINED" value="45,0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:prox_javaInheritance">
-      <dailyData date="21-08-2018">
-        <observation name="UNDEFINED" value="50,0" />
+      <dailyData date="22-08-2018">
+        <observation name="UNDEFINED" value="45,0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:prox_referenceList">
-      <dailyData date="21-08-2018">
-        <observation name="UNDEFINED" value="50,0" />
+      <dailyData date="22-08-2018">
+        <observation name="UNDEFINED" value="45,0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:recursion">
-      <dailyData date="21-08-2018">
-        <observation name="UNDEFINED" value="50,0" />
+      <dailyData date="22-08-2018">
+        <observation name="UNDEFINED" value="45,0" />
       </dailyData>
     </factor>
     <factor id="completionFinishedType">
-      <dailyData date="21-08-2018">
-        <observation name="cancelled" value="198,0" />
-        <observation name="explicitSelect" value="38,0" />
-        <observation name="typedSelect" value="12,0" />
-      </dailyData>
       <dailyData date="22-08-2018">
-        <observation name="cancelled" value="15,0" />
+        <observation name="cancelled" value="86,0" />
+        <observation name="explicitSelect" value="26,0" />
+        <observation name="typedSelect" value="19,0" />
       </dailyData>
     </factor>
     <factor id="completionType">
-      <dailyData date="21-08-2018">
-        <observation name="BASIC" value="69,0" />
-      </dailyData>
       <dailyData date="22-08-2018">
-        <observation name="BASIC" value="1,0" />
+        <observation name="BASIC" value="61,0" />
       </dailyData>
     </factor>
     <factor id="completionUsage">
-      <dailyData date="21-08-2018">
-        <observation name="count" value="248,0" />
-      </dailyData>
       <dailyData date="22-08-2018">
-        <observation name="count" value="15,0" />
+        <observation name="count" value="131,0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:explicitProximity">
-      <dailyData date="21-08-2018">
+      <dailyData date="22-08-2018">
         <observation name="average" value="0,0" />
-        <observation name="count" value="99,0" />
+        <observation name="count" value="89,0" />
         <observation name="max" value="0,0" />
         <observation name="min" value="0,0" />
         <observation name="variance" value="0,0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:grouping">
-      <dailyData date="21-08-2018">
+      <dailyData date="22-08-2018">
         <observation name="average" value="0,0" />
-        <observation name="count" value="99,0" />
+        <observation name="count" value="89,0" />
         <observation name="max" value="0,0" />
         <observation name="min" value="0,0" />
         <observation name="variance" value="0,0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:mostUsed">
-      <dailyData date="21-08-2018">
-        <observation name="UNDEFINED" value="50,0" />
+      <dailyData date="22-08-2018">
+        <observation name="UNDEFINED" value="45,0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:nameEnd">
-      <dailyData date="21-08-2018">
-        <observation name="UNDEFINED" value="50,0" />
+      <dailyData date="22-08-2018">
+        <observation name="UNDEFINED" value="45,0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:position">
-      <dailyData date="21-08-2018">
-        <observation name="average" value="0,20202" />
-        <observation name="count" value="99,0" />
-        <observation name="max" value="4,0" />
+      <dailyData date="22-08-2018">
+        <observation name="average" value="0,089888" />
+        <observation name="count" value="89,0" />
+        <observation name="max" value="1,0" />
         <observation name="min" value="0,0" />
-        <observation name="variance" value="0,248591" />
+        <observation name="variance" value="0,059757" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:prefix">
-      <dailyData date="21-08-2018">
-        <observation name="average" value="-1015,838384" />
-        <observation name="count" value="99,0" />
+      <dailyData date="22-08-2018">
+        <observation name="average" value="-1105,404494" />
+        <observation name="count" value="89,0" />
         <observation name="max" value="0,0" />
         <observation name="min" value="-1253,0" />
-        <observation name="variance" value="103883,726762" />
+        <observation name="variance" value="41999,437275" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:priority">
-      <dailyData date="21-08-2018">
+      <dailyData date="22-08-2018">
         <observation name="average" value="0,0" />
-        <observation name="count" value="99,0" />
+        <observation name="count" value="89,0" />
         <observation name="max" value="0,0" />
         <observation name="min" value="0,0" />
         <observation name="variance" value="0,0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:prox_explicitlyImported">
-      <dailyData date="21-08-2018">
-        <observation name="UNDEFINED" value="50,0" />
+      <dailyData date="22-08-2018">
+        <observation name="UNDEFINED" value="45,0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:prox_knownElement">
-      <dailyData date="21-08-2018">
-        <observation name="UNDEFINED" value="50,0" />
+      <dailyData date="22-08-2018">
+        <observation name="UNDEFINED" value="45,0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:prox_sameModule">
-      <dailyData date="21-08-2018">
-        <observation name="UNDEFINED" value="31,0" />
-        <observation name="average" value="1,135135" />
-        <observation name="count" value="37,0" />
+      <dailyData date="22-08-2018">
+        <observation name="UNDEFINED" value="4,0" />
+        <observation name="average" value="1,209877" />
+        <observation name="count" value="81,0" />
         <observation name="max" value="2,0" />
         <observation name="min" value="0,0" />
-        <observation name="variance" value="0,609452" />
+        <observation name="variance" value="0,759618" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:prox_samePsiMember">
-      <dailyData date="21-08-2018">
-        <observation name="UNDEFINED" value="50,0" />
+      <dailyData date="22-08-2018">
+        <observation name="UNDEFINED" value="45,0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:query_length">
-      <dailyData date="21-08-2018">
+      <dailyData date="22-08-2018">
         <observation name="average" value="0,0" />
-        <observation name="count" value="99,0" />
+        <observation name="count" value="89,0" />
         <observation name="max" value="0,0" />
         <observation name="min" value="0,0" />
         <observation name="variance" value="0,0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:result_length">
-      <dailyData date="21-08-2018">
-        <observation name="average" value="6,030303" />
-        <observation name="count" value="99,0" />
-        <observation name="max" value="19,0" />
-        <observation name="min" value="2,0" />
-        <observation name="variance" value="7,827248" />
+      <dailyData date="22-08-2018">
+        <observation name="average" value="4,505618" />
+        <observation name="count" value="89,0" />
+        <observation name="max" value="11,0" />
+        <observation name="min" value="1,0" />
+        <observation name="variance" value="4,083567" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:sameWords">
-      <dailyData date="21-08-2018">
-        <observation name="UNDEFINED" value="50,0" />
+      <dailyData date="22-08-2018">
+        <observation name="UNDEFINED" value="45,0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:shorter">
-      <dailyData date="21-08-2018">
-        <observation name="UNDEFINED" value="50,0" />
+      <dailyData date="22-08-2018">
+        <observation name="UNDEFINED" value="45,0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:simple">
-      <dailyData date="21-08-2018">
-        <observation name="UNDEFINED" value="50,0" />
+      <dailyData date="22-08-2018">
+        <observation name="UNDEFINED" value="45,0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:sorter">
-      <dailyData date="21-08-2018">
+      <dailyData date="22-08-2018">
         <observation name="average" value="1,0" />
-        <observation name="count" value="99,0" />
+        <observation name="count" value="89,0" />
         <observation name="max" value="1,0" />
         <observation name="min" value="1,0" />
         <observation name="variance" value="0,0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:statics">
-      <dailyData date="21-08-2018">
-        <observation name="UNDEFINED" value="50,0" />
+      <dailyData date="22-08-2018">
+        <observation name="UNDEFINED" value="45,0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:stats">
-      <dailyData date="21-08-2018">
-        <observation name="average" value="3635,050505" />
-        <observation name="count" value="99,0" />
+      <dailyData date="22-08-2018">
+        <observation name="average" value="4490,494382" />
+        <observation name="count" value="89,0" />
         <observation name="max" value="10000,0" />
         <observation name="min" value="0,0" />
-        <observation name="variance" value="18472614,779372" />
+        <observation name="variance" value="19813354,427034" />
       </dailyData>
     </factor>
     <factor id="itemPosition">
-      <dailyData date="21-08-2018">
-        <observation name="0" value="31,0" />
-        <observation name="1" value="6,0" />
-        <observation name="4" value="1,0" />
+      <dailyData date="22-08-2018">
+        <observation name="0" value="22,0" />
+        <observation name="1" value="4,0" />
       </dailyData>
     </factor>
     <factor id="mnemonicsUsage">
-      <dailyData date="21-08-2018">
-        <observation name="total" value="27,0" />
+      <dailyData date="22-08-2018">
+        <observation name="total" value="19,0" />
         <observation name="withMnemonics" value="0,0" />
       </dailyData>
     </factor>
     <factor id="prefixLength">
-      <dailyData date="21-08-2018">
-        <observation name="0" value="6,0" />
+      <dailyData date="22-08-2018">
+        <observation name="0" value="2,0" />
         <observation name="1" value="5,0" />
-        <observation name="2" value="11,0" />
-        <observation name="3" value="3,0" />
-        <observation name="4" value="11,0" />
+        <observation name="2" value="5,0" />
+        <observation name="3" value="10,0" />
+        <observation name="4" value="1,0" />
         <observation name="5" value="1,0" />
-        <observation name="6" value="1,0" />
+        <observation name="6" value="2,0" />
       </dailyData>
     </factor>
     <factor id="timeBetweenTyping">
-      <dailyData date="21-08-2018">
-        <observation name="average" value="384,275862" />
-        <observation name="count" value="87,0" />
+      <dailyData date="22-08-2018">
+        <observation name="average" value="458,034483" />
+        <observation name="count" value="58,0" />
       </dailyData>
     </factor>
   </component>
@@ -621,18 +581,18 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../htdocs" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path" value="node" />
-    <property name="settings.editor.selected.configurable" value="terminal" />
+    <property name="settings.editor.selected.configurable" value="com.chrisrm.idea.config" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp7\htdocs\" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp7\ci\application\views\tuteur" />
       <recent name="C:\xampp7\ci\application\views\parents" />
       <recent name="C:\xampp7\ci\application\views\eleve" />
       <recent name="C:\xampp7\ci\application\views\eduquemoi" />
       <recent name="C:\xampp7\ci\application\views\ecole" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp7\htdocs\" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -719,7 +679,9 @@
       <workItem from="1533555878164" duration="715000" />
       <workItem from="1533889124624" duration="652000" />
       <workItem from="1534876248086" duration="6106000" />
-      <workItem from="1534882934439" duration="6509000" />
+      <workItem from="1534882934439" duration="12914000" />
+      <workItem from="1534950667406" duration="138000" />
+      <workItem from="1534950999792" duration="8834000" />
     </task>
     <task id="LOCAL-00001" summary="Arrangement index finis">
       <created>1523378690273</created>
@@ -739,7 +701,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="172569000" />
+    <option name="totallyTimeSpent" value="187946000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -755,11 +717,11 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.14826702" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.1521181" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.24962178" />
       <window_info anchor="bottom" id="Event Log" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="1" weight="0.4422043" />
-      <window_info anchor="bottom" id="Terminal" order="2" visible="true" weight="0.21505377" />
+      <window_info anchor="bottom" id="Terminal" order="2" visible="true" weight="0.22715054" />
       <window_info anchor="bottom" id="CSS-X-Fire" order="3" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.328594" />
@@ -767,7 +729,7 @@
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="10" weight="0.32847896" />
+      <window_info anchor="bottom" id="TODO" order="10" weight="0.3266129" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="12" weight="0.3293011" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.3288364" />
@@ -776,7 +738,7 @@
       <window_info anchor="right" id="Database" order="1" weight="0.22015405" />
       <window_info anchor="right" id="Coding Bot" order="2" side_tool="true" />
       <window_info anchor="right" id="Commander" order="3" weight="0.4" />
-      <window_info anchor="right" x="92" y="92" width="1182" height="584" id="Documentation" order="4" type="FLOATING" />
+      <window_info anchor="right" x="92" y="92" width="1182" height="584" id="Documentation" order="4" side_tool="true" weight="0.32991013" />
       <window_info anchor="right" id="Ant Build" order="5" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="6" weight="0.25" />
     </layout>
@@ -843,63 +805,6 @@
   </component>
   <component name="WordPressConfiguration" doNotAskAgain="true" />
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../php/php.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="946" column="10" selection-start-line="946" selection-end-line="946" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../htdocs/g2_sms/_app/Mail_g2.php" />
-    <entry file="file://$PROJECT_DIR$/../htdocs/apj-chat/site2/lib/lang/en.php" />
-    <entry file="file://$PROJECT_DIR$/../htdocs/apj-chat/site2/lib/lang/fr.php" />
-    <entry file="file://$PROJECT_DIR$/../htdocs/apj-chat/site2/lib/data/channels.php" />
-    <entry file="file://$PROJECT_DIR$/../htdocs/apj-chat/site2/js/chat.js" />
-    <entry file="file://$PROJECT_DIR$/../htdocs/apj-chat/site2/lib/template/loggedIn.html" />
-    <entry file="file://$PROJECT_DIR$/../htdocs/apj-chat/site2/lib/template/loggedOut.html" />
-    <entry file="file://$PROJECT_DIR$/../htdocs/apj-chat/site2/lib/template/logs.html" />
-    <entry file="file://$PROJECT_DIR$/application/helpers/imgFromDir_helper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="21" lean-forward="true" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/ecole/admissions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="53" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Ecole.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="54" column="1" selection-start-line="54" selection-start-column="1" selection-end-line="54" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/eleve/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="74" column="20" lean-forward="true" selection-start-line="74" selection-start-column="20" selection-end-line="74" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/eleve/basic_tables.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/helpers/selectHoraire_helper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/eleve/inbox.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="765">
@@ -907,13 +812,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/helpers/selectDevoir_helper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="117" selection-start-line="5" selection-start-column="117" selection-end-line="5" selection-end-column="117" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/application/helpers/selectDevoir_helper.php" />
     <entry file="file://$PROJECT_DIR$/application/views/eleve/devoir.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -933,11 +832,6 @@
         <state relative-caret-position="153">
           <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/config/smileys.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-151" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/eleve/horaire.php">
@@ -962,13 +856,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/helpers/selectAllCours_helper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/application/helpers/selectAllCours_helper.php" />
     <entry file="file://$PROJECT_DIR$/application/views/ecole/_global/footer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
@@ -976,20 +864,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/helpers/selectCours_helper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="81" lean-forward="true" selection-start-line="4" selection-start-column="81" selection-end-line="4" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/config/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="77" column="28" lean-forward="true" selection-start-line="77" selection-start-column="28" selection-end-line="77" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/application/helpers/selectCours_helper.php" />
     <entry file="file://$PROJECT_DIR$/phpstorm.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -997,27 +872,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/eleve/_global/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/helpers/connect.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="30" column="70" selection-start-line="30" selection-start-column="70" selection-end-line="30" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/eleve/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12">
-          <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/application/helpers/connect.php" />
     <entry file="file://$PROJECT_DIR$/application/views/eleve/_global/nav.php">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1031,39 +886,12 @@
     <entry file="file://$PROJECT_DIR$/../htdocs/phpstorm.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/.htaccess">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../htdocs/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/system/core/CodeIgniter.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="943">
           <caret line="99" column="23" lean-forward="true" selection-start-line="99" selection-start-column="23" selection-end-line="99" selection-end-column="23" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../htdocs/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="314" column="35" selection-start-line="314" selection-start-column="35" selection-end-line="314" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/eleve_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/core/Front_end.php">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Eleve.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -1089,40 +917,183 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Assets.php">
+    <entry file="file://$PROJECT_DIR$/application/config/autoload.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-125">
-          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
-          <folding>
-            <element signature="e#6#89#0#PHP" />
-          </folding>
+        <state relative-caret-position="335">
+          <caret line="91" column="46" selection-start-line="91" selection-start-column="46" selection-end-line="91" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../htdocs/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="71" selection-start-line="71" selection-end-line="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Eduqueadmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/config/config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4715">
-          <caret line="226" selection-start-line="226" selection-end-line="226" />
-          <folding>
-            <element signature="e#71#870#0#PHP" />
-          </folding>
+        <state relative-caret-position="-2425">
+          <caret line="400" column="2" selection-start-line="400" selection-start-column="2" selection-end-line="400" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/constants.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1574" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1771">
+          <caret line="77" column="28" lean-forward="true" selection-start-line="77" selection-start-column="28" selection-end-line="77" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/foreign_chars.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1988" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/memcached.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/migration.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1551" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/profiler.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1035" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/smileys.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1091" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/user_agents.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="204" column="35" lean-forward="true" selection-start-line="204" selection-start-column="35" selection-end-line="204" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/core/Front_end.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/language/french/upload_lang.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/eleve_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13">
+          <caret line="15" column="69" lean-forward="true" selection-start-line="15" selection-start-column="69" selection-end-line="15" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/eduquemoi/css/font-awesome.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="2" lean-forward="true" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Eduquemoi.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../htdocs/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="60" selection-start-line="6" selection-start-column="60" selection-end-line="6" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/eleve/_global/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="39" column="121" selection-start-line="39" selection-start-column="121" selection-end-line="39" selection-end-column="121" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/tuteur/_global/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="39" column="122" selection-start-line="39" selection-start-column="122" selection-end-line="39" selection-end-column="122" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/mimes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="141" column="22" selection-start-line="141" selection-start-column="22" selection-end-line="141" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/eduquemoi/_global/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="42" column="122" selection-start-line="42" selection-start-column="122" selection-end-line="42" selection-end-column="122" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/eduquemoi/_global/header2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="43" column="126" selection-start-line="43" selection-start-column="126" selection-end-line="43" selection-end-column="126" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="11" lean-forward="true" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/eleve/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="13" column="117" selection-start-line="13" selection-start-column="117" selection-end-line="13" selection-end-column="117" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/eduquemoi/index.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Eduquemoi.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="42" lean-forward="true" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+        <state relative-caret-position="260">
+          <caret line="97" column="80" selection-start-line="97" selection-start-column="80" selection-end-line="97" selection-end-column="80" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/config/autoload.php">
+    <entry file="file://$PROJECT_DIR$/application/helpers/imgFromDir_helper.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="91" column="46" selection-start-line="91" selection-start-column="46" selection-end-line="91" selection-end-column="46" />
+        <state relative-caret-position="391">
+          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Assets.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="20" column="28" lean-forward="true" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+          <folding>
+            <element signature="e#6#89#0#PHP" />
+          </folding>
         </state>
       </provider>
     </entry>
