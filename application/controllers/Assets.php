@@ -11,16 +11,22 @@ class Assets extends CI_Controller
 {
     public function index()
     {
-        redirect(base_url());//TODO: import Font-Awesome from internet
+        redirect(base_url());
     }
 
-    public function statics(string $first = null, string $second = null,string $third = null)
+    public function statics(string $first = null, string $second = null,string $third = null, string $fourth = null)
     {
         $this->load->helper("file");
-        $mime = get_mime_by_extension($third);
+        if ($fourth != null)
+            $last = $fourth;
+        else
+            $last = $third;
+        $mime = get_mime_by_extension($last);
         if ($mime){
             header("Content-type: ".$mime);
-            $this->load->view($first."/".$second."/".$third);
+            $p = $first."/".$second."/".$third;
+            $p = ($fourth != null) ? $p."/".$fourth : $p;
+            $this->load->view($p);
         }else{
             redirect(base_url());
         }
