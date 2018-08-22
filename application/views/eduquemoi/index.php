@@ -5,7 +5,7 @@
 			<div class="col-md-6 col-sm-6 gallery-grids agileits w3layouts gallery-grids1 wow slideInLeft">
 				<div class="gallery-grid-images agileits w3layouts">
                     <?php
-                    $resultats = imgFromDir("images/a");
+                    $resultats = imgFromDir("eduquemoi/images/a/");
                     foreach ($resultats as $resultat) {
                     ?>
 					<div class="col-md-4 col-sm-4 gallery-grid gallery-grid-1 history-grid-image">
@@ -95,7 +95,7 @@
                          $i=0;
                          $nom[]="Ben Sulumu"; $nom[]="Noemie Campbell";
                          $details[]='Parent d\'eleves'; $details[]='Encadreur';
-                         $resultats = imgFromDir(__DIR__."eduquemoi/images/testimonials");
+                         $resultats = imgFromDir("eduquemoi/images/testimonials/");
                          foreach ($resultats as $resultat) {
                          ?>
 							<div class="agile">
@@ -115,48 +115,6 @@
                              $i++;
                          }
                          ?>
-<!--							<div class="agile">-->
-<!--							   	<div class="test-grid">-->
-<!--							   		<div class="col-md-8 test-grid1">-->
-<!--										<p class="para-w3-agile">-->
-<!--										</p>-->
-<!--										<h4>Andery</h4>-->
-<!--										<span></span>-->
-<!--									</div>	-->
-<!--									<div class="col-md-4 test-grid2">-->
-<!--                                        <img src="--><?//=base_url("assets/statics/eduquemoi/images/t2.jpg")?><!--" alt="" class="img-r">-->
-<!--									</div>-->
-<!--								</div>	-->
-<!--								<div class="clearfix"></div>-->
-<!--							</div>-->
-<!--							<div class="agile">-->
-<!--							   	<div class="test-grid">-->
-<!--							   		<div class="col-md-8 test-grid1">-->
-<!--										<p class="para-w3-agile">-->
-<!--										    </p>-->
-<!--										<h4>williams</h4>-->
-<!--										<span></span>-->
-<!--									</div>	-->
-<!--									<div class="col-md-4 test-grid2">-->
-<!--                                        <img src="--><?//=base_url("assets/statics/eduquemoi/images/t3.jpg")?><!--" alt="" class="img-r">-->
-<!--									</div>-->
-<!--								</div>	-->
-<!--								<div class="clearfix"></div>-->
-<!--							</div>-->
-<!--							<div class="agile">-->
-<!--							   	<div class="test-grid">-->
-<!--							   		<div class="col-md-8 test-grid1">-->
-<!--										<p class="para-w3-agile">-->
-<!--										    </p>-->
-<!--										<h4>Shane Smith</h4>-->
-<!--										<span>Lorem Ipsum</span>-->
-<!--									</div>	-->
-<!--									<div class="col-md-4 test-grid2">-->
-<!--                                        <img src="--><?//=base_url("assets/statics/eduquemoi/images/t4.jpg")?><!--" alt="" class="img-r">-->
-<!--									</div>-->
-<!--								</div>	-->
-<!--								<div class="clearfix"></div>-->
-<!--							</div>	-->
 					</div>
 				</div>	
 		</div>
