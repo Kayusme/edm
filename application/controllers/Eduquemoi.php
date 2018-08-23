@@ -5,7 +5,6 @@ class Eduquemoi extends CI_Controller {
 
     public function index()
     {
-        $this->load->helper('imgFromDir');
 //        $this->lang->load('fr','french');
         $data['title'] = 'eduque-moi';
         $this->load->view('eduquemoi/_global/header',$data);
