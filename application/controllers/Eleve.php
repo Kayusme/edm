@@ -5,8 +5,10 @@ class Eleve  extends CI_Controller
 {
     public function index()
     {
-        if (isset($_SESSION['user'])){
+        $maSession = $this->session->userdata('matricule');
+        if (isset($maSession)){
             $data['title'] = "Page d'administration";
+            $data['infos'] = $this->session->userdata;
             $this->load->view("eleve/_global/header",$data);
             $this->load->view("eleve/_global/nav");
             $this->load->view("eleve/index",$data);
@@ -14,21 +16,93 @@ class Eleve  extends CI_Controller
         }else{
             redirect("eleve/login");
         }
-
     }
+
     public function login()
     {
-        if (!isset($_SESSION['user'])){
-            $data['title'] = "Login";
-            $this->load->view("eleve/login",$data);
-        }else{
-            redirect("eleve/index");
+        if (!isset($_SESSION['user'])) {
+            $this->load->library('form_validation');
+            $this->form_validation->set_rules('matricule', 'Login utilisateur', 'required', array('required' => 'Le login est obligatoire'));
+            $this->form_validation->set_rules('password', 'Mot De Passe', 'required', array('required' => 'Saisissez Le mot de passe '));
+
+            if ($this->form_validation->run()) {
+                $this->load->model("eleve_model");
+
+                $data = array(
+                    "matricule" => $this->input->post("matricule"),
+                    "password" => $this->input->post("password")
+                );
+                // var_dump($data);die();
+                $res = $this->eleve_model->login($data['matricule'], $data['password']);
+                // var_dump($res);die();
+                $user_data = $res;
+                // var_dump($user_data);die();
+
+                $this->session->set_userdata($user_data);
+                // var_dump($user_data['matricule']);die();
+                if ($user_data['matricule']) {
+                    redirect('eleve/index');
+                } else {
+                    $this->session->set_flashdata('error', 'Matricule ou Mot de Passe incorrect');
+                    redirect('eleve/login');
+                }
+
+            }
+//            else
+//            {
+//                 print_r("<span class=\"alert alert-danger col-xs-3 col-xs-offset-4\">
+//                             <a href=\"#\" class=\"close\" data-dismiss = \"alert\" aria-label = \"close\">&times;</a>
+//                             <strong>Aucune Connexion établie</strong>
+//                         </span>");
+//            }
+
+            if (!isset($user_data['matricule'])) {
+                $data['title'] = "Login";
+                $this->load->view("eleve/login", $data);
+            } else {
+                redirect("eleve/index");
+            }
         }
+    }
+
+    public function logout()
+    {
+        $this->session->unset_userdata('matricule');
+        $this->session->sess_destroy();
+        redirect('eleve/index');
+    }
+
+    public function logme()
+    {
+        $this->load->library('form_validation');
+        $this->form_validation->set_rules("matricule", "Matricule", 'required|alpha');
+        $this->form_validation->set_rules("password", "Password", 'required|alpha');
+
+        if($this->formvalidation->run()) {
+            $this->load->model("eleve_model");
+
+            $data= array(
+                "matricule" => $this->input->get("matricule"),
+                "password" => $this->input->get("password")
+            );
+            $res = $this->eleve_model->login($data);
+
+            $user_data = array(
+                'matricule' => $res['matricule'],
+                'nom' => $res['nom'],
+                'postnom' => $res['postnom'],
+                'prenom' => $res['prenom'],
+                'nationalite' => $res['nationalite'],
+            );
+            $this->session->set_userdata($user_data);
+        }
+        else
+            $this->index();
     }
 
     public function bulletin()
     {
-        $data['title'] = "Resultat";
+        $data['title'] = "Resultats";
         $this->load->view("eleve/_global/header",$data);
         $this->load->view("eleve/_global/nav");
         $this->load->view("eleve/basic_tables",$data);
@@ -68,7 +142,7 @@ class Eleve  extends CI_Controller
 
     public function horaire()
     {
-        $data['title'] = "Journal de classe";
+        $data['title'] = "Horaire";
 
         $this->load->view("eleve/_global/header",$data);
         $this->load->view("eleve/_global/nav");
@@ -78,7 +152,7 @@ class Eleve  extends CI_Controller
 
     public function blog()
     {
-        $data['title'] = "Journal de classe";
+        $data['title'] = "Blog";
 
         $this->load->view("eleve/_global/header",$data);
         $this->load->view("eleve/_global/nav");
@@ -88,7 +162,12 @@ class Eleve  extends CI_Controller
 
     public function profile()
     {
-        $data['title'] = "Journal de classe";
+        $data['infos'] = $this->session->userdata;
+        // var_dump($data['infos']);die();
+        $this->load->helper('selectEleve');
+        $data['eleve'] = selectEleve($data['infos']['id']);//On doit y recuperer la id de l'eleve par la SESSION
+        
+        $data['title'] = "Profil";
 
         $this->load->view("eleve/_global/header",$data);
         $this->load->view("eleve/_global/nav");
