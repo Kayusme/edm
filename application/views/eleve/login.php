@@ -23,7 +23,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	  <?php form_open('eleve/login')?>
 		<input type="text" class="text" name="matricule" placeholder="Matricule">
 		<input type="password" name="password" placeholder="Mot de Passe">
-		<div class="submit"><input type="submit" onclick="myFunction()" value="Connecter"></div>
+		<input type="submit" onclick="myFunction()" value="Connecter">
 		<ul class="new">
 			<li class="new_left"><p><a href="#">Mot de passe Oublié ?</a></p></li>
 			<div class="clearfix"></div>

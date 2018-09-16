@@ -34,7 +34,7 @@ class Eleve  extends CI_Controller
                 );
                 // var_dump($data);die();
                 $res = $this->eleve_model->login($data['matricule'], $data['password']);
-                // var_dump($res);die();
+                 var_dump($res);die();
                 $user_data = $res;
                 // var_dump($user_data);die();
 
@@ -136,8 +136,8 @@ class Eleve  extends CI_Controller
     {
         $data['infos'] = $this->session->userdata;
         // var_dump($data['infos']);die();
-        $this->load->helper('selectEleve');
-        $data['eleve'] = selectEleve($data['infos']['id']);//On doit y recuperer la id de l'eleve par la SESSION
+//        $this->load->helper('selectEleve');
+//        $data['eleve'] = selectEleve($data['infos']['id']);//On doit y recuperer la id de l'eleve par la SESSION
         
         $data['title'] = "Profil";
 
