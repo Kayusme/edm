@@ -10,4 +10,11 @@ class Ecole_model extends CI_Model
 		
 		return $this->db->get()->result_array();
 	}
+	function selectAllCours()
+	{
+		$this->db->select('*');
+		$this->db->from('matiere');
+
+		return $this->db->get()->result_array();
+	}
 }

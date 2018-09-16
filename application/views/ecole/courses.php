@@ -1,5 +1,5 @@
 <?php
-	$cours = selectAllCours();//FIXME: Transferer tous les Models dans modele
+//	$cours = selectAllCours();//FIXME: Transferer tous les Models dans modele
 
 //	 var_dump($cours);die();
 ?>
@@ -14,7 +14,7 @@
 			<?php
 			$cl = "";
 			foreach ($classes as $class) {
-				$cl .= $class[0]." ";
+				$cl .= $class['id']." ";
 			}
 			?>
 			<ul id="filters" class="clearfix">
@@ -30,9 +30,9 @@
 						<a href="index.html" class="b-link-stripe b-animate-go  thickbox">
 						<div class="port-1">
 <!--                            $c[1] est le nom du cours-->
-                            <h5 class="text-center"><?= ucfirst($c[1])?></h5>
+                            <h5 class="text-center"><?= ucfirst($c['nom'])?></h5>
 <!--                             $c[2] est la description du cours-->
-							<p><?=ucfirst($c[2])?></p>
+							<p><?=ucfirst($c['description'])?></p>
 						</div>
 							<div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "></h2>
 							</div></a>

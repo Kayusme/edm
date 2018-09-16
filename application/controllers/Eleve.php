@@ -5,6 +5,7 @@ class Eleve  extends CI_Controller
 {
     public function index()
     {
+//        var_dump($this->session);die();
 //        $maSession = $this->session->userdata('matricule');
         if ($this->session->has_userdata('matricule')){
             $data['title'] = "Page d'administration";
@@ -40,9 +41,9 @@ class Eleve  extends CI_Controller
 //                 var_dump($user_data);die();
 
                 $this->session->set_userdata($user_data);
-                 var_dump($this->session);die();
+//                 var_dump($res['prenom']);die();
                 if ($res['matricule']) {
-//                    var_dump($_SESSION);die();
+//                 var_dump($this->session);die();
                     redirect('eleve/index');
                 } else {
                     $this->session->set_flashdata('error', 'Matricule ou Mot de Passe incorrect');
