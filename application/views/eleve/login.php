@@ -20,7 +20,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
   </div>
   <h2 class="form-heading">connexion</h2>
   <div class="app-cam">
-<<<<<<< HEAD
 	  <?php form_open('eleve/login')?>
 		<input type="text" class="text" name="matricule" placeholder="Matricule">
 		<input type="password" name="password" placeholder="Mot de Passe">
@@ -29,25 +28,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<li class="new_left"><p><a href="#">Mot de passe Oublié ?</a></p></li>
 			<div class="clearfix"></div>
 		</ul>
-=======
-	  <!-- <form method="post" action="eleve/login"> -->
-      <?= validation_errors();?>
-      <?php echo form_open('eleve/login');?>
-          <input type="text" class="text" name="matricule" value="Matricule" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Matricule';}">
-          <span class="text-danger"><?php echo form_error("matricule")?></span>
-          <input type="password" name="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}">
-          <span class="text-danger"><?php echo form_error("password")?></span>
-          <div class="submit">
-            <input type="submit" onclick="myFunction()" value="Connecter">
-            <?php 
-              echo '<label class="text-danger">'.$this->session->flashdata("error").'</label>';
-            ?>
-          </div>
-          <ul class="new">
-              <li class="new_left"><p><a href="#">Mot de passe Oublié ?</a></p></li>
-              <div class="clearfix"></div>
-          </ul>
->>>>>>> jonathan
 	</form>
   </div>
   <script src="<?= BASE_URL() ?>assets/statics/eleve/js/jquery.min.js"></script>
