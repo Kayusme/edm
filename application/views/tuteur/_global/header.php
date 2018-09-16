@@ -37,11 +37,11 @@
 
     echo meta($meta).
         '<!-- Font-awesome-CSS -->'."\n".
-        link_tag("assets/tuteur/css/font-awesome.css").
+        '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>'."\n".
         '<!-- Flex-slider-CSS -->'."\n".
-        link_tag("assets/tuteur/css/monthly.css").
+        link_tag("assets/statics/tuteur/css/monthly.css").
         '<!-- Index-Page-CSS -->'."\n".
-        link_tag("assets/tuteur/css/style.css").
+        link_tag("assets/statics/tuteur/css/style.css").
         '<!-- Headings-font -->'."\n".
         link_tag("//fonts.googleapis.com/css?family=Philosopher:400,400i,700,700i&amp;subset=cyrillic").
         '<!-- Body-font -->'."\n".

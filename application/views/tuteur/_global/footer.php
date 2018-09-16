@@ -7,10 +7,10 @@
 </div>
 
 <!-- js -->
-<script type="text/javascript" src="<?=base_url("assets/tuteur/js/jquery-2.1.4.min.js")?>"></script>
+<script type="text/javascript" src="<?=base_url("assets/statics/tuteur/js/jquery-2.1.4.min.js")?>"></script>
 
 <!-- calendar -->
-<script src="<?=base_url("assets/tuteur/js/monthly.js")?>"></script>
+<script src="<?=base_url("assets/statics/tuteur/js/monthly.js")?>"></script>
 
 <script type="text/javascript">
     $(window).load( function() {

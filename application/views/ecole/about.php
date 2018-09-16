@@ -7,7 +7,7 @@
 				<p>Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orc i ac sem. Duis ultricies pharetra magna. Donec accumsan malesuada orci. Donec sit amet eros. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit. Aenean auctor wisi et urna. Aliquam erat volutpat. Duis ac turpis. Integer rutrum ante eu lacus.</p>
 				<div class="about-text">
 					<div class="col-md-4 about-text-left">
-						<img src="<?=base_url("assets/ecole/images/st-1.jpg")?>" alt="">
+						<img src="<?=base_url("assets/statics/ecole/images/st-1.jpg")?>" alt="">
 						<h5>Ce que nous faison</h5>
 						<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam et dignissim augue, et sagittis turpis. Vestibulum congue turpis ac tincidunt accumsan.</p>
 						<div class="tool">
@@ -16,7 +16,7 @@
 						</div>
 					</div>
 					<div class="col-md-4 about-text-left">
-						<img src="<?=base_url("assets/ecole/images/st-2.jpg")?>" alt="">
+						<img src="<?=base_url("assets/statics/ecole/images/st-2.jpg")?>" alt="">
 						<h5>Nos Capacités</h5>
 						<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam et dignissim augue, et sagittis turpis. Vestibulum congue turpis ac tincidunt accumsan.</p>
 						<div class="tool">
@@ -25,7 +25,7 @@
 						</div>
 					</div>
 					<div class="col-md-4 about-text-left">
-						<img src="<?=base_url("assets/ecole/images/st-4.jpg")?>" alt="">
+						<img src="<?=base_url("assets/statics/ecole/images/st-4.jpg")?>" alt="">
 						<h5>Nos Standards</h5>
 						<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam et dignissim augue, et sagittis turpis. Vestibulum congue turpis ac tincidunt accumsan.</p>
 						<div class="tool">

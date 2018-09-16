@@ -11,6 +11,6 @@
 
 <!--#Script-->
 <!-- Bootstrap Core JavaScript -->
-<script src="<?=base_url("assets/eleve/js/bootstrap.min.js")?>"></script>
+<script src="<?=base_url("assets/statics/eleve/js/bootstrap.min.js")?>"></script>
 </body>
 </html>

@@ -72,34 +72,6 @@ class Eleve  extends CI_Controller
         redirect('eleve/index');
     }
 
-    public function logme()
-    {
-        $this->load->library('form_validation');
-        $this->form_validation->set_rules("matricule", "Matricule", 'required|alpha');
-        $this->form_validation->set_rules("password", "Password", 'required|alpha');
-
-        if($this->formvalidation->run()) {
-            $this->load->model("eleve_model");
-
-            $data= array(
-                "matricule" => $this->input->get("matricule"),
-                "password" => $this->input->get("password")
-            );
-            $res = $this->eleve_model->login($data);
-
-            $user_data = array(
-                'matricule' => $res['matricule'],
-                'nom' => $res['nom'],
-                'postnom' => $res['postnom'],
-                'prenom' => $res['prenom'],
-                'nationalite' => $res['nationalite'],
-            );
-            $this->session->set_userdata($user_data);
-        }
-        else
-            $this->index();
-    }
-
     public function bulletin()
     {
         $data['title'] = "Resultats";

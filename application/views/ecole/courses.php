@@ -1,5 +1,5 @@
 <?php
-	$cours = selectAllCours();
+	$cours = selectAllCours();//FIXME: Transferer tous les Models dans modele
 
 //	 var_dump($cours);die();
 ?>

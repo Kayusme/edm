@@ -1,6 +1,6 @@
 <div class="header-top">
     <div class="top-menu">
-        <div id="dd1" class="wrapper-dropdown-1 dr1" tabindex="1"><span><img src="<?=base_url("assets/parents/images/botton.png")?>"/></span>
+        <div id="dd1" class="wrapper-dropdown-1 dr1" tabindex="1"><span><img src="<?=base_url("assets/statics/parents/images/botton.png")?>"/></span>
             <ul class="dropdown">
 
                 <li><a href="#">Home </a></li>
@@ -36,10 +36,10 @@
             });
         </script>
 
-        <span class="menu"><img src="<?=base_url("assets/parents/images/botton.png")?>" alt=""/> </span>
+        <span class="menu"><img src="<?=base_url("assets/statics/parents/images/botton.png")?>" alt=""/> </span>
         <ul>
 
-            <li><a href="#"><img src="<?=base_url("assets/parents/images/Home.jpg")?>"></a></li>
+            <li><a href="#"><img src="<?=base_url("assets/statics/parents/images/Home.jpg")?>"></a></li>
 <!--            <li><a href="#" class="scroll">about</a></li>-->
             <li><a href="#" class="scroll">Evenements</a></li>
             <li><a href="#stat" class="scroll">Statistique</a></li>

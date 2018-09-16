@@ -38,7 +38,7 @@
      <div class="agile-homes-w3l  grid">
                 <div class="col-md-3 home-agile-left">
 				   <figure class="effect-moses">
-							<img src="../assets/eduquemoi/images/team1.jpg" alt="" />
+							<img src="../assets/statics/eduquemoi/images/team1.jpg" alt="" />
 							<figcaption>
 							<div class="team-top-block">
 								<h4>Taylor</h4>
@@ -56,7 +56,7 @@
 				</div>
 				<div class="col-md-3 home-agile-left">
 						 <figure class="effect-moses">
-							<img src="../assets/eduquemoi/images/team2.jpg" alt="" />
+							<img src="../assets/statics/eduquemoi/images/team2.jpg" alt="" />
 							<figcaption>
 							<div class="team-top-block">
 								<h4>Ben</h4>
@@ -74,7 +74,7 @@
 				</div>
 				<div class="col-md-3 home-agile-left">
 						 <figure class="effect-moses">
-							<img src="../assets/eduquemoi/images/team3.jpg" alt="" />
+							<img src="../assets/statics/eduquemoi/images/team3.jpg" alt="" />
 							<figcaption>
 							<div class="team-top-block">
 							<h4>Jo</h4>
@@ -92,7 +92,7 @@
 				</div>
 				<div class="col-md-3 home-agile-left">
 						 <figure class="effect-moses">
-							<img src="../assets/eduquemoi/images/team4.jpg" alt="" />
+							<img src="../assets/statics/eduquemoi/images/team4.jpg" alt="" />
 							<figcaption>
 							<div class="team-top-block">
 								<h4>Kaylin</h4>

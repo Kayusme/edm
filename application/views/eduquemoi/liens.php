@@ -1,7 +1,7 @@
 <div class="jumbotron">
     <div class="container">
         <div class="agile_banner_bottom_grids">
-            <a href="<?=site_url("eleve/")?>">
+            <a href="<?=site_url("eleve")?>">
             <div class="col-md-3 w3_agile_contact_grid">
                 <div class="col-xs-4 agile_contact_grid_left">
                     <i class="glyphicon glyphicon-education" aria-hidden="true"></i>
@@ -13,7 +13,7 @@
                 <div class="clearfix"> </div>
             </div>
             </a>
-            <a href="<?=site_url("parents/")?>">
+            <a href="<?=site_url("parents")?>">
             <div class="col-md-3 w3_agile_contact_grid">
                 <div class="col-xs-4 agile_contact_grid_left agileits_w3layouts_left">
                     <i class="fa fa-user" aria-hidden="true"></i>
@@ -37,7 +37,7 @@
                 <div class="clearfix"> </div>
             </div>
             </a>
-            <a href="<?=site_url("tuteur/")?>">
+            <a href="<?=site_url("tuteur")?>">
             <div class="col-md-3 w3_agile_contact_grid">
                 <div class="col-xs-4 agile_contact_grid_left agileits_w3layouts_left">
                     <i class="fa fa-pencil" aria-hidden="true"></i>
