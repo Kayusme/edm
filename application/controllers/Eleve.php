@@ -5,8 +5,8 @@ class Eleve  extends CI_Controller
 {
     public function index()
     {
-        $maSession = $this->session->userdata('matricule');
-        if (isset($maSession)){
+//        $maSession = $this->session->userdata('matricule');
+        if ($this->session->has_userdata('matricule')){
             $data['title'] = "Page d'administration";
             $data['infos'] = $this->session->userdata;
             $this->load->view("eleve/_global/header",$data);
@@ -21,7 +21,8 @@ class Eleve  extends CI_Controller
     public function login()
     {
         if (!isset($_SESSION['user'])) {
-            $this->load->library('form_validation');
+//            $this->load->library('form_validation');
+//            $this->load->library('session');
             $this->form_validation->set_rules('matricule', 'Login utilisateur', 'required', array('required' => 'Le login est obligatoire'));
             $this->form_validation->set_rules('password', 'Mot De Passe', 'required', array('required' => 'Saisissez Le mot de passe '));
 
@@ -34,13 +35,14 @@ class Eleve  extends CI_Controller
                 );
                 // var_dump($data);die();
                 $res = $this->eleve_model->login($data['matricule'], $data['password']);
-                 var_dump($res);die();
+//                 var_dump($res);die();
                 $user_data = $res;
-                // var_dump($user_data);die();
+//                 var_dump($user_data);die();
 
                 $this->session->set_userdata($user_data);
-                // var_dump($user_data['matricule']);die();
-                if ($user_data['matricule']) {
+                 var_dump($this->session);die();
+                if ($res['matricule']) {
+//                    var_dump($_SESSION);die();
                     redirect('eleve/index');
                 } else {
                     $this->session->set_flashdata('error', 'Matricule ou Mot de Passe incorrect');

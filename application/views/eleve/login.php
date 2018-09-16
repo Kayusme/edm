@@ -20,11 +20,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
   </div>
   <h2 class="form-heading">connexion</h2>
   <div class="app-cam">
-	  <?php form_open('eleve/login')?>
+	  <?php echo form_open('eleve/login')?>
 		<input type="text" class="text" name="matricule" placeholder="Matricule">
 		<input type="password" name="password" placeholder="Mot de Passe">
-		<input type="submit" onclick="myFunction()" value="Connecter">
-		<ul class="new">
+		<input type="submit" value="Connecter">
+		<ul class="new center">
 			<li class="new_left"><p><a href="#">Mot de passe Oublié ?</a></p></li>
 			<div class="clearfix"></div>
 		</ul>
