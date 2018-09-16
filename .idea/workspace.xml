@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ed339959-b02a-44c3-8cbe-57240f17c553" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Assets.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Assets.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/helpers/imgFromDir_helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/helpers/imgFromDir_helper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/eduquemoi/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/eduquemoi/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Desktop.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Desktop.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/ecole/courses.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/ecole/courses.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,12 +35,18 @@
     <session id="-1314606400">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="10" />
+          <entry key="project.open.time.110" value="1" />
+          <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.28" value="1" />
           <entry key="project.open.time.29" value="1" />
           <entry key="project.open.time.37" value="1" />
-          <entry key="project.open.time.41" value="1" />
-          <entry key="project.open.time.50" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.open.time.41" value="2" />
+          <entry key="project.open.time.50" value="2" />
+          <entry key="project.open.time.64" value="1" />
+          <entry key="project.open.time.77" value="1" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -49,14 +54,16 @@
           <entry key="css" value="2" />
           <entry key="gitignore" value="51" />
           <entry key="htaccess" value="95" />
-          <entry key="php" value="1506" />
+          <entry key="json" value="1" />
+          <entry key="php" value="2000" />
           <entry key="txt" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="2" />
-          <entry key="PHP" value="1506" />
+          <entry key="JSON" value="1" />
+          <entry key="PHP" value="2000" />
           <entry key="PLAIN_TEXT" value="54" />
           <entry key="htaccess" value="95" />
         </counts>
@@ -66,15 +73,16 @@
           <entry key="css" value="1" />
           <entry key="gitignore" value="2" />
           <entry key="htaccess" value="5" />
-          <entry key="php" value="43" />
+          <entry key="php" value="57" />
           <entry key="sql" value="1" />
+          <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="1" />
-          <entry key="PHP" value="43" />
-          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="PHP" value="57" />
+          <entry key="PLAIN_TEXT" value="3" />
           <entry key="Scratch" value="1" />
           <entry key="htaccess" value="5" />
         </counts>
@@ -86,7 +94,7 @@
       </usages-collector>
       <usages-collector id="statistics.php.new.class">
         <counts>
-          <entry key="PHP Class.type" value="2" />
+          <entry key="PHP Class.type" value="3" />
         </counts>
       </usages-collector>
     </session>
@@ -100,31 +108,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/helpers/imgFromDir_helper.php">
+        <entry file="file://$PROJECT_DIR$/application/views/ecole/courses.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/eduquemoi/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="97" column="80" selection-start-line="97" selection-start-column="80" selection-end-line="97" selection-end-column="80" />
+            <state relative-caret-position="230">
+              <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/controllers/Eduquemoi.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="10" column="54" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/Assets.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="20" column="28" lean-forward="true" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
-              <folding>
-                <element signature="e#6#89#0#PHP" />
-              </folding>
+            <state relative-caret-position="299">
+              <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -193,13 +198,23 @@
         <entry key="$PROJECT_DIR$" value="Roland" />
       </map>
     </option>
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="jonathan" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/application/views/parents/index.php" />
-        <option value="$PROJECT_DIR$/../htdocs/g2_sms/sms_genie_logiciel.php" />
-        <option value="$PROJECT_DIR$/../htdocs/g2_sms/assets/css/style.css" />
         <option value="$PROJECT_DIR$/../htdocs/g2_sms/Mail_g2.php" />
         <option value="$PROJECT_DIR$/../htdocs/g2_sms/Sms_g2.php" />
         <option value="$PROJECT_DIR$/../htdocs/g2_sms/connexion.dao.php" />
@@ -225,19 +240,15 @@
         <option value="$PROJECT_DIR$/application/helpers/selectCours_helper.php" />
         <option value="$PROJECT_DIR$/application/views/eleve/cours.php" />
         <option value="$PROJECT_DIR$/application/views/eleve/_global/nav.php" />
-        <option value="$PROJECT_DIR$/application/views/ecole/courses.php" />
         <option value="$PROJECT_DIR$/application/helpers/selectAllCours_helper.php" />
         <option value="$PROJECT_DIR$/application/models/eleve_login.php" />
         <option value="$PROJECT_DIR$/application/controllers/Eleve.php" />
         <option value="$PROJECT_DIR$/../htdocs/.gitignore" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/application/views/ecole/_global/header.php" />
-        <option value="$PROJECT_DIR$/application/config/autoload.php" />
         <option value="$PROJECT_DIR$/application/controllers/Eduqueadmin.php" />
         <option value="$PROJECT_DIR$/application/config/config.php" />
-        <option value="$PROJECT_DIR$/../htdocs/index.php" />
         <option value="$PROJECT_DIR$/application/models/eleve_model.php" />
-        <option value="$PROJECT_DIR$/application/controllers/Eduquemoi.php" />
         <option value="$PROJECT_DIR$/application/views/eduquemoi/css/font-awesome.css" />
         <option value="$PROJECT_DIR$/application/views/eduquemoi/_global/header.php" />
         <option value="$PROJECT_DIR$/application/views/eleve/login.php" />
@@ -248,6 +259,13 @@
         <option value="$PROJECT_DIR$/application/helpers/imgFromDir_helper.php" />
         <option value="$PROJECT_DIR$/application/views/eduquemoi/index.php" />
         <option value="$PROJECT_DIR$/application/controllers/Assets.php" />
+        <option value="$PROJECT_DIR$/application/views/eduquemoi/liens.php" />
+        <option value="$PROJECT_DIR$/application/views/ecole/courses.php" />
+        <option value="$PROJECT_DIR$/application/config/autoload.php" />
+        <option value="$PROJECT_DIR$/../htdocs/edmsecu/testfile.json" />
+        <option value="$PROJECT_DIR$/application/controllers/Desktop.php" />
+        <option value="$PROJECT_DIR$/../htdocs/index.php" />
+        <option value="$PROJECT_DIR$/application/controllers/Eduquemoi.php" />
       </list>
     </option>
   </component>
@@ -263,285 +281,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="620" />
-    <option name="width" value="785" />
-    <option name="height" value="745" />
-  </component>
-  <component name="ProjectUserFactors">
-    <factor id="binaryFeature:liftShorter">
-      <dailyData date="22-08-2018">
-        <observation name="false" value="45,0" />
-      </dailyData>
-    </factor>
-    <factor id="binaryFeature:liftShorterClasses">
-      <dailyData date="22-08-2018">
-        <observation name="UNDEFINED" value="45,0" />
-      </dailyData>
-    </factor>
-    <factor id="binaryFeature:middleMatching">
-      <dailyData date="22-08-2018">
-        <observation name="false" value="45,0" />
-      </dailyData>
-    </factor>
-    <factor id="binaryFeature:nonGeneric">
-      <dailyData date="22-08-2018">
-        <observation name="UNDEFINED" value="45,0" />
-      </dailyData>
-    </factor>
-    <factor id="binaryFeature:prox_inResolveScope">
-      <dailyData date="22-08-2018">
-        <observation name="UNDEFINED" value="4,0" />
-        <observation name="false" value="41,0" />
-      </dailyData>
-    </factor>
-    <factor id="binaryFeature:prox_openedInEditor">
-      <dailyData date="22-08-2018">
-        <observation name="UNDEFINED" value="4,0" />
-        <observation name="false" value="19,0" />
-        <observation name="true" value="22,0" />
-      </dailyData>
-    </factor>
-    <factor id="binaryFeature:prox_sameDirectory">
-      <dailyData date="22-08-2018">
-        <observation name="UNDEFINED" value="4,0" />
-        <observation name="false" value="19,0" />
-        <observation name="true" value="22,0" />
-      </dailyData>
-    </factor>
-    <factor id="binaryFeature:prox_sameLogicalRoot">
-      <dailyData date="22-08-2018">
-        <observation name="UNDEFINED" value="4,0" />
-        <observation name="false" value="41,0" />
-      </dailyData>
-    </factor>
-    <factor id="binaryFeature:prox_sdkOrLibrary">
-      <dailyData date="22-08-2018">
-        <observation name="UNDEFINED" value="4,0" />
-        <observation name="false" value="41,0" />
-      </dailyData>
-    </factor>
-    <factor id="binaryFeature:templates">
-      <dailyData date="22-08-2018">
-        <observation name="false" value="45,0" />
-      </dailyData>
-    </factor>
-    <factor id="categoricalFeature:accessible">
-      <dailyData date="22-08-2018">
-        <observation name="UNDEFINED" value="45,0" />
-      </dailyData>
-    </factor>
-    <factor id="categoricalFeature:expectedType">
-      <dailyData date="22-08-2018">
-        <observation name="UNDEFINED" value="45,0" />
-      </dailyData>
-    </factor>
-    <factor id="categoricalFeature:kind">
-      <dailyData date="22-08-2018">
-        <observation name="UNDEFINED" value="45,0" />
-      </dailyData>
-    </factor>
-    <factor id="categoricalFeature:prox_groovyReferenceListWeigher">
-      <dailyData date="22-08-2018">
-        <observation name="UNDEFINED" value="45,0" />
-      </dailyData>
-    </factor>
-    <factor id="categoricalFeature:prox_javaInheritance">
-      <dailyData date="22-08-2018">
-        <observation name="UNDEFINED" value="45,0" />
-      </dailyData>
-    </factor>
-    <factor id="categoricalFeature:prox_referenceList">
-      <dailyData date="22-08-2018">
-        <observation name="UNDEFINED" value="45,0" />
-      </dailyData>
-    </factor>
-    <factor id="categoricalFeature:recursion">
-      <dailyData date="22-08-2018">
-        <observation name="UNDEFINED" value="45,0" />
-      </dailyData>
-    </factor>
-    <factor id="completionFinishedType">
-      <dailyData date="22-08-2018">
-        <observation name="cancelled" value="86,0" />
-        <observation name="explicitSelect" value="26,0" />
-        <observation name="typedSelect" value="19,0" />
-      </dailyData>
-    </factor>
-    <factor id="completionType">
-      <dailyData date="22-08-2018">
-        <observation name="BASIC" value="61,0" />
-      </dailyData>
-    </factor>
-    <factor id="completionUsage">
-      <dailyData date="22-08-2018">
-        <observation name="count" value="131,0" />
-      </dailyData>
-    </factor>
-    <factor id="doubleFeature:explicitProximity">
-      <dailyData date="22-08-2018">
-        <observation name="average" value="0,0" />
-        <observation name="count" value="89,0" />
-        <observation name="max" value="0,0" />
-        <observation name="min" value="0,0" />
-        <observation name="variance" value="0,0" />
-      </dailyData>
-    </factor>
-    <factor id="doubleFeature:grouping">
-      <dailyData date="22-08-2018">
-        <observation name="average" value="0,0" />
-        <observation name="count" value="89,0" />
-        <observation name="max" value="0,0" />
-        <observation name="min" value="0,0" />
-        <observation name="variance" value="0,0" />
-      </dailyData>
-    </factor>
-    <factor id="doubleFeature:mostUsed">
-      <dailyData date="22-08-2018">
-        <observation name="UNDEFINED" value="45,0" />
-      </dailyData>
-    </factor>
-    <factor id="doubleFeature:nameEnd">
-      <dailyData date="22-08-2018">
-        <observation name="UNDEFINED" value="45,0" />
-      </dailyData>
-    </factor>
-    <factor id="doubleFeature:position">
-      <dailyData date="22-08-2018">
-        <observation name="average" value="0,089888" />
-        <observation name="count" value="89,0" />
-        <observation name="max" value="1,0" />
-        <observation name="min" value="0,0" />
-        <observation name="variance" value="0,059757" />
-      </dailyData>
-    </factor>
-    <factor id="doubleFeature:prefix">
-      <dailyData date="22-08-2018">
-        <observation name="average" value="-1105,404494" />
-        <observation name="count" value="89,0" />
-        <observation name="max" value="0,0" />
-        <observation name="min" value="-1253,0" />
-        <observation name="variance" value="41999,437275" />
-      </dailyData>
-    </factor>
-    <factor id="doubleFeature:priority">
-      <dailyData date="22-08-2018">
-        <observation name="average" value="0,0" />
-        <observation name="count" value="89,0" />
-        <observation name="max" value="0,0" />
-        <observation name="min" value="0,0" />
-        <observation name="variance" value="0,0" />
-      </dailyData>
-    </factor>
-    <factor id="doubleFeature:prox_explicitlyImported">
-      <dailyData date="22-08-2018">
-        <observation name="UNDEFINED" value="45,0" />
-      </dailyData>
-    </factor>
-    <factor id="doubleFeature:prox_knownElement">
-      <dailyData date="22-08-2018">
-        <observation name="UNDEFINED" value="45,0" />
-      </dailyData>
-    </factor>
-    <factor id="doubleFeature:prox_sameModule">
-      <dailyData date="22-08-2018">
-        <observation name="UNDEFINED" value="4,0" />
-        <observation name="average" value="1,209877" />
-        <observation name="count" value="81,0" />
-        <observation name="max" value="2,0" />
-        <observation name="min" value="0,0" />
-        <observation name="variance" value="0,759618" />
-      </dailyData>
-    </factor>
-    <factor id="doubleFeature:prox_samePsiMember">
-      <dailyData date="22-08-2018">
-        <observation name="UNDEFINED" value="45,0" />
-      </dailyData>
-    </factor>
-    <factor id="doubleFeature:query_length">
-      <dailyData date="22-08-2018">
-        <observation name="average" value="0,0" />
-        <observation name="count" value="89,0" />
-        <observation name="max" value="0,0" />
-        <observation name="min" value="0,0" />
-        <observation name="variance" value="0,0" />
-      </dailyData>
-    </factor>
-    <factor id="doubleFeature:result_length">
-      <dailyData date="22-08-2018">
-        <observation name="average" value="4,505618" />
-        <observation name="count" value="89,0" />
-        <observation name="max" value="11,0" />
-        <observation name="min" value="1,0" />
-        <observation name="variance" value="4,083567" />
-      </dailyData>
-    </factor>
-    <factor id="doubleFeature:sameWords">
-      <dailyData date="22-08-2018">
-        <observation name="UNDEFINED" value="45,0" />
-      </dailyData>
-    </factor>
-    <factor id="doubleFeature:shorter">
-      <dailyData date="22-08-2018">
-        <observation name="UNDEFINED" value="45,0" />
-      </dailyData>
-    </factor>
-    <factor id="doubleFeature:simple">
-      <dailyData date="22-08-2018">
-        <observation name="UNDEFINED" value="45,0" />
-      </dailyData>
-    </factor>
-    <factor id="doubleFeature:sorter">
-      <dailyData date="22-08-2018">
-        <observation name="average" value="1,0" />
-        <observation name="count" value="89,0" />
-        <observation name="max" value="1,0" />
-        <observation name="min" value="1,0" />
-        <observation name="variance" value="0,0" />
-      </dailyData>
-    </factor>
-    <factor id="doubleFeature:statics">
-      <dailyData date="22-08-2018">
-        <observation name="UNDEFINED" value="45,0" />
-      </dailyData>
-    </factor>
-    <factor id="doubleFeature:stats">
-      <dailyData date="22-08-2018">
-        <observation name="average" value="4490,494382" />
-        <observation name="count" value="89,0" />
-        <observation name="max" value="10000,0" />
-        <observation name="min" value="0,0" />
-        <observation name="variance" value="19813354,427034" />
-      </dailyData>
-    </factor>
-    <factor id="itemPosition">
-      <dailyData date="22-08-2018">
-        <observation name="0" value="22,0" />
-        <observation name="1" value="4,0" />
-      </dailyData>
-    </factor>
-    <factor id="mnemonicsUsage">
-      <dailyData date="22-08-2018">
-        <observation name="total" value="19,0" />
-        <observation name="withMnemonics" value="0,0" />
-      </dailyData>
-    </factor>
-    <factor id="prefixLength">
-      <dailyData date="22-08-2018">
-        <observation name="0" value="2,0" />
-        <observation name="1" value="5,0" />
-        <observation name="2" value="5,0" />
-        <observation name="3" value="10,0" />
-        <observation name="4" value="1,0" />
-        <observation name="5" value="1,0" />
-        <observation name="6" value="2,0" />
-      </dailyData>
-    </factor>
-    <factor id="timeBetweenTyping">
-      <dailyData date="22-08-2018">
-        <observation name="average" value="458,034483" />
-        <observation name="count" value="58,0" />
-      </dailyData>
-    </factor>
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="754" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -578,20 +321,21 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../htdocs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../htdocs/banque" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path" value="node" />
-    <property name="settings.editor.selected.configurable" value="com.chrisrm.idea.config" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp7\htdocs\edmsecu" />
       <recent name="C:\xampp7\ci\application\views\tuteur" />
       <recent name="C:\xampp7\ci\application\views\parents" />
       <recent name="C:\xampp7\ci\application\views\eleve" />
       <recent name="C:\xampp7\ci\application\views\eduquemoi" />
-      <recent name="C:\xampp7\ci\application\views\ecole" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp7\htdocs" />
       <recent name="C:\xampp7\htdocs\" />
     </key>
   </component>
@@ -606,11 +350,6 @@
         </RuleState>
       </list>
     </option>
-  </component>
-  <component name="RunManager">
-    <configuration name="PHP" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server" document_root="$PROJECT_DIR$/../htdocs">
-      <method v="2" />
-    </configuration>
   </component>
   <component name="SshConsoleOptionsProvider">
     <option name="myEncoding" value="UTF-8" />
@@ -681,7 +420,15 @@
       <workItem from="1534876248086" duration="6106000" />
       <workItem from="1534882934439" duration="12914000" />
       <workItem from="1534950667406" duration="138000" />
-      <workItem from="1534950999792" duration="8834000" />
+      <workItem from="1534950999792" duration="12130000" />
+      <workItem from="1535030740217" duration="51000" />
+      <workItem from="1535031531943" duration="242000" />
+      <workItem from="1535031836840" duration="941000" />
+      <workItem from="1535048346124" duration="603000" />
+      <workItem from="1535058348502" duration="4951000" />
+      <workItem from="1535460709210" duration="2013000" />
+      <workItem from="1535626468933" duration="990000" />
+      <workItem from="1536059397489" duration="124000" />
     </task>
     <task id="LOCAL-00001" summary="Arrangement index finis">
       <created>1523378690273</created>
@@ -701,7 +448,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="187946000" />
+    <option name="totallyTimeSpent" value="201157000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -714,14 +461,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="916" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.1521181" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.16752246" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.24962178" />
       <window_info anchor="bottom" id="Event Log" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="1" weight="0.4422043" />
-      <window_info anchor="bottom" id="Terminal" order="2" visible="true" weight="0.22715054" />
+      <window_info anchor="bottom" id="Terminal" order="2" weight="0.20026882" />
       <window_info anchor="bottom" id="CSS-X-Fire" order="3" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.328594" />
@@ -729,7 +475,7 @@
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="10" weight="0.3266129" />
+      <window_info anchor="bottom" id="TODO" order="10" weight="0.32392472" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="12" weight="0.3293011" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.3288364" />
@@ -742,29 +488,6 @@
       <window_info anchor="right" id="Ant Build" order="5" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="6" weight="0.25" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.18003026" />
-      <window_info id="Structure" order="2" weight="0.24962178" />
-      <window_info anchor="bottom" id="Event Log" order="0" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="1" weight="0.32847896" />
-      <window_info anchor="bottom" id="Terminal" order="2" />
-      <window_info anchor="bottom" id="CSS-X-Fire" order="3" />
-      <window_info anchor="bottom" id="Message" order="4" />
-      <window_info anchor="bottom" id="Find" order="5" weight="0.328594" />
-      <window_info anchor="bottom" id="Run" order="6" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="10" weight="0.32847896" />
-      <window_info anchor="right" id="JSON Utils" order="0" weight="0.32980332" />
-      <window_info anchor="right" id="Database" order="1" weight="0.1354009" />
-      <window_info anchor="right" id="Coding Bot" order="2" side_tool="true" />
-      <window_info anchor="right" id="Commander" order="3" weight="0.4" />
-      <window_info anchor="right" x="92" y="92" width="1182" height="584" id="Documentation" order="4" type="FLOATING" />
-      <window_info anchor="right" id="Ant Build" order="5" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="6" weight="0.25" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -805,54 +528,11 @@
   </component>
   <component name="WordPressConfiguration" doNotAskAgain="true" />
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/views/eleve/inbox.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="45" column="33" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/helpers/selectDevoir_helper.php" />
-    <entry file="file://$PROJECT_DIR$/application/views/eleve/devoir.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="49" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/superglobals/_superglobals.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2176">
-          <caret line="128" column="36" lean-forward="true" selection-start-line="128" selection-start-column="36" selection-end-line="128" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/config/doctypes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/eleve/horaire.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="42" column="24" selection-start-line="42" selection-start-column="24" selection-end-line="57" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://f38e6b50-a646-4264-909a-d8cba532a287/schema/edm/table/matiere" />
     <entry file="file://$PROJECT_DIR$/application/views/eleve/cours.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="392">
           <caret line="74" column="3" selection-start-line="74" selection-start-column="3" selection-end-line="74" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/ecole/courses.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -917,20 +597,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/config/autoload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="91" column="46" selection-start-line="91" selection-start-column="46" selection-end-line="91" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../htdocs/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="71" selection-start-line="71" selection-end-line="71" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Eduqueadmin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
@@ -961,9 +627,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1988" />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/config/memcached.php">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/application/config/migration.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -996,24 +659,10 @@
     <entry file="file://$PROJECT_DIR$/application/language/french/upload_lang.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/eleve_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13">
-          <caret line="15" column="69" lean-forward="true" selection-start-line="15" selection-start-column="69" selection-end-line="15" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/eduquemoi/css/font-awesome.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
           <caret line="10" column="2" lean-forward="true" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Eduquemoi.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -1045,20 +694,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/eduquemoi/_global/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="42" column="122" selection-start-line="42" selection-start-column="122" selection-end-line="42" selection-end-column="122" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/eduquemoi/_global/header2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="43" column="126" selection-start-line="43" selection-start-column="126" selection-end-line="43" selection-end-column="126" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
@@ -1073,13 +708,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/eduquemoi/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="97" column="80" selection-start-line="97" selection-start-column="80" selection-end-line="97" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/helpers/imgFromDir_helper.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -1087,13 +715,101 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/eduquemoi/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-248">
+          <caret line="97" column="80" selection-start-line="97" selection-start-column="80" selection-end-line="97" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/eduquemoi/_global/register.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/eduquemoi/_global/navbar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-483" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/eduquemoi/_global/header2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1573">
+          <caret line="43" column="126" selection-start-line="43" selection-start-column="126" selection-end-line="43" selection-end-column="126" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/eduquemoi/_global/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1527">
+          <caret line="42" column="122" selection-start-line="42" selection-start-column="122" selection-end-line="42" selection-end-column="122" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/eduquemoi/_global/footer.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/eduquemoi/liens.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-18">
+          <caret line="39" column="40" selection-start-line="39" selection-start-column="40" selection-end-line="39" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/eleve_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="69" selection-start-line="15" selection-start-column="69" selection-end-line="15" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/memcached.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/autoload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2093">
+          <caret line="91" column="59" selection-start-line="91" selection-start-column="59" selection-end-line="91" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../htdocs/edmsecu/testfile.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36570">
+          <caret line="1" column="794401" selection-start-line="1" selection-start-column="794401" selection-end-line="1" selection-end-column="794401" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Desktop.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/ecole/courses.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../htdocs/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" selection-start-line="1" selection-start-column="2" selection-end-line="2" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Assets.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="20" column="28" lean-forward="true" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
-          <folding>
-            <element signature="e#6#89#0#PHP" />
-          </folding>
+        <state relative-caret-position="299">
+          <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Eduquemoi.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="54" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
         </state>
       </provider>
     </entry>
