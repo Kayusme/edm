@@ -3,10 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="ed339959-b02a-44c3-8cbe-57240f17c553" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Desktop.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Desktop.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/ecole/courses.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/ecole/courses.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -107,29 +106,43 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/ecole/courses.php">
+      <file leaf-file-name="Eleve.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/Eleve.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+            <state relative-caret-position="119">
+              <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/controllers/Eduquemoi.php">
+      <file leaf-file-name="eleve_model.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/eleve_model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="10" column="54" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
+            <state relative-caret-position="272">
+              <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/Assets.php">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/eduquemoi/index.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/eleve/login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+            <state relative-caret-position="272">
+              <caret line="28" column="59" selection-start-line="28" selection-start-column="59" selection-end-line="28" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/config/config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="83">
+              <caret line="378" column="33" selection-start-line="378" selection-start-column="33" selection-end-line="378" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -146,6 +159,16 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
+      <find>time</find>
+      <find>Wanna</find>
+      <find>post</find>
+      <find>call</find>
+      <find>cal</find>
+      <find>text</find>
+      <find>input</find>
+      <find>blog</find>
+      <find>pie</find>
+      <find>comment</find>
       <find>3</find>
       <find>--&gt;</find>
       <find>$tel</find>
@@ -163,58 +186,31 @@
       <find>emoticonsContainer</find>
       <find>devoir</find>
       <find>i</find>
-      <find>/css</find>
-      <find>[a-z]*/css</find>
-      <find>[a-z]*/css|[a-z]*/js</find>
-      <find>ecole/css</find>
-      <find>js</find>
-      <find>assets/</find>
-      <find>eot</find>
-      <find>font-awesome.css</find>
-      <find>link_tag(assets/statics/[a-z]*/css/font-awesome.css</find>
-      <find>css/font-awesome.css</find>
-      <find>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://use.fontawesome.com/releases/v5.2.0/css/all.css&quot; integrity=&quot;sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ&quot; crossorigin=&quot;anonymous&quot;&gt;</find>
-      <find>/v5.2.0/css/all.css&quot; *[a-z]*</find>
-      <find>imgFromDir</find>
+      <find>activate_menu</find>
+      <find>profil</find>
+      <find>bull</find>
     </findStrings>
-    <replaceStrings>
-      <replace>css/[a-z]*|js/[a-z]*</replace>
-      <replace />
-      <replace>assets/statics/</replace>
-      <replace>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&quot;&gt;</replace>
-    </replaceStrings>
-    <dirStrings>
-      <dir>C:\xampp7\ci\application</dir>
-      <dir>C:\xampp7\htdocs</dir>
-      <dir>C:\xampp7\ci</dir>
-      <dir>C:\xampp7\ci\application\views</dir>
-    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="Roland" />
-      </map>
-    </option>
-    <favorite-branches>
-      <branch-storage>
-        <map>
-          <entry type="LOCAL">
-            <value>
-              <list>
-                <branch-info repo="$PROJECT_DIR$" source="jonathan" />
-              </list>
-            </value>
-          </entry>
-        </map>
-      </branch-storage>
-    </favorite-branches>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/application/views/eduquemoi/index.php" />
+        <option value="$PROJECT_DIR$/application/views/eduquemoi/_global/register.php" />
+        <option value="$PROJECT_DIR$/../htdocs/assets/eduquemoi/css/style.css" />
+        <option value="$PROJECT_DIR$/application/views/eduquemoi/contact.php" />
+        <option value="$PROJECT_DIR$/application/views/eduquemoi/liens.php" />
+        <option value="$PROJECT_DIR$/application/views/eleve/blog.php" />
+        <option value="$PROJECT_DIR$/application/views/eduquemoi/_global/footer.php" />
+        <option value="$PROJECT_DIR$/application/views/eduquemoi/single.php" />
+        <option value="$PROJECT_DIR$/application/views/eduquemoi/about.php" />
+        <option value="$PROJECT_DIR$/application/views/parents/_global/navbar.php" />
+        <option value="$PROJECT_DIR$/application/views/parents/index.php" />
+        <option value="$PROJECT_DIR$/../htdocs/g2_sms/sms_genie_logiciel.php" />
+        <option value="$PROJECT_DIR$/../htdocs/g2_sms/assets/css/style.css" />
         <option value="$PROJECT_DIR$/../htdocs/g2_sms/Mail_g2.php" />
         <option value="$PROJECT_DIR$/../htdocs/g2_sms/Sms_g2.php" />
         <option value="$PROJECT_DIR$/../htdocs/g2_sms/connexion.dao.php" />
@@ -233,39 +229,26 @@
         <option value="$PROJECT_DIR$/application/views/eleve/index.php" />
         <option value="$PROJECT_DIR$/application/helpers/selectHoraire_helper.php" />
         <option value="$PROJECT_DIR$/application/views/eleve/inbox.php" />
-        <option value="$PROJECT_DIR$/application/views/eleve/basic_tables.php" />
         <option value="$PROJECT_DIR$/application/helpers/selectDevoir_helper.php" />
         <option value="$PROJECT_DIR$/application/config/database.php" />
         <option value="$PROJECT_DIR$/application/views/eleve/horaire.php" />
         <option value="$PROJECT_DIR$/application/helpers/selectCours_helper.php" />
         <option value="$PROJECT_DIR$/application/views/eleve/cours.php" />
         <option value="$PROJECT_DIR$/application/views/eleve/_global/nav.php" />
+        <option value="$PROJECT_DIR$/application/views/ecole/courses.php" />
         <option value="$PROJECT_DIR$/application/helpers/selectAllCours_helper.php" />
         <option value="$PROJECT_DIR$/application/models/eleve_login.php" />
-        <option value="$PROJECT_DIR$/application/controllers/Eleve.php" />
-        <option value="$PROJECT_DIR$/../htdocs/.gitignore" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/application/views/ecole/_global/header.php" />
-        <option value="$PROJECT_DIR$/application/controllers/Eduqueadmin.php" />
-        <option value="$PROJECT_DIR$/application/config/config.php" />
-        <option value="$PROJECT_DIR$/application/models/eleve_model.php" />
-        <option value="$PROJECT_DIR$/application/views/eduquemoi/css/font-awesome.css" />
-        <option value="$PROJECT_DIR$/application/views/eduquemoi/_global/header.php" />
-        <option value="$PROJECT_DIR$/application/views/eleve/login.php" />
-        <option value="$PROJECT_DIR$/../htdocs/.htaccess" />
-        <option value="$PROJECT_DIR$/application/views/eleve/_global/header.php" />
-        <option value="$PROJECT_DIR$/application/views/tuteur/_global/header.php" />
-        <option value="$PROJECT_DIR$/application/views/eduquemoi/_global/header2.php" />
-        <option value="$PROJECT_DIR$/application/helpers/imgFromDir_helper.php" />
-        <option value="$PROJECT_DIR$/application/views/eduquemoi/index.php" />
-        <option value="$PROJECT_DIR$/application/controllers/Assets.php" />
-        <option value="$PROJECT_DIR$/application/views/eduquemoi/liens.php" />
-        <option value="$PROJECT_DIR$/application/views/ecole/courses.php" />
+        <option value="$PROJECT_DIR$/application/helpers/active_helper.php" />
         <option value="$PROJECT_DIR$/application/config/autoload.php" />
-        <option value="$PROJECT_DIR$/../htdocs/edmsecu/testfile.json" />
-        <option value="$PROJECT_DIR$/application/controllers/Desktop.php" />
-        <option value="$PROJECT_DIR$/../htdocs/index.php" />
-        <option value="$PROJECT_DIR$/application/controllers/Eduquemoi.php" />
+        <option value="$PROJECT_DIR$/application/views/eduquemoi/_global/header.php" />
+        <option value="$PROJECT_DIR$/application/views/eduquemoi/_global/header2.php" />
+        <option value="$PROJECT_DIR$/application/views/eleve/basic_tables.php" />
+        <option value="$PROJECT_DIR$/application/views/eleve/profile.php" />
+        <option value="$PROJECT_DIR$/../htdocs/assets/eleve/css/style.css" />
+        <option value="$PROJECT_DIR$/application/models/eleve_model.php" />
+        <option value="$PROJECT_DIR$/application/views/eleve/login.php" />
+        <option value="$PROJECT_DIR$/application/controllers/Eleve.php" />
+        <option value="$PROJECT_DIR$/application/config/config.php" />
       </list>
     </option>
   </component>
@@ -275,7 +258,21 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.2">
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/../htdocs/shekProjet/part/_download/node_modules" />
+    <handled-path value="$PROJECT_DIR$/../htdocs/shekProjet/part/_user/entreprise/_pages/node_modules" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/../htdocs/CodeIgniter-3.1.5/admin/package.json" />
+      <path value="$PROJECT_DIR$/../htdocs/aiglespourjesus/application/views/admin/package.json" />
+      <path value="$PROJECT_DIR$/../htdocs/shekProjet/part/_download/package.json" />
+      <path value="$PROJECT_DIR$/../htdocs/shekProjet/part/_user/entreprise/_pages/package.json" />
+      <path value="$PROJECT_DIR$/../htdocs/test/assets/js/package.json" />
+      <path value="$PROJECT_DIR$/../htdocs/test/webcamjs-master/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
       <path value="$PROJECT_DIR$/../php" />
     </include_path>
@@ -291,29 +288,56 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="ci" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ci" type="462c0819:PsiDirectoryNode" />
+              <item name="ci" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="ci" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ci" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="ci" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="ci" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ci" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="ci" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="ci" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ci" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="models" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="ci" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ci" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="ci" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ci" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="eleve" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="ci" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ci" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="eleve" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="_global" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="NBKnowledgePane" />
     </panes>
   </component>
@@ -356,7 +380,7 @@
     <option name="myConnectionType" value="NONE" />
   </component>
   <component name="SvnConfiguration">
-    <configuration>C:\Users\ITOT\AppData\Roaming\Subversion</configuration>
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -417,18 +441,9 @@
       <workItem from="1533536930805" duration="479000" />
       <workItem from="1533555878164" duration="715000" />
       <workItem from="1533889124624" duration="652000" />
-      <workItem from="1534876248086" duration="6106000" />
-      <workItem from="1534882934439" duration="12914000" />
-      <workItem from="1534950667406" duration="138000" />
-      <workItem from="1534950999792" duration="12130000" />
-      <workItem from="1535030740217" duration="51000" />
-      <workItem from="1535031531943" duration="242000" />
-      <workItem from="1535031836840" duration="941000" />
-      <workItem from="1535048346124" duration="603000" />
-      <workItem from="1535058348502" duration="4951000" />
-      <workItem from="1535460709210" duration="2013000" />
-      <workItem from="1535626468933" duration="990000" />
-      <workItem from="1536059397489" duration="124000" />
+      <workItem from="1534954243296" duration="1193000" />
+      <workItem from="1536145953210" duration="616000" />
+      <workItem from="1537001877633" duration="13242000" />
     </task>
     <task id="LOCAL-00001" summary="Arrangement index finis">
       <created>1523378690273</created>
@@ -444,11 +459,18 @@
       <option name="project" value="LOCAL" />
       <updated>1532627942972</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="[FIX] merge problems">
+      <created>1537108304214</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1537108304214</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="201157000" />
+    <option name="totallyTimeSpent" value="175005000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -460,34 +482,58 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="916" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.16752246" />
-      <window_info id="Structure" order="2" side_tool="true" weight="0.24962178" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.15128593" />
+      <window_info anchor="bottom" id="TODO" order="10" weight="0.32847896" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="0" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="1" weight="0.4422043" />
-      <window_info anchor="bottom" id="Terminal" order="2" weight="0.20026882" />
+      <window_info anchor="right" id="Database" order="1" weight="0.073373675" />
+      <window_info anchor="bottom" id="Database Changes" order="11" weight="0.3288364" />
+      <window_info anchor="bottom" id="Version Control" order="1" weight="0.44856662" />
+      <window_info anchor="bottom" id="Run" order="6" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.24962178" />
+      <window_info anchor="bottom" id="Terminal" order="2" />
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="3" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3288364" />
+      <window_info anchor="bottom" id="Database Console" order="12" weight="0.32954547" />
+      <window_info anchor="right" x="92" y="92" width="1182" height="584" id="Documentation" order="3" type="FLOATING" />
       <window_info anchor="bottom" id="CSS-X-Fire" order="3" />
       <window_info anchor="bottom" id="Message" order="4" />
-      <window_info anchor="bottom" id="Find" order="5" weight="0.328594" />
-      <window_info anchor="bottom" id="Run" order="6" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="10" weight="0.32392472" />
-      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="12" weight="0.3293011" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.3288364" />
-      <window_info anchor="bottom" id="Database Console" order="14" weight="0.32954547" />
       <window_info anchor="right" id="JSON Utils" order="0" weight="0.32980332" />
-      <window_info anchor="right" id="Database" order="1" weight="0.22015405" />
       <window_info anchor="right" id="Coding Bot" order="2" side_tool="true" />
-      <window_info anchor="right" id="Commander" order="3" weight="0.4" />
-      <window_info anchor="right" x="92" y="92" width="1182" height="584" id="Documentation" order="4" side_tool="true" weight="0.32991013" />
-      <window_info anchor="right" id="Ant Build" order="5" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="6" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="5" weight="0.328594" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="6" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.18003026" />
+      <window_info id="Structure" order="2" weight="0.24962178" />
+      <window_info anchor="right" id="Commander" order="3" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="10" weight="0.32847896" />
+      <window_info anchor="bottom" id="Run" order="6" />
+      <window_info anchor="bottom" id="Find" order="5" weight="0.328594" />
+      <window_info anchor="right" x="92" y="92" width="1182" height="584" id="Documentation" order="4" type="FLOATING" />
+      <window_info anchor="right" id="Database" order="1" weight="0.1354009" />
+      <window_info anchor="bottom" id="CSS-X-Fire" order="3" />
+      <window_info anchor="bottom" id="Terminal" order="2" />
+      <window_info anchor="right" id="JSON Utils" order="0" weight="0.32980332" />
+      <window_info anchor="bottom" id="Version Control" order="1" weight="0.32847896" />
+      <window_info anchor="bottom" id="Event Log" order="0" side_tool="true" />
+      <window_info anchor="right" id="Coding Bot" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
+      <window_info id="Favorites" order="0" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -524,10 +570,70 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Arrangement index finis" />
     <MESSAGE value="Arrangement listes cours(ECOLE) &amp; Add Statistiques(ELEVES)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Arrangement listes cours(ECOLE) &amp; Add Statistiques(ELEVES)" />
+    <MESSAGE value="[FIX] merge problems" />
+    <option name="LAST_COMMIT_MESSAGE" value="[FIX] merge problems" />
   </component>
   <component name="WordPressConfiguration" doNotAskAgain="true" />
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/../htdocs/assets/eleve/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2017">
+          <caret line="413" column="21" lean-forward="true" selection-start-line="413" selection-start-column="21" selection-end-line="413" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Eduquemoi.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/helpers/active_helper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="23" lean-forward="true" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/eduquemoi/_global/header2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="109" column="57" lean-forward="true" selection-start-line="109" selection-start-column="57" selection-end-line="109" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/eduquemoi/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/eleve_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="17" column="34" lean-forward="true" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/eleve/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="28" column="59" selection-start-line="28" selection-start-column="59" selection-end-line="28" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Eleve.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="378" column="33" lean-forward="true" selection-start-line="378" selection-start-column="33" selection-end-line="378" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
     <entry file="das://f38e6b50-a646-4264-909a-d8cba532a287/schema/edm/table/matiere" />
     <entry file="file://$PROJECT_DIR$/application/views/eleve/cours.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -560,12 +666,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/510aae1b-1243-467c-907a-827067f741d1/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../htdocs/phpstorm.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/system/core/CodeIgniter.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="943">
@@ -575,8 +675,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Eleve.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="58" selection-start-line="1" selection-end-line="1" selection-end-column="63" />
+        <state relative-caret-position="119">
+          <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -586,9 +686,6 @@
           <caret line="3" column="12" lean-forward="true" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Epsp.php">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/ecole/_global/header.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -606,8 +703,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/config/config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2425">
-          <caret line="400" column="2" selection-start-line="400" selection-start-column="2" selection-end-line="400" selection-end-column="2" />
+        <state relative-caret-position="83">
+          <caret line="378" column="33" selection-start-line="378" selection-start-column="33" selection-end-line="378" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -633,9 +730,6 @@
         <state relative-caret-position="-1551" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/config/profiler.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/config/routes.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1035" />
@@ -652,12 +746,6 @@
           <caret line="204" column="35" lean-forward="true" selection-start-line="204" selection-start-column="35" selection-end-line="204" selection-end-column="35" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/core/Front_end.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/language/french/upload_lang.php">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/eduquemoi/css/font-awesome.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -703,8 +791,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/eleve/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="13" column="117" selection-start-line="13" selection-start-column="117" selection-end-line="13" selection-end-column="117" />
+        <state relative-caret-position="272">
+          <caret line="28" column="59" selection-start-line="28" selection-start-column="59" selection-end-line="28" selection-end-column="59" />
         </state>
       </provider>
     </entry>
@@ -716,13 +804,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/eduquemoi/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-248">
-          <caret line="97" column="80" selection-start-line="97" selection-start-column="80" selection-end-line="97" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/eduquemoi/_global/register.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/eduquemoi/_global/navbar.php">
@@ -744,9 +825,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/eduquemoi/_global/footer.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/eduquemoi/liens.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-18">
@@ -756,13 +834,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/models/eleve_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="69" selection-start-line="15" selection-start-column="69" selection-end-line="15" selection-end-column="69" />
+        <state relative-caret-position="272">
+          <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/config/memcached.php">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/application/config/autoload.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -771,13 +846,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../htdocs/edmsecu/testfile.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36570">
-          <caret line="1" column="794401" selection-start-line="1" selection-start-column="794401" selection-end-line="1" selection-end-column="794401" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../htdocs/edmsecu/testfile.json" />
     <entry file="file://$PROJECT_DIR$/application/controllers/Desktop.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
