@@ -105,7 +105,7 @@ html[xmlns] .slides {display: block;}
 }
 .flex-control-nav li:first-child:before {
     content: '';
-    background: #f5b120;
+    background: #77abde;
     width: 150%;
     height: 2px;
     position: absolute;
@@ -118,7 +118,7 @@ html[xmlns] .slides {display: block;}
 	-o-transform: rotate(-90deg);
 }
 .flex-control-paging li a.flex-active { 
-	background:#f5b120; 
+	background:#77abde;
 	cursor: default;
 	transform: rotateX(360deg);
 	-webkit-transform: rotateX(360deg);

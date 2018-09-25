@@ -16,7 +16,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </head>
 <body id="login">
   <div class="login-logo">
-    <a href="index.html"><img src="<?= BASE_URL() ?>assets/statics/eleve/images/logo.png" alt=""/></a>
+    <a href="index.html"><img src="<?= BASE_URL() ?>assets/statics/eleve/images/logo.png" alt="" style="max-height: 200px;"/></a>
   </div>
   <h2 class="form-heading">connexion</h2>
   <div class="app-cam">

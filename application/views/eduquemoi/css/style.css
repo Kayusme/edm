@@ -56,14 +56,14 @@ label{
     color: #fff;
 }
 .top-header-agile-right ul li a:hover {
-    background: #1bb4b9;
-    border-color: #1bb4b9;
+    background: #114b85;
+    border-color: #114b85;
 }
 .top-header-agile-left {
     margin-top: 1em;
 }
 .top-header-agile-left ul li .fa {
-    color: #f5b120;
+    color: #77abde;
     margin-right: 5px;
     font-size: 18px;
 }
@@ -150,7 +150,7 @@ label{
 	white-space: nowrap;
 	color: transparent;
 	z-index: 3;
-	    background: #1bb4b9;
+	    background: #114b85;
 }
 
 .cd-search-trigger::before, .cd-search-trigger::after {
@@ -282,9 +282,9 @@ label{
     background: rgba(0, 0, 0, 0.75);
     width: 100%;
     padding: 0 5%;
-    -webkit-box-shadow: inset 0 3px 0 #f5b120, 0 3px 6px rgba(0, 0, 0, 0.05);
-    -moz-box-shadow: inset 0 3px 0 #f5b120, 0 3px 6px rgba(0, 0, 0, 0.05);
-    box-shadow: inset 0 3px 0 #f5b120, 0 3px 6px rgba(0, 0, 0, 0.05);
+    -webkit-box-shadow: inset 0 3px 0 #77abde, 0 3px 6px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: inset 0 3px 0 #77abde, 0 3px 6px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 3px 0 #77abde, 0 3px 6px rgba(0, 0, 0, 0.05);
  -webkit-appearance: none;
     -moz-appearance: none;
     -ms-appearance: none;
@@ -352,7 +352,7 @@ a.navbar-brand {
     display: block;
     font-size: .4em;
     line-height: 0.8;
-    color: #f5b120;
+    color: #77abde;
     text-transform: capitalize;
     letter-spacing: 3.7px;
 }
@@ -360,7 +360,7 @@ a.navbar-brand {
     color:#FFFFFF;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-    color: #f5b120;
+    color: #77abde;
     background: none;
 }
 .navbar-nav > li > a {
@@ -395,13 +395,13 @@ ul.dropdown-menu li a:before{
     float: none;
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-    color: #f5b120;
+    color: #77abde;
 }
 .nav > li > a {
     font-family: 'Hind Vadodara', sans-serif;
 }
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-    color: #f5b120;
+    color: #77abde;
     background-color: rgba(231, 231, 231, 0);
 }
 /*-- //nav --*/
@@ -456,7 +456,7 @@ ul.dropdown-menu li a:before{
 	font-weight: 600;
 }
 .w3l_banner_info p {
-    color: #f5b120;
+    color: #77abde;
     font-size: 17px;
     letter-spacing: 2px;
     text-transform: capitalize;
@@ -512,7 +512,7 @@ h2.tittle-agileits-w3layouts, h3.tittle-agileits-w3layouts {
     margin-bottom: 0.8em;
 }
 h2.tittle-agileits-w3layouts span, h3.tittle-agileits-w3layouts span {
-    color: #f5b120;
+    color: #77abde;
 }
 p.para-w3-agile {
     color: #777;
@@ -525,7 +525,7 @@ a.button-w3layouts {
     color: #fff;
     text-transform: uppercase;
     padding: 10px 20px;
-    background: #1bb4b9;
+    background: #114b85;
     letter-spacing: 1px;
     font-size: 13px;
     display: inline-block;
@@ -556,7 +556,7 @@ a.button-w3layouts {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #f5b120;
+  background: #77abde;
   -webkit-transform: scale(0);
   transform: scale(0);
   -webkit-transition-property: transform;
@@ -593,7 +593,7 @@ a.button-w3layouts {
     padding-left: 2.5em;
 }
 .gallery-grids h5 {
-    color: #1bb4b9;
+    color: #114b85;
     font-size: 17px;
     font-weight: 300;
     letter-spacing: 2px;
@@ -690,13 +690,13 @@ img.zoom-img {
 	-ms-transition:0.5s all;
 }
 .service-grids-w3ls:hover i{
-	color:#1bb4b9!important;
+	color:#114b85!important;
 }
 .service-grids-w3ls:hover h5{
 	color:#000!important;
 }
 .service-grids-w3ls:hover p{
-	color:#f5b120!important;
+	color:#77abde!important;
 }
 .services-right {
     background: url(../images/services.jpg) no-repeat 0px 0px;
@@ -759,13 +759,13 @@ img.zoom-img {
 	border-color:rgba(74, 73, 71, 0.36);
 }
 .form-control {
-    background: #39bec2!important;
+    background: #77abde!important;
 }
 .form-bg-w3ls {
     padding: 2em;
     width: 85%;
     margin: 0 auto;
-    background: #1bb4b9;
+    background: #114b85;
 }
 .form-bg-w3ls h3 {
     color: #fff;
@@ -804,7 +804,7 @@ img.zoom-img {
     -ms-transition: .5s ease-in;
 }
 .form-bg-w3ls input[type="submit"]:hover{
-	background:#f5b120;
+	background:#77abde;
 	color:#fff;
 }
 /*-- Countdown-Timer --*/
@@ -815,7 +815,6 @@ h3.tittle {
 	text-align:center;margin-bottom:0.5em;
 }
 .countdown-timer-w3laits {
-    background: url(../images/count.jpg)no-repeat 0px 0px;
     background-size: cover;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -866,7 +865,7 @@ span.simply-amount {
     font-size: 2.5em;
     line-height: 0;
     font-weight: 100;
-    color: #1bb4b9;
+    color: #114b85;
 	letter-spacing: 1px;
     font-weight: 500;
 }
@@ -877,7 +876,7 @@ span.simply-word {
     font-weight: 500;
     /* margin-left: 5px; */
     text-transform: uppercase;
-    color: #f5b120;
+    color: #77abde;
     display: block;
     margin-top: 0.5em;
 }
@@ -886,7 +885,7 @@ span.simply-word {
 /*-- agile_testimonials --*/
 .test-grid h4 {
     font-size: 1.5em;
-    color: #f5b120;
+    color: #77abde;
     font-weight: 600;
     letter-spacing: .8px;
     margin: 1.5em 0 0.2em;
@@ -943,10 +942,10 @@ h2.inner-tittle-w3layouts {
     -o-background-size: cover;
     -ms-background-size: cover;
     min-height: 300px;
-    border: 5px solid #1bb4b9;
+    border: 5px solid #114b85;
 }
 .about-grids {
-    border-left: 3px solid #f5b120;
+    border-left: 3px solid #77abde;
     margin-top: 1.5em;
 }
 .about-grids h5 {
@@ -957,7 +956,7 @@ h2.inner-tittle-w3layouts {
     padding: 20px 0 10px;
 }
 span.green-w3{
-	color:#1bb4b9!important;
+	color:#114b85!important;
 }
 .grid {
 	position: relative;
@@ -1025,7 +1024,7 @@ figure.effect-moses p {
 figure.effect-moses p span {
     display: block;
     font-size: 17px;
-    color: #f5b120;
+    color: #77abde;
     font-weight: 500;
     letter-spacing: 2px;
     text-transform: capitalize;
@@ -1140,7 +1139,7 @@ figure.effect-moses:hover img {
     font-size: 24px;
     font-weight: 700;
     margin-top: .5em;
-    color: #1bb4b9;
+    color: #114b85;
     text-transform: capitalize;
     padding: 10px 0 10px 20px;
     line-height: 21px;
@@ -1167,7 +1166,7 @@ figure.effect-moses:hover img {
 	text-decoration:none;
 }
 .blog-info h4 a {
-    color: #f5b120!important;
+    color: #77abde!important;
     text-decoration: none;
 }
 .blog-info h6 {
@@ -1208,7 +1207,7 @@ figure.effect-moses:hover img {
     display: inline;
 }
 .blog-left-w3ls a {
-    color: #f5b120;
+    color: #77abde;
     display: inline;
     padding-left: 10px;
     font-weight: 500;
@@ -1226,7 +1225,7 @@ figure.effect-moses:hover img {
 }
 .blog-w3ls-mid h6 {
     color: #fff;
-    background: #1bb4b9;
+    background: #114b85;
     padding: 2em 1em;
     font-size: 18px;
     line-height: 30px;
@@ -1402,7 +1401,7 @@ figure.effect-moses:hover img {
 }
 .agileits_recent_posts_gridr ul li span {
     padding-right: .5em;
-    color: #f5b120;
+    color: #77abde;
     font-size: 13px;
 }
 .agileits_recent_posts_gridr ul li a {
@@ -1637,7 +1636,7 @@ ul.callbacks_tabs.callbacks2_tabs {
 .single-bottom {
     padding: 2em;
     margin: 0 auto;
-    background: #1bb4b9;
+    background: #114b85;
 }
 .single-middle {
   margin-top: 3em;
@@ -1675,7 +1674,7 @@ ul.callbacks_tabs.callbacks2_tabs {
     -ms-transition: .5s ease-in;
 }
 .single-bottom  input[type="submit"]:hover{
-	 background: #f5b120;
+	 background: #77abde;
     color: #fff;
 }
  .single-bottom textarea {
@@ -1688,10 +1687,10 @@ ul.callbacks_tabs.callbacks2_tabs {
 	font-size: 1.5em;
 }
 .media-left img, .media-right img, .media-body img {
-    border: 5px solid #1bb4b9;
+    border: 5px solid #114b85;
 }
 .media-body h4 a {
-    color: #f5b120;
+    color: #77abde;
     text-decoration: none;
     letter-spacing: 1px;
 }
@@ -1724,7 +1723,7 @@ ul.callbacks_tabs.callbacks2_tabs {
 	list-style:none;
 }
 ul.grid-part li a {
-    color: #1bb4b9;
+    color: #114b85;
     font-size: 16px;
     letter-spacing: .4px;
     line-height: 33px;
@@ -1757,7 +1756,7 @@ ul.grid-part {
 
 .w3l-blog-list h4, .blog-list1 h4, .blog-list2 h4, .w3ls_recent_posts h3 {
     font-size: 1.6em;
-    color: #1bb4b9;
+    color: #114b85;
     margin-bottom: 10px;
     letter-spacing: 1px;
 }
@@ -1788,7 +1787,7 @@ ul.grid-part {
 }
 .blog-text span {
     font-size: 13px;
-    color: #f5b120;
+    color: #77abde;
     margin-top: 6px;
     display: block;
     letter-spacing: 1px;
@@ -1810,7 +1809,7 @@ ul.grid-part {
     padding: 0.5em 0 0;
 }
 .blog-list2 ul li a:hover {
-       background: #f5b120;
+       background: #77abde;
 }
 .w3l-blog-list, .blog-list1,.w3ls_recent_posts {
     margin: 0 0 40px;
@@ -1864,7 +1863,7 @@ ul.grid-part {
 }
 .top-blog_wthree_agileits p a {
     text-decoration: none;
-    color: #f5b120;
+    color: #77abde;
 }
 h5.w3ls_single_agileinfo {
     font-size: 1.9em;
@@ -1884,7 +1883,7 @@ p.wthree_agileits {
 }
 .blog-left_w3_agileinfo b {
     font-size: 40px;
-    color: #1bb4b9;
+    color: #114b85;
     display: block;
     height: 50px;
 }
@@ -2187,7 +2186,7 @@ h2.typoh2{
 /*-- //icons --*/
 /*-- contact --*/
 .agile_contact_grid_left{
-	background:#0ea2a7;
+	background:#113e6b;
     text-align: center;
 }
 .agile_contact_grid_left i{
@@ -2196,12 +2195,12 @@ h2.typoh2{
     line-height: 3.8em;
 }
 .agile_contact_grid_right {
-    background: #1bb4b9;
+    background: #114b85;
     padding: 1em;
 }
 .agile_contact_grid_right h4 {
     font-size: 1.3em;
-    color: rgba(255, 255, 255, 0.58);
+    color: #fff;
     font-weight: 600;
     letter-spacing: 1px;
     margin-bottom: 4px;
@@ -2222,10 +2221,10 @@ h2.typoh2{
 	text-decoration:none;
 }
 .agileits_w3layouts_left {
-    background: #efa200 !important;
+    background: #113e6b !important;
 }
 .agileits_w3layouts_right {
-    background: #f5b120 !important;
+    background: #114b85 !important;
 }
 .agile_contact_grid_right p a:hover{
 	color:#212121;
@@ -2360,14 +2359,14 @@ h2.typoh2{
     border: none;
     outline: none;
     width: 100%;
-    background-color: #f5b120;
+    background-color: #114b85;
     display: block;
     padding: 0.8em;
     font-size: 19px;
     color: #fff;
 }
 .w3_agileits_contact_right2 input[type="submit"]:hover {
-    background-color: #1bb4b9;
+    background-color: #114b85;
 }
 /*-- //contact --*/
 /*-- map --*/
@@ -2413,7 +2412,7 @@ section.social ul li a i {
   color: #fff;
 }
 .footer-grids h6 a {
-    color: #f5b120;
+    color: #77abde;
     font-size: 25px;
     text-decoration: none;
     text-transform: uppercase;
@@ -2470,7 +2469,7 @@ section.social ul li a i {
     outline: none;
     padding: 9px 9px;
     border: none;
-    background:#1bb4b9;
+    background:#114b85;
     transition: .5s ease-in;
     -webkit-transition: .5s ease-in;
     -moz-transition: .5s ease-in;
@@ -2479,7 +2478,7 @@ section.social ul li a i {
     -webkit-appearance: none;
 }
 .footer-grids form input[type="submit"]:hover{
-	    background: #f5b120;
+	    background: #77abde;
 }
 /*-- //footer --*/
 /*-- Copyright --*/
@@ -2496,7 +2495,7 @@ section.social ul li a i {
 }
 
 .copyright-wthree a {
-	    color: #1bb4b9;
+	    color: #114b85;
 	text-decoration: none;
 }
 .copyright-wthree a:hover {
@@ -2532,7 +2531,6 @@ section.social ul li a i {
     height: 64px;
 	border: none;
 	text-indent: 100%;
-	background: url("../images/arr.png") no-repeat 0px 0px;
 	background-size: 30px;
 }
 #toTopHover {
@@ -3425,7 +3423,7 @@ section.social ul li a i {
 		color: #fff;
 	}
 	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-		color: #f5b120;
+		color: #77abde;
 	}
 	.navbar-nav .open .dropdown-menu {
 		text-align: center;
