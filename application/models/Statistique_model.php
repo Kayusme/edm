@@ -36,8 +36,8 @@ class Statistique_model extends CI_Model
 
     public function pourcentage($id_matiere)
     {
-        $id_cours_dispense = cours_dispense($id_matiere);
-        $valeur_sans_pourcentage = valeur_minimale($id_cours_dispense) / valeur_maximale($id_matiere);
+        $id_cours_dispense = $this->cours_dispense($id_matiere);
+        $valeur_sans_pourcentage = $this->valeur_minimale($id_cours_dispense) / $this->valeur_maximale($id_matiere);
         $valeur_avec_pourcentage = $valeur_sans_pourcentage * 100;
 
         return $valeur_avec_pourcentage;
