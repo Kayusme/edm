@@ -110,14 +110,7 @@ doctype("html5")."\n"?>
                                 <li><a href="<?=site_url('eduquemoi/index')?>" data-hover="Home">Accueil</a></li>
                                 <li class="active"><a href="<?=site_url('eduquemoi/about')?>" data-hover="About Us">A Propos</a></li>
                                 <li><a href="<?=site_url('eduquemoi/gallery')?>" data-hover="Gallery">Gallerie</a></li>
-                                <li class="dropdown menu__item">
-                                    <a href="#" class="dropdown-toggle menu__link"  data-toggle="dropdown" data-hover="Pages" role="button" aria-haspopup="true" aria-expanded="false">Pages<span class="caret"></span></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="<?=site_url('eduquemoi/codes')?>">Codes</a></li>
-                                        <li><a href="<?=site_url('eduquemoi/icons')?>">Icones</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="<?=site_url('eduquemoi/blog')?>" data-hover="Blog">Blog</a></li>
+                                <li><a href="<?=site_url('eduquemoi/ecoles')?>" data-hover="Ecoles">Ecoles</a></li>
                                 <li><a href="<?=site_url('eduquemoi/contact')?>" data-hover="Mail Us">Contactez nous</a></li>
                             </ul>
                         </nav>
