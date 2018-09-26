@@ -62,7 +62,7 @@ doctype("html5")."\n"?>
     <div class="banner inner-banner-w3-agileits" id="home">
         <div class="banner-overlay-agileinfo">
             <div class="top-header-agile">
-                <h1><a class="col-md-4 navbar-brand" href="<?=site_url('eduquemoi/index')?>"><img src="<?= BASE_URL() ?>assets/statics/eduquemoi/images/logo_noir.png" alt="" style="max-height: 75px;"/></a></h1>
+                <h1><a class="col-md-4 navbar-brand" href="<?=site_url('eduquemoi/index')?>"><img src="<?= BASE_URL() ?>assets/statics/eduquemoi/images/logo_white.png" alt="" style="max-height: 75px;"/></a></h1>
                 <div class="col-md-4 top-header-agile-right">
                     <ul>
                         <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
