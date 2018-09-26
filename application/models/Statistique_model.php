@@ -13,7 +13,12 @@ class Statistique_model extends CI_Model
         $this->db->where('idMatiere',$id_matiere);
         $this->db->from('dispenser');
         
-        return $this->db->get();
+        $lignes = $this->db->get();
+        
+        foreach ($lignes->result() as $ligne) {
+            return $ligne->id;
+        }
+
     }
 
     public function valeur_maximale($id_matiere)
