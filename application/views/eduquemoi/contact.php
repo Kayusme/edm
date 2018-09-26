@@ -13,8 +13,8 @@
 						<i class="fa fa-map-marker" aria-hidden="true"></i>
 					</div>
 					<div class="col-xs-8 agile_contact_grid_right agilew3_contact">
-						<h4>Address</h4>
-						<p>450 Golf-Meteo, Lubumbashi.</p>
+						<h4>Addresse</h4>
+						<p>15 Lomami, Lubumbashi RDCongo.</p>
 					</div>
 					<div class="clearfix"> </div>
 				</div>
@@ -65,7 +65,7 @@
 					</div>
 					<div class="col-md-6 w3_agileits_contact_right">
 						<div class="w3_agileits_contact_right1">
-							<textarea name="Message" placeholder="Your comment here..." required=""></textarea>
+							<textarea name="Message" placeholder="Votre commentaire ici..." required=""></textarea>
 						</div>
 						<div class="w3_agileits_contact_right2">
 							<input type="submit" value="Envoyer">
@@ -78,6 +78,6 @@
 		</div>
 	</div>
 	<div class="map-agileits">
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24804.011287515073!2d-77.42088058957434!3d39.00387414146245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b6384f20fb61ad%3A0x5bfd0cf0a55864c!2sSterling%2C+VA%2C+USA!5e0!3m2!1sen!2sin!4v1487219294651"></iframe>
+		<iframe width="100%" height="600" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;coord=27.486014,-11.669759&amp;q=%20Hotel%20Cosmopolite%2015%20Ave%20Lomami%2C%20Lubumbashi%2C%20R%C3%A9publique%20d%C3%A9mocratique%20du%20Congo+(%20Hotel%20Cosmopolite)&amp;ie=UTF8&amp;t=&amp;z=16&amp;iwloc=A&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/create-google-map/">Embed Google Map</a></iframe>
 	</div>
 <!-- //contact -->
