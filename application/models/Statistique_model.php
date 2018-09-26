@@ -29,7 +29,7 @@ class Statistique_model extends CI_Model
     {
         $this->db->select('cote');
         $this->db->where('idDispenser', $id_cours_dispense);
-        $this->db->from('dispenser');
+        $this->db->from('cote');
         
         return $this->db->get();
     }
