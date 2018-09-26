@@ -12,7 +12,7 @@ class Statistique_model extends CI_Model
         $this->db->select('id');
         $this->db->where('idMatiere',$id_matiere);
         $this->db->from('dispenser');
-        
+
         $lignes = $this->db->get();
         
         foreach ($lignes->result() as $ligne) {
@@ -40,7 +40,12 @@ class Statistique_model extends CI_Model
         $this->db->where('idDispenser', $id_cours_dispense);
         $this->db->from('cote');
         
-        return $this->db->get('cote');
+        $lignes = $this->db->get();
+        
+        foreach ($lignes->result() as $ligne) {
+            return $ligne->cote;
+        }
+
     }
 
     public function pourcentage($id_matiere)
