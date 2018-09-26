@@ -22,7 +22,11 @@ class Statistique_model extends CI_Model
         $this->db->where('idMatiere',$id_matiere);
         $this->db->from('dispenser');
         
-        return $this->db->get();
+        $lignes = $this->db->get();
+
+        foreach ($lignes->result() as $ligne) {
+            return $ligne->maxi;
+        }
     }
 
     public function valeur_minimale($id_cours_dispense)
@@ -31,7 +35,7 @@ class Statistique_model extends CI_Model
         $this->db->where('idDispenser', $id_cours_dispense);
         $this->db->from('cote');
         
-        return $this->db->get();
+        return $this->db->get('cote');
     }
 
     public function pourcentage($id_matiere)
