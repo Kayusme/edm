@@ -954,7 +954,7 @@ button.note-color-btn {
 .xs h3, .widget_head{
 	color:#000;
 	font-size:1.7em;
-	font-weight:300;
+	font-weight:500;
 	margin-bottom: 1em;
 }
 .grid_3 p{
@@ -1676,11 +1676,11 @@ blockquote {
   padding: 0 0px 0 5px;
 }
 .tile-progress h4 {
-  color: #ffffff;
+  color: #000000;
   margin: 0px;
   text-align: center;
   white-space: nowrap;
-  font-weight:300;
+  font-weight:800;
 }
 .tile-progress .progress {
   margin: 15px 0 10px 0;
@@ -1705,7 +1705,7 @@ blockquote {
   text-align: center;
   margin: 0px;
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 500;
 }
 .bg-success {
   background:#eae874;

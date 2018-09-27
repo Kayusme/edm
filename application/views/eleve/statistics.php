@@ -1,6 +1,6 @@
 <div id="page-wrapper">
   <div class="col-md-12 graphs">
-    <h3 class="text-center">Evolutions statistique</h3class>
+    <h3 class="text-center">Evolutions statistique</h3>
            <div class="graph_box1">
 
               <div class="col-md-6 grid_2"><div class="grid_1">
