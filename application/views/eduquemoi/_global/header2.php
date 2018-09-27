@@ -38,6 +38,8 @@ doctype("html5")."\n"?>
         header("Cache-Control: no-cache");
         header("Pragma: no-cache");
         echo meta($meta).
+            '<!-- Icon-CSS -->'."\n".
+            link_tag("assets/statics/eduquemoi/images/icone.jpg",'icon').
             '<!-- Bootstrap-CSS -->'."\n".
             link_tag("assets/statics/eduquemoi/css/bootstrap.css").
             '<!-- Font-awesome-CSS -->'."\n".

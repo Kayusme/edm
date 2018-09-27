@@ -6,6 +6,7 @@
         function hideURLbar(){ window.scrollTo(0,1); } </script>
     <!-- //Meta-Tags -->
     <!-- Custom-Stylesheet-Links -->
+    
     <?php
     header("Cache-Control: no-cache");
     header("Pragma: no-cache");
@@ -35,8 +36,10 @@
             'content'=>'width=device-width, initial-scale=1'
         )
     );
-
+    
     echo meta($meta).
+    '<!-- Icon-CSS -->'."\n".
+        link_tag("assets/statics/eduquemoi/images/icone.jpg",'icon').
     '<!-- Bootstrap-CSS -->'."\n".
         link_tag("assets/statics/eduquemoi/css/bootstrap.css").
     '<!-- Font-awesome-CSS -->'."\n".

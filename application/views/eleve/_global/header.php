@@ -34,6 +34,8 @@
     );
 
     echo meta($meta).
+        '<!-- Icon-CSS -->'."\n".
+        link_tag("assets/statics/eduquemoi/images/icone.jpg",'icon').
         '<!-- Bootstrap-CSS -->'."\n".
         link_tag("assets/statics/eleve/css/bootstrap.min.css").
         '<!-- Font-awesome-CSS -->'."\n".
