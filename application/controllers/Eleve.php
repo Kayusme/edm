@@ -92,8 +92,6 @@ class Eleve  extends CI_Controller
 
     public function statistics()
     {
-        $this->load->helper('selectAllCours');
-        $data['cours'] = selectAllCours();
         $data['title'] = "Statistiques";
         $this->load->view("eleve/_global/header",$data);
         $this->load->view("eleve/_global/nav");
