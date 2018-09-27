@@ -41,4 +41,17 @@ class Eleve_model extends CI_Model
 
         return $res;
     }
+
+    function selectCours($idClass){
+        $this->db->select('*,m.nom as nomCours,m.description as descriptionCours', false);
+        $this->db->from('dispenser as d');
+        $this->db->join('matiere as m','d.idMatiere = m.id');
+        $this->db->join('agent as a','d.idAgent = a.id');
+        $this->db->join('classe as c','d.idClasse = c.id');
+        $this->db->where('c.id',$idClass);
+        $res = $this->db->get()->result_array();
+        // var_dump($res = $this->db->get());die();
+
+        return $res;
+    }
 }

@@ -103,6 +103,8 @@ class Eleve  extends CI_Controller
     public function cours()
     {
         $data['title'] = "Cours";
+        $idclass = 1;
+        $data['resultats'] = $this->eleve_model->selectCours($idclass);
 
         $this->load->view("eleve/_global/header",$data);
         $this->load->view("eleve/_global/nav");
@@ -124,7 +126,8 @@ class Eleve  extends CI_Controller
     public function horaire()
     {
         $data['title'] = "Horaire";
-        $data['resultats'] = $this->eleve_model->selectHoraire(1);
+        $idclass = 1;
+        $data['resultats'] = $this->eleve_model->selectHoraire($idclass);
 
         $this->load->view("eleve/_global/header",$data);
         $this->load->view("eleve/_global/nav");

@@ -9,18 +9,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="graphs">
 	     <div class="widget_head">COURS</div>
             <?php
-                $idclass=1;
-                $resultats = selectCours($idclass);
-//                var_dump($resultats);die();
                 foreach ($resultats as $resultat) {
             ?>
 		   <div class="widget_1">
 		 	 <div class="col-sm-3 widget_1_box">
                 <div class="tile-progress bg-info">
                     <div class="content">
-                        <h4><i class="fa fa-dashboard icon-sm"></i> <?= strtoupper($resultat[6])?></h4>
+                        <h4><i class="fa fa-dashboard icon-sm"></i> <?= strtoupper($resultat['nomCours'])?></h4>
                         <div class="progress"><div class="progress-bar inviewport animated visible slideInLeft" style="width: 40%;"></div></div>
-                        <span><?= ucfirst($resultat[7])?></span>
+                        <span><?= ucfirst($resultat['descriptionCours'])?></span>
                     </div>
                 </div>
              </div>
