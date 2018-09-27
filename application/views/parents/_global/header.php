@@ -35,7 +35,7 @@
 //    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
     echo meta($meta).
         '<!-- Icon-CSS -->'."\n".
-        link_tag("assets/statics/eduquemoi/images/icone.jpg",'icon').
+        link_tag("assets/statics/eduquemoi/images/icone.png",'icon').
         '<!-- Bootstrap-CSS -->'."\n".
         link_tag("assets/statics/parents/css/bootstrap.css").
         '<!-- Calender-CSS -->'."\n".
