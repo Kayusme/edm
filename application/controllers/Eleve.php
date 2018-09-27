@@ -7,6 +7,7 @@ class Eleve  extends CI_Controller
     {
         parent::__construct();
         $this->load->library('session');
+        $this->load->model('eleve_model');
     }
     public function index()
     {
@@ -113,7 +114,7 @@ class Eleve  extends CI_Controller
     public function inbox()
     {
         $data['title'] = "Messageries";
-
+        
         $this->load->view("eleve/_global/header",$data);
         $this->load->view("eleve/_global/nav");
         $this->load->view("eleve/inbox",$data);
@@ -123,6 +124,7 @@ class Eleve  extends CI_Controller
     public function horaire()
     {
         $data['title'] = "Horaire";
+        $data['resultats'] = $this->eleve_model->selectHoraire(1);
 
         $this->load->view("eleve/_global/header",$data);
         $this->load->view("eleve/_global/nav");
