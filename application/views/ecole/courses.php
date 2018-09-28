@@ -19,7 +19,7 @@
 			?>
 			<ul id="filters" class="clearfix">
 				<li><span class="filter active" data-filter="<?= $cl; ?>">Tous</span></li>
-                <?php foreach ($cours as $c){?>
+                <?php foreach ($classes as $c){?>
 				    <li><span class="filter" data-filter="<?=$c['id']?>"><?=$c['nom']?></span></li>
                 <?php }?>
 			</ul>
