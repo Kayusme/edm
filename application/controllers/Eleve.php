@@ -118,6 +118,7 @@ class Eleve  extends CI_Controller
         $this->load->view("eleve/_global/nav");
         $this->load->view("eleve/inbox",$data);
         $this->load->view("eleve/_global/footer");
+        //$this->load->view("eleve/connections");
     }
 
     public function horaire()
