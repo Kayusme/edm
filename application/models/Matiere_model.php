@@ -11,11 +11,16 @@ class Matiere_model extends CI_Model
 		return $this->db->get();
     }
 
-    public function selectMatiere($id_matiere)
+    public function selectNomMatiere($id_matiere)
     {
-        $this->db->select('*');
+        $this->db->select('nom');
         $this->db->where('id',$id_matiere);
 		$this->db->from('matiere');
 		
-		return $this->db->get();
+        $lignes = $this->db->get();
+        
+        foreach ($lignes->result() as $ligne) {
+            return $ligne->nom;
+        }
     }
+}
