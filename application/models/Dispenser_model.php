@@ -12,14 +12,19 @@ class Dispenser_model extends CI_Model
 		return $this->db->get();
     }
 
-    public function selectMaximumMatiereDispenserByClasseAndMatiere($id_classe, $id_matiere)
+    public function selectMaximum($id_classe, $id_matiere)
     {
         $this->db->select('maxi');
         $this->db->where('idClasse',$id_classe);
         $this->db->where('idMatiere',$id_matiere);
 		$this->db->from('dispenser');
 		
-		return $this->db->get();
+		$lignes = $this->db->get();
+
+        foreach ($lignes->result() as $ligne) {
+            return $ligne->maxi;
+        }
+
     }
 
     public function selectIdMatiereDispenserByAgent($id_agent)
