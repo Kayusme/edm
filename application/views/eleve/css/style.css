@@ -2189,8 +2189,8 @@ ul.new li.new_right{
   height: 400px;
 }
 canvas#doughnut, canvas#line, canvas#polarArea, #bar, #pie, #radar {
-  width: 342px !important;
-  height:260px !important;
+  width: 100% !important;
+  height:500px !important;
 }
 .avatar_left {
   width: 65%;
