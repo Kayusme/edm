@@ -62,23 +62,23 @@
           <a href="https://eduquemoi.org">
             <div class="icons-container blur-item mt-5" data-toggle="on-screen">
               <!-- Center -->
-              <i class="icon ni ni-diamond"></i>
+              <i class="icon fa fa-diamond"></i>
               <!-- Right 1 -->
-              <i class="icon icon-sm ni ni-album-2"></i>
-              <i class="icon icon-sm ni ni-app"></i>
-              <i class="icon icon-sm ni ni-atom"></i>
+              <i class="icon icon-sm fa fa-photo"></i>
+              <i class="icon icon-sm fa fa-cube"></i>
+              <i class="icon icon-sm fa fa-connectdevelop"></i>
               <!-- Right 2 -->
-              <i class="icon ni ni-bag-17"></i>
-              <i class="icon ni ni-bell-55"></i>
-              <i class="icon ni ni-credit-card"></i>
+              <i class="icon fa fa-user"></i>
+              <i class="icon fa fa-bell"></i>
+              <i class="icon fa fa-credit-card-alt"></i>
               <!-- Left 1 -->
-              <i class="icon icon-sm ni ni-briefcase-24"></i>
-              <i class="icon icon-sm ni ni-building"></i>
-              <i class="icon icon-sm ni ni-button-play"></i>
+              <i class="icon icon-sm fa fa-suitcase"></i>
+              <i class="icon icon-sm fa fa-building"></i>
+              <i class="icon icon-sm fa fa-play"></i>
               <!-- Left 2 -->
-              <i class="icon ni ni-calendar-grid-58"></i>
-              <i class="icon ni ni-camera-compact"></i>
-              <i class="icon ni ni-chart-bar-32"></i>
+              <i class="icon fa fa-calendar"></i>
+              <i class="icon fa fa-camera-retro"></i>
+              <i class="icon fa fa-area-chart"></i>
             </div>
             <span class="blur-hidden h5 text-default text-center"><img src="<?=base_url("assets/statics/parents/images/logo.png")?>" style="max-width: 300px;"> <br> Votre Enfant Peut Devenir Un Génie.</span>
           </a>
@@ -109,10 +109,10 @@
                 </ol>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img class="img-fluid" src="<?=base_url("assets/statics/parents/images/bg2.png")?>" alt="First slide">
+                    <img class="img-fluid" src="<?=base_url("assets/statics/parents/images/bg2.jpg")?>" alt="First slide">
                   </div>
                   <div class="carousel-item">
-                    <img class="img-fluid" src="<?=base_url("assets/statics/parents/images/bg.png")?>" alt="Second slide">
+                    <img class="img-fluid" src="<?=base_url("assets/statics/parents/images/bg.jpg")?>" alt="Second slide">
                   </div>
                 </div>
                 <a class="carousel-control-prev" href="#carousel_example" role="button" data-slide="prev">
