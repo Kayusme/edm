@@ -8,13 +8,16 @@ class Statistique extends CI_Controller
         $data['title'] = 'Statistiques';
         
         $this->load->model('statistique_model');
-        $data['valeur_minimale'] = $this->statistique_model->valeur_minimale(1);
-        $data['valeur_maximale'] = $this->statistique_model->valeur_maximale(2);
+        $this->load->model('cote_model');
+        $this->load->model('dispenser_model');
 
-        $data['pourcentage'] = $this->statistique_model->pourcentage(2);
+        $data["cote"] = $this->cote_model->selectCote(1,1,2);
+        $data["maximum"] = $this->dispenser_model->selectMaximum(1,2);
 
-        $this->load->view('eleve/_global/header',$data);
-        $this->load->view('eleve/statistics',$data);
-        $this->load->view('eleve/_global/footer');
+        $data['pourcentage'] = $this->statistique_model->pourcentage($data["cote"], $data["maximum"]);
+
+        //$this->load->view('eleve/_global/header',$data);
+        $this->load->view('eleve/test',$data);
+        //$this->load->view('eleve/_global/footer');
     }
 }
