@@ -20,7 +20,7 @@
                 <ul class="b-nav">
                     <li><a href="<?=site_url('eduquemoi/index')?>">Accueil</a></li>
                     <li><a href="<?=site_url('eduquemoi/about')?>">A Propos</a></li>
-                    <li><a href="<?=site_url('eduquemoi/blog')?>">Blog</a></li>
+                    <li><a href="<?=site_url('eduquemoi/ecoles')?>">Ecoles</a></li>
                     <li><a href="<?=site_url('eduquemoi/contact')?>">Contactez Nous</a></li>
                 </ul>
             </div>

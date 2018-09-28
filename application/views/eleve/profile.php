@@ -1,7 +1,7 @@
 
 <div id="page-wrapper" style="background-color: #fff">
     <hr>
-    <div class="container bootstrap snippet">
+    <div class="container-fluid bootstrap snippet">
         <div class="row">
             <div class="col-sm-10"><h1>User Profil</h1></div>
             <div class="col-sm-2"><a href="/users" class="pull-right"><img title="profile image" class="img-circle img-responsive" src="http://www.gravatar.com/avatar/28fd20ccec6865e2d5f0e1f4446eb7bf?s=100"></a></div>
@@ -91,19 +91,16 @@
                                 <div class="col-xs-12">
                                     <br>
                                     <button class="btn btn-lg btn-success" type="submit"><i class="fa fa-plus"></i> Modifier</button>
-<!--                                    <button class="btn btn-lg" type="reset"><i class="glyphicon glyphicon-repeat"></i> Reset</button>-->
                                 </div>
                             </div>
                         </form>
-
                         <hr>
-
                     </div><!--/tab-pane-->
                 </div><!--/tab-pane-->
             </div><!--/tab-content-->
-
         </div><!--/col-9-->
-    </div><!--/row-->
+    </div>
+    <!--/row-->
 <!--	<div class="row">-->
 <!--		<div class="col-md-2"></div>-->
 <!--    <div class="col-md-8"  style="background-color: white; margin-top: 5%">-->

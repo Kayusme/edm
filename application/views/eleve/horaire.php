@@ -19,8 +19,6 @@
             <table class="table">
                 <tbody>
                 <?php
-                $idclass=1;
-                $resultats = selectHoraire($idclass);
                 foreach ($resultats as $resultat) {
                 ?>
                 <tr class="unread checked">
