@@ -3,13 +3,40 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Dispenser_model extends CI_Model
 {
-    public function selectIdMatiereDispenserByClasse($id_classe)
+
+    public function selectIdDispenser($id_classe)
     {
         $this->db->select('id');
         $this->db->where('idClasse',$id_classe);
 		$this->db->from('dispenser');
 		
-		return $this->db->get();
+        $lignes = $this->db->get();
+        $i = 0;
+        foreach ($lignes->result() as $ligne) {
+            $retour[$i] = $ligne->id;
+            $i++;
+        }
+
+        return $retour;
+
+    }
+
+    public function selectIdMatiereDispenserByClasse($id_classe)
+    {
+        $this->db->select('idMatiere');
+        $this->db->where('idClasse',$id_classe);
+		$this->db->from('dispenser');
+		
+        $lignes = $this->db->get();
+        // $retour = [];
+        $i = 0;
+        foreach ($lignes->result() as $ligne) {
+            $retour[$i] = $ligne->idMatiere;
+            $i++;
+        }
+
+        return $retour;
+
     }
 
     public function selectMaximum($id_classe, $id_matiere)
