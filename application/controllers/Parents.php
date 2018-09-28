@@ -13,9 +13,9 @@ class Parents  extends CI_Controller
     public function index()
     {
         $data['title'] = 'eduque-moi';
-        // $this->load->view('parents/_global/header');
-        // $this->load->view('parents/_global/navbar');
+        $this->load->view('parents/_global/header');
+        $this->load->view('parents/_global/navbar');
         $this->load->view('parents/index',$data);
-        // $this->load->view('parents/_global/footer');
+        $this->load->view('parents/_global/footer');
     }
 }
