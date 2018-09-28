@@ -12,25 +12,10 @@ class Parents  extends CI_Controller
 {
     public function index()
     {
-        $data['title'] = 'Login';
-        $this->load->view('parents/_global/header');
-        $this->load->view('parents/login',$data);
-        $this->load->view('parents/_global/footer');
-    }
-    public function accueil()
-    {
         $data['title'] = 'eduque-moi';
-        $this->load->view('parents/_global/header');
-            $this->load->view('parents/_global/navbar');
+        // $this->load->view('parents/_global/header');
+        // $this->load->view('parents/_global/navbar');
         $this->load->view('parents/index',$data);
-        $this->load->view('parents/_global/footer');
-    }
-    public function liste()
-    {
-        $data['title'] = 'eduque-moi';
-        $this->load->view('parents/_global/header');
-            $this->load->view('parents/_global/navbar');
-        $this->load->view('parents/inbox',$data);
-        $this->load->view('parents/_global/footer');
+        // $this->load->view('parents/_global/footer');
     }
 }
