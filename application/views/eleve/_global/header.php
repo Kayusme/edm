@@ -45,7 +45,7 @@
         link_tag("assets/statics/eleve/css/lines.css").
         link_tag("assets/statics/eleve/css/custom.css").
         '<!--//web-fonts-->'."\n".
-        link_tag("http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900")
+        link_tag("http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900");
     ?>
     <!-- jQuery -->
     <script src="<?=base_url("assets/statics/eleve/js/jquery.min.js")?>"></script>
