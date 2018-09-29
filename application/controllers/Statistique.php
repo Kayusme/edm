@@ -55,9 +55,9 @@ class Statistique extends CI_Controller
 
             if ($i != count($data["matieres"]) - 1) {
                 //echo $cote[$i]." / ".$max[$i]." * 100 = ";
-                echo $this->matiere_model->selectNomMatiere($data["matieres"][$i]).", ";
+                echo '"'.$this->matiere_model->selectNomMatiere($data["matieres"][$i]).'",';
             } else {
-                echo $this->matiere_model->selectNomMatiere($data["matieres"][$i]);
+                echo '"'.$this->matiere_model->selectNomMatiere($data["matieres"][$i]).'"';
             }         
 
         }
