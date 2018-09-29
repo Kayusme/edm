@@ -103,6 +103,9 @@ class Eleve  extends CI_Controller
         //La valeur de l'id de l'élève qui vient de la session sera placée là. 
         $data["eleve"] = 1;
 
+        //Reccupère la dernière classe de l'élève
+        $data["classe"] = $this->parcourt_model->selectClasseEleve($data["eleve"]);
+
         $this->load->view("eleve/_global/header",$data);
         $this->load->view("eleve/_global/nav");
         $this->load->view("eleve/statistics",$data);
