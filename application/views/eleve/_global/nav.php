@@ -63,7 +63,17 @@
                 <li class="dropdown-menu-header text-center">
                     <strong>Profil</strong>
                 </li>
-                <li class="m_2"><a href="<?=base_url("Eleve/inbox")?>"><i class="fa fa-bell-o"></i> Notification <span class="label label-info">42</span></a></li>
+                <!-- include php database -->
+                <?php
+                    $pdo = new PDO("mysql:host=localhost; dbname=notifications",'root','');
+                    $data = $pdo->query('select * from notifications ');
+                    $new_data = $pdo->query('select * from notifications where read_n=0');
+                    $count = $new_data->rowCount();
+
+                    //if($pdo){echo "<h1><b>connected</b></h1>";}
+                ?>
+
+                <li class="m_2"><a href="<?=base_url("Eleve/inbox")?>"><i class="fa fa-bell-o"></i> Notification <span class="label label-info"><?=$count?></span></a></li>
                 <li class="m_2"><a href="<?=base_url("Eleve/compose")?>"><i class="fa fa-envelope-o"></i> Messages <span class="label label-success">2</span></a></li>
                 <li class="m_2"><a href="<?=base_url("Eleve/devoir")?>"><i class="fa fa-tasks"></i> Devoirs <span class="label label-danger">6</span></a></li>
                     <br /><br /><strong style="margin-left: 40%">Settings</strong><br />
