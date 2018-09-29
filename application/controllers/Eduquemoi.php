@@ -11,7 +11,7 @@ class Eduquemoi extends CI_Controller {
         $this->load->view('eduquemoi/_global/navbar');
         $this->load->view('eduquemoi/index',$data);
         $this->load->view("eduquemoi/liens");
-        $this->load->view("eduquemoi/_global/register");
+        // $this->load->view("eduquemoi/_global/register");
         $this->load->view('eduquemoi/_global/footer');
 
     }
@@ -60,25 +60,7 @@ class Eduquemoi extends CI_Controller {
         $this->load->view('eduquemoi/single',$data);
         $this->load->view('eduquemoi/_global/footer');
     }
-    public function codes()
-    {
-        //$this->load->helper('language');
-        $data['title'] = 'codes';
-        $this->load->view('eduquemoi/_global/header2',$data);
-        $this->load->view('eduquemoi/codes',$data);
-        $this->load->view("eduquemoi/_global/register");
-        $this->load->view('eduquemoi/_global/footer');
-    }
-    public function icons()
-    {
-        //$this->load->helper('language');
-        $data['title'] = 'icones';
-        $this->load->view('eduquemoi/_global/header2',$data);
-        $this->load->view('eduquemoi/icons',$data);
-        $this->load->view("eduquemoi/_global/register");
-        $this->load->view('eduquemoi/_global/footer');
-    }
-
+    
     //Verifie la connexion avant de le rediriger vers le bon endroit
     public function login()
     {
