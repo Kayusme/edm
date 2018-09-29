@@ -106,6 +106,9 @@ class Eleve  extends CI_Controller
         //Reccupère la dernière classe de l'élève
         $data["classe"] = $this->parcourt_model->selectClasseEleve($data["eleve"]);
 
+        //Tableaux contenant tous les id de la table dispenser
+        $data["id_cours_dispenses"] = $this->dispenser_model->selectIdDispenser($data["classe"]);
+
         $this->load->view("eleve/_global/header",$data);
         $this->load->view("eleve/_global/nav");
         $this->load->view("eleve/statistics",$data);
