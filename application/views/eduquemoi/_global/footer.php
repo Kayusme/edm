@@ -27,7 +27,7 @@
                 <h3>Pour tous contact</h3>
                 <p>Lubumbashi, RDC</p>
                 <p>+243 991 888 702</p>
-                <p>Av. Du 30 juin, Lubumbashi Haut-Katanga</p>
+                <p>15 Lomami, Lubumbashi Haut-Katanga.</p>
                 <p><a href="mailto:info@eduquemoi.com">info@eduquemoi.com</a></p>
             </div>
             <div class="col-md-3 footer-grids w3l-agileits">
