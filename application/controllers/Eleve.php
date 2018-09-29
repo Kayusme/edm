@@ -123,7 +123,7 @@ class Eleve  extends CI_Controller
 
         }
 
-        //Début de la reccupération des points de la première période
+        //Début de la reccupération des points de la période 1
 
         $i = 0;
 
@@ -142,7 +142,6 @@ class Eleve  extends CI_Controller
         for ($i=0; $i < count($max); $i++) { 
 
             if ($i != count($max) - 1) {
-                //echo $cote[$i]." / ".$max[$i]." * 100 = ";
                 $data["periode1"] = $this->statistique_model->pourcentage($cote[$i], $max[$i]).", ";
             } else {
                 $data["periode1"] .= $this->statistique_model->pourcentage($cote[$i], $max[$i]);
@@ -150,7 +149,128 @@ class Eleve  extends CI_Controller
 
         }
 
-        //Fin de la reccupération des points de la première période
+        //Fin de la reccupération des points de la période 1
+
+        //Début de la reccupération des points de la période2
+
+        $i = 0;
+
+        foreach ($data["id_cours_dispenses"] as $id_cours_dispense) {
+            $cote[$i] = $this->cote_model->selectCote($id_cours_dispense,2,$data["eleve"]);
+            $i++;
+        }
+
+        for ($i=0; $i < count($max); $i++) { 
+
+            if ($i != count($max) - 1) {
+                //echo $cote[$i]." / ".$max[$i]." * 100 = ";
+                $data["periode2"] = $this->statistique_model->pourcentage($cote[$i], $max[$i]).", ";
+            } else {
+                $data["periode2"] .= $this->statistique_model->pourcentage($cote[$i], $max[$i]);
+            }         
+
+        }
+
+        //Fin de la reccupération des points de la période 2
+
+        //Début de la reccupération des points de la période 3
+
+        $i = 0;
+
+        foreach ($data["id_cours_dispenses"] as $id_cours_dispense) {
+            $cote[$i] = $this->cote_model->selectCote($id_cours_dispense,3,$data["eleve"]);
+            $i++;
+        }
+
+        $i = 0;
+
+        foreach ($data["matieres"] as $matiere) {
+            $max[$i] = $this->dispenser_model->selectMaximum($data["classe"],$matiere);
+            $i++;
+        }
+
+        for ($i=0; $i < count($max); $i++) { 
+
+            if ($i != count($max) - 1) {
+                $data["periode3"] = $this->statistique_model->pourcentage($cote[$i], $max[$i]).", ";
+            } else {
+                $data["periode3"] .= $this->statistique_model->pourcentage($cote[$i], $max[$i]);
+            }         
+
+        }
+
+        //Fin de la reccupération des points de la période 3
+
+        //Début de la reccupération des points de la période4
+
+        $i = 0;
+
+        foreach ($data["id_cours_dispenses"] as $id_cours_dispense) {
+            $cote[$i] = $this->cote_model->selectCote($id_cours_dispense,4,$data["eleve"]);
+            $i++;
+        }
+
+        for ($i=0; $i < count($max); $i++) { 
+
+            if ($i != count($max) - 1) {
+                $data["periode4"] = $this->statistique_model->pourcentage($cote[$i], $max[$i]).", ";
+            } else {
+                $data["periode4"] .= $this->statistique_model->pourcentage($cote[$i], $max[$i]);
+            }         
+
+        }
+
+        //Fin de la reccupération des points de la période 4
+
+        //Début de la reccupération des points de l'examen 1
+
+        $i = 0;
+
+        foreach ($data["id_cours_dispenses"] as $id_cours_dispense) {
+            $cote[$i] = $this->cote_model->selectCote($id_cours_dispense,5,$data["eleve"]);
+            $i++;
+        }
+
+        $i = 0;
+
+        foreach ($data["matieres"] as $matiere) {
+            $max[$i] = $this->dispenser_model->selectMaximum($data["classe"],$matiere) * 2;
+            $i++;
+        }
+
+        for ($i=0; $i < count($max); $i++) { 
+
+            if ($i != count($max) - 1) {
+                $data["examen1"] = $this->statistique_model->pourcentage($cote[$i], $max[$i]).", ";
+            } else {
+                $data["examen1"] .= $this->statistique_model->pourcentage($cote[$i], $max[$i]);
+            }         
+
+        }
+
+        //Fin de la reccupération des points de l'examen 1
+
+        //Début de la reccupération des points de l'examen 2
+
+        $i = 0;
+
+        foreach ($data["id_cours_dispenses"] as $id_cours_dispense) {
+            $cote[$i] = $this->cote_model->selectCote($id_cours_dispense,6,$data["eleve"]);
+            $i++;
+        }
+
+        for ($i=0; $i < count($max); $i++) { 
+
+            if ($i != count($max) - 1) {
+                //echo $cote[$i]." / ".$max[$i]." * 100 = ";
+                $data["examen2"] = $this->statistique_model->pourcentage($cote[$i], $max[$i]).", ";
+            } else {
+                $data["examen2"] .= $this->statistique_model->pourcentage($cote[$i], $max[$i]);
+            }         
+
+        }
+
+        //Fin de la reccupération des points de l'examen 2
 
         $this->load->view("eleve/_global/header",$data);
         $this->load->view("eleve/_global/nav");
