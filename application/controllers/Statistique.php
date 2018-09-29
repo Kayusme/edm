@@ -44,14 +44,13 @@ class Statistique extends CI_Controller
 
             if ($i != count($max) - 1) {
                 //echo $cote[$i]." / ".$max[$i]." * 100 = ";
-                echo $this->statistique_model->pourcentage($cote[$i], $max[$i]).", ";
+                $data["periode1"] = $this->statistique_model->pourcentage($cote[$i], $max[$i]).", ";
             } else {
-                echo $this->statistique_model->pourcentage($cote[$i], $max[$i]);
+                $data["periode1"] = $this->statistique_model->pourcentage($cote[$i], $max[$i]);
             }         
 
-            $pourcentage[$i] = $this->statistique_model->pourcentage($cote[$i], $max[$i]);
-
         }
+        
 
     }
 }
