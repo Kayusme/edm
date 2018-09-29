@@ -118,7 +118,7 @@ class Eleve  extends CI_Controller
             if ($i != count($data["matieres"]) - 1) {
                 $data["cours"] = '"'.$this->matiere_model->selectNomMatiere($data["matieres"][$i]).'",';
             } else {
-                $data["cours"] = '"'.$this->matiere_model->selectNomMatiere($data["matieres"][$i]).'"';
+                $data["cours"] .= '"'.$this->matiere_model->selectNomMatiere($data["matieres"][$i]).'"';
             }         
 
         }
@@ -145,7 +145,7 @@ class Eleve  extends CI_Controller
                 //echo $cote[$i]." / ".$max[$i]." * 100 = ";
                 $data["periode1"] = $this->statistique_model->pourcentage($cote[$i], $max[$i]).", ";
             } else {
-                $data["periode1"] = $this->statistique_model->pourcentage($cote[$i], $max[$i]);
+                $data["periode1"] .= $this->statistique_model->pourcentage($cote[$i], $max[$i]);
             }         
 
         }
