@@ -116,9 +116,9 @@ class Eleve  extends CI_Controller
         for ($i=0; $i < count($data["matieres"]); $i++) { 
 
             if ($i != count($data["matieres"]) - 1) {
-                $data["cours"] = $this->matiere_model->selectNomMatiere($data["matieres"][$i]).", ";
+                $data["cours"] = '"'.$this->matiere_model->selectNomMatiere($data["matieres"][$i]).'",';
             } else {
-                $data["cours"] = $this->matiere_model->selectNomMatiere($data["matieres"][$i]);
+                $data["cours"] = '"'.$this->matiere_model->selectNomMatiere($data["matieres"][$i]).'"';
             }         
 
         }
