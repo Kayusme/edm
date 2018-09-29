@@ -112,6 +112,17 @@ class Eleve  extends CI_Controller
         //Tableaux contenant tous les id des matieres
         $data["matieres"] = $this->dispenser_model->selectIdMatiereDispenserByClasse($data["classe"]);
 
+        //Liste des matières
+        for ($i=0; $i < count($data["matieres"]); $i++) { 
+
+            if ($i != count($data["matieres"]) - 1) {
+                $data["cours"] = $this->matiere_model->selectNomMatiere($data["matieres"][$i]).", ";
+            } else {
+                $data["cours"] = $this->matiere_model->selectNomMatiere($data["matieres"][$i]);
+            }         
+
+        }
+
         //Début de la reccupération des points de la première période
 
         $i = 0;
