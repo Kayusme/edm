@@ -108,6 +108,9 @@ class Eleve  extends CI_Controller
 
         //Tableaux contenant tous les id de la table dispenser
         $data["id_cours_dispenses"] = $this->dispenser_model->selectIdDispenser($data["classe"]);
+        
+        //Tableaux contenant tous les id des matieres
+        $data["matieres"] = $this->dispenser_model->selectIdMatiereDispenserByClasse($data["classe"]);
 
         $this->load->view("eleve/_global/header",$data);
         $this->load->view("eleve/_global/nav");
