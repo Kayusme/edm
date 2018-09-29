@@ -3,29 +3,53 @@
     <h3 class="text-center">Evolutions statistique</h3>
            <div class="graph_box1">
 
-              <div class="col-md-6 grid_2"><div class="grid_1">
+              <div class="col-md-12 grid_2">
+                <div class="grid_1">
 <!--                <h3>Bar</h3>-->
-                <canvas id="bar" height="300" width="400" style="width: 400px; height: 300px;"></canvas>
-              </div></div>
-              <div class="col-md-6 grid_2"><div class="grid_1">
+                  <canvas id="bar" height="500" width="1000" style="width: 1000px; height: 500px;"></canvas>
+                </div>
+              </div>
+              <div class="col-md-12 grid_2">
+                <div class="grid_1">
 <!--                <h3>Pie</h3>-->
-                <canvas id="pie" height="300" width="400" style="width: 400px; height: 300px;"></canvas>
-              </div></div>
+                  <canvas id="pie" height="500" width="1000" style="width: 1000px; height: 500px;"></canvas>
+                </div>
+              </div>
               <div class="clearfix"> </div>
             </div>
             <script>
     var barChartData = {
-      labels : ["Francais","Chimie","Histoire","Math","Geo","Physique","Anglais"],
+      labels : ["Francais","Chimie","Histoire","Math","Geo","Physique","Anglais","Scott","Shekinah","Scott","Shekinah"],
       datasets : [
         {
           fillColor : "#ef553a",
           strokeColor : "#ef553a",
-          data : [65,59,90,81,56,55,40]
+          data : [65,59,90,81,56,55,40,175,100,120,85]
         },
         {
           fillColor : "#00aced",
           strokeColor : "#00aced",
-          data : [28,48,40,19,96,27,100]
+          data : [28,48,40,19,96,27,100,150,82,110,1]
+        },
+        {
+          fillColor : "green",
+          strokeColor : "green",
+          data : [28,48,40,19,96,27,100,150,82,110,1]
+        },
+        {
+          fillColor : "#ef553a",
+          strokeColor : "#ef553a",
+          data : [65,59,90,81,56,55,40,175,100,120,85]
+        },
+        {
+          fillColor : "green",
+          strokeColor : "green",
+          data : [28,48,40,19,96,27,100,150,82,110,1]
+        },
+        {
+          fillColor : "#00aced",
+          strokeColor : "#00aced",
+          data : [28,48,40,19,96,27,100,150,82,110,10]
         }
       ]
       
