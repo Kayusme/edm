@@ -8,6 +8,7 @@ class Eleve  extends CI_Controller
         parent::__construct();
         $this->load->library('session');
         $this->load->model('eleve_model');
+        $this->load->model('notifications_model');
     }
     public function index()
     {
@@ -293,7 +294,8 @@ class Eleve  extends CI_Controller
     public function inbox()
     {
         $data['title'] = "Messageries";
-        
+        $data['notifications'] = $this->notifications_model->selectNotifications();
+        $data['count'] = count($this->notifications_model->unreadNotifications());
         $this->load->view("eleve/_global/header",$data);
         $this->load->view("eleve/_global/nav");
         $this->load->view("eleve/inbox",$data);

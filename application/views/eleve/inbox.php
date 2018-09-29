@@ -82,75 +82,28 @@
                </div>
                 <table class="table">
                     <tbody>
+                    <?php 
+                    // var_dump($notifications);die();
+                        foreach ($notifications as $notification) {
+                    ?>
                         <tr class="unread checked">
                             <td class="hidden-xs">
                                 <input type="checkbox" class="checkbox">
                             </td>
                             <td class="hidden-xs">
-                                Messe d'ouverture
+                                <?= $notification['title']?>
                             </td>
                             <td>
-                                messe à l'Esprit Saint
+                            <?= $notification['message']?>
                             </td>
                             <td>
                                 <i class="fa fa-paperclip"></i>
                             </td>
                             <td class="">
-                                22 septembre 2018
+                            <?= $notification['date']?>
                             </td>
                         </tr>
-                        <tr class="unread checked">
-                            <td class="hidden-xs">
-                            	<input type="checkbox" class="checkbox">
-                            </td>
-                            <td class="hidden-xs">
-                                Objet du message
-                            </td>
-                            <td class="">
-                                Visite des anciens finalistes
-                            </td>
-                            <td>
-                                <i class="fa fa-paperclip"></i>
-                            </td>
-                            <td>
-                                26 septembre 2018
-                            </td>
-                        </tr>
-                        <tr class="unread checked">
-                            <td class="hidden-xs">
-                                <input type="checkbox" class="checkbox">
-                            </td>
-                            <td class="hidden-xs">
-                                Objet du message
-                            </td>
-                            <td class="">
-                                Recollection des profs
-                            </td>
-                            <td>
-                                <i class="fa fa-paperclip"></i>
-                            </td>
-                            <td>
-                                8 octobre 2018
-                            </td>
-                        </tr>
-                        <tr class="unread checked">
-                            <td class="hidden-xs">
-                                <input type="checkbox" class="checkbox">
-                            </td>
-                            <td class="hidden-xs">
-                                Objet du message
-                            </td>
-                            <td class="">
-                                Inauguration des nouveaux locaux
-                            </td>
-                            <td>
-                                <i class="fa fa-paperclip"></i>
-                            </td>
-                            <td>
-                                14 decembre 2018
-                            </td>
-                        </tr>
-
+                    <?php }?>
                     </tbody>
                 </table>
                </div>

@@ -1,6 +1,6 @@
 <?php
-if (!function_exists('imgFromDir')){
-    function imgFromDir($dir){
+if (!function_exists('imgfromdir')){
+    function imgfromdir($dir){
         $dir = __DIR__."/../views/".$dir;
         $result = [];
         if (is_dir($dir)){
