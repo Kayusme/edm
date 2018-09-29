@@ -32,6 +32,7 @@
                         De <?= $resultat['horaire.heureDebut']?> à <?= $resultat['horaire.heureFin']?>
                     </td>
                     <td>
+                    <?= $resultat['matiere.nom']?>
                     </td>
                     <td>
                         <?= $resultat['horaire.date']?>
@@ -49,6 +50,7 @@
                         6h de cours : de 7h 30 à 12h 50
                     </td>
                     <td>
+                        Physique
                     </td>
                     <td>
                         13 septembre
