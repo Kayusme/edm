@@ -24,21 +24,23 @@
                 <?php }?>
 			</ul>
 			<div id="portfoliolist">
-                <?php foreach ($cours as $c){?>
-				<div class="portfolio <?=$c['id']?> mix_all" data-cat="<?=$c['id']?>" style="display: inline-block; opacity: 1;">
-					<div class="portfolio-wrapper">		
-						<a href="index.html" class="b-link-stripe b-animate-go  thickbox">
-						<div class="port-1">
-<!--                            $c[1] est le nom du cours-->
-                            <h5 class="text-center"><?= ucfirst($c['nom'])?></h5>
-<!--                             $c[2] est la description du cours-->
-							<p><?=ucfirst($c['description'])?></p>
+				<?php foreach ($matieres as $matiere){?>
+					<?php foreach ($matiere as $mat) {?>					
+					
+					<div class="portfolio <?=$mat['idClasse']?> mix_all" data-cat="<?=$mat['idClasse']?>" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="index.html" class="b-link-stripe b-animate-go  thickbox">
+							<div class="port-1">
+	<!--                            $c[1] est le nom du cours-->
+								<h5 class="text-center"><?= ucfirst($mat['nomCours'])?></h5>
+	<!--                             $c[2] est la description du cours-->
+								<p><?=ucfirst($mat['descriptionCours'])?></p>
+							</div>
+								<div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "></h2>
+								</div></a>
 						</div>
-							<div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "></h2>
-							</div></a>
 					</div>
-				</div>
-                <?php }?>
+					<?php } }?>
 			</div>
 				<div class="clearfix"></div>
 		</div>
