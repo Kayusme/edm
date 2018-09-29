@@ -7,10 +7,9 @@
                 <p class="footer-one-w3ls">Votre enfant peut devenir un g&eacute;nie.</p>
                 <div class="top-header-agile-right">
                     <ul>
-                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+                        <li><a href="twitter.com/eduquemoi"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="facebook.com/eduquemoi"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="linkedin.com/eduquemoi"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                     </ul>
                 </div>
                 <div class="clearfix"></div>
@@ -28,14 +27,14 @@
                 <h3>Pour tous contact</h3>
                 <p>Lubumbashi, RDC</p>
                 <p>+243 991 888 702</p>
-                <p>Av. Du 30 juin, Lubumbashi Haut-Katanga</p>
+                <p>15 Lomami, Lubumbashi Haut-Katanga.</p>
                 <p><a href="mailto:info@eduquemoi.com">info@eduquemoi.com</a></p>
             </div>
             <div class="col-md-3 footer-grids w3l-agileits">
                 <h3>Newsletter</h3>
                 <p>Restez au courant de toutes nos nouveaut&eacute;s. <p>
                 <?=form_open("eduquemoi/newsletter")?>
-                    <input title="moncompte@email.fr" type="email" class="text" required="" />
+                    <input title="moncompte@email.fr" type="email" class="text" name="mail" required="" />
                     <input type="submit" value="Go" />
                 <?=form_close()?>
             </div>

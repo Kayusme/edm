@@ -1,4 +1,4 @@
-<div class="jumbotron">
+<div class="jumbotron" style="margin-bottom: 0">
     <div class="container">
         <div class="agile_banner_bottom_grids">
             <a href="<?=site_url("eleve")?>">

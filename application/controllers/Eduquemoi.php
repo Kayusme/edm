@@ -1,17 +1,21 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Eduquemoi extends CI_Controller {
-
+class Eduquemoi extends CI_Controller 
+{
+    public function __construct()
+    {
+        parent::__construct();
+        $this->load->library('form_validation');
+        $this->load->model('eduquemoi_model');
+    }
     public function index()
     {
-//        $this->lang->load('fr','french');
         $data['title'] = 'eduque-moi';
         $this->load->view('eduquemoi/_global/header',$data);
         $this->load->view('eduquemoi/_global/navbar');
         $this->load->view('eduquemoi/index',$data);
         $this->load->view("eduquemoi/liens");
-        $this->load->view("eduquemoi/_global/register");
         $this->load->view('eduquemoi/_global/footer');
 
     }
@@ -22,7 +26,6 @@ class Eduquemoi extends CI_Controller {
     }
     public function about()
     {
-        //$this->load->helper('language');
         $data['title'] = 'a Propos';
         $this->load->view('eduquemoi/_global/header2',$data);
         $this->load->view('eduquemoi/about',$data);
@@ -30,7 +33,6 @@ class Eduquemoi extends CI_Controller {
     }
     public function gallery()
     {
-        //$this->load->helper('language');
         $data['title'] = 'gallerie';
         $this->load->view('eduquemoi/_global/header2',$data);
         $this->load->view('eduquemoi/gallery',$data);
@@ -38,7 +40,6 @@ class Eduquemoi extends CI_Controller {
     }
     public function ecoles()
     {
-        //$this->load->helper('language');
         $data['title'] = 'Lites d\'ecoles';
         $this->load->view('eduquemoi/_global/header2',$data);
         $this->load->view('eduquemoi/ecoles',$data);
@@ -46,7 +47,6 @@ class Eduquemoi extends CI_Controller {
     }
     public function contact()
     {
-        //$this->load->helper('language');
         $data['title'] = 'contact';
         $this->load->view('eduquemoi/_global/header2',$data);
         $this->load->view('eduquemoi/contact',$data);
@@ -54,40 +54,25 @@ class Eduquemoi extends CI_Controller {
     }
     public function single()
     {
-        //$this->load->helper('language');
         $data['title'] = 'single';
         $this->load->view('eduquemoi/_global/header2',$data);
         $this->load->view('eduquemoi/single',$data);
         $this->load->view('eduquemoi/_global/footer');
     }
-    public function codes()
-    {
-        //$this->load->helper('language');
-        $data['title'] = 'codes';
-        $this->load->view('eduquemoi/_global/header2',$data);
-        $this->load->view('eduquemoi/codes',$data);
-        $this->load->view("eduquemoi/_global/register");
-        $this->load->view('eduquemoi/_global/footer');
-    }
-    public function icons()
-    {
-        //$this->load->helper('language');
-        $data['title'] = 'icones';
-        $this->load->view('eduquemoi/_global/header2',$data);
-        $this->load->view('eduquemoi/icons',$data);
-        $this->load->view("eduquemoi/_global/register");
-        $this->load->view('eduquemoi/_global/footer');
-    }
-
-    //Verifie la connexion avant de le rediriger vers le bon endroit
-    public function login()
-    {
-        var_dump($_SERVER);
-    }
-    
+      
     //Inscription a la newsletter
     public function newsletter()
     {
+        $this->form_validation->set_rules('mail', 'Mail', 'required', array('required' => 'Le login est invalide'));
         
+        if ($this->form_validation->run()) {
+            $mail = $this->input->post("mail");
+            
+            $result = $this->eduquemoi_model->newsletter($mail);
+            if($result)
+               echo 'Success';
+            redirect('eduquemoi/index');
+
+        }
     }
 }

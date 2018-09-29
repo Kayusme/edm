@@ -17810,10 +17810,9 @@ p
 
 .lead
 {
-    font-size: 1.25rem;
-    font-weight: 300;
-    line-height: 1.7;
-
+    font-size: 1.rem;
+    font-weight: 100;
+    line-height: 1.2;
     margin-top: 1.5rem;
 }
 .lead + .btn-wrapper
