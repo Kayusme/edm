@@ -22,7 +22,7 @@
                 <img src="<?=base_url("assets/statics/parents/images/logo_white.png")?>" style="width: 200px;" class="img-fluid">
                 <p class="lead text-white">Votre Enfant Peut Devenir Un Génie.</p>
                 <div class="btn-wrapper mt-5">
-                  <a href="https://www.playstore.com/edm" class="btn btn-lg btn-white btn-icon mb-3 mb-sm-0">
+                  <a href="https://play.google.com/store/apps/details?id=com.pbreakers.eduquemoi" class="btn btn-lg btn-white btn-icon mb-3 mb-sm-0">
                     <span class="btn-inner--icon"><i class="fa fa-cloud-download"></i></span>
                     <span class="btn-inner--text">Download</span>
                   </a>
