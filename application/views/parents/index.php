@@ -22,8 +22,8 @@
                 <img src="<?=base_url("assets/statics/parents/images/logo_white.png")?>" style="width: 200px;" class="img-fluid">
                 <p class="lead text-white">Votre Enfant Peut Devenir Un Génie.</p>
                 <div class="btn-wrapper mt-5">
-                  <a href="https://www.playstore.com/edm" class="btn btn-lg btn-white btn-icon mb-3 mb-sm-0">
-                    <span class="btn-inner--icon"><i class="ni ni-cloud-download-95"></i></span>
+                  <a href="https://play.google.com/store/apps/details?id=com.pbreakers.eduquemoi" class="btn btn-lg btn-white btn-icon mb-3 mb-sm-0">
+                    <span class="btn-inner--icon"><i class="fa fa-cloud-download"></i></span>
                     <span class="btn-inner--text">Download</span>
                   </a>
                   <a href="https://www.eduquemoi.org/contact.html" class="btn btn-lg btn-github btn-icon mb-3 mb-sm-0" target="_blank">
@@ -98,7 +98,12 @@
         <div class="row justify-content-between align-items-center">
           <div class="col-lg-5 mb-5 mb-lg-0">
             <h1 class="text-white font-weight-light">Eduquemoi Mobile</h1>
-            <p class="lead text-white mt-4">Argon Design System comes with four pre-built pages to help you get started faster. You can change the text and images and you're good to go.</p>
+            <p class="lead text-white mt-4">Eduque-Moi est un programme Digital Utilisant la
+technologie de pointe caractérisé dans le TICE dont
+le but principal est d’apporter une solution innovante
+dans la gestion de la communication entre les acteurs
+principaux de l’enseignement à communiquer
+efficacement entre eux.</p>
           </div>
           <div class="col-lg-6 mb-lg-auto">
             <div class="rounded shadow-lg overflow-hidden transform-perspective-right">

@@ -67,10 +67,9 @@
             <h1><a class="col-md-4 navbar-brand" href="<?=site_url('eduquemoi/index')?>"><img src="<?= BASE_URL() ?>assets/statics/eduquemoi/images/logo_white.png" alt="" style="max-height: 75px;"/></a></h1>
             <div class="col-md-4 top-header-agile-right">
                 <ul>
-                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+                    <li><a href="twitter.com/eduquemoi"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="facebook.com/eduquemoi"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="linkedin.com/eduquemoi"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                 </ul>
             </div>
             <div class="col-md-4 top-header-agile-left">
