@@ -1,7 +1,7 @@
  
 <div id="page-wrapper">
     <div class="panel panel-default" data-widget="{&quot;draggable&quot;: &quot;false&quot;}" data-widget-static="">
-				<div class="panel-heading" style="background-color:#114b85;color:white; ">
+				<div class="panel-heading">
 					<h1><?=$title?></h1>
 					<div class="panel-ctrls" data-actions-container="" data-action-collapse="{&quot;target&quot;: &quot;.panel-body&quot;}"><span class="button-icon has-bg"><i class="ti ti-angle-down"></i></span></div>
 				</div>
