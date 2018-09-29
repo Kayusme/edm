@@ -23,7 +23,7 @@
                 <p class="lead text-white">Votre Enfant Peut Devenir Un Génie.</p>
                 <div class="btn-wrapper mt-5">
                   <a href="https://www.playstore.com/edm" class="btn btn-lg btn-white btn-icon mb-3 mb-sm-0">
-                    <span class="btn-inner--icon"><i class="ni ni-cloud-download-95"></i></span>
+                    <span class="btn-inner--icon"><i class="fa fa-cloud-download"></i></span>
                     <span class="btn-inner--text">Download</span>
                   </a>
                   <a href="https://www.eduquemoi.org/contact.html" class="btn btn-lg btn-github btn-icon mb-3 mb-sm-0" target="_blank">
