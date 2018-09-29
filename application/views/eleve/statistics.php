@@ -20,37 +20,37 @@
             </div>
             <script>
     var barChartData = {
-      labels : ["Francais","Chimie","Histoire","Math","Geo","Physique","Anglais","Scott","Shekinah","Scott","Shekinah"],
+      labels : [<?=$cours?>],
       datasets : [
         {
           fillColor : "#ef553a",
           strokeColor : "#ef553a",
-          data : [65,59,90,81,56,55,40,175,100,120,85]
-        },
-        {
-          fillColor : "#00aced",
-          strokeColor : "#00aced",
-          data : [28,48,40,19,96,27,100,150,82,110,1]
-        },
-        {
-          fillColor : "green",
-          strokeColor : "green",
-          data : [28,48,40,19,96,27,100,150,82,110,1]
+          data : [<?=$periode1?>]
         },
         {
           fillColor : "#ef553a",
           strokeColor : "#ef553a",
-          data : [65,59,90,81,56,55,40,175,100,120,85]
+          data : [<?=$periode2?>]
         },
         {
-          fillColor : "green",
-          strokeColor : "green",
-          data : [28,48,40,19,96,27,100,150,82,110,1]
+          fillColor : "#ef553a",
+          strokeColor : "#ef553a",
+          data : [<?=$examen1?>]
         },
         {
-          fillColor : "#00aced",
-          strokeColor : "#00aced",
-          data : [28,48,40,19,96,27,100,150,82,110,10]
+          fillColor : "#ef553a",
+          strokeColor : "#ef553a",
+          data : [<?=$periode3?>]
+        },
+        {
+          fillColor : "#ef553a",
+          strokeColor : "#ef553a",
+          data : [<?=$periode4?>]
+        },
+        {
+          fillColor : "#ef553a",
+          strokeColor : "#ef553a",
+          data : [<?=$examen2?>]
         }
       ]
       
