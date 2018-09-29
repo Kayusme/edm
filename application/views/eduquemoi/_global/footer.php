@@ -34,7 +34,7 @@
                 <h3>Newsletter</h3>
                 <p>Restez au courant de toutes nos nouveaut&eacute;s. <p>
                 <?=form_open("eduquemoi/newsletter")?>
-                    <input title="moncompte@email.fr" type="email" class="text" required="" />
+                    <input title="moncompte@email.fr" type="email" class="text" name="mail" required="" />
                     <input type="submit" value="Go" />
                 <?=form_close()?>
             </div>

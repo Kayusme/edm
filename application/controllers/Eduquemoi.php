@@ -1,8 +1,14 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Eduquemoi extends CI_Controller {
-
+class Eduquemoi extends CI_Controller 
+{
+    public function __construct()
+    {
+        parent::__construct();
+        $this->load->library('form_validation');
+        $this->load->model('eduquemoi_model');
+    }
     public function index()
     {
         $data['title'] = 'eduque-moi';
@@ -57,6 +63,16 @@ class Eduquemoi extends CI_Controller {
     //Inscription a la newsletter
     public function newsletter()
     {
+        $this->form_validation->set_rules('mail', 'Mail', 'required', array('required' => 'Le login est invalide'));
         
+        if ($this->form_validation->run()) {
+            $mail = $this->input->post("mail");
+            
+            $result = $this->eduquemoi_model->newsletter($mail);
+            if($result)
+               echo 'Success';
+            redirect('eduquemoi/index');
+
+        }
     }
 }
