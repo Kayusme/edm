@@ -1,13 +1,12 @@
         <div id="page-wrapper">
         <div class="graphs">
 	     <div class="xs">
-  	     <h3>Notifications</h3>
+  	     <h3><?=$title?></h3>
         <div class="col-md-12 inbox_right">
             <div class="mailbox-content">
                 <table class="table">
                     <tbody>
-                    <?php 
-                    // var_dump($notifications);die();
+                    <?php
                         foreach ($notifications as $notification) {
                     ?>
                         <tr class="unread checked">

@@ -293,7 +293,7 @@ class Eleve  extends CI_Controller
 
     public function inbox()
     {
-        $data['title'] = "Messageries";
+        $data['title'] = "Notifications";
         $data['notifications'] = $this->notifications_model->selectNotifications();
         $data['count'] = count($this->notifications_model->unreadNotifications());
         $this->load->view("eleve/_global/header",$data);
