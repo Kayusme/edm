@@ -93,6 +93,13 @@ class Eleve  extends CI_Controller
     public function statistics()
     {
         $data['title'] = "Statistiques";
+        
+        $this->load->model('statistique_model');
+        $this->load->model('cote_model');
+        $this->load->model('dispenser_model');
+        $this->load->model('parcourt_model');
+        $this->load->model('matiere_model');
+        
         $this->load->view("eleve/_global/header",$data);
         $this->load->view("eleve/_global/nav");
         $this->load->view("eleve/statistics",$data);
