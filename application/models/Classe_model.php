@@ -1,5 +1,5 @@
 <?php
-efined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Classe_model extends CI_Model
 {

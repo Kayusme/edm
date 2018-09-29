@@ -28,13 +28,29 @@ class Dispenser_model extends CI_Model
 		$this->db->from('dispenser');
 		
         $lignes = $this->db->get();
-        // $retour = [];
         $i = 0;
         foreach ($lignes->result() as $ligne) {
             $retour[$i] = $ligne->idMatiere;
             $i++;
         }
+        
+        return $retour;
 
+    }
+
+    public function selectMomMatiereDispenserByClasse($id_classe)
+    {
+        $this->db->select('idMatiere');
+        $this->db->where('idClasse',$id_classe);
+		$this->db->from('dispenser');
+		
+        $lignes = $this->db->get();
+        $i = 0;
+        foreach ($lignes->result() as $ligne) {
+            $retour[$i] = $ligne->idMatiere;
+            $i++;
+        }
+        
         return $retour;
 
     }

@@ -41,10 +41,21 @@ class Ecole  extends CI_Controller
     public function courses()
     {
         $this->load->model('ecole_model');
-        $data['classes'] = $this->ecole_model->selectClass();
-        $data['cours'] = $this->ecole_model->selectAllCours();
+        $this->load->model('classe_model');
+        $this->load->model('dispenser_model');
+        $this->load->model('matiere_model');
+
+        $data["classes"] = $this->classe_model->selectClasses();
+
+        
+        foreach ($data["classes"] as $classe) {            
+            $matieres[$classe["id"]] = $this->matiere_model->selectCours($classe["id"]);
+        }  
+
+        $data["matieres"] = $matieres;
 
         $data['title'] = 'Cours';
+
         $this->load->view('ecole/_global/header2',$data);
         $this->load->view('ecole/courses',$data);
         $this->load->view('ecole/_global/footer');
