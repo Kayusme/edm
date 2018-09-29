@@ -99,7 +99,10 @@ class Eleve  extends CI_Controller
         $this->load->model('dispenser_model');
         $this->load->model('parcourt_model');
         $this->load->model('matiere_model');
-        
+
+        //La valeur de l'id de l'élève qui vient de la session sera placée là. 
+        $data["eleve"] = 1;
+
         $this->load->view("eleve/_global/header",$data);
         $this->load->view("eleve/_global/nav");
         $this->load->view("eleve/statistics",$data);
