@@ -7,10 +7,9 @@
                 <p class="footer-one-w3ls">Votre enfant peut devenir un g&eacute;nie.</p>
                 <div class="top-header-agile-right">
                     <ul>
-                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+                        <li><a href="twitter.com/eduquemoi"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="facebook.com/eduquemoi"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="linkedin.com/eduquemoi"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                     </ul>
                 </div>
                 <div class="clearfix"></div>
