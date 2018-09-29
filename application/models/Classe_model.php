@@ -9,7 +9,7 @@ class Classe_model extends CI_Model
         $this->db->select('*');
 		$this->db->from('classe');
 		
-		return $this->db->get();
+		return $this->db->get()->result_array();
     }
 
     public function selectClasse($nom_salle)
