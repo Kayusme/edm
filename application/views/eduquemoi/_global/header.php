@@ -6,6 +6,7 @@
         function hideURLbar(){ window.scrollTo(0,1); } </script>
     <!-- //Meta-Tags -->
     <!-- Custom-Stylesheet-Links -->
+    
     <?php
     header("Cache-Control: no-cache");
     header("Pragma: no-cache");
@@ -35,8 +36,10 @@
             'content'=>'width=device-width, initial-scale=1'
         )
     );
-
+    
     echo meta($meta).
+    '<!-- Icon-CSS -->'."\n".
+        link_tag("assets/statics/eduquemoi/images/icone.png",'icon').
     '<!-- Bootstrap-CSS -->'."\n".
         link_tag("assets/statics/eduquemoi/css/bootstrap.css").
     '<!-- Font-awesome-CSS -->'."\n".
@@ -107,14 +110,7 @@
                             <li class="active"><a href="<?=site_url('eduquemoi/index')?>" data-hover="Home">Accueil</a></li>
                             <li><a href="<?=site_url('eduquemoi/about')?>" data-hover="About Us">A Propos</a></li>
                             <li><a href="<?=site_url('eduquemoi/gallery')?>" data-hover="Gallery">Gallerie</a></li>
-                            <li class="dropdown menu__item">
-                                <a href="#" class="dropdown-toggle menu__link"  data-toggle="dropdown" data-hover="Pages" role="button" aria-haspopup="true" aria-expanded="false">Pages<span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="<?=site_url('eduquemoi/codes')?>">Codes</a></li>
-                                    <li><a href="<?=site_url('eduquemoi/icons')?>">Icones</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="<?=site_url('eduquemoi/blog')?>" data-hover="Blog">Blog</a></li>
+                            <li><a href="<?=site_url('eduquemoi/ecoles')?>" data-hover="Ecoles">Ecoles</a></li>
                             <li><a href="<?=site_url('eduquemoi/contact')?>" data-hover="Mail Us">Contactez Nous</a></li>
                         </ul>
                     </nav>

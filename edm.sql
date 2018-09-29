@@ -1,13 +1,15 @@
 -- phpMyAdmin SQL Dump
--- version 4.6.5.2
+-- version 4.7.0
 -- https://www.phpmyadmin.net/
 --
--- Client :  127.0.0.1
--- Généré le :  Mar 21 Août 2018 à 15:42
--- Version du serveur :  10.1.21-MariaDB
--- Version de PHP :  7.1.1
+-- Hôte : localhost
+-- Généré le :  jeu. 27 sep. 2018 à 09:05
+-- Version du serveur :  10.1.22-MariaDB
+-- Version de PHP :  7.1.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -36,7 +38,7 @@ CREATE TABLE `agent` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Contenu de la table `agent`
+-- Déchargement des données de la table `agent`
 --
 
 INSERT INTO `agent` (`id`, `nom`, `postNom`, `prenom`, `idFonction`, `idType`) VALUES
@@ -58,7 +60,7 @@ CREATE TABLE `classe` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Contenu de la table `classe`
+-- Déchargement des données de la table `classe`
 --
 
 INSERT INTO `classe` (`id`, `idSalle`, `nom`, `description`, `idProf`) VALUES
@@ -124,7 +126,7 @@ CREATE TABLE `dispenser` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Contenu de la table `dispenser`
+-- Déchargement des données de la table `dispenser`
 --
 
 INSERT INTO `dispenser` (`id`, `idAgent`, `idMatiere`, `idClasse`, `maxi`) VALUES
@@ -157,7 +159,7 @@ CREATE TABLE `eleve` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Contenu de la table `eleve`
+-- Déchargement des données de la table `eleve`
 --
 
 INSERT INTO `eleve` (`id`, `matricule`, `nom`, `postnom`, `prenom`, `genre`, `dateNaissance`, `lieuNaissance`, `adresse`, `idParent`, `nationnaliter`, `img`, `pwd`) VALUES
@@ -188,7 +190,7 @@ CREATE TABLE `fonction` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Contenu de la table `fonction`
+-- Déchargement des données de la table `fonction`
 --
 
 INSERT INTO `fonction` (`id`, `nom`, `description`) VALUES
@@ -247,7 +249,7 @@ CREATE TABLE `matiere` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Contenu de la table `matiere`
+-- Déchargement des données de la table `matiere`
 --
 
 INSERT INTO `matiere` (`id`, `nom`, `description`) VALUES
@@ -294,7 +296,7 @@ CREATE TABLE `parcourt` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Contenu de la table `parcourt`
+-- Déchargement des données de la table `parcourt`
 --
 
 INSERT INTO `parcourt` (`idParcourt`, `idEleve`, `idClasse`, `annee`, `maxPayement`) VALUES
@@ -313,6 +315,19 @@ CREATE TABLE `parent` (
   `prenom` varchar(255) DEFAULT NULL,
   `numero` varchar(255) DEFAULT NULL,
   `mail` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `payement`
+--
+
+CREATE TABLE `payement` (
+  `id` int(11) NOT NULL,
+  `idParcourt` int(11) NOT NULL,
+  `montant` double NOT NULL,
+  `date` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -340,7 +355,7 @@ CREATE TABLE `salle` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Contenu de la table `salle`
+-- Déchargement des données de la table `salle`
 --
 
 INSERT INTO `salle` (`id`, `description`, `idAgent`) VALUES
@@ -371,14 +386,14 @@ CREATE TABLE `type` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Contenu de la table `type`
+-- Déchargement des données de la table `type`
 --
 
 INSERT INTO `type` (`id`, `nom`, `description`) VALUES
 (1, 'permanent', 'il est engage totalement a l\'ecole');
 
 --
--- Index pour les tables exportées
+-- Index pour les tables déchargées
 --
 
 --
@@ -506,6 +521,12 @@ ALTER TABLE `parent`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Index pour la table `payement`
+--
+ALTER TABLE `payement`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Index pour la table `periode`
 --
 ALTER TABLE `periode`
@@ -533,7 +554,7 @@ ALTER TABLE `type`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT pour les tables exportées
+-- AUTO_INCREMENT pour les tables déchargées
 --
 
 --
@@ -622,6 +643,11 @@ ALTER TABLE `parcourt`
 ALTER TABLE `parent`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
+-- AUTO_INCREMENT pour la table `payement`
+--
+ALTER TABLE `payement`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
 -- AUTO_INCREMENT pour la table `periode`
 --
 ALTER TABLE `periode`
@@ -640,7 +666,8 @@ ALTER TABLE `titulaire`
 -- AUTO_INCREMENT pour la table `type`
 --
 ALTER TABLE `type`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;COMMIT;
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

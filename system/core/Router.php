@@ -6,7 +6,7 @@
  *
  * This content is released under the MIT License (MIT)
  *
- * Copyright (c) 2014 - 2017, British Columbia Institute of Technology
+ * Copyright (c) 2014 - 2018, British Columbia Institute of Technology
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -29,7 +29,7 @@
  * @package	CodeIgniter
  * @author	EllisLab Dev Team
  * @copyright	Copyright (c) 2008 - 2014, EllisLab, Inc. (https://ellislab.com/)
- * @copyright	Copyright (c) 2014 - 2017, British Columbia Institute of Technology (http://bcit.ca/)
+ * @copyright	Copyright (c) 2014 - 2018, British Columbia Institute of Technology (http://bcit.ca/)
  * @license	http://opensource.org/licenses/MIT	MIT License
  * @link	https://codeigniter.com
  * @since	Version 1.0.0
@@ -76,7 +76,7 @@ class CI_Router {
 	 *
 	 * @var	string
 	 */
-	public $method = 'Index';
+	public $method =	'index';
 
 	/**
 	 * Sub-directory that contains the requested controller class
@@ -272,7 +272,7 @@ class CI_Router {
 		}
 		else
 		{
-			$segments[1] = 'Index';
+			$segments[1] = 'index';
 		}
 
 		array_unshift($segments, NULL);
@@ -297,7 +297,7 @@ class CI_Router {
 		// Is the method being specified?
 		if (sscanf($this->default_controller, '%[^/]/%s', $class, $method) !== 2)
 		{
-			$method = 'Index';
+			$method = 'index';
 		}
 
 		if ( ! file_exists(APPPATH.'controllers/'.$this->directory.ucfirst($class).'.php'))

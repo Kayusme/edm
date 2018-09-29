@@ -26,7 +26,6 @@ class Eduquemoi extends CI_Controller {
         $data['title'] = 'a Propos';
         $this->load->view('eduquemoi/_global/header2',$data);
         $this->load->view('eduquemoi/about',$data);
-        $this->load->view("eduquemoi/_global/register");
         $this->load->view('eduquemoi/_global/footer');
     }
     public function gallery()
@@ -35,16 +34,14 @@ class Eduquemoi extends CI_Controller {
         $data['title'] = 'gallerie';
         $this->load->view('eduquemoi/_global/header2',$data);
         $this->load->view('eduquemoi/gallery',$data);
-        $this->load->view("eduquemoi/_global/register");
         $this->load->view('eduquemoi/_global/footer');
     }
-    public function blog()
+    public function ecoles()
     {
         //$this->load->helper('language');
-        $data['title'] = 'blog';
+        $data['title'] = 'Lites d\'ecoles';
         $this->load->view('eduquemoi/_global/header2',$data);
-        $this->load->view('eduquemoi/blog',$data);
-        $this->load->view("eduquemoi/_global/register");
+        $this->load->view('eduquemoi/ecoles',$data);
         $this->load->view('eduquemoi/_global/footer');
     }
     public function contact()
@@ -53,7 +50,6 @@ class Eduquemoi extends CI_Controller {
         $data['title'] = 'contact';
         $this->load->view('eduquemoi/_global/header2',$data);
         $this->load->view('eduquemoi/contact',$data);
-        $this->load->view("eduquemoi/_global/register");
         $this->load->view('eduquemoi/_global/footer');
     }
     public function single()
@@ -62,7 +58,6 @@ class Eduquemoi extends CI_Controller {
         $data['title'] = 'single';
         $this->load->view('eduquemoi/_global/header2',$data);
         $this->load->view('eduquemoi/single',$data);
-        $this->load->view("eduquemoi/_global/register");
         $this->load->view('eduquemoi/_global/footer');
     }
     public function codes()
