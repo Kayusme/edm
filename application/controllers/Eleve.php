@@ -17,6 +17,7 @@ class Eleve  extends CI_Controller
         if ($this->session->has_userdata('matricule')){
             $data['title'] = "Page d'administration";
             $data['infos'] = $this->session->userdata;
+            $data['count'] = count($this->notifications_model->unreadNotifications());
             $this->load->view("eleve/_global/header",$data);
             $this->load->view("eleve/_global/nav");
             $this->load->view("eleve/index",$data);
@@ -272,7 +273,8 @@ class Eleve  extends CI_Controller
         }
 
         //Fin de la reccupération des points de l'examen 2
-
+        
+        $data['count'] = count($this->notifications_model->unreadNotifications());
         $this->load->view("eleve/_global/header",$data);
         $this->load->view("eleve/_global/nav");
         $this->load->view("eleve/statistics",$data);
@@ -283,6 +285,7 @@ class Eleve  extends CI_Controller
         $data['title'] = "Cours";
         $idclass = 1;
         $data['resultats'] = $this->eleve_model->selectCours($idclass);
+        $data['count'] = count($this->notifications_model->unreadNotifications());
 
         $this->load->view("eleve/_global/header",$data);
         $this->load->view("eleve/_global/nav");
@@ -307,6 +310,7 @@ class Eleve  extends CI_Controller
         $data['title'] = "Horaire";
         $idclass = 1;
         $data['resultats'] = $this->eleve_model->selectHoraire($idclass);
+        $data['count'] = count($this->notifications_model->unreadNotifications());
 
         $this->load->view("eleve/_global/header",$data);
         $this->load->view("eleve/_global/nav");
@@ -317,6 +321,7 @@ class Eleve  extends CI_Controller
     public function blog()
     {
         $data['title'] = "Blog";
+        $data['count'] = count($this->notifications_model->unreadNotifications());
 
         $this->load->view("eleve/_global/header",$data);
         $this->load->view("eleve/_global/nav");
@@ -332,6 +337,7 @@ class Eleve  extends CI_Controller
 //        $data['eleve'] = selectEleve($data['infos']['id']);//On doit y recuperer la id de l'eleve par la SESSION
         
         $data['title'] = "Profil";
+        $data['count'] = count($this->notifications_model->unreadNotifications());
 
         $this->load->view("eleve/_global/header",$data);
         $this->load->view("eleve/_global/nav");
@@ -342,6 +348,7 @@ class Eleve  extends CI_Controller
     public function compose()
     {
         $data['title'] = "Chat Box";
+        $data['count'] = count($this->notifications_model->unreadNotifications());
 
         $this->load->view("eleve/_global/header",$data);
         $this->load->view("eleve/_global/nav");
@@ -351,6 +358,7 @@ class Eleve  extends CI_Controller
     public function devoir()
     {
         $data['title'] = "Devoir";
+        $data['count'] = count($this->notifications_model->unreadNotifications());
 
         $this->load->view("eleve/_global/header",$data);
         $this->load->view("eleve/_global/nav");
