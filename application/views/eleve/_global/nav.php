@@ -65,10 +65,8 @@
                 </li>
                 <!-- include php database -->
                 <?php
-                    $pdo = new PDO("mysql:host=localhost; dbname=notifications",'root','');
-                    $data = $pdo->query('select * from notifications ');
-                    $new_data = $pdo->query('select * from notifications where read_n=0');
-                    $count = $new_data->rowCount();
+                    // var_dump($notifications);die();
+                    // $count = count(if($notifications['read_n']));
 
                     //if($pdo){echo "<h1><b>connected</b></h1>";}
                 ?>
