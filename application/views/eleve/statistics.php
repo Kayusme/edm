@@ -8,16 +8,25 @@
                   <canvas id="bar" height="500" width="1000" style="width: 1000px; height: 500px;"></canvas>
                 </div>
               </div>
-              <div class="col-md-12 grid_2">
+              <div class="col-md-6 grid_2">
                 <div class="grid_1">
 <!--                <h3>Pie</h3>-->
-                  <canvas id="pie" height="500" width="1000" style="width: 1000px; height: 500px;"></canvas>
+                  <canvas id="pie" height="400" width="400" style="width: 400px; height: 400px;"></canvas>
                 </div>
               </div>
-              <div class="col-md-6 col_5">
-
-				<div id="chart"></div>
-	       		<div id="slider"></div>
+              <div class="col-md-6 grid_2">
+                <form action="">
+                  <select name="" id="" class="form-control">
+                      <option value="1">1 Periode</option>
+                      <option value="2">2 Periode</option>
+                      <option value="3">Exam 1</option>
+                      <option value="4">3 Periode</option>
+                  </select>
+                </form>
+                <div class="grid_1">
+                  <div id="chart"></div>
+                </div>
+              </div>
 				<script>
 
 			var seriesData = [ [], [], [], [], [] ];
@@ -70,29 +79,6 @@
 			});
 				</script>
 		</div>
-	      <!-- map -->
-<link href="<?=base_url("assets/statics/eleve/css/jqvmap.css")?>" rel='stylesheet' type='text/css' />
-<script src="<?=base_url("assets/statics/eleve/js/jquery.vmap.js")?>"></script>
-<script src="<?=base_url("assets/statics/eleve/js/jquery.vmap.sampledata.js")?>" type="text/javascript"></script>
-<script src="<?=base_url("assets/statics/eleve/js/jquery.vmap.world.js")?>" type="text/javascript"></script>
-<script type="text/javascript">
-	jQuery(document).ready(function() {
-		jQuery('#vmap').vectorMap({
-		    map: 'world_en',
-		    backgroundColor: '#333333',
-		    color: '#ffffff',
-		    hoverOpacity: 0.7,
-		    selectedColor: '#666666',
-		    enableZoom: true,
-		    showTooltip: true,
-		    values: sample_data,
-		    scaleColors: ['#C8EEFF', '#006491'],
-		    normalizeFunction: 'polynomial'
-		});
-	});
-</script>
-<!-- //map -->
-              <div class="clearfix"> </div>
             </div>
             
             <script>
