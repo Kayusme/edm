@@ -145,11 +145,14 @@ class Eleve  extends CI_Controller
 
             if ($i != count($max) - 1) {
                 $data["periode1"] = $this->statistique_model->pourcentage($cote[$i], $max[$i]).", ";
+                $resulat[$i] =  $this->statistique_model->pourcentage($cote[$i], $max[$i]);
             } else {
                 $data["periode1"] .= $this->statistique_model->pourcentage($cote[$i], $max[$i]);
+                $resulat[$i] =  $this->statistique_model->pourcentage($cote[$i], $max[$i]);
             }         
 
         }
+        $data["resultats"] = $resulat;
 
         //Fin de la reccupération des points de la période 1
 
