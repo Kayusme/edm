@@ -119,20 +119,23 @@
       
     };
     var pieData = [
+      <?php for ($i=0; $i < count($resultats); $i++) { 
+        if ($i != count($resultats) - 1) {
+      ?>
         {
-            value: 30,
+            value: <?=$resultats[$i]?>,
             color:"#ef553a"
         },
+      <?php 
+        } else { 
+      ?>
         {
-            value : 50,
-            color : "#00aced"
-        },
-        {
-            value : 100,
-            color : "#69D2E7"
+            value: <?=$resultats[$i]?>,
+            color:"#ef553a"
         }
-
+      <?php } } ?>
     ];
+      
   var chartData = [
       {
         value : Math.random(),
