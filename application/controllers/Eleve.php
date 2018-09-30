@@ -14,7 +14,7 @@ class Eleve  extends CI_Controller
     {
 //        var_dump($this->session);die();
 //        $maSession = $this->session->userdata('matricule');
-        if ($this->session->has_userdata('matricule')){
+        // if ($this->session->has_userdata('matricule')){
             $data['title'] = "Page d'administration";
             $data['infos'] = $this->session->userdata;
             $data['count'] = count($this->notifications_model->unreadNotifications());
@@ -22,9 +22,9 @@ class Eleve  extends CI_Controller
             $this->load->view("eleve/_global/nav");
             $this->load->view("eleve/index",$data);
             $this->load->view("eleve/_global/footer");
-        }else{
-            redirect("eleve/login");
-        }
+        // }else{
+        //     redirect("eleve/login");
+        // }
     }
 
     public function login()
