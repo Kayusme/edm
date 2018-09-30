@@ -10,7 +10,7 @@
 <div class="container">
 	<h3 class="tittle-agileits-w3layouts"><?=ucfirst($title);?> de <span class="green-w3">Nous</span>.</h3>
 	<p class="para-w3-agile" style=" text-align: justify;text-justify: inter-word;"><a href="eduquemoi.org">Eduque-Moi</a> est un programme  Digital Utilisant la technologie de pointe  caractérisé dans le TICE dont le but principal est d’apporter une solution innovante dans la gestion de la communication entre  les acteurs principaux de l’enseignement à communiquer efficacement entre eux, des nouvelles importantes liées à des situations régulières, inhabituelles voire exceptionnelles des activités scolaires et parascolaires en temps réel et appuyer  l’EPSP dans le suivi du respect au programme scolaire par les écoles. 
-								<br>Pour ce faire, le projet Eduque-Moi dispose de 3 plateformes, soit un centre d’administration, un site web et une application mobile. Le contenu de la dite plateformes est composé des  module suivants :</p>
+								<br>Pour ce faire, le projet Eduque-Moi dispose de 3 plateformes, soit un centre d’administration, un site web et une application mobile.</p>
 	<div class="abt-img"></div>
 	<div class="abt-iinfo-w3ls">
 		<div class="col-md-4 about-grids">
@@ -36,21 +36,28 @@
 	<div class="container">
 		<h3 class="tittle-agileits-w3layouts">Nos <span>Partenaires</span></h3>
 	</div>
-     <div class="agile-homes-w3l  grid">
+     <div class="agile-homes-w3l grid container">
                 <div class="col-md-3 home-agile-left">
-				   <figure class="effect-moses">
-						<img src="../assets/statics/eduquemoi/images/logo.png" alt="" />
+				   <figure class="">
+						<img src="../assets/statics/eduquemoi/images/logo.png" alt="Eduque-Moi" />
 						<figcaption>
-						<div class="team-top-block">
-								<div class="top-header-agile-right team-w3">
-									<ul>
-										<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-										<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-										<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-									</ul>
-								</div>
-							</div>
 							<p><span>Eduque-Moi</span></p>
+						</figcaption>			
+					</figure>
+				</div>
+				<div class="col-md-3 home-agile-left">
+				   <figure class="">
+						<img src="../assets/statics/eduquemoi/images/logopb.jpg" alt="P-breakers" />
+						<figcaption>
+							<p><span>P-breakers</span></p>
+						</figcaption>			
+					</figure>
+				</div>
+				<div class="col-md-3 home-agile-left">
+				   <figure class="">
+						<img src="../assets/statics/eduquemoi/images/logo.png" alt="ZX-Connect" />
+						<figcaption>
+							<p><span>ZX-Connect</span></p>
 						</figcaption>			
 					</figure>
 				</div>
