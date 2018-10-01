@@ -337,9 +337,7 @@ class Eleve  extends CI_Controller
     public function profile()
     {
         $data['infos'] = $this->session->userdata;
-        // var_dump($data['infos']);die();
-//        $this->load->helper('selectEleve');
-//        $data['eleve'] = selectEleve($data['infos']['id']);//On doit y recuperer la id de l'eleve par la SESSION
+       $data['eleve'] =$this->eleve_model->selectEleve(1)[0];//On doit y recuperer la id de l'eleve par la SESSION
         
         $data['title'] = "Profil";
         $data['count'] = count($this->notifications_model->unreadNotifications());
