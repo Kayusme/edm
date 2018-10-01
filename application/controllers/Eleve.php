@@ -9,6 +9,7 @@ class Eleve  extends CI_Controller
         $this->load->library('session');
         $this->load->model('eleve_model');
         $this->load->model('notifications_model');
+        $this->load->model('devoir_model');
     }
     public function index()
     {
@@ -361,7 +362,9 @@ class Eleve  extends CI_Controller
     }
     public function devoir()
     {
+        $idclass= 1;
         $data['title'] = "Devoir";
+        $data['resultats'] = $this->devoir_model->selectDevoir($idclass);
         $data['count'] = count($this->notifications_model->unreadNotifications());
 
         $this->load->view("eleve/_global/header",$data);
