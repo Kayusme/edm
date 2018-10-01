@@ -17,6 +17,7 @@ class Eleve  extends CI_Controller
         // if ($this->session->has_userdata('matricule')){
             $data['title'] = "Page d'administration";
             $data['infos'] = $this->session->userdata;
+            $data['notifications'] = $this->notifications_model->selectNotifications();
             $data['count'] = count($this->notifications_model->unreadNotifications());
             $this->load->view("eleve/_global/header",$data);
             $this->load->view("eleve/_global/nav");

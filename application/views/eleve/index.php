@@ -49,52 +49,26 @@
 			<script src= "<?=base_url("assets/statics/eleve/js/moment-2.2.1.js")?>" type="text/javascript"></script>
 			<script src="<?=base_url("assets/statics/eleve/js/clndr.js")?>" type="text/javascript"></script>
 			<script src="<?=base_url("assets/statics/eleve/js/site.js")?>" type="text/javascript"></script>
-<!--		<div class="col_1">-->
-<!--			<div class="col-md-8">-->
-<!--				<br /><br /><br />-->
-<!--				<h3> Bon retour sur le banc de classe</h3><br /><br />-->
-<!--				<img src="--><?//=base_url("assets/statics/eleve/images/g5.jpg")?><!--" >-->
-<!--			</div>-->
-<!--			<div class="col-md-4"><br /><br /><br /><br /><br /><br /><br /><br />Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod-->
-<!--			tempor incididunt ut labore et dolore magna aliqua.<br /> Ut enim ad minim veniam,-->
-<!--			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo-->
-<!--			consequat. <br />Duis aute irure dolor in reprehenderit in voluptate velit esse-->
-<!--			cillum dolore eu fugiat nulla pariatur.<br /> Excepteur sint occaecat cupidatat non-->
-<!--			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>-->
-<!--		</div>-->
-<!--		<br />-->
+
             <div class="clearfix"></div>
             <h2 class="text-center">Notifications</h2>
             <div class="container-fluid">
-		<div class="row">
-            <div class="col-md-12">
-                <h3 class="text-center"> Bon retour sur le banc de classe</h3><br /><br />
-                <div class="col-md-3 col-xs-12">
-                    <img src="<?=base_url("assets/statics/eleve/images/a4.jpg")?>" class="img-responsive img-thumbnail" style="">
-                </div>
-                <div class="col-md-9  col-xs-12">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua.<br /> Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat.</div>
-            </div>
-		</div>
+			<?php
+				foreach ($notifications as $notification) {
+			?>
+				<div class="row">
+					<div class="col-md-12">
+						<h3 class="text-center"> <?= $notification['title']?></h3><br /><br />
+						<div class="col-md-2 col-xs-12">
+							<img src="<?=base_url("assets/statics/eleve/images/logo.jpg")?>" class="img-responsive img-thumbnail" style="">
+						</div>
+						<div class="col-md-10  col-xs-12">
+						<?= $notification['message']?>.
+					<p style="font-size: 10px;"><span> <?= $notification['date']?></span></p></div>
+					</div>
+				</div>
                 <hr>
-            </br>
-		<div class="row">
-            <div class="col-md-12">
-                <h3 class="text-center"> Discours du prefet</h3><br /><br />
-                <div class="col-md-3 col-xs-12">
-                    <img src="<?=base_url("assets/statics/eleve/images/a4.jpg")?>" class="img-responsive img-thumbnail" style="">
-                </div>
-                <div class="col-md-9  col-xs-12">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua.<br /> Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat.</div>
-            </div>
-		</div>
-                <hr>
-            </br>
+			</br>
+			<?php }?>
     </div>
     
