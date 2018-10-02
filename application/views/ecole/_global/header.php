@@ -109,7 +109,7 @@
                 <ul class="nav" id="nav">
                     <li class="active"><?=anchor("ecole/index","Accueil")?></a></li>
                     <li><?=anchor("ecole/about","A Propos")?></li>
-                    <li><?=anchor("ecole/academics","Academie")?></li>
+                    <!-- <li><?=anchor("ecole/academics","Academie")?></li> -->
                     <li><?=anchor("ecole/admissions","Admission")?></li>
                     <li><?=anchor("ecole/courses","Cours")?></li>
                     <li><?=anchor("ecole/contact","Contact")?></li>
@@ -135,10 +135,10 @@
                     <article style="position: absolute; width:64%; opacity: 0;">
                         <div class=" cont span_2_of_3 client-main">
                             <div class="logo">
-                                <a href="#"><img src="<?=base_url("assets/statics/ecole/images/logo.png")?>" alt=""></a>
+                                <a href="#"><h1 class="text-center">Collège EDEN</h1></a>
                             </div>
                             <div class="slide-text">
-                                <p>Suspendisse commodo tempor sagittis! In justo est, sollicitudin eu scelerisque pretium, placerat.</p>
+                                <p>Travail</p>
                                 <span> </span>
                             </div>
                             <div class="clearfix"> </div>
@@ -147,10 +147,10 @@
                     <article style="position: absolute; width:64%; opacity: 0;">
                         <div class=" cont span_2_of_3  client-main">
                             <div class="logo">
-                                <a href="#"><img src="<?=base_url('assets/statics/ecole/images/logo.png')?>" alt=""></a>
+                            <a href="#"><h1 class="text-center">Collège EDEN</h1></a>
                             </div>
                             <div class="slide-text">
-                                <p>Suspendisse eget lobortis lacus, et elementum tortor. Praesent metus ligula, lacinia eu sodales sed,</p>
+                                <p>Qualité</p>
                                 <span> </span>
                             </div>
                             <div class="clearfix"> </div>
@@ -159,10 +159,10 @@
                     <article style="position: absolute; width:64%; opacity: 0;">
                         <div class="cont span_2_of_3  client-main">
                             <div class="logo">
-                                <a href="#"><img src="<?=base_url('assets/statics/ecole/images/logo.png')?>" alt=""></a>
+                            <a href="#"><h1 class="text-center">Collège EDEN</h1></a>
                             </div>
                             <div class="slide-text">
-                                <p>Vitae pellentesque nec, pharetra a orci. Praesent nunc nunc, egestas eget elementum sed; rutrum!</p>
+                                <p>Excellence</p>
                                 <span> </span>
                             </div>
                             <div class="clearfix"> </div>
