@@ -34,7 +34,7 @@
 						</div>
 					</div>
 					<div class="col-md-4 about-text-left">
-						<img src="<?=base_url("assets/statics/ecole/images/st-4.jpg")?>" alt="">
+						<img src="<?=base_url("assets/statics/ecole/images/st-2.jpg")?>" alt="">
 						<h5>Nos Standards</h5>
 						<p>Nous, College Eden de Lubumbashi avons convenu de promouvoir des échanges internationaux et culturels avec Eden Academy de l'australie dans l'intérêt des deux parties. Les activités futures de ce partenariat incluront le transfert d'étudiants, les formations du corps professoral et l'échange de professeurs.</p>
 						<div class="tool">
