@@ -119,7 +119,7 @@ if (!isset($title)) {
                 <ul class="nav" id="nav">
                     <li class="active"><?=anchor("ecole/index","Accueil")?></a></li>
                     <li><?=anchor("ecole/about","A Propos")?></li>
-                    <li><?=anchor("ecole/academics","Academie")?></li>
+                    <!-- <li><?=anchor("ecole/academics","Academie")?></li> -->
                     <li><?=anchor("ecole/admissions","Admission")?></li>
                     <li><?=anchor("ecole/courses","Cours")?></li>
                     <li><?=anchor("ecole/contact","Contact")?></li>
