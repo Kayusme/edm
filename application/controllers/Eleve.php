@@ -10,6 +10,12 @@ class Eleve  extends CI_Controller
         $this->load->model('eleve_model');
         $this->load->model('notifications_model');
         $this->load->model('devoir_model');
+        $this->load->model('statistique_model');
+        $this->load->model('cote_model');
+        $this->load->model('dispenser_model');
+        $this->load->model('parcourt_model');
+        $this->load->model('matiere_model');
+        
     }
     public function index()
     {
@@ -88,11 +94,7 @@ class Eleve  extends CI_Controller
     public function bulletin()
     {
         $data['title'] = "Resultats";
-        $this->load->model('statistique_model');
-        $this->load->model('cote_model');
-        $this->load->model('dispenser_model');
-        $this->load->model('parcourt_model');
-        $this->load->model('matiere_model');
+
 
         //La valeur de l'id de l'élève qui vient de la session sera placée là. 
         $data["eleve"] = 1;
@@ -130,11 +132,7 @@ class Eleve  extends CI_Controller
     {
         $data['title'] = "Statistiques";
         
-        $this->load->model('statistique_model');
-        $this->load->model('cote_model');
-        $this->load->model('dispenser_model');
-        $this->load->model('parcourt_model');
-        $this->load->model('matiere_model');
+        
 
         //La valeur de l'id de l'élève qui vient de la session sera placée là. 
         $data["eleve"] = 1;
