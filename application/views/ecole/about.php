@@ -34,9 +34,9 @@
 						</div>
 					</div>
 					<div class="col-md-4 about-text-left">
-						<img src="<?=base_url("assets/statics/ecole/images/st-4.jpg")?>" alt="">
+						<img src="<?=base_url("assets/statics/ecole/images/st-2.jpg")?>" alt="">
 						<h5>Nos Standards</h5>
-						<p>Nous, Complexe Scolaire Bellevue de Lubumbashi et Le College Bellevue de Washington avons convenu de promouvoir des échanges internationaux et culturels dans l'intérêt des deux parties. Les activités futures de ce partenariat incluront le transfert d'étudiants, les formations du corps professoral et l'échange de professeurs.</p>
+						<p>Nous, College Eden de Lubumbashi avons convenu de promouvoir des échanges internationaux et culturels avec Eden Academy de l'australie dans l'intérêt des deux parties. Les activités futures de ce partenariat incluront le transfert d'étudiants, les formations du corps professoral et l'échange de professeurs.</p>
 						<div class="tool">
 							<a class="tooltips" href="#">
 							<span>Lire plus</span></a>
@@ -52,18 +52,20 @@
 	<!-- <div class="success">-->
 		<div class="container">
 			<div class="row">
-                    <div class="col-md-8">
+                    <div class="col-md-6">
                         <div class="widget-main">
                             <div class="widget-main-title">
                                 <h4 class="widget-title">Notre partenaire</h4>
                             </div> <!-- /.widget-main-title -->
-                            <div class="widget-inner">
+                            <div class="widget-inner well">
                                 <div class="our-campus clearfix">
                                 	<table>
                                 		<tr>
-                                			<td><a href="#" title="Bellevue College, Washington" target="_blank"><img src="<?=base_url("assets/statics/ecole/images/logo.png")?>"></a></td>
+                                			<td><a href="#" title="Bellevue College, Washington" target="_blank" style="heigth=50px;"><img src="<?=base_url("assets/statics/ecole/images/logo_noir.png")?>" heigth="100" width="100" style="heigth=50px;"></a></td>
                                 			<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                                			<td><a href="#" title="Explore BC: Take the new virtual tour of Bellevue College" target="_blank"><img src="<?=base_url("assets/statics/ecole/images/logo.png")?>" heigth="400" width="400"></a></td>
+                                			<td><a href="#" title="Explore BC: Take the new virtual tour of Bellevue College" target="_blank" style="heigth=50px;"><img src="<?=base_url("assets/statics/ecole/images/bg2.jpg")?>" heigth="200" width="200"></a></td>
+											<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+											<td><a href="#" title="Explore BC: Take the new virtual tour of Bellevue College" target="_blank" style="heigth=50px;"><img src="<?=base_url("assets/statics/ecole/images/logo.png")?>" heigth="100" width="100"></a></td>
                                 		</tr>
                                 	</table>
                                 </div>
