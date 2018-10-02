@@ -51,52 +51,27 @@
 	<!--start-vision-->
 	<!-- <div class="success">-->
 		<div class="container">
-			<div class="success-main">
-				<div class="col-md-8 col-md-offset success-left">
-					<h3>Stratégies pour réussir</h3>
-					<div class="success-bottom">
-						<div class="success-bottom-left">
-							<h6>1</h6>
-						</div>
-						<div class="success-bottom-right">
-							<h5>Excepteur sint occaecat cupidatat non proident</h5>
-							<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit. Integer tristique eu mauris sed auctor. Cras in eros lobortis, consequat quam tincidunt, fermentum risus. Aenean eleifend interdum mauris, at mattis metus venenatis interdum. Suspendisse eu luctus nisl, sed condimentum mauris.</p>
-						</div>
-						<div class="clearfix"> </div>
-					</div>
-					<div class="success-bottom">
-						<div class="success-bottom-left">
-							<h6>2</h6>
-						</div>
-						<div class="success-bottom-right">
-							<h5>Integer tristique eu mau ris sed auctor</h5>
-							<p>Excepteur sint occaecat cupidatat non proident. Lorem ipsum dolor sit amet conse ctetur adipisicing elit. Integer tristi que eu mauris sed auctor. Cras in eros lobortis, consequat quam tincidunt, fermentum risus. Aenean eleifend interdum mauris, at mattis metus venenatis interdum.</p>
-						</div>
-						<div class="clearfix"> </div>
-					</div>
-					<div class="success-bottom">
-						<div class="success-bottom-left">
-							<h6>3</h6>
-						</div>
-						<div class="success-bottom-right">
-							<h5>luctus nisl sed condimentum maurim sociis</h5>
-							<p>Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel. Cursus eleifend, elit. Aenean auctor wisi et urna. Aliquam erat volutpat.consequat quam tincidunt, fermentum risus. Aenean eleifend interdum mauris, at mattis metus venenatis interdum.</p>
-						</div>
-						<div class="clearfix"> </div>
-					</div>
-					<div class="success-bottom">
-						<div class="success-bottom-left">
-							<h6>4</h6>
-						</div>
-						<div class="success-bottom-right">
-							<h5>Aenean eleifend interdum mauris,</h5>
-							<p>Ut tellus dolor, dapibus eget, elemen tum vel. Cursus eleifend, elit. Aenean auctor wisi et urna. Aliquam erat volutpat. Duis ac turpis. Integer rutrum ante eu lacus. Lorem ipsum dolo.consequat quam tincidunt, fermentum risus. Aenean eleifend interdum mauris, at mattis metus venenatis interdum.</p>
-						</div>
-						<div class="clearfix"> </div>
-					</div>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
+			<div class="row">
+                    <div class="col-md-8">
+                        <div class="widget-main">
+                            <div class="widget-main-title">
+                                <h4 class="widget-title">Notre partenaire</h4>
+                            </div> <!-- /.widget-main-title -->
+                            <div class="widget-inner">
+                                <div class="our-campus clearfix">
+                                	<table>
+                                		<tr>
+                                			<td><a href="#" title="Bellevue College, Washington" target="_blank"><img src="<?=base_url("assets/statics/ecole/images/logo.png")?>"></a></td>
+                                			<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                			<td><a href="#" title="Explore BC: Take the new virtual tour of Bellevue College" target="_blank"><img src="<?=base_url("assets/statics/ecole/images/logo.png")?>" heigth="400" width="400"></a></td>
+                                		</tr>
+                                	</table>
+                                </div>
+                            </div>
+                        </div> <!-- /.widget-main -->
+                    </div> <!-- /.col-md-12 -->
+                </div> <!-- /.row -->
 		</div>
 <!--</div> -->
 	<!--end-vision-->
+
