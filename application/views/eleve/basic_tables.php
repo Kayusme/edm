@@ -42,11 +42,11 @@
             <h3>Max</h3>
             <?php
               $totmax = 0;
-                foreach ($max as $maxi) {
+              foreach ($max as $maxim) {
             ?>
-            <p><?=$maxi?></p><br>
-            <?php $totmax = $totmax + $maxi;
-             }?>
+            <p><?=$maxim?></p><br>
+            <?php $totmax = $totmax + $maxim;
+             } ?>
           </div>
       </div>
       <?php $pourc = ($totcote / $totmax) * 100; ?>
