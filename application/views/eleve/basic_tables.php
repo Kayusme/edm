@@ -7,10 +7,10 @@
             <tr>
               <th>
                 
-                    <p>Nom : <?=$eleve['nom']?></p><br />
-                    <p>Post-nom : <?=$eleve['postnom']?></p><br />
-                    <p>Prenom : <?=$eleve['prenom']?></p><br />
-                    <p>Sexe : <?=$eleve['genre']?></p><br />
+                    <p>Nom : <?=$el['nom']?></p><br />
+                    <p>Post-nom : <?=$el['postnom']?></p><br />
+                    <p>Prenom : <?=$el['prenom']?></p><br />
+                    <p>Sexe : <?=$el['matricule']?></p><br />
                     <p>Classe : <?=$Classe?></p><br />
               </th>
             </tr>

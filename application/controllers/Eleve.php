@@ -94,7 +94,7 @@ class Eleve  extends CI_Controller
     public function bulletin()
     {
         $data['title'] = "Resultats";
-
+        $data['el'] =$this->eleve_model->selectEleve(1)[0];//On doit y recuperer la id de l'eleve par la SESSION
 
         //La valeur de l'id de l'élève qui vient de la session sera placée là. 
         $data["eleve"] = 1;
