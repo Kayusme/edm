@@ -103,11 +103,13 @@ class Eleve  extends CI_Controller
         $data["classe"] = $this->parcourt_model->selectClasseEleve($data["eleve"]);
         //Tableaux contenant tous les id de la table dispenser
         $data["id_cours_dispenses"] = $this->dispenser_model->selectIdDispenser($data["classe"]);
+        #$idclass = 1;
+        $data['cours'] = $this->eleve_model->selectCours($data["classe"]);
         
         //Tableaux contenant tous les id des matieres
         $data["matieres"] = $this->dispenser_model->selectIdMatiereDispenserByClasse($data["classe"]);
         //Liste des matières
-        for ($i=0; $i < count($data["matieres"]); $i++) { 
+        /*for ($i=0; $i < count($data["matieres"]); $i++) { 
 
             if ($i != count($data["matieres"]) - 1) {
                 $data["cours"] = '"'.$this->matiere_model->selectNomMatiere($data["matieres"][$i]).'",';
@@ -115,7 +117,7 @@ class Eleve  extends CI_Controller
                 $data["cours"] .= '"'.$this->matiere_model->selectNomMatiere($data["matieres"][$i]).'"';
             }         
 
-        }
+        }*/
         foreach ($data["id_cours_dispenses"] as $id_cours_dispense) {
             $data['cote'] = $this->cote_model->selectCote($id_cours_dispense,1,$data["eleve"]);
         }
