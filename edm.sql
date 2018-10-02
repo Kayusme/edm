@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost
--- Généré le :  sam. 29 sep. 2018 à 17:41
+-- Généré le :  mar. 02 oct. 2018 à 13:50
 -- Version du serveur :  10.1.22-MariaDB
 -- Version de PHP :  7.1.4
 
@@ -111,6 +111,14 @@ CREATE TABLE `devoir` (
   `questionnaire` text NOT NULL,
   `link` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Déchargement des données de la table `devoir`
+--
+
+INSERT INTO `devoir` (`id`, `idMatiere`, `idClass`, `date_debut`, `date_depot`, `questionnaire`, `link`) VALUES
+(1, 1, 1, '2018-10-01 13:11:16', '2018-10-03 09:30:00', 'calculer la vitesse d\'une balle tire dans un espace ou l\'air souffle a une vitesse de 20km/h dans le sens oppose de la balle; sachant que la balle pese 200g', '#'),
+(2, 4, 1, '2018-10-02 12:00:00', '2018-10-04 07:30:00', 'donnez une sythese breve de la guere de 100 ans', '#');
 
 -- --------------------------------------------------------
 
@@ -311,8 +319,8 @@ CREATE TABLE `notifications` (
 --
 
 INSERT INTO `notifications` (`id`, `title`, `message`, `read_n`, `date`) VALUES
-(1, 'Salutation', 'Shekinah est malade', 0, '2018-09-28 00:00:00'),
-(2, 'Vacances Termine', 'Les vacs sont finis', 0, '2018-09-29 00:00:00');
+(1, 'Salutation', 'Shekinah est malade', 0, '2018-09-28 08:26:00'),
+(2, 'Vacances Termine', 'Les vacs sont finis', 0, '2018-09-29 07:32:16');
 
 -- --------------------------------------------------------
 
@@ -637,7 +645,7 @@ ALTER TABLE `cote`
 -- AUTO_INCREMENT pour la table `devoir`
 --
 ALTER TABLE `devoir`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT pour la table `dispenser`
 --
