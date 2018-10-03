@@ -117,10 +117,10 @@
           </div>
       </div>
       <?php if ($totcote1 != 0) {
-              $pourc1 = ($totcote1 / $totmax) * 100;
+              $pourc1 = ($totcote1 / $totmaxe) * 100;
             } else { $pourc1= 0;}
             if ($totcote2 != 0) {
-              $pourc1 = ($totcote2 / $totmax) * 100;
+              $pourc2 = ($totcote2 / $totmaxe) * 100;
             } else { $pourc2= 0;}
             if ($totcote3 != 0) {
               $pourc3 = ($totcote3 / $totmaxe) * 100;
@@ -150,14 +150,14 @@
           <div class="col-md-4 b">
             <p><b>Pourcentage</b></p>
           </div>
-          <div class="col-md-1 b">-</div>
+          <div class="col-md-1 b" style="background:black;">-</div>
           <div class="col-md-1 b">
             <p><b><?php echo $pourc1." % "; ?></b></p>
           </div>
           <div class="col-md-1 b">
             <p><b><?php echo $pourc2." % "; ?></b></p>
           </div>
-          <div class="col-md-1 b">-</div>
+          <div class="col-md-1 b" style="background:black;">-</div>
           <div class="col-md-1 b"><?php echo $pourc3." % "; ?></div>
       </div>
       <div class="clearfix"></div>
