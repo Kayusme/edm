@@ -7,12 +7,12 @@
             <tr>
               <th>
                 
-                    <p>Nom : <?=$el['nom']?></p><br />
-                    <p>Post-nom : <?=$el['postnom']?></p><br />
-                    <p>Prenom : <?=$el['prenom']?></p><br />
-                    <p>matricule : <?=$el['matricule']?></p><br />
-                    <p>Sexe : <?=$el['genre']?></p><br />
-                    <p>Classe : <?=$classe?></p><br />
+                    <p>Nom : <?=strtoupper($el['nom'])?></p><br />
+                    <p>Post-nom : <?=strtoupper($el['postnom'])?></p><br />
+                    <p>Prenom : <?=strtoupper($el['prenom'])?></p><br />
+                    <p>matricule : <?=strtoupper($el['matricule'])?></p><br />
+                    <p>Sexe : <?=strtoupper($el['genre'])?></p><br />
+                    <p>Classe : <?=strtoupper($classe)?></p><br />
               </th>
             </tr>
           </table>
