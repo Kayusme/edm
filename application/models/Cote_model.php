@@ -23,11 +23,11 @@ class Cote_model extends CI_Model
         $this->db->where('idEleve', $id_eleve);
         $this->db->from('cote');
         $re = $this->db->get()->result_array();
-        #$lignes = $this->db->get();
-        
-        #foreach ($lignes->result() as $ligne) {
+        #$lignes = $this->db->get()->resul();
+
+        foreach ($lignes->result() as $ligne) {
             return $re;
-        #}
+        }
     }
 
 }
