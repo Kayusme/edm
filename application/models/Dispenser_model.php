@@ -65,7 +65,7 @@ class Dispenser_model extends CI_Model
 		$lignes = $this->db->get();
 
         foreach ($lignes->result() as $ligne) {
-            return $ligne;
+            return $ligne->maxi;
         }
 
     }
