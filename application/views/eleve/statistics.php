@@ -91,28 +91,28 @@
           data : [<?=$periode1?>]
         },
         {
-          fillColor : "#ef553a",
-          strokeColor : "#ef553a",
+          fillColor : "blue",
+          strokeColor : "blue",
           data : [<?=$periode2?>]
         },
         {
-          fillColor : "#ef553a",
-          strokeColor : "#ef553a",
+          fillColor : "green",
+          strokeColor : "green",
           data : [<?=$examen1?>]
         },
         {
-          fillColor : "#ef553a",
-          strokeColor : "#ef553a",
+          fillColor : "orange",
+          strokeColor : "orange",
           data : [<?=$periode3?>]
         },
         {
-          fillColor : "#ef553a",
-          strokeColor : "#ef553a",
+          fillColor : "pink",
+          strokeColor : "pink",
           data : [<?=$periode4?>]
         },
         {
-          fillColor : "#ef553a",
-          strokeColor : "#ef553a",
+          fillColor : "purple",
+          strokeColor : "purple",
           data : [<?=$examen2?>]
         }
       ]

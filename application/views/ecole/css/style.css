@@ -1024,7 +1024,7 @@ span.subscribe{
 	padding:0em 0 2em;
 }
 .price-grid:hover > .price-grid h4{
-	background:#eb5055;	
+	background:#1793d1;	
 }
 .price-grid h4{
 	font-size: 2em;
@@ -1036,7 +1036,7 @@ span.subscribe{
 	font-size: 1.2em;
 	color: #fff;
 	padding: 5px;
-	background: #eb5055;
+	background: #1793d1;
 	display: block;
 	font-weight: 600;
 }
@@ -1062,10 +1062,10 @@ ul.price-list li{
 }
 .price-grid a:hover, a.a-act{
 	border:0;
-	background:#eb5055;
+	background:#1793d1;
 }
 h4.p_act{
-	background:#eb5055;
+	background:#1793d1;
 	color:#fff;
 }
 small.sm_act{
@@ -1371,7 +1371,7 @@ ul#filters {
 	font-size:15px;
 }
 .port-bttn a:hover{
-	color:#E74C3C;
+	color:#1793d1;
 	text-decoration:none;
 }
 /*--Portfolio Part Ends Here --*/
