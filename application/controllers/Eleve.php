@@ -107,7 +107,10 @@ class Eleve  extends CI_Controller
         //Tableaux contenant tous les id des matieres
         $data["matieres"] = $this->dispenser_model->selectIdMatiereDispenserByClasse($data["classe"]);
         foreach ($data["id_cours_dispenses"] as $id_cours_dispense) {
-            $data['cote'] = $this->cote_model->selectCote($id_cours_dispense,1,$data["eleve"]);
+            $data['p1'] = $this->cote_model->selectCote($id_cours_dispense,1,$data["eleve"]);
+        }
+        foreach ($data["id_cours_dispenses"] as $id_cours_dispense) {
+            $data['p2'] = $this->cote_model->selectCote($id_cours_dispense,1,$data["eleve"]);
         }
         foreach ($data["matieres"] as $matiere) {
             $data['max'] = $this->dispenser_model->selectMaximum($data["classe"],$matiere);

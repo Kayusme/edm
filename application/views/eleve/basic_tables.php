@@ -29,16 +29,6 @@
             <?php }?>
           </div>
           <div class="col-md-4">
-            <h3>Cotes</h3>
-            <?php
-              $totcote= 0;
-                foreach ($cote as $cotes) {
-            ?>
-            <p><?=$cotes?></p><br>
-            <?php $totcote= $totcote + $cotes;
-             }?>
-          </div>
-          <div class="col-md-4">
             <h3>Max</h3>
             <?php
               $totmax = 0;
@@ -48,25 +38,53 @@
             <?php $totmax = $totmax + $maxim;
              } ?>
           </div>
+          <div class="col-md-2">
+            <h3>1e p</h3>
+            <?php
+              $totcote1= 0;
+                foreach ($p1 as $cotes) {
+            ?>
+            <p><?=$cotes?></p><br>
+            <?php $totcote1= $totcote1 + $cotes;
+             }?>
+          </div>
+          <div class="col-md-2">
+            <h3>2e p</h3>
+            <?php
+              $totcote2= 0;
+                foreach ($p2 as $cotes) {
+            ?>
+            <p><?=$cotes?></p><br>
+            <?php $totcote2= $totcote2 + $cotes;
+             }?>
+          </div>
       </div>
-      <?php $pourc = ($totcote / $totmax) * 100; ?>
+      <?php $pourc1 = ($totcote1 / $totmax) * 100;
+            $pourc2 = ($totcote2 / $totmax) * 100;
+       ?>
       <div class="row">
         <div class="col-md-4">
           <p><b>Total</b></p>
         </div>
         <div class="col-md-4">
-          <p><b><?=$totcote?></b></p>
-        </div>
-        <div class="col-md-4">
           <p><b><?=$totmax?></b></p>
+        </div>
+        <div class="col-md-2">
+          <p><b><?=$totcote1?></b></p>
+        </div>
+        <div class="col-md-2">
+          <p><b><?=$totcote2?></b></p>
         </div>
       </div>
       <div class="row">
           <div class="col-md-4">
             <p><b>Pourcentage</b></p>
           </div>
-          <div class="col-md-4">
-            <p><b><?php echo $pourc." % "; ?></b></p>
+          <div class="col-md-2">
+            <p><b><?php echo $pourc1." % "; ?></b></p>
+          </div>
+          <div class="col-md-2">
+            <p><b><?php echo $pourc2." % "; ?></b></p>
           </div>
           <div class="col-md-4"></div>
       </div>
