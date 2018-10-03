@@ -28,48 +28,7 @@
 								<td>Thornton</td>
 								<td>@fat</td>
 							</tr>
-							<tr>
-								<td>2 heure</td>
-								<td>Jacob</td>
-								<td>Thornton</td>
-                                <td>@fat</td>
-                                <td>Jacob</td>
-								<td>Thornton</td>
-								<td>@fat</td>
-							</tr>
-							<tr>
-								<td>3 heure</td>
-								<td>Larry</td>
-								<td>the Bird</td>
-                                <td>@twitter</td>
-                                <td>Jacob</td>
-								<td>Thornton</td>
-								<td>@fat</td>
-                            </tr>
-                            <tr>
-								<td>4 heure</td>
-								<td>Mark</td>
-								<td>Otto</td>
-                                <td>@mdo</td>
-                                <td>Jacob</td>
-								<td>Thornton</td>
-								<td>@fat</td>
-							</tr>
-							<tr>
-								<td>5 heure</td>
-								<td>Jacob</td>
-								<td>Thornton</td>
-								<td>@fat</td>
-							</tr>
-							<tr>
-								<td>6 heure</td>
-								<td>Larry</td>
-								<td>the Bird</td>
-                                <td>@twitter</td>
-                                <td>Jacob</td>
-								<td>Thornton</td>
-								<td>@fat</td>
-							</tr>
+							
 						</tbody>
 					</table>
 				</div>
