@@ -204,7 +204,7 @@ class Eleve  extends CI_Controller
         $i = 0;
 
         foreach ($data["id_cours_dispenses"] as $id_cours_dispense) {
-            $cote[$i] = $this->cote_model->selectCote($id_cours_dispense,1,$data["eleve"]);
+            $cote[$i] = $this->cote_model->selectCote1($id_cours_dispense,1,$data["eleve"]);
             $i++;
         }
 
