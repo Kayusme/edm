@@ -1,64 +1,78 @@
  
 <div id="page-wrapper">
-    <div class="col-md-2"></div>
-<!--    <div class="col-md-8">-->
-<!--        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><h1>CONFER DISK DUR  DE AMPIRE</h1>-->
-<!--    </div>-->
-    <h1 class="">Journal de Classe</h1>
-    <div class="col-md-8 inbox_right">
-        <form action="#" method="GET">
-            <div class="input-group">
-                <input type="text" name="search" class="form-control1 input-search" placeholder="Search...">
-                <span class="input-group-btn">
-                        <button class="btn btn-success" type="button"><i class="fa fa-search"></i></button>
-                    </span>
-            </div><!-- Input Group -->
-        </form>
-        <div class="mailbox-content">
-
-            <table class="table">
-                <tbody>
-                <?php
-                foreach ($resultats as $resultat) {
-                ?>
-                <tr class="unread checked">
-                    <td class="hidden-xs">
-                        <i class="fa fa-star icon-state-warning"></i>
-                    </td>
-                    <td class="">
-                        <?= $resultat['jour.nom']?>
-                    </td>
-                    <td>
-                        De <?= $resultat['horaire.heureDebut']?> à <?= $resultat['horaire.heureFin']?>
-                    </td>
-                    <td>
-                    </td>
-                    <td>
-                        <?= $resultat['horaire.date']?>
-                    </td>
-                </tr>
-                <?php }?>
-                <tr class="unread checked">
-                    <td class="hidden-xs">
-                        <i class="fa fa-star icon-state-warning"></i>
-                    </td>
-                    <td class="">
-                        Mardi
-                    </td>
-                    <td>
-                        6h de cours : de 7h 30 à 12h 50
-                    </td>
-                    <td>
-                    </td>
-                    <td>
-                        13 septembre
-                    </td>
-                </tr>
-
-                </tbody>
-            </table>
-        </div>
-    </div>
-    <div class="clearfix"></div>
+    <div class="panel panel-default" data-widget="{&quot;draggable&quot;: &quot;false&quot;}" data-widget-static="">
+				<div class="panel-heading">
+					<h1><?=$title?></h1>
+					<div class="panel-ctrls" data-actions-container="" data-action-collapse="{&quot;target&quot;: &quot;.panel-body&quot;}"><span class="button-icon has-bg"><i class="ti ti-angle-down"></i></span></div>
+				</div>
+				<div class="panel-body no-padding" style="display: block;">
+					<table class="table table-striped">
+						<thead>
+							<tr class="default">
+								<th>Jours</th>
+								<th>Lundi</th>
+								<th>Mardi</th>
+                                <th>Mercredi</th>
+                                <th>Jeudi</th>
+                                <th>Vendredi</th>
+                                <th>Samedi</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1 heure</td>
+								<td>Mark</td>
+								<td>Otto</td>
+                                <td>@mdo</td>
+                                <td>Jacob</td>
+								<td>Thornton</td>
+								<td>@fat</td>
+							</tr>
+							<tr>
+								<td>2 heure</td>
+								<td>Jacob</td>
+								<td>Thornton</td>
+                                <td>@fat</td>
+                                <td>Jacob</td>
+								<td>Thornton</td>
+								<td>@fat</td>
+							</tr>
+							<tr>
+								<td>3 heure</td>
+								<td>Larry</td>
+								<td>the Bird</td>
+                                <td>@twitter</td>
+                                <td>Jacob</td>
+								<td>Thornton</td>
+								<td>@fat</td>
+                            </tr>
+                            <tr>
+								<td>4 heure</td>
+								<td>Mark</td>
+								<td>Otto</td>
+                                <td>@mdo</td>
+                                <td>Jacob</td>
+								<td>Thornton</td>
+								<td>@fat</td>
+							</tr>
+							<tr>
+								<td>5 heure</td>
+								<td>Jacob</td>
+								<td>Thornton</td>
+								<td>@fat</td>
+							</tr>
+							<tr>
+								<td>6 heure</td>
+								<td>Larry</td>
+								<td>the Bird</td>
+                                <td>@twitter</td>
+                                <td>Jacob</td>
+								<td>Thornton</td>
+								<td>@fat</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
 <!--    <div class="col-md-2"></div>-->
 </div>

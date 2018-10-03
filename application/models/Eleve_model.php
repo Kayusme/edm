@@ -12,14 +12,8 @@ class Eleve_model extends CI_Model
         $q = $this->db->get();
 
         $user = $q->row_array();
-
-        // var_dump(password_hash('kkvvddii',PASSWORD_BCRYPT));die();
-
-        // var_dump(password_verify($password, $user['pwd']));die();
         if($user['pwd']){
             if(password_verify($password, $user['pwd'])){
-                // print_r($user);
-                  // var_dump($user);die();
                 return $user;
             }
             // else{
@@ -51,6 +45,14 @@ class Eleve_model extends CI_Model
         $this->db->where('c.id',$idClass);
         $res = $this->db->get()->result_array();
         // var_dump($res = $this->db->get());die();
+
+        return $res;
+    }
+    function selectEleve($idEleve){
+        $this->db->select('*');
+        $this->db->from('eleve');
+        $this->db->where('id',$idEleve);
+        $res = $this->db->get()->result_array();
 
         return $res;
     }

@@ -63,35 +63,27 @@
                 <li class="dropdown-menu-header text-center">
                     <strong>Profil</strong>
                 </li>
-                <!-- include php database -->
-                <?php
-                    // var_dump($notifications);die();
-                    // $count = count(if($notifications['read_n']));
-
-                    //if($pdo){echo "<h1><b>connected</b></h1>";}
-                ?>
-
                 <li class="m_2"><a href="<?=base_url("Eleve/inbox")?>"><i class="fa fa-bell-o"></i> Notification <span class="label label-info"><?=$count?></span></a></li>
-                <li class="m_2"><a href="<?=base_url("Eleve/compose")?>"><i class="fa fa-envelope-o"></i> Messages <span class="label label-success">2</span></a></li>
-                <li class="m_2"><a href="<?=base_url("Eleve/devoir")?>"><i class="fa fa-tasks"></i> Devoirs <span class="label label-danger">6</span></a></li>
+                <li class="m_2"><a href="<?=base_url("Eleve/compose")?>"><i class="fa fa-envelope-o"></i> Messages <span class="label label-success">0</span></a></li>
+                <li class="m_2"><a href="<?=base_url("Eleve/devoir")?>"><i class="fa fa-tasks"></i> Devoirs <span class="label label-danger">2</span></a></li>
                     <br /><br /><strong style="margin-left: 40%">Settings</strong><br />
                 </li>
                 <li class="m_2"><a href="<?=base_url("Eleve/profile")?>"><i class="fa fa-user"></i> Profile</a></li>
-                <li class="m_2"><a href="<?=base_url("Eleve/blog")?>"><i class="fa fa-users icon_1"></i> Blog <span class="label label-default">4</span></a></li>
+                <!-- <li class="m_2"><a href="<?=base_url("Eleve/blog")?>"><i class="fa fa-users icon_1"></i> Blog <span class="label label-default">4</span></a></li> -->
                 <li class="divider"></li>
                 <li class="m_2"><a href="#"><i class="fa fa-shield"></i> Lock Profile</a></li>
                 <li class="m_2"><a href="logout"><i class="fa fa-lock"></i> Logout</a></li>
             </ul>
         </li>
     </ul>
-    <form class="navbar-form navbar-right">
+    <!-- <form class="navbar-form navbar-right">
         <input type="text" class="form-control" value="Search..." onfocus="this.value = '';" onblur="if (this.value === '') {this.value = 'Search...';}">
-    </form>
+    </form> -->
     <div class="navbar-default sidebar" role="navigation">
         <div class="sidebar-nav navbar-collapse">
             <ul class="nav" id="side-menu">
                 <li>
-                    <a href="index.html"><i class="fa fa-dashboard fa-fw nav_icon"></i>Acceuil</a>
+                    <a href="<?=base_url("eleve/index.html")?>"><i class="fa fa-dashboard fa-fw nav_icon"></i>Acceuil</a>
                 </li>
                 <li>
                     <a href="#"><i class="fa fa-indent nav_icon"></i>Cours<span class="fa arrow"></span></a>
@@ -102,11 +94,7 @@
                         <li>
                             <?=anchor("eleve/cours","Cours")?>
                         </li>
-<!--                        <li>-->
-<!--                            <a href="typography.html">Typography</a>-->
-<!--                        </li>-->
                     </ul>
-                    <!-- /.nav-second-level -->
                 </li>
                 <li>
                     <a href="#"><i class="fa fa-envelope nav_icon"></i>Messageries<span class="fa arrow"></span></a>

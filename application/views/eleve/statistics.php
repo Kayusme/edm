@@ -1,23 +1,86 @@
 <div id="page-wrapper">
   <div class="col-md-12 graphs">
-
     <h3 class="text-center">Evolutions statistique</h3>
            <div class="graph_box1">
-
               <div class="col-md-12 grid_2">
                 <div class="grid_1">
 <!--                <h3>Bar</h3>-->
                   <canvas id="bar" height="500" width="1000" style="width: 1000px; height: 500px;"></canvas>
                 </div>
               </div>
-              <div class="col-md-12 grid_2">
+              <div class="col-md-6 grid_2">
                 <div class="grid_1">
 <!--                <h3>Pie</h3>-->
-                  <canvas id="pie" height="500" width="1000" style="width: 1000px; height: 500px;"></canvas>
+                  <canvas id="pie" height="400" width="400" style="width: 400px; height: 400px;"></canvas>
                 </div>
               </div>
-              <div class="clearfix"> </div>
+              <div class="col-md-6 grid_2">
+                <form action="">
+                  <select name="" id="" class="form-control">
+                      <option value="1">1 Periode</option>
+                      <option value="2">2 Periode</option>
+                      <option value="3">Exam 1</option>
+                      <option value="4">3 Periode</option>
+                  </select>
+                </form>
+                <div class="grid_1">
+                  <div id="chart"></div>
+                </div>
+              </div>
+				<script>
+
+			var seriesData = [ [], [], [], [], [] ];
+			var random = new Rickshaw.Fixtures.RandomData(50);
+
+			for (var i = 0; i < 75; i++) {
+				random.addData(seriesData);
+			}
+
+			var graph = new Rickshaw.Graph( {
+				element: document.getElementById("chart"),
+				renderer: 'multi',
+				
+				dotSize: 5,
+				series: [
+					{
+						name: 'temperature',
+						data: seriesData.shift(),
+						color: '#AFE9FF',
+						renderer: 'stack'
+					}, {
+						name: 'heat index',
+						data: seriesData.shift(),
+						color: '#FFCAC0',
+						renderer: 'stack'
+					}, {
+						name: 'dewpoint',
+						data: seriesData.shift(),
+						color: '#555',
+						renderer: 'scatterplot'
+					}, {
+						name: 'pop',
+						data: seriesData.shift().map(function(d) { return { x: d.x, y: d.y / 4 } }),
+						color: '#555',
+						renderer: 'bar'
+					}, {
+						name: 'humidity',
+						data: seriesData.shift().map(function(d) { return { x: d.x, y: d.y * 1.5 } }),
+						renderer: 'line',
+						color: '#ef553a'
+					}
+				]
+			} );
+
+
+			graph.render();
+
+			var detail = new Rickshaw.Graph.HoverDetail({
+				graph: graph
+			});
+				</script>
+		</div>
             </div>
+            
             <script>
     var barChartData = {
       labels : [<?=$cours?>],
@@ -28,48 +91,51 @@
           data : [<?=$periode1?>]
         },
         {
-          fillColor : "#ef553a",
-          strokeColor : "#ef553a",
+          fillColor : "blue",
+          strokeColor : "blue",
           data : [<?=$periode2?>]
         },
         {
-          fillColor : "#ef553a",
-          strokeColor : "#ef553a",
+          fillColor : "green",
+          strokeColor : "green",
           data : [<?=$examen1?>]
         },
         {
-          fillColor : "#ef553a",
-          strokeColor : "#ef553a",
+          fillColor : "orange",
+          strokeColor : "orange",
           data : [<?=$periode3?>]
         },
         {
-          fillColor : "#ef553a",
-          strokeColor : "#ef553a",
+          fillColor : "pink",
+          strokeColor : "pink",
           data : [<?=$periode4?>]
         },
         {
-          fillColor : "#ef553a",
-          strokeColor : "#ef553a",
+          fillColor : "purple",
+          strokeColor : "purple",
           data : [<?=$examen2?>]
         }
       ]
       
     };
     var pieData = [
+      <?php for ($i=0; $i < count($resultats); $i++) { 
+        if ($i != count($resultats) - 1) {
+      ?>
         {
-            value: 30,
+            value: <?=$resultats[$i]?>,
             color:"#ef553a"
         },
+      <?php 
+        } else { 
+      ?>
         {
-            value : 50,
-            color : "#00aced"
-        },
-        {
-            value : 100,
-            color : "#69D2E7"
+            value: <?=$resultats[$i]?>,
+            color:"#ef553a"
         }
-
+      <?php } } ?>
     ];
+      
   var chartData = [
       {
         value : Math.random(),

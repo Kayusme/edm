@@ -36,30 +36,26 @@
 
 							<div class="blog-top">
 							<div class="blog-left_w3_agileinfo">
-								<b>03</b>
-								<span>Mai</span>
+								<b><?=date('d')?></b>
+								<span><?=date('m')?></span>
 							</div>
 							<div class="top-blog_wthree_agileits">
 								<h5 class="w3ls_single_agileinfo">Bienvenue chez Eduque-Moi</h5>
-								<p>Posté par <a href="#">Admin</a> en <a href="#">General</a> | <a href="#">10 Commentaires</a></p>
-								<p class="para-w3-agile">Le désir constant de se dépasser et d’offrir des produits et services de qualité supérieure fait littéralement partie de nos gènes.
-                                    Chaque membre de notre équipe oeuvre avec passion, Rigueur et porte une attention particulière à la qualité de son travail.</p>
+								<p class="para-w3-agile" style=" text-align: justify;text-justify: inter-word;"><a href="eduquemoi.org">Eduque-Moi</a> est un programme  Digital Utilisant la technologie de pointe  caractérisé dans le TICE dont le but principal est d’apporter une solution innovante dans la gestion de la communication entre  les acteurs principaux de l’enseignement à communiquer efficacement entre eux, des nouvelles importantes liées à des situations régulières, inhabituelles voire exceptionnelles des activités scolaires et parascolaires en temps réel et appuyer  l’EPSP dans le suivi du respect au programme scolaire par les écoles. 
+								<br>Pour ce faire, le projet Eduque-Moi dispose de 3 plateformes, soit un centre d’administration, un site web et une application mobile. Le contenu de la dite plateformes est composé des  module suivants :</p>
 								<div class="col-md-6 md-in">
 						<ul class="grid-part">
-							<li><a href="#"><i class="fa fa-long-arrow-right"> </i>Sed ut perspiciatis unde omnis</a></li>
-							<li><a href="#"><i class="fa fa-long-arrow-right"> </i>Lorem ipsum dolor sit amet,  </a></li>
-							<li><a href="#"><i class="fa fa-long-arrow-right"> </i>Sed ut perspiciatis unde omnis</a></li>
-							<li><a href="#"><i class="fa fa-long-arrow-right"> </i>Lorem ipsum dolor sit amet,  </a></li>
-							<li><a href="#"><i class="fa fa-long-arrow-right"> </i>Sed ut perspiciatis unde omnis</a></li>
+							<li><a href="#"><i class="fa fa-long-arrow-right"> </i>Journal de classe électronique</a></li>
+							<li><a href="#"><i class="fa fa-long-arrow-right"> </i>Peformance eleve</a></li>
+							<li><a href="#"><i class="fa fa-long-arrow-right"> </i>Tutorat</a></li>
+							<li><a href="#"><i class="fa fa-long-arrow-right"> </i>Jeux concours eleves </a></li>
 						</ul>
 						</div>
 						<div class="col-md-6 md-in">
 						<ul class="grid-part">
-							<li><a href="#"><i class="fa fa-long-arrow-right"> </i>Sed ut perspiciatis unde omnis</a></li>
-							<li><a href="#"><i class="fa fa-long-arrow-right"> </i>Lorem ipsum dolor sit amet,  </a></li>
-							<li><a href="#"><i class="fa fa-long-arrow-right"> </i>Sed ut perspiciatis unde omnis</a></li>
-							<li><a href="#"><i class="fa fa-long-arrow-right"> </i>Lorem ipsum dolor sit amet,  </a></li>
-							<li><a href="#"><i class="fa fa-long-arrow-right"> </i>Sed ut perspiciatis unde omnis</a></li>
+							<li><a href="#"><i class="fa fa-long-arrow-right"> </i>Bulletin électronique</a></li>
+							<li><a href="#"><i class="fa fa-long-arrow-right"> </i> Suivis evolution des cours</a></li>
+							<li><a href="#"><i class="fa fa-long-arrow-right"> </i>Paiement mobile </a></li>
 						</ul>
 						</div>
 						<div class="clearfix"> </div>
@@ -67,147 +63,23 @@
 							<div class="clearfix"> </div>
 					</div>
 					</div>	
-		<div class="single-middle">
-			
-			<h3>3 Commentaires</h3>
-				<div class="media">
-				  <div class="media-left">
-					<a href="#">
-					  <img class="media-object" src="<?=base_url("assets/statics/eduquemoi/images/co1.jpg")?>" alt="">
-					</a>
-				  </div>
-				  <div class="media-body">
-					<h4 class="media-heading"><a href="#">Jonathan YOMBO</a></h4>
-						<p>Bonjour, je laisse un commentaire...donc! la page, elle est pas mal, le design assez bon et l'interactivité aussi j'aime bien...</p>
-				  </div>
-				</div>
-				<div class="media in-media">
-				  <div class="media-left">
-					<a href="#">
-					  <img class="media-object" src="<?=base_url("assets/statics/eduquemoi/images/co2.jpg")?>" alt="">
-					</a>
-				  </div>
-				   <div class="media-body">
-					<h4 class="media-heading"><a href="#">Helène BAGAYA</a></h4>
-						<p>C'est une bonne et très belle initiative, j'encourage les concepteurs...  </p>
-				  </div>
-				</div>
-				<div class="media">
-				  <div class="media-left">
-					<a href="#">
-					  <img class="media-object" src="<?=base_url("assets/statics/eduquemoi/images/co3.jpg")?>" alt="">
-					</a>
-				  </div>
-				  <div class="media-body">
-					<h4 class="media-heading"><a href="#">Emmanuel MAKABU</a></h4>
-						<p>Très belle initiative... </p>
-				  </div>
-				</div>
-			<div class="clearfix"> </div>
-		</div>
-		<div class="single-bottom">
-		
-			<h3>Laisser un commentaire</h3>
-				<form action="#" method="post">
-						<div class="col-md-4 comment">
-						<input type="text" placeholder="Votre nom" name="Your Name" required="" />
-						</div>
-						<div class="col-md-4 comment">
-						<input type="email" placeholder="Votre Email" name="Your Mail" required="" />
-						</div>
-						<div class="col-md-4 comment">
-						<input type="text" placeholder="Votre sujet" name="Your Subject" />
-						</div>
-						<div class="clearfix"> </div>
-						<textarea placeholder="Votre message" name="Message" required=""></textarea>
-						
-							<input type="submit" value="ENVOYER" >
-						
-				</form>
-			</div>
+		<div class="single-middle"></div>
+		<div class="single-bottom"></div>
 <!-- //Single-page -->
 			</div>
 			<div class="col-md-3 agile-blog-sidebar">
-<!--		<div class="w3l-blog-list">-->
-<!--	     	<h4>Our courses</h4>-->
-<!--			<ul>-->
-<!--				<li><a href="#"><i class="fa fa-long-arrow-right"> </i>Lorem ipsum dolor</a></li>-->
-<!--				<li><a href="#"><i class="fa fa-long-arrow-right"> </i>eiusmod tempor</a></li>-->
-<!--				<li><a href="#"><i class="fa fa-long-arrow-right"> </i>adipisicing elit</a></li>-->
-<!--				<li><a href="#"><i class="fa fa-long-arrow-right"> </i>eiusmod tempor</a></li>-->
-<!--				<li><a href="#"><i class="fa fa-long-arrow-right"> </i>Lorem ipsum dolor</a></li>-->
-<!--				<li><a href="#"><i class="fa fa-long-arrow-right"> </i>At vero eos et accusamus</a></li>-->
-<!--				<li><a href="#"><i class="fa fa-long-arrow-right"> </i>adipisicing elit</a></li>-->
-<!--			</ul>-->
-<!--			-->
-<!--			<div class="clearfix"> </div>-->
-<!--		 </div>-->
+
 		 <div class="w3ls_recent_posts">
-					<h3>Publications Récentes</h3>
-             <?php
-             $resultats = imgFromDir("eduquemoi/images/g");
-             for ($i=0;$i<4;$i++) {
-                 ?>
-                 <div class="agileits_recent_posts_grid">
-                     <div class="agileits_recent_posts_gridl">
-                         <a href="single.php"><img src="<?=base_url($resultats[$i])?>" alt=" " class="img-responsive"></a>
-                     </div>
-                     <div class="agileits_recent_posts_gridr">
-                         <h4><a href="single.php">Personne <?=$i+1;?></a></h4>
-                         <ul>
-                             <li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><a href="#"><?=$i+1*2;?></a></li>
-                             <li><span class="glyphicon glyphicon-time" aria-hidden="true"></span>5:30 AM</li>
-                         </ul>
-                     </div>
-                     <div class="clearfix"> </div>
-                 </div>
-                 <?php
-             }
-             ?>
-				</div>
+			<h3 class="text-center">INTEGRITE</h3>
+			<p class="para-w3-agile" style=" text-align: justify;text-justify: inter-word;">Voilà une valeur fondamentale de notre entreprise. La transparence et l’honnêteté de notre équipe est gagée de la réputation viable que nous nous sommes forgée et qui nous permet aujourd’hui de rayonner aux 4 coins du de la nation congolaise.</p>
+		</div>
 		 <div class="blog-list1">
-	     	<h4>Nos évènements scolaires</h4>
-             <?php
-             $resultats = imgFromDir("eduquemoi/images/g");
-             for ($i=0;$i<4;$i++) {
-                 ?>
-                 <div class="blog-list-top">
-                     <div class="blog-img">
-                         <a href="gallery.php"><img class="img-responsive" src="<?=base_url($resultats[$i])?>" alt=""></a>
-                     </div>
-                     <div class="blog-text">
-                         <p><a href="gallery.php">Evenement <?=$i+1;?></a></p>
-                         <span class="link">
-						July 03, 2017
-					</span>
-                     </div>
-                     <div class="clearfix"> </div>
-                 </div>
-                 <?php
-             }
-             ?>
-		 </div>
-		  <div class="blog-list2">
-	     	<h4>Tags</h4>
-			<ul>
-				<li><a href="#">Lorem</a></li>
-				<li><a href="#">Ipsum</a></li>
-				<li><a href="#"> Dolor</a></li>
-				<li><a href="#">Sit</a></li>
-				<li><a href="#">Amet</a></li>
-				<li><a href="#">Lorem</a></li>
-				<li><a href="#">Ipsum</a></li>
-				<li><a href="#"> Dolor</a></li>
-				<li><a href="#">Sit</a></li>
-				<li><a href="#">Amet</a></li>
-				<li><a href="#">Ipsum</a></li>
-				<li><a href="#"> Dolor</a></li>
-			</ul>
+			 <h4 class="text-center">OBJECTIFS</h4>
+			 <p class="para-w3-agile" style=" text-align: justify;text-justify: inter-word;">Dans le souci Offrir ce qu´ il y’a de mieux et de toujours améliorer la qualité de nos services VALEURS ENGAGEMENT VERS L’EXCELLENCE le désir constant de se surpasser et d’offrir Des produits et services de qualité supérieure fait littéralement partie de nos gènes. Chaque Membre de notre équipe œuvre avec passion, Rigueur et porte une attention particulière à la Qualité de son travail.</p>
 		 </div>
 	 </div>
 			<div class="clearfix"> </div>
-
-		                  </div>
-	        </div>
-       </div>
+	</div>
+</div>
+</div>
 <!--//story-->

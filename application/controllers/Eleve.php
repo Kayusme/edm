@@ -9,21 +9,30 @@ class Eleve  extends CI_Controller
         $this->load->library('session');
         $this->load->model('eleve_model');
         $this->load->model('notifications_model');
+        $this->load->model('devoir_model');
+        $this->load->model('statistique_model');
+        $this->load->model('cote_model');
+        $this->load->model('dispenser_model');
+        $this->load->model('parcourt_model');
+        $this->load->model('matiere_model');
+        
     }
     public function index()
     {
 //        var_dump($this->session);die();
 //        $maSession = $this->session->userdata('matricule');
-        if ($this->session->has_userdata('matricule')){
+        // if ($this->session->has_userdata('matricule')){
             $data['title'] = "Page d'administration";
             $data['infos'] = $this->session->userdata;
+            $data['notifications'] = $this->notifications_model->selectNotifications();
+            $data['count'] = count($this->notifications_model->unreadNotifications());
             $this->load->view("eleve/_global/header",$data);
             $this->load->view("eleve/_global/nav");
             $this->load->view("eleve/index",$data);
             $this->load->view("eleve/_global/footer");
-        }else{
-            redirect("eleve/login");
-        }
+        // }else{
+        //     redirect("eleve/login");
+        // }
     }
 
     public function login()
@@ -85,6 +94,36 @@ class Eleve  extends CI_Controller
     public function bulletin()
     {
         $data['title'] = "Resultats";
+        $data['el'] =$this->eleve_model->selectEleve(1)[0];//On doit y recuperer la id de l'eleve par la SESSION
+
+        //La valeur de l'id de l'élève qui vient de la session sera placée là. 
+        $data["eleve"] = 1;
+
+        //Reccupère la dernière classe de l'élève
+        $data["classe"] = $this->parcourt_model->selectClasseEleve($data["eleve"]);
+        //Tableaux contenant tous les id de la table dispenser
+        $data["id_cours_dispenses"] = $this->dispenser_model->selectIdDispenser($data["classe"]);
+        #$idclass = 1;
+        $data['cours'] = $this->eleve_model->selectCours($data["classe"]);
+        
+        //Tableaux contenant tous les id des matieres
+        $data["matieres"] = $this->dispenser_model->selectIdMatiereDispenserByClasse($data["classe"]);
+        //Liste des matières
+        /*for ($i=0; $i < count($data["matieres"]); $i++) { 
+
+            if ($i != count($data["matieres"]) - 1) {
+                $data["cours"] = '"'.$this->matiere_model->selectNomMatiere($data["matieres"][$i]).'",';
+            } else {
+                $data["cours"] .= '"'.$this->matiere_model->selectNomMatiere($data["matieres"][$i]).'"';
+            }         
+
+        }*/
+        foreach ($data["id_cours_dispenses"] as $id_cours_dispense) {
+            $data['cote'] = $this->cote_model->selectCote($id_cours_dispense,1,$data["eleve"]);
+        }
+        foreach ($data["matieres"] as $matiere) {
+            $data['max'] = $this->dispenser_model->selectMaximum($data["classe"],$matiere);
+        }
         $this->load->view("eleve/_global/header",$data);
         $this->load->view("eleve/_global/nav");
         $this->load->view("eleve/basic_tables",$data);
@@ -95,11 +134,7 @@ class Eleve  extends CI_Controller
     {
         $data['title'] = "Statistiques";
         
-        $this->load->model('statistique_model');
-        $this->load->model('cote_model');
-        $this->load->model('dispenser_model');
-        $this->load->model('parcourt_model');
-        $this->load->model('matiere_model');
+        
 
         //La valeur de l'id de l'élève qui vient de la session sera placée là. 
         $data["eleve"] = 1;
@@ -144,11 +179,14 @@ class Eleve  extends CI_Controller
 
             if ($i != count($max) - 1) {
                 $data["periode1"] = $this->statistique_model->pourcentage($cote[$i], $max[$i]).", ";
+                $resulat[$i] =  $this->statistique_model->pourcentage($cote[$i], $max[$i]);
             } else {
                 $data["periode1"] .= $this->statistique_model->pourcentage($cote[$i], $max[$i]);
+                $resulat[$i] =  $this->statistique_model->pourcentage($cote[$i], $max[$i]);
             }         
 
         }
+        $data["resultats"] = $resulat;
 
         //Fin de la reccupération des points de la période 1
 
@@ -272,7 +310,8 @@ class Eleve  extends CI_Controller
         }
 
         //Fin de la reccupération des points de l'examen 2
-
+        
+        $data['count'] = count($this->notifications_model->unreadNotifications());
         $this->load->view("eleve/_global/header",$data);
         $this->load->view("eleve/_global/nav");
         $this->load->view("eleve/statistics",$data);
@@ -283,6 +322,7 @@ class Eleve  extends CI_Controller
         $data['title'] = "Cours";
         $idclass = 1;
         $data['resultats'] = $this->eleve_model->selectCours($idclass);
+        $data['count'] = count($this->notifications_model->unreadNotifications());
 
         $this->load->view("eleve/_global/header",$data);
         $this->load->view("eleve/_global/nav");
@@ -293,7 +333,7 @@ class Eleve  extends CI_Controller
 
     public function inbox()
     {
-        $data['title'] = "Messageries";
+        $data['title'] = "Notifications";
         $data['notifications'] = $this->notifications_model->selectNotifications();
         $data['count'] = count($this->notifications_model->unreadNotifications());
         $this->load->view("eleve/_global/header",$data);
@@ -307,6 +347,7 @@ class Eleve  extends CI_Controller
         $data['title'] = "Horaire";
         $idclass = 1;
         $data['resultats'] = $this->eleve_model->selectHoraire($idclass);
+        $data['count'] = count($this->notifications_model->unreadNotifications());
 
         $this->load->view("eleve/_global/header",$data);
         $this->load->view("eleve/_global/nav");
@@ -317,6 +358,7 @@ class Eleve  extends CI_Controller
     public function blog()
     {
         $data['title'] = "Blog";
+        $data['count'] = count($this->notifications_model->unreadNotifications());
 
         $this->load->view("eleve/_global/header",$data);
         $this->load->view("eleve/_global/nav");
@@ -327,11 +369,10 @@ class Eleve  extends CI_Controller
     public function profile()
     {
         $data['infos'] = $this->session->userdata;
-        // var_dump($data['infos']);die();
-//        $this->load->helper('selectEleve');
-//        $data['eleve'] = selectEleve($data['infos']['id']);//On doit y recuperer la id de l'eleve par la SESSION
+       $data['eleve'] =$this->eleve_model->selectEleve(1)[0];//On doit y recuperer la id de l'eleve par la SESSION
         
         $data['title'] = "Profil";
+        $data['count'] = count($this->notifications_model->unreadNotifications());
 
         $this->load->view("eleve/_global/header",$data);
         $this->load->view("eleve/_global/nav");
@@ -342,6 +383,7 @@ class Eleve  extends CI_Controller
     public function compose()
     {
         $data['title'] = "Chat Box";
+        $data['count'] = count($this->notifications_model->unreadNotifications());
 
         $this->load->view("eleve/_global/header",$data);
         $this->load->view("eleve/_global/nav");
@@ -350,7 +392,10 @@ class Eleve  extends CI_Controller
     }
     public function devoir()
     {
+        $idclass= 1;
         $data['title'] = "Devoir";
+        $data['resultats'] = $this->devoir_model->selectDevoir($idclass);
+        $data['count'] = count($this->notifications_model->unreadNotifications());
 
         $this->load->view("eleve/_global/header",$data);
         $this->load->view("eleve/_global/nav");
