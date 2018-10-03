@@ -69,7 +69,7 @@ class Dispenser_model extends CI_Model
         }
 
     }
-
+    
     public function selectIdMatiereDispenserByAgent($id_agent)
     {
         $this->db->select('id');

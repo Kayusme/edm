@@ -115,9 +115,13 @@ class Eleve  extends CI_Controller
         foreach ($data["id_cours_dispenses"] as $id_cours_dispense) {
             $data['ex1'] = $this->cote_model->selectCote($id_cours_dispense,3,$data["eleve"]);
         }
+
+        $i=0;
         foreach ($data["matieres"] as $matiere) {
-            $data['max'] = $this->dispenser_model->selectMaximum($data["classe"],$matiere);
+            $max[$i] = $this->dispenser_model->selectMaximum($data["classe"],$matiere);
+            $i++;
         }
+        $data['max'] = $max;
         $data['count'] = count($this->notifications_model->unreadNotifications());
         $this->load->view("eleve/_global/header",$data);
         $this->load->view("eleve/_global/nav");
