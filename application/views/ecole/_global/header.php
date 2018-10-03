@@ -135,9 +135,9 @@
                     <article style="position: absolute; width:64%; opacity: 0;">
                         <div class=" cont span_2_of_3 client-main">
                             <div class="logo">
-                                <a href="#"><h1 class="text-center">Collège EDEN</h1></a>
+                                <a href="#"><h1 class="text-center" style="color:white; font-size:60px; font-weight:600">Collège EDEN</h1></a>
                             </div>
-                            <div class="slide-text">
+                            <div class="slide-text" style="font-size:30px;">
                                 <p>Travail</p>
                                 <span> </span>
                             </div>
@@ -147,9 +147,9 @@
                     <article style="position: absolute; width:64%; opacity: 0;">
                         <div class=" cont span_2_of_3  client-main">
                             <div class="logo">
-                            <a href="#"><h1 class="text-center">Collège EDEN</h1></a>
+                            <a href="#"><h1 class="text-center" style="color:white; font-size:60px; font-weight:600">Collège EDEN</h1></a>
                             </div>
-                            <div class="slide-text">
+                            <div class="slide-text" style="font-size:30px;">
                                 <p>Qualité</p>
                                 <span> </span>
                             </div>
@@ -159,9 +159,9 @@
                     <article style="position: absolute; width:64%; opacity: 0;">
                         <div class="cont span_2_of_3  client-main">
                             <div class="logo">
-                            <a href="#"><h1 class="text-center">Collège EDEN</h1></a>
+                            <a href="#"><h1 class="text-center" style="color:white; font-size:60px; font-weight:600">Collège EDEN</h1></a>
                             </div>
-                            <div class="slide-text">
+                            <div class="slide-text" style="font-size:30px;">
                                 <p>Excellence</p>
                                 <span> </span>
                             </div>
