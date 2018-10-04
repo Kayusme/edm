@@ -25,9 +25,9 @@ class Cote_model extends CI_Model
         $re = $this->db->get()->result_array();
         #$lignes = $this->db->get()->resul();
 
-        foreach ($lignes->result() as $ligne) {
+      #  foreach ($lignes->result() as $ligne) {
             return $re;
-        }
+       # }
     }
     public function selectCote1($id_dispenser, $id_periode, $id_eleve)
     {
