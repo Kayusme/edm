@@ -53,7 +53,7 @@
 						<span class="input input--akira">
 							<input class="input__field input__field--akira" type="email" id="input-23" name="Email" placeholder="" required="" />
 							<label class="input__label input__label--akira" for="input-23">
-								<span class="input__label-content input__label-content--akira">Email</span>
+								<span class="input__label-content input__label-content--akira">Votre adresse Email</span>
 							</label>
 						</span>
 						<span class="input input--akira">

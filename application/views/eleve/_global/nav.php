@@ -97,7 +97,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="#"><i class="fa fa-envelope nav_icon"></i>Messageries<span class="fa arrow"></span></a>
+                    <a href="#"><i class="fa fa-envelope nav_icon"></i>Messagerie<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li>
                             <?=anchor("eleve/inbox","Notifications")?>
