@@ -21,12 +21,12 @@
 						<tbody>
 							<tr>
 								<td>1 heure</td>
-								<td>Mark</td>
-								<td>Otto</td>
-                                <td>@mdo</td>
-                                <td>Jacob</td>
-								<td>Thornton</td>
-								<td>@fat</td>
+								<td>Mathematique</td>
+								<td>Français</td>
+                                <td>Histoire</td>
+                                <td>Physique</td>
+								<td>Histoire</td>
+								<td>Informatique</td>
 							</tr>
 							
 						</tbody>

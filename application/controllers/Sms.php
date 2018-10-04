@@ -46,6 +46,11 @@ class Sms extends CI_Controller
         return [];
     }
 
+    public function message_horaire($matricule, $horaire, $jour)
+    {
+        
+    }
+
     public function index()
     {
         //$this->synthaxe_requete("12dj34 1P");
