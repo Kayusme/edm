@@ -110,7 +110,7 @@ doctype("html5")."\n"?>
                             <ul class="nav navbar-nav">
                                 <li><a href="<?=site_url('eduquemoi/index')?>" data-hover="Home">Accueil</a></li>
                                 <li class="active"><a href="<?=site_url('eduquemoi/about')?>" data-hover="About Us">A Propos</a></li>
-                                <li><a href="<?=site_url('eduquemoi/gallery')?>" data-hover="Gallery">Gallerie</a></li>
+                                <li><a href="<?=site_url('eduquemoi/gallery')?>" data-hover="Gallery">Galerie</a></li>
                                 <li><a href="<?=site_url('eduquemoi/ecoles')?>" data-hover="Ecoles">Ecoles</a></li>
                                 <li><a href="<?=site_url('eduquemoi/contact')?>" data-hover="Mail Us">Contactez nous</a></li>
                             </ul>

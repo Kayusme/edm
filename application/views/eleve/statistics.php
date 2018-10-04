@@ -1,6 +1,6 @@
 <div id="page-wrapper">
   <div class="col-md-12 graphs">
-    <h3 class="text-center">Evolutions statistique</h3>
+    <h3 class="text-center">Evolution statistique</h3>
            <div class="graph_box1">
               <div class="col-md-12 grid_2">
                 <div class="grid_1">
@@ -19,7 +19,7 @@
                   <select name="" id="" class="form-control">
                       <option value="1">1 Periode</option>
                       <option value="2">2 Periode</option>
-                      <option value="3">Exam 1</option>
+                      <option value="3">Examen </option>
                       <option value="4">3 Periode</option>
                   </select>
                 </form>
