@@ -51,6 +51,11 @@ class Sms extends CI_Controller
         
     }
 
+    public function message_resultat($matricule, $periode)
+    {
+        
+    }
+
     public function index()
     {
         //$this->synthaxe_requete("12dj34 1P");
