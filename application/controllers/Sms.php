@@ -49,7 +49,7 @@ class Sms extends CI_Controller
     public function index()
     {
         //$this->synthaxe_requete("12dj34 1P");
-        $this->load->library("../controllers/eleve");
+        //$this->load->library("../controllers/eleve");
     }
 
 }
