@@ -9,6 +9,14 @@
                 </div>
               </div>
               <div class="col-md-6 grid_2">
+              <form action="">
+                  <select name="" id="" class="form-control">
+                      <option value="1">1 Periode</option>
+                      <option value="2">2 Periode</option>
+                      <option value="3">Exam 1</option>
+                      <option value="4">3 Periode</option>
+                  </select>
+                </form>
                 <div class="grid_1">
 <!--                <h3>Pie</h3>-->
                   <canvas id="pie" height="400" width="400" style="width: 400px; height: 400px;"></canvas>
