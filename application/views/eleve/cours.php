@@ -10,7 +10,7 @@
                     <div class="tile-progress bg-info">
                         <div class="content">
                             <h4><i class="fa fa-dashboard icon-sm"></i> <?= strtoupper($resultat['nomCours'])?></h4><br>
-                            <!-- <div class="progress"><div class="progress-bar inviewport animated visible slideInLeft" style="width: 40%;"></div></div> -->
+                            <div class="progress"><div class="progress-bar inviewport animated visible slideInLeft" style="width: 40%;"></div></div>
                             <span><?= ucfirst($resultat['descriptionCours'])?></span>
                         </div>
                     </div>
