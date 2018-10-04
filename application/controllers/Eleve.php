@@ -106,18 +106,31 @@ class Eleve  extends CI_Controller
         $data['cours'] = $this->eleve_model->selectCours($data["classe"]);
         //Tableaux contenant tous les id des matieres
         $data["matieres"] = $this->dispenser_model->selectIdMatiereDispenserByClasse($data["classe"]);
+        $i = 0;
         foreach ($data["id_cours_dispenses"] as $id_cours_dispense) {
-            $data['p1'] = $this->cote_model->selectCote($id_cours_dispense,1,$data["eleve"]);
+            $p1[$i] = $this->cote_model->selectCote($id_cours_dispense,1,$data["eleve"]);
+            $i++;
         }
+        $data['p1'] = $p1;
+        $i = 0;
         foreach ($data["id_cours_dispenses"] as $id_cours_dispense) {
-            $data['p2'] = $this->cote_model->selectCote($id_cours_dispense,2,$data["eleve"]);
+            $p2[$i] = $this->cote_model->selectCote($id_cours_dispense,2,$data["eleve"]);
+            $i++;
         }
+        $data['p2'] = $p2;
+        $i =0;
         foreach ($data["id_cours_dispenses"] as $id_cours_dispense) {
-            $data['ex1'] = $this->cote_model->selectCote($id_cours_dispense,3,$data["eleve"]);
+            $ex1[$i] = $this->cote_model->selectCote($id_cours_dispense,3,$data["eleve"]);
+            $i++;
         }
+        $data['ex1'] = $ex1;
+
+        $i=0;
         foreach ($data["matieres"] as $matiere) {
-            $data['max'] = $this->dispenser_model->selectMaximum($data["classe"],$matiere);
+            $max[$i] = $this->dispenser_model->selectMaximum($data["classe"],$matiere);
+            $i++;
         }
+        $data['max'] = $max;
         $data['count'] = count($this->notifications_model->unreadNotifications());
         $this->load->view("eleve/_global/header",$data);
         $this->load->view("eleve/_global/nav");
@@ -132,39 +145,52 @@ class Eleve  extends CI_Controller
             redirect("eleve/bulletin");
         }else{
             $data['title'] = "Resultats";
-        if($this->form_validation->Run())
-        {
-            $id=$this->input->get("id");
-        }
-        $data['el'] =$this->eleve_model->selectEleve($id)[0];//On doit y recuperer la id de l'eleve par la SESSION
+            if($this->form_validation->Run())
+            {
+                $id=$this->input->get("id");
+            }
+            $data['el'] =$this->eleve_model->selectEleve($id)[0];//On doit y recuperer la id de l'eleve par la SESSION
 
-        //La valeur de l'id de l'élève qui vient de la session sera placée là. 
-        $data["eleve"] = $id;
+            //La valeur de l'id de l'élève qui vient de la session sera placée là. 
+            $data["eleve"] = $id;
 
-        //Reccupère la dernière classe de l'élève
-        $data["classe"] = $this->parcourt_model->selectClasseEleve($data["eleve"]);
-        //Tableaux contenant tous les id de la table dispenser
-        $data["id_cours_dispenses"] = $this->dispenser_model->selectIdDispenser($data["classe"]);
-        $data['cours'] = $this->eleve_model->selectCours($data["classe"]);
-        //Tableaux contenant tous les id des matieres
-        $data["matieres"] = $this->dispenser_model->selectIdMatiereDispenserByClasse($data["classe"]);
-        foreach ($data["id_cours_dispenses"] as $id_cours_dispense) {
-            $data['p1'] = $this->cote_model->selectCote($id_cours_dispense,1,$data["eleve"]);
-        }
-        foreach ($data["id_cours_dispenses"] as $id_cours_dispense) {
-            $data['p2'] = $this->cote_model->selectCote($id_cours_dispense,2,$data["eleve"]);
-        }
-        foreach ($data["id_cours_dispenses"] as $id_cours_dispense) {
-            $data['ex1'] = $this->cote_model->selectCote($id_cours_dispense,3,$data["eleve"]);
-        }
-        foreach ($data["matieres"] as $matiere) {
-            $data['max'] = $this->dispenser_model->selectMaximum($data["classe"],$matiere);
-        }
-        $data['count'] = count($this->notifications_model->unreadNotifications());
-        $this->load->view("eleve/_global/header",$data);
-        $this->load->view("eleve/_global/nav");
-        $this->load->view("eleve/basic_tables",$data);
-        $this->load->view("eleve/_global/footer");
+            //Reccupère la dernière classe de l'élève
+            $data["classe"] = $this->parcourt_model->selectClasseEleve($data["eleve"]);
+            //Tableaux contenant tous les id de la table dispenser
+            $data["id_cours_dispenses"] = $this->dispenser_model->selectIdDispenser($data["classe"]);
+            $data['cours'] = $this->eleve_model->selectCours($data["classe"]);
+            //Tableaux contenant tous les id des matieres
+            $data["matieres"] = $this->dispenser_model->selectIdMatiereDispenserByClasse($data["classe"]);
+            $i = 0;
+            foreach ($data["id_cours_dispenses"] as $id_cours_dispense) {
+                $p1[$i] = $this->cote_model->selectCote($id_cours_dispense,1,$data["eleve"]);
+                $i++;
+            }
+            $data['p1'] = $p1;
+            $i = 0;
+            foreach ($data["id_cours_dispenses"] as $id_cours_dispense) {
+                $p2[$i] = $this->cote_model->selectCote($id_cours_dispense,2,$data["eleve"]);
+                $i++;
+            }
+            $data['p2'] = $p2;
+            $i =0;
+            foreach ($data["id_cours_dispenses"] as $id_cours_dispense) {
+                $ex1[$i] = $this->cote_model->selectCote($id_cours_dispense,3,$data["eleve"]);
+                $i++;
+            }
+            $data['ex1'] = $ex1;
+
+            $i=0;
+            foreach ($data["matieres"] as $matiere) {
+                $max[$i] = $this->dispenser_model->selectMaximum($data["classe"],$matiere);
+                $i++;
+            }
+            $data['max'] = $max;
+            $data['count'] = count($this->notifications_model->unreadNotifications());
+            $this->load->view("eleve/_global/header",$data);
+            $this->load->view("eleve/_global/nav");
+            $this->load->view("eleve/basic_tables",$data);
+            $this->load->view("eleve/_global/footer");
         }
         
     }
