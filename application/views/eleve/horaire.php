@@ -20,6 +20,21 @@
 							</div>
 							<div class="col-md-2">
 								<th>lundi</th>
+								<?php
+									$c = 0;
+									foreach ($lundi as $lun) {
+										$c = $c + 1;?>
+										<th><?php echo $lun['ncours'];?></th><br><hr>
+									<?php
+									}
+									if ($c < $heure) {
+										$c = $heure - $c;
+										while ($c != 0) {?>
+											<th>-</th><br><hr>
+										<?php $c = $c - 1;
+										}
+									}
+								?>
 							</div>
 							<div class="col-md-2">
 								<th>lundi</th>
