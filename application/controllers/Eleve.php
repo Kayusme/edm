@@ -415,7 +415,28 @@ class Eleve  extends CI_Controller
         $idclass = 1;
         $data['resultats'] = $this->eleve_model->selectHoraire($idclass);
         $data['count'] = count($this->notifications_model->unreadNotifications());
-
+        $totheure = count($data['lundi']);
+        $t = count($data['mar']);
+        if ($t > $totheure) {
+            $totheure = $t;
+        }
+        $t = count($data['mer']);
+        if ($t > $totheure) {
+            $totheure = $t;
+        }
+        $t = count($data['jeudi']);
+        if ($t > $totheure) {
+            $totheure = $t;
+        }
+        $t = count($data['ven']);
+        if ($t > $totheure) {
+            $totheure = $t;
+        }
+        $t = count($data['sam']);
+        if ($t > $totheure) {
+            $totheure = $t;
+        }
+        $data['heure'] = $totheure;
         $this->load->view("eleve/_global/header",$data);
         $this->load->view("eleve/_global/nav");
         $this->load->view("eleve/horaire",$data);
