@@ -8,7 +8,15 @@
 				<div class="panel-body no-padding" style="display: block;">
 					<div class="col-md-1">
 								<th>Heure</th><br><hr>
-								<th><?=$heure?></th><br>
+								<?php
+								$i = 0;
+									while ( $i <= $heure) { 
+										$a = $i+1;?>
+										<th><?php echo $a."e hrs";?></th><br><hr> <?php
+										$i = $i + 1;
+									}
+								?>
+								<th></th><br>
 							</div>
 							<div class="col-md-2">
 								<th>lundi</th>
