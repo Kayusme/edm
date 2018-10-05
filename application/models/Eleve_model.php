@@ -57,4 +57,13 @@ class Eleve_model extends CI_Model
 
         return $res;
     }
+    
+    function selectEleveByMatricule($matricule){
+        $this->db->select('*');
+        $this->db->from('eleve');
+        $this->db->where('matricule',$matricule);
+        $res = $this->db->get()->result_array();
+
+        return $res;
+    }
 }
