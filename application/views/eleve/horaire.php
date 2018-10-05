@@ -6,31 +6,29 @@
 					<div class="panel-ctrls" data-actions-container="" data-action-collapse="{&quot;target&quot;: &quot;.panel-body&quot;}"><span class="button-icon has-bg"><i class="ti ti-angle-down"></i></span></div>
 				</div>
 				<div class="panel-body no-padding" style="display: block;">
-					<table class="table table-striped">
-						<thead>
-							<tr class="default">
-								<th>Jours</th>
-								<th>Lundi</th>
-								<th>Mardi</th>
-                                <th>Mercredi</th>
-                                <th>Jeudi</th>
-                                <th>Vendredi</th>
-                                <th>Samedi</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>1 heure</td>
-								<td>Mathematique</td>
-								<td>Français</td>
-                                <td>Histoire</td>
-                                <td>Physique</td>
-								<td>Histoire</td>
-								<td>Informatique</td>
-							</tr>
-							
-						</tbody>
-					</table>
+					<div class="col-md-1">
+								<th>Heure</th><br><hr>
+								<th><?=$heure?></th><br>
+							</div>
+							<div class="col-md-2">
+								<th>lundi</th>
+							</div>
+							<div class="col-md-2">
+								<th>lundi</th>
+							</div>
+							<div class="col-md-2">
+								<th>lundi</th>
+							</div>
+							<div class="col-md-2">
+								<th>lundi</th>
+							</div>
+							<div class="col-md-2">
+								<th>lundi</th><br>
+							</div>
+							<div class="col-md-1">
+								<th>lundi</th><br><hr>
+								<th>lundi</th><br>
+							</div>
 				</div>
 			</div>
 <!--    <div class="col-md-2"></div>-->

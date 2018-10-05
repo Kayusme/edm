@@ -31,7 +31,7 @@ class Eleve_model extends CI_Model
         $this->db->join('matiere','horaire.idMatiere = matiere.id');
         $this->db->join('jour','horaire.idJour = jour.id');
         $this->db->where('classe.id',$idClass);
-        $this->db->where('classe.id',$idJour);
+        $this->db->where('horaire.idJour',$idJour);
         $res = $this->db->get()->result_array();
 
         return $res;
