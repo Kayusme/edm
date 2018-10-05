@@ -76,7 +76,7 @@
 								<th>Jeudi</th><br><hr>
 								<?php
 									$c = 0;
-									foreach ($Jeudi as $jeu) {
+									foreach ($jeudi as $jeu) {
 										$c = $c + 1;?>
 										<th><?php echo $jeu['ncours'];?></th><br><hr>
 									<?php
