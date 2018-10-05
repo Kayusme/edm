@@ -25,13 +25,13 @@ class Eleve_model extends CI_Model
     }
     
     function selectHoraire($idClass, $idJour){
-        $this->db->select('*');
+        $this->db->select('*','matire.nom as ncours');
         $this->db->from('horaire');
         $this->db->join('classe','horaire.idClasse = classe.id');
         $this->db->join('matiere','horaire.idMatiere = matiere.id');
         $this->db->join('jour','horaire.idJour = jour.id');
         $this->db->where('classe.id',$idClass);
-        $this->db->where('classe.id',$idJour);
+        $this->db->where('horaire.idJour',$idJour);
         $res = $this->db->get()->result_array();
 
         return $res;
