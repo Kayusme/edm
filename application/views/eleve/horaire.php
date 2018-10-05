@@ -19,7 +19,7 @@
 								<th></th><br>
 							</div>
 							<div class="col-md-2">
-								<th>lundi</th>
+								<th>lundi</th><br><hr>
 								<?php
 									$c = 0;
 									foreach ($lundi as $lun) {
@@ -37,20 +37,34 @@
 								?>
 							</div>
 							<div class="col-md-2">
-								<th>lundi</th>
+								<th>Mardi</th><br><hr>
+								<?php
+									$c = 0;
+									foreach ($mar as $mardi) {
+										$c = $c + 1;?>
+										<th><?php echo $mardi['ncours'];?></th><br><hr>
+									<?php
+									}
+									if ($c < $heure) {
+										$c = $heure - $c;
+										while ($c != 0) {?>
+											<th>-</th><br><hr>
+										<?php $c = $c - 1;
+										}
+									}
+								?>
 							</div>
 							<div class="col-md-2">
-								<th>lundi</th>
+								<th>Mercredi</th>
 							</div>
 							<div class="col-md-2">
-								<th>lundi</th>
+								<th>Jeudi</th>
 							</div>
 							<div class="col-md-2">
-								<th>lundi</th><br>
+								<th>Vendredi</th><br>
 							</div>
 							<div class="col-md-1">
-								<th>lundi</th><br><hr>
-								<th>lundi</th><br>
+								<th>Samedi</th><br><hr>
 							</div>
 				</div>
 			</div>
