@@ -110,6 +110,21 @@
 							</div>
 							<div class="col-md-1">
 								<th>Samedi</th><br><hr>
+								<?php
+									$c = 0;
+									foreach ($sam as $Samedi) {
+										$c = $c + 1;?>
+										<th><?php echo $Samedi['ncours'];?></th><br><hr>
+									<?php
+									}
+									if ($c < $heure) {
+										$c = $heure - $c;
+										while ($c != 0) {?>
+											<th>-</th><br><hr>
+										<?php $c = $c - 1;
+										}
+									}
+								?>
 							</div>
 				</div>
 			</div>
