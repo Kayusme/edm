@@ -74,6 +74,21 @@
 							</div>
 							<div class="col-md-2">
 								<th>Jeudi</th><br><hr>
+								<?php
+									$c = 0;
+									foreach ($Jeudi as $jeu) {
+										$c = $c + 1;?>
+										<th><?php echo $jeu['ncours'];?></th><br><hr>
+									<?php
+									}
+									if ($c < $heure) {
+										$c = $heure - $c;
+										while ($c != 0) {?>
+											<th>-</th><br><hr>
+										<?php $c = $c - 1;
+										}
+									}
+								?>
 							</div>
 							<div class="col-md-2">
 								<th>Vendredi</th><br><hr>
