@@ -47,7 +47,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |				'ssl_key'    - Path to the private key file
 |				'ssl_cert'   - Path to the public key certificate file
 |				'ssl_ca'     - Path to the certificate authority file
-|				'ssl_capath' - Path to a directory containing trusted CA certificats in PEM format
+|				'ssl_capath' - Path to a directory containing trusted CA certificates in PEM format
 |				'ssl_cipher' - List of *allowed* ciphers to be used for the encryption, separated by colons (':')
 |				'ssl_verify' - TRUE/FALSE; Whether verify the server certificate or not ('mysqli' only)
 |
@@ -76,23 +76,21 @@ $query_builder = TRUE;
 $db['default'] = array(
 	'dsn'	=> 'mysql:host=localhost;dbname=edm',
 	'hostname' => 'localhost',
-//	'username' => 'eduqueMe',
 	'username' => 'root',
-//	'password' => 'JusteUnPassWord',
 	'password' => '',
 	'database' => 'edm',
 	'dbdriver' => 'pdo',
 	'dbprefix' => '',
-	'pconnect' => TRUE,
+	'pconnect' => FALSE,
 	'db_debug' => (ENVIRONMENT !== 'production'),
-	'cache_on' => TRUE,
+	'cache_on' => FALSE,
 	'cachedir' => '',
 	'char_set' => 'utf8',
 	'dbcollat' => 'utf8_general_ci',
 	'swap_pre' => '',
-	'encrypt' => TRUE,
-	'compress' => TRUE,
-	'stricton' => TRUE,
+	'encrypt' => FALSE,
+	'compress' => FALSE,
+	'stricton' => FALSE,
 	'failover' => array(),
 	'save_queries' => TRUE
 );
