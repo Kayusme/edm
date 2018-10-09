@@ -21,7 +21,7 @@ class Eleve  extends CI_Controller
     {
 //        var_dump($this->session);die();
 //        $maSession = $this->session->userdata('matricule');
-        // if ($this->session->has_userdata('matricule')){
+         if ($this->session->has_userdata('matricule')){
             $data['title'] = "Page d'administration";
             $data['infos'] = $this->session->userdata;
             $data['notifications'] = $this->notifications_model->selectNotifications();
@@ -30,9 +30,9 @@ class Eleve  extends CI_Controller
             $this->load->view("eleve/_global/nav");
             $this->load->view("eleve/index",$data);
             $this->load->view("eleve/_global/footer");
-        // }else{
-        //     redirect("eleve/login");
-        // }
+        }else{
+            redirect("edm/session/Codeigniter-3.1.8/eleve/login");
+        }
     }
 
     public function login()
@@ -60,10 +60,10 @@ class Eleve  extends CI_Controller
 //                 var_dump($res['prenom']);die();
                 if ($res['matricule']) {
 //                 var_dump($this->session);die();
-                    redirect('eleve/index');
+                    redirect('edm/session/Codeigniter-3.1.8/index.php/eleve/index');
                 } else {
                     $this->session->set_flashdata('error', 'Matricule ou Mot de Passe incorrect');
-                    redirect('eleve/login');
+                    redirect('edm/session/Codeigniter-3.1.8/index.php/eleve/login');
                 }
 
             }
