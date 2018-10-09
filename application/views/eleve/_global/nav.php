@@ -71,7 +71,7 @@
                 <li class="m_2"><a href="<?=base_url("Eleve/profile")?>"><i class="fa fa-user"></i> Profile</a></li>
                 <!-- <li class="m_2"><a href="<?=base_url("Eleve/blog")?>"><i class="fa fa-users icon_1"></i> Blog <span class="label label-default">4</span></a></li> -->
                 <li class="divider"></li>
-                <li class="m_2"><a href="#"><i class="fa fa-shield"></i> Lock Profile</a></li>
+                <!-- <li class="m_2"><a href="#"><i class="fa fa-shield"></i> Lock Profile</a></li> -->
                 <li class="m_2"><a href="logout"><i class="fa fa-lock"></i> Logout</a></li>
             </ul>
         </li>
