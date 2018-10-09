@@ -398,7 +398,7 @@ class Eleve  extends CI_Controller
     {
         if ($this->session->has_userdata('matricule')){
             $data['title'] = "Cours";
-            $idclass = 1;
+            $idclass = $this->parcourt_model->selectClasseEleve($this->session->userdata('id'));
             $data['resultats'] = $this->eleve_model->selectCours($idclass);
             $data['count'] = count($this->notifications_model->unreadNotifications());
 
@@ -431,7 +431,7 @@ class Eleve  extends CI_Controller
     {
         if ($this->session->has_userdata('matricule')){
             $data['title'] = "Horaire";
-            $idclass = 1;
+            $idclass = $this->parcourt_model->selectClasseEleve($this->session->userdata('id'));
             $data['lundi'] = $this->eleve_model->selectHoraire($idclass, 1);
             $data['mar'] = $this->eleve_model->selectHoraire($idclass, 2);
             $data['mer'] = $this->eleve_model->selectHoraire($idclass, 3);
@@ -520,7 +520,7 @@ class Eleve  extends CI_Controller
     public function devoir()
     {
         if ($this->session->has_userdata('matricule')){
-            $idclass= 1;
+            $idclass= $this->parcourt_model->selectClasseEleve($this->session->userdata('id'));
             $data['title'] = "Devoir";
             $data['resultats'] = $this->devoir_model->selectDevoir($idclass);
             $data['count'] = count($this->notifications_model->unreadNotifications());
