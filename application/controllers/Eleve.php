@@ -19,7 +19,7 @@ class Eleve  extends CI_Controller
     }
     public function index()
     {
-    //    var_dump($this->session);die();
+    //    var_dump($this->session->userdata('id'));die();
 //        $maSession = $this->session->userdata('matricule');
          if ($this->session->has_userdata('matricule')){
             $data['title'] = "Page d'administration";
@@ -95,10 +95,10 @@ class Eleve  extends CI_Controller
     {
         if ($this->session->has_userdata('matricule')){
             $data['title'] = "Resultats";
-            $data['el'] =$this->eleve_model->selectEleve(1)[0];//On doit y recuperer la id de l'eleve par la SESSION
+            $data['el'] =$this->eleve_model->selectEleve($this->session->userdata('id'))[0];//On doit y recuperer la id de l'eleve par la SESSION
 
             //La valeur de l'id de l'élève qui vient de la session sera placée là. 
-            $data["eleve"] = 1;
+            $data["eleve"] = $this->session->userdata('id');
 
             //Reccupère la dernière classe de l'élève
             $data["classe"] = $this->parcourt_model->selectClasseEleve($data["eleve"]);
@@ -210,8 +210,8 @@ class Eleve  extends CI_Controller
         if ($this->session->has_userdata('matricule')){
             $data['title'] = "Statistiques";
             
-            //La valeur de l'id de l'élève qui vient de la session sera placée là. 
-            $data["eleve"] = 1;
+            //La valeur de l'id de l'élève qui vient de la session. 
+            $data["eleve"] = $this->session->userdata('id');
 
             //Reccupère la dernière classe de l'élève
             $data["classe"] = $this->parcourt_model->selectClasseEleve($data["eleve"]);
@@ -489,7 +489,7 @@ class Eleve  extends CI_Controller
     {
         if ($this->session->has_userdata('matricule')){
             $data['infos'] = $this->session->userdata;
-            $data['eleve'] =$this->eleve_model->selectEleve(1)[0];//On doit y recuperer la id de l'eleve par la SESSION
+            $data['eleve'] =$this->eleve_model->selectEleve($this->session->userdata('id'))[0];
 
             $data['title'] = "Profil";
             $data['count'] = count($this->notifications_model->unreadNotifications());
