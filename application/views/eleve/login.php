@@ -19,7 +19,7 @@
   </div>
   <h2 class="form-heading">connexion</h2>
   <div class="app-cam">
-	  <?php echo form_open('edm/session/Codeigniter-3.1.8/index.php/eleve/login')?>
+	  <?php echo form_open('eleve/login')?>
 		<input type="text" class="text" name="matricule" placeholder="Matricule" autocomplete="off" />
 		<input type="password" name="password" placeholder="Mot de Passe"/>
 		<input type="submit" value="Connecter"/>
