@@ -31,7 +31,7 @@ class Eleve  extends CI_Controller
             $this->load->view("eleve/index",$data);
             $this->load->view("eleve/_global/footer");
         }else{
-            redirect("edm/session/Codeigniter-3.1.8/eleve/login");
+            redirect("edm/session/codeigniter-3.1.8/index.php/eleve/login");
         }
     }
 
