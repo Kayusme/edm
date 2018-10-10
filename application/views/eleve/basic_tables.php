@@ -128,12 +128,15 @@
       </div>
       <?php if ($totcote1 != 0) {
               $pourc1 = ($totcote1 / $totmaxe) * 100;
+              $pourc1 = $pourc1 * 2;
             } else { $pourc1= 0;}
             if ($totcote2 != 0) {
               $pourc2 = ($totcote2 / $totmaxe) * 100;
+              $pourc2 = $pourc2 * 2;
             } else { $pourc2= 0;}
             if ($totcote3 != 0) {
               $pourc3 = ($totcote3 / $totmaxe) * 100;
+              $pourc3 = $pourc3 * 2;
             } else { $pourc3= 0;}
        ?>
       <div class="row">
