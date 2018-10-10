@@ -225,12 +225,13 @@ class Eleve  extends CI_Controller
             //Liste des matières
             for ($i=0; $i < count($data["matieres"]); $i++) { 
 
-                if ($i != count($data["matieres"]) - 1) {
+                if ($i == 0) {
                     $data["cours"] = '"'.$this->matiere_model->selectNomMatiere($data["matieres"][$i]).'",';
-                } else {
+                }elseif ($i != count($data["matieres"]) - 1) {
+                    $data["cours"] .= '"'.$this->matiere_model->selectNomMatiere($data["matieres"][$i]).'",';
+                }else {
                     $data["cours"] .= '"'.$this->matiere_model->selectNomMatiere($data["matieres"][$i]).'"';
                 }         
-
             }
 
             //Début de la reccupération des points de la période 1
@@ -251,15 +252,19 @@ class Eleve  extends CI_Controller
 
             for ($i=0; $i < count($max); $i++) { 
 
-                if ($i != count($max) - 1) {
+                if ($i == 0) {
                     $data["periode1"] = $this->statistique_model->pourcentage($cote[$i], $max[$i]).", ";
                     $resulat[$i] =  $this->statistique_model->pourcentage($cote[$i], $max[$i]);
-                } else {
+                }else if ($i != count($max) - 1) {
+                    $data["periode1"] .= $this->statistique_model->pourcentage($cote[$i], $max[$i]).", ";
+                    $resulat[$i] =  $this->statistique_model->pourcentage($cote[$i], $max[$i]);
+                }  else {
                     $data["periode1"] .= $this->statistique_model->pourcentage($cote[$i], $max[$i]);
                     $resulat[$i] =  $this->statistique_model->pourcentage($cote[$i], $max[$i]);
                 }         
 
             }
+            //var_dump($data["periode1"]);die();
             $data["resultats"] = $resulat;
 
             //Fin de la reccupération des points de la période 1
@@ -269,18 +274,22 @@ class Eleve  extends CI_Controller
             $i = 0;
 
             foreach ($data["id_cours_dispenses"] as $id_cours_dispense) {
-                $cote[$i] = $this->cote_model->selectCote($id_cours_dispense,2,$data["eleve"]);
+                $cote[$i] = $this->cote_model->selectCote1($id_cours_dispense,2,$data["eleve"]);
                 $i++;
             }
 
             for ($i=0; $i < count($max); $i++) { 
 
-                if ($i != count($max) - 1) {
-                    //echo $cote[$i]." / ".$max[$i]." * 100 = ";
+                if ($i == 0) {
                     $data["periode2"] = $this->statistique_model->pourcentage($cote[$i], $max[$i]).", ";
-                } else {
+                    $resulat[$i] =  $this->statistique_model->pourcentage($cote[$i], $max[$i]);
+                }else if ($i != count($max) - 1) {
+                    $data["periode2"] .= $this->statistique_model->pourcentage($cote[$i], $max[$i]).", ";
+                    $resulat[$i] =  $this->statistique_model->pourcentage($cote[$i], $max[$i]);
+                }  else {
                     $data["periode2"] .= $this->statistique_model->pourcentage($cote[$i], $max[$i]);
-                }         
+                    $resulat[$i] =  $this->statistique_model->pourcentage($cote[$i], $max[$i]);
+                }           
 
             }
 
@@ -291,7 +300,7 @@ class Eleve  extends CI_Controller
             $i = 0;
 
             foreach ($data["id_cours_dispenses"] as $id_cours_dispense) {
-                $cote[$i] = $this->cote_model->selectCote($id_cours_dispense,3,$data["eleve"]);
+                $cote[$i] = $this->cote_model->selectCote1($id_cours_dispense,3,$data["eleve"]);
                 $i++;
             }
 
@@ -304,11 +313,16 @@ class Eleve  extends CI_Controller
 
             for ($i=0; $i < count($max); $i++) { 
 
-                if ($i != count($max) - 1) {
+                if ($i == 0) {
                     $data["periode3"] = $this->statistique_model->pourcentage($cote[$i], $max[$i]).", ";
-                } else {
+                    $resulat[$i] =  $this->statistique_model->pourcentage($cote[$i], $max[$i]);
+                }else if ($i != count($max) - 1) {
+                    $data["periode3"] .= $this->statistique_model->pourcentage($cote[$i], $max[$i]).", ";
+                    $resulat[$i] =  $this->statistique_model->pourcentage($cote[$i], $max[$i]);
+                }  else {
                     $data["periode3"] .= $this->statistique_model->pourcentage($cote[$i], $max[$i]);
-                }         
+                    $resulat[$i] =  $this->statistique_model->pourcentage($cote[$i], $max[$i]);
+                }        
 
             }
 
@@ -319,17 +333,22 @@ class Eleve  extends CI_Controller
             $i = 0;
 
             foreach ($data["id_cours_dispenses"] as $id_cours_dispense) {
-                $cote[$i] = $this->cote_model->selectCote($id_cours_dispense,4,$data["eleve"]);
+                $cote[$i] = $this->cote_model->selectCote1($id_cours_dispense,4,$data["eleve"]);
                 $i++;
             }
 
             for ($i=0; $i < count($max); $i++) { 
 
-                if ($i != count($max) - 1) {
+                if ($i == 0) {
                     $data["periode4"] = $this->statistique_model->pourcentage($cote[$i], $max[$i]).", ";
-                } else {
+                    $resulat[$i] =  $this->statistique_model->pourcentage($cote[$i], $max[$i]);
+                }else if ($i != count($max) - 1) {
+                    $data["periode4"] .= $this->statistique_model->pourcentage($cote[$i], $max[$i]).", ";
+                    $resulat[$i] =  $this->statistique_model->pourcentage($cote[$i], $max[$i]);
+                }  else {
                     $data["periode4"] .= $this->statistique_model->pourcentage($cote[$i], $max[$i]);
-                }         
+                    $resulat[$i] =  $this->statistique_model->pourcentage($cote[$i], $max[$i]);
+                }        
 
             }
 
@@ -340,7 +359,7 @@ class Eleve  extends CI_Controller
             $i = 0;
 
             foreach ($data["id_cours_dispenses"] as $id_cours_dispense) {
-                $cote[$i] = $this->cote_model->selectCote($id_cours_dispense,5,$data["eleve"]);
+                $cote[$i] = $this->cote_model->selectCote1($id_cours_dispense,5,$data["eleve"]);
                 $i++;
             }
 
@@ -353,11 +372,16 @@ class Eleve  extends CI_Controller
 
             for ($i=0; $i < count($max); $i++) { 
 
-                if ($i != count($max) - 1) {
+                if ($i == 0) {
                     $data["examen1"] = $this->statistique_model->pourcentage($cote[$i], $max[$i]).", ";
-                } else {
+                    $resulat[$i] =  $this->statistique_model->pourcentage($cote[$i], $max[$i]);
+                }else if ($i != count($max) - 1) {
+                    $data["examen1"] .= $this->statistique_model->pourcentage($cote[$i], $max[$i]).", ";
+                    $resulat[$i] =  $this->statistique_model->pourcentage($cote[$i], $max[$i]);
+                }  else {
                     $data["examen1"] .= $this->statistique_model->pourcentage($cote[$i], $max[$i]);
-                }         
+                    $resulat[$i] =  $this->statistique_model->pourcentage($cote[$i], $max[$i]);
+                }           
 
             }
 
@@ -368,18 +392,22 @@ class Eleve  extends CI_Controller
             $i = 0;
 
             foreach ($data["id_cours_dispenses"] as $id_cours_dispense) {
-                $cote[$i] = $this->cote_model->selectCote($id_cours_dispense,6,$data["eleve"]);
+                $cote[$i] = $this->cote_model->selectCote1($id_cours_dispense,6,$data["eleve"]);
                 $i++;
             }
 
             for ($i=0; $i < count($max); $i++) { 
 
-                if ($i != count($max) - 1) {
-                    //echo $cote[$i]." / ".$max[$i]." * 100 = ";
+                if ($i == 0) {
                     $data["examen2"] = $this->statistique_model->pourcentage($cote[$i], $max[$i]).", ";
-                } else {
+                    $resulat[$i] =  $this->statistique_model->pourcentage($cote[$i], $max[$i]);
+                }else if ($i != count($max) - 1) {
+                    $data["examen2"] .= $this->statistique_model->pourcentage($cote[$i], $max[$i]).", ";
+                    $resulat[$i] =  $this->statistique_model->pourcentage($cote[$i], $max[$i]);
+                }  else {
                     $data["examen2"] .= $this->statistique_model->pourcentage($cote[$i], $max[$i]);
-                }         
+                    $resulat[$i] =  $this->statistique_model->pourcentage($cote[$i], $max[$i]);
+                }           
 
             }
 
