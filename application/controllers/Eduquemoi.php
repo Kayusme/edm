@@ -11,6 +11,7 @@ class Eduquemoi extends CI_Controller
     }
     public function index()
     {
+        $this->session->set_userdata(['jo'=>"Jonthan","ljo"=>'LJOBOY']);
         $data['title'] = 'eduque-moi';
         $this->load->view('eduquemoi/_global/header',$data);
         $this->load->view('eduquemoi/_global/navbar');
@@ -26,6 +27,11 @@ class Eduquemoi extends CI_Controller
     }
     public function about()
     {
+        
+        echo "<pre>";
+        print_r ($this->session);
+        echo "</pre>";
+        die;
         $data['title'] = 'a Propos';
         $this->load->view('eduquemoi/_global/header2',$data);
         $this->load->view('eduquemoi/about',$data);
