@@ -26,6 +26,7 @@ class Eleve  extends CI_Controller
             $data['infos'] = $this->session->userdata;
             $data['notifications'] = $this->notifications_model->selectNotifications();
             $data['count'] = count($this->notifications_model->unreadNotifications());
+            
             $this->load->view("eleve/_global/header",$data);
             $this->load->view("eleve/_global/nav");
             $this->load->view("eleve/index",$data);
@@ -402,6 +403,7 @@ class Eleve  extends CI_Controller
         $data['title'] = "Notifications";
         $data['notifications'] = $this->notifications_model->selectNotifications();
         $data['count'] = count($this->notifications_model->unreadNotifications());
+        
         $this->load->view("eleve/_global/header",$data);
         $this->load->view("eleve/_global/nav");
         $this->load->view("eleve/inbox",$data);
