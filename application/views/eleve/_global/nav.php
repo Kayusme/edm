@@ -129,10 +129,27 @@
     </div>
     <!-- /.navbar-static-side -->
 </nav>
-<script>
-$(document).on('click','dropdown-menu',function(){
-    $('.count').html('');
-    load_notification();
-});
 
+<script>
+$(document).ready(function(){
+    function load_notification(view = '')
+    {
+        $.ajax({
+            url:"applications/models/Notifications_models.php",
+            data:{view:view},
+            dataType:"json",
+            success:function(data)
+            {
+                $('.dropdown-menu').html(data.load_notification)
+            }
+
+        });
+
+    }
+    
+    $(document).on('click','dropdown-menu',function(){
+        $('.count').html('');
+        load_notification('yes');
+    })
+});
 </script>
