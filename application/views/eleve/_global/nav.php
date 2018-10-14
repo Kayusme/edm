@@ -63,7 +63,10 @@
                 <li class="dropdown-menu-header text-center">
                     <strong>Profil</strong>
                 </li>
-                <li class="m_2"><a href="<?=base_url("Eleve/inbox")?>"><i class="fa fa-bell-o"></i> Notification <span class="label label-info"><?=$count?></span></a></li>
+                <li class="m_2"><a href="<?=base_url("Eleve/inbox")?>"><i class="fa fa-bell-o count "></i> Notification 
+                
+                <span class="label label-info "><?=$count?> </span></a></li> 
+            
                 <li class="m_2"><a href="<?=base_url("Eleve/compose")?>"><i class="fa fa-envelope-o"></i> Messages <span class="label label-success">0</span></a></li>
                 <li class="m_2"><a href="<?=base_url("Eleve/devoir")?>"><i class="fa fa-tasks"></i> Devoirs <span class="label label-danger">2</span></a></li>
                     <br /><br /><strong style="margin-left: 40%">Settings</strong><br />
@@ -126,3 +129,10 @@
     </div>
     <!-- /.navbar-static-side -->
 </nav>
+<script>
+$(document).on('click','dropdown-menu',function(){
+    $('.count').html('');
+    load_notification();
+});
+
+</script>
