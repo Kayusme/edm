@@ -132,7 +132,7 @@
 
 <script>
 $(document).ready(function(){
-    function load_notification(view = '')
+    function load_notification(view = '1')
     {
         $.ajax({
             url:"applications/models/Notifications_models.php",
@@ -140,16 +140,27 @@ $(document).ready(function(){
             dataType:"json",
             success:function(data)
             {
-                $('.dropdown-menu').html(data.load_notification)
+                $('.dropdown-menu').html(data.readnotification);
+                if(data.unreadnotifications > 0)
+                {
+                    $('.count').html(data.unreadnotifications);
+                }
             }
-
         });
-
     }
+    load_notification();
     
     $(document).on('click','dropdown-menu',function(){
         $('.count').html('');
-        load_notification('yes');
-    })
+        load_notification(view = '2');
+    });
+
+    setInterval(function(){
+        load_notification();
+    }, 5000);
+
+    $(" .bt").click(function(){
+        load_notification();
+    });
 });
 </script>
