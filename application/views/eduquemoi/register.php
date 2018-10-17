@@ -2,8 +2,8 @@
 <div class="register-wthree">
     <div class="container">
         <div class="col-md-6 regstr-l-w3-agileits">
-            <h3 class="tittle-agileits-w3layouts white-w3ls">Avoir <span>des cours gratuits</span> en ligne</h3>
-            <h4>Se connecter</h4>
+            <h3 class="tittle-agileits-w3layouts white-w3ls">Notre <span>lancement officiel</span></h3>
+            <!-- <h4>Se connecter</h4> -->
             <!--timer-->
             <section class="examples">
                 <div class="simply-countdown-losange" id="simply-countdown-losange"></div>

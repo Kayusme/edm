@@ -153,7 +153,7 @@
 <!-- Countdown-Timer-JavaScript -->
 <script src="<?=base_url("assets/statics/eduquemoi/js/simplyCountdown.js")?>"></script>
 <script>
-    var d = new Date(new Date().getTime() + 948 * 120 * 120 * 2000);
+    var d = new Date(new Date().getTime() + 948 * 120 * 2.3 * 2000);
 
     // default example
     simplyCountdown('.simply-countdown-one', {

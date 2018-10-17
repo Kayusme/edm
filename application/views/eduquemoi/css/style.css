@@ -699,7 +699,7 @@ img.zoom-img {
 	color:#77abde!important;
 }
 .services-right {
-    background: url(../images/services.jpg) no-repeat 0px 0px;
+    background: url(../images/bg3.jpg) no-repeat 0px 0px;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -717,7 +717,7 @@ img.zoom-img {
 /*-- //services --*/
 /*--Register--*/
 .register-wthree{
-	 background: url(../images/register.jpg)no-repeat 0px 0px;
+	 background: url(../images/bg3.jpg)no-repeat 0px 0px;
     background-size: cover;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
