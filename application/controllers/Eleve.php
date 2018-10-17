@@ -66,14 +66,12 @@ class Eleve  extends CI_Controller
                     redirect('eleve/login');
                 }
 
+            } else {
+                 print_r("<span class=\"alert alert-danger col-xs-3 col-xs-offset-4\">
+                             <a href=\"#\" class=\"close\" data-dismiss = \"alert\" aria-label = \"close\">&times;</a>
+                             <strong>Aucune Connexion établie</strong>
+                         </span>");
             }
-//            else
-//            {
-//                 print_r("<span class=\"alert alert-danger col-xs-3 col-xs-offset-4\">
-//                             <a href=\"#\" class=\"close\" data-dismiss = \"alert\" aria-label = \"close\">&times;</a>
-//                             <strong>Aucune Connexion établie</strong>
-//                         </span>");
-//            }
 
             if (!isset($user_data['matricule'])) {
                 $data['title'] = "Login";
