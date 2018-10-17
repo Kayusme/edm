@@ -178,6 +178,3 @@
           <div class="col-md-1 b" style="background:black;">-</div>
       </div>
       <div class="clearfix"></div>
-         
-</body>
-</html>
