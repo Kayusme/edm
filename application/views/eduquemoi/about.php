@@ -45,14 +45,14 @@
 						</figcaption>			
 					</figure>
 				</div>
-				<div class="col-md-3 home-agile-left">
-				   <figure class="">
-						<img src="../assets/statics/eduquemoi/images/logopb.jpg" alt="P-breakers" />
-						<figcaption>
-							<p><span>P-breakers</span></p>
-						</figcaption>			
-					</figure>
-				</div>
+<!--				<div class="col-md-3 home-agile-left">-->
+<!--				   <figure class="">-->
+<!--						<img src="../assets/statics/eduquemoi/images/logopb.jpg" alt="P-breakers" />-->
+<!--						<figcaption>-->
+<!--							<p><span>P-breakers</span></p>-->
+<!--						</figcaption>			-->
+<!--					</figure>-->
+<!--				</div>-->
 				<div class="col-md-3 home-agile-left">
 				   <figure class="">
 						<img src="../assets/statics/eduquemoi/images/logo.png" alt="ZX-Connect" />
