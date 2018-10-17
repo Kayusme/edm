@@ -22,9 +22,7 @@
                     <select title="" class="form-control">
                         <option disabled>Connecter en tant que</option>
                         <option value="1">Eleves</option>
-                        <option value="2">Professeur</option>
-                        <option value="3">Parents</option>
-                        <option value="4">Tuteurs</option>
+                        <option value="2">Parents</option>
                     </select>
                     <input type="submit" value="Connexion" class="button-w3layouts hvr-rectangle-out">
                 <?=form_close()?>
