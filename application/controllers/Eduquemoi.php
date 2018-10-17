@@ -16,6 +16,7 @@ class Eduquemoi extends CI_Controller
         $this->load->view('eduquemoi/_global/navbar');
         $this->load->view('eduquemoi/index',$data);
         $this->load->view("eduquemoi/liens");
+        $this->load->view("eduquemoi/register");
         $this->load->view('eduquemoi/_global/footer');
 
     }
