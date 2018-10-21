@@ -38,6 +38,8 @@ class Ecole  extends CI_Controller
         $this->load->view('ecole/admissions',$data);
         $this->load->view('ecole/_global/footer');
     }
+    public function pre_inscription()
+    {}
     public function courses()
     {
         $this->load->model('ecole_model');

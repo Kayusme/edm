@@ -4,7 +4,7 @@
 			<div class="admi-top">
 				<h3><?=ucfirst($title);?></h3>
 				<div class="admi-main">
-					<div class="col-md-7 admi-main-left">
+					<div class="col-md-5 admi-main-left">
 						<div  id="top" class="callbacks_container">
 			      		<ul class="rslides" id="slider4">
 
@@ -30,21 +30,21 @@
 			    </div>
 			    <div class="clearfix"> </div>
 					</div>
-                    <div class="col-md-5 admi-main-right">
-                        <h4>Formulaire d'admission</h4><br>
+                    <div class="col-md-7 admi-main-right">
+                        <h4>Formulaire de pre-inscription</h4><br>
                         <form action="" method="POST">
                         	<input type="text" name="nom" placeholder="Nom : "><br><br>
-                        	<input type="text" name="post_nom" placeholder="Post-om : "><br><br>
+                        	<input type="text" name="post_nom" placeholder="Post-nom : "><br><br>
                         	<input type="text" name="prenom" placeholder="Prenom : "><br><br>
                         	Genre : F <input type="radio" name="sex">
                         	M <input type="radio" name="sex"><br><br>
                         	Date de naissance : 
-                        	JJ <select>
+                        	JJ <select name="jj">
                         		<?php for($i = 1; $i <= 31; $i++) {?>
                         		<option><?=$i ?></option>
                         		<?php } ?>
                         	</select>
-                        	MM <select>
+                        	MM <select name="mm">
                         		<option>janvier</option>
                         		<option>fevrier</option>
                         		<option>mars</option>
@@ -57,11 +57,16 @@
                         		<option>novembre</option>
                         		<option>decembre</option>
                         	</select>
-                        	AA <select>
+                        	AA <select name="aa">
                         		<?php for($i = 1900; $i <= date('Y'); $i++) {?>
                         		<option><?=$i ?></option>
                         		<?php } ?>
-                        	</select>
+                        	</select><br><br>
+                        	<input type="text" name="lieu" placeholder="Lieu de naissance : "><br><br>
+                        	<input type="text" name="nationalite" placeholder="Nationalite : "><br><br>
+                        	<input type="text" name="classe" placeholder="Classe : "><br><br>
+                        	<input type="text" name="ecole_provenance" placeholder="Ecole de provenace : "><br><br>
+                        	<input type="text" name="resultat" placeholder="Pourcentage obtenu : "><br><br>
                         </form>
                         
                     </div>
