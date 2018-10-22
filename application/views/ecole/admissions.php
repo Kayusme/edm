@@ -78,7 +78,7 @@
 					</div>
                     <div class="col-md-7 admi-main-right">
                         <h4>Formulaire de pre-inscription</h4><br>
-                        <?php echo form_open('ecole/pre_inscription')?>
+                                                <?php echo form_open('ecole/pre_inscription')?>
                         	<input type="text" name="nom" placeholder="Nom : " required=""><br><br>
                         	<input type="text" name="post_nom" placeholder="Post-nom : " required=""><br><br>
                         	<input type="text" name="prenom" placeholder="Prenom : " required=""><br><br>
