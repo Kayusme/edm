@@ -39,7 +39,26 @@ class Ecole  extends CI_Controller
         $this->load->view('ecole/_global/footer');
     }
     public function pre_inscription()
-    {}
+    {
+        $nom = $this->input->post("nom");
+        $post_nom = $this->input->post("post_nom");
+        $prenom =$this->input->post("prenom");
+        $sex = $this->input->post("sex");
+        $dt = array($this->input->post("jj"), $this->input->post("mm"), $this->input->post("aa"));
+        $lieu = $this->input->post("lieu");
+        $nationalite = $this->input->post("nationalite");
+        $classe = $this->input->post("classe");
+        $ecole = $this->input->post("ecole_provenance");
+        $pourc = $this->input->post("resultat");
+        if (isset($nom) and isset($post_nom) and isset($prenom) and isset($sex) and isset($dt) and isset($lieu) and isset($nationalite) and isset($classe) and isset($ecole) and isset($pourc)) {
+            $this->load->model("ecole_model");
+            $validation = $this->ecole_model->admission($nom, $post_nom, $prenom, $sex, $dt, $lieu, $nationalite, $classe, $ecole, $pourc);
+            $this->index();
+        }
+        else{
+            $this->admissions();
+        }
+    }
     public function courses()
     {
         $this->load->model('ecole_model');
