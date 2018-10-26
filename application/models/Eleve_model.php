@@ -25,7 +25,7 @@ class Eleve_model extends CI_Model
     }
     
     function selectHoraire($idClass, $idJour){
-        $this->db->select('*','matire.nom as ncours');
+        $this->db->select('*,matiere.nom as ncours');
         $this->db->from('horaire');
         $this->db->join('classe','horaire.idClasse = classe.id');
         $this->db->join('matiere','horaire.idMatiere = matiere.id');

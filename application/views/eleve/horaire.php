@@ -10,7 +10,7 @@
 								<th>Heure</th><br><hr>
 								<?php
 								$i = 0;
-									while ( $i <= $heure) { 
+									while ( $i < $heure) { 
 										$a = $i+1;?>
 										<th><?php echo $a."e hrs";?></th><br><hr> <?php
 										$i = $i + 1;
