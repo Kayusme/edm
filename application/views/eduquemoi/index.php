@@ -9,7 +9,7 @@
                     foreach ($resultats as $resultat) {
                     ?>
 					<div class="col-md-4 col-sm-4 gallery-grid gallery-grid-1 history-grid-image">
-						<img src="<?=base_url($resultat)?>" alt="Agileits W3layouts" class="zoom-img">
+						<img src="<?=base_url($resultat)?>" alt="EduqueMoi" class="zoom-img">
 					</div>
                         <?php
                     }
@@ -93,7 +93,7 @@
 					 <div id="owl-demo2" class="owl-carousel">
                          <?php
                          $i=0;
-                         $nom[]="Ben Sulumu"; $nom[]="Noemie Campbell";
+                         $nom[]="Noemie Campbell"; $nom[]="Ben Sulumu";
                          $details[]='Parent d\'eleves'; $details[]='Encadreur';
                          $resultats = imgFromDir("eduquemoi/images/testimonials/");
                          foreach ($resultats as $resultat) {
