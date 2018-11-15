@@ -35,28 +35,28 @@
 
     echo meta($meta).
         '<!-- Icon-CSS -->'."\n".
-        link_tag("assets/statics/eduquemoi/images/icone.png",'icon').
+        link_tag("assets/eduquemoi/images/icone.png",'icon').
         '<!-- Bootstrap-CSS -->'."\n".
-        link_tag("assets/statics/eleve/css/bootstrap.min.css").
+        link_tag("assets/eleve/css/bootstrap.min.css").
         '<!-- Font-awesome-CSS -->'."\n".
        '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>'."\n".
         '<!-- Flex-slider-CSS -->'."\n".
-        link_tag("assets/statics/eleve/css/style.css").
-        link_tag("assets/statics/eleve/css/lines.css").
-        link_tag("assets/statics/eleve/css/custom.css").
+        link_tag("assets/eleve/css/style.css").
+        link_tag("assets/eleve/css/lines.css").
+        link_tag("assets/eleve/css/custom.css").
         '<!--//web-fonts-->'."\n".
         link_tag("http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900");
     ?>
     <!-- jQuery -->
-    <script src="<?=base_url("assets/statics/eleve/js/jquery.min.js")?>"></script>
+    <script src="<?=base_url("assets/eleve/js/jquery.min.js")?>"></script>
     <!-- Metis Menu Plugin JavaScript -->
-    <script src="<?=base_url("assets/statics/eleve/js/metisMenu.min.js")?>"></script>
-    <script src="<?=base_url("assets/statics/eleve/js/custom.js")?>"></script>
+    <script src="<?=base_url("assets/eleve/js/metisMenu.min.js")?>"></script>
+    <script src="<?=base_url("assets/eleve/js/custom.js")?>"></script>
     <!-- Graph JavaScript -->
-    <script src="<?=base_url("assets/statics/eleve/js/d3.v3.js")?>"></script>
-    <script src="<?=base_url("assets/statics/eleve/js/rickshaw.js")?>"></script>
+    <script src="<?=base_url("assets/eleve/js/d3.v3.js")?>"></script>
+    <script src="<?=base_url("assets/eleve/js/rickshaw.js")?>"></script>
     <!-- chart -->
-    <script src="<?=base_url("assets/statics/eleve/js/Chart.js")?>"></script>
+    <script src="<?=base_url("assets/eleve/js/Chart.js")?>"></script>
     <!-- //chart -->
 </head>
 <body>
