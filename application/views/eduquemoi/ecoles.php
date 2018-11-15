@@ -25,18 +25,18 @@
 					<td>Lubumbashi,22 lomami street</td>
 					<td><a href="http://imara.eduquemoi.org" target="blank">imara.eduquemoi.org</a></td>
 				</tr>
-				<tr>
+				<!-- <tr>
 					<td>2</td>
 					<td>Salama</td>
 					<td>Lubumbashi,12 femme-katangaise</td>
 					<td><a href="http://salama.eduquemoi.org" target="blank">salama.eduquemoi.org</a></td>
-				</tr>
-				<tr>
+				</tr> -->
+				<!-- <tr>
 					<td>3</td>
 					<td>Mahadini</td>
 					<td>Lubumbashi, Sandowa</td>
 					<td><a href="http://mahadini.eduquemoi.org">mahadini.eduquemoi.org</a></td>
-				</tr>
+				</tr> -->
 			</tbody>
 		</table>
 	</div>
