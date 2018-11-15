@@ -2,7 +2,7 @@
     <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom">
       <div class="container">
         <a class="navbar-brand mr-lg-5" href="parents/index.html">
-          <img src="<?=base_url("assets/statics/parents/images/logo_white.png")?>">
+          <img src="<?=base_url("assets/parents/images/logo_white.png")?>">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -12,7 +12,7 @@
             <div class="row">
               <div class="col-6 collapse-brand">
                 <a href="./index.html">
-                  <img src="<?=base_url("assets/statics/parents/images/logo.png")?>">
+                  <img src="<?=base_url("assets/parents/images/logo.png")?>">
                 </a>
               </div>
               <div class="col-6 collapse-close">
