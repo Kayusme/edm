@@ -24,7 +24,7 @@
                 </li>
                 <li class="avatar">
                     <a href="#">
-                        <img src="<?=base_url("assets/statics/eleve/images/1.png")?>" alt=""/>
+                        <img src="<?=base_url("assets/eleve/images/1.png")?>" alt=""/>
                         <div>Nouveau message</div>
                         <small>1 minute ago</small>
                         <span class="label label-info">Nouveau</span>
@@ -32,7 +32,7 @@
                 </li>
                 <li class="avatar">
                     <a href="#">
-                        <img src="<?=base_url("assets/statics/eleve/images/2.png")?>" alt=""/>
+                        <img src="<?=base_url("assets/eleve/images/2.png")?>" alt=""/>
                         <div>Nouveau message</div>
                         <small>1 minute ago</small>
                         <span class="label label-info">NEW</span>
@@ -40,14 +40,14 @@
                 </li>
                 <li class="avatar">
                     <a href="#">
-                        <img src="<?=base_url("assets/statics/eleve/images/3.png")?>" alt=""/>
+                        <img src="<?=base_url("assets/eleve/images/3.png")?>" alt=""/>
                         <div>Nouveau message</div>
                         <small>2 minutes ago</small>
                     </a>
                 </li>
                 <li class="avatar">
                     <a href="#">
-                        <img src="<?=base_url("assets/statics/eleve/images/4.png")?>" alt=""/>
+                        <img src="<?=base_url("assets/eleve/images/4.png")?>" alt=""/>
                         <div>Nouveau message</div>
                         <small>5 minutes ago</small>
                     </a>
