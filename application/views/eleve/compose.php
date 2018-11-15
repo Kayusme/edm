@@ -10,15 +10,15 @@
             <small>(En ligne)</small>
             </h4>
             <div class="status-badge mrg10A">
-                <img class="img-circle" width="40" src="<?=base_url("/assets/statics/admin/images/1.png")?>" alt="">
+                <img class="img-circle" width="40" src="<?=base_url("/assets/eleve/images/1.png")?>" alt="">
                 <div class="small-badge bg-red"></div>
             </div>
             <div class="status-badge mrg10A">
-                <img class="img-circle" width="40" src="<?=base_url("/assets/statics/admin/images/2.png")?>" alt="">
+                <img class="img-circle" width="40" src="<?=base_url("/assets/eleve/images/2.png")?>" alt="">
                 <div class="small-badge bg-orange"></div>
             </div>
             <div class="status-badge mrg10A">
-                <img class="img-circle" width="40" src="<?=base_url("/assets/statics/eleve/images/3.png")?>" alt="">
+                <img class="img-circle" width="40" src="<?=base_url("/assets/eleve/images/3.png")?>" alt="">
                 <div class="small-badge bg-red"></div>
             </div>
           </div>
