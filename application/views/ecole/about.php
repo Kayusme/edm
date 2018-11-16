@@ -16,7 +16,7 @@
 			</ul>
 				<div class="about-text">
 					<div class="col-md-4 about-text-left">
-						<img src="<?=base_url("assets/statics/ecole/images/st-1.jpg")?>" alt="">
+						<img src="<?=base_url("assets/ecole/images/st-1.jpg")?>" alt="">
 						<h5>Ce que nous faison</h5>
 						<p>			En plus des options d'études que nous offrons, nos enseignements sont aussi axés sur le renforcement des capacités en informatique, en anglais et en espagnole. Nous disposons des solutions informatiques permettant :</p>
 						<div class="tool">
@@ -25,7 +25,7 @@
 						</div>
 					</div>
 					<div class="col-md-4 about-text-left">
-						<img src="<?=base_url("assets/statics/ecole/images/st-2.jpg")?>" alt="">
+						<img src="<?=base_url("assets/ecole/images/st-2.jpg")?>" alt="">
 						<h5>Nos Capacités</h5>
 						<p>Nos bâtiments contiennent 35 salles de classes ayant une capacité d'accueil de 45 élèves par classe donc nous disposons d'une capacité totale d'accueil de 1575 élèves, 5 bureaux, 20 blocs de toilettes, 1 bibliothèque, 1 grande salle de réunion, 1 Salle informatique équipée de 50 Ordinateurs pour la pratique, 1 Laboratoire Physico-Chimique, 1 cantine, 1 terrain de Basket-ball, 1 de football et de Volley-ball.</p>
 						<div class="tool">
@@ -34,7 +34,7 @@
 						</div>
 					</div>
 					<div class="col-md-4 about-text-left">
-						<img src="<?=base_url("assets/statics/ecole/images/st-2.jpg")?>" alt="">
+						<img src="<?=base_url("assets/ecole/images/st-2.jpg")?>" alt="">
 						<h5>Nos Standards</h5>
 						<p>Nous, College Eden de Lubumbashi avons convenu de promouvoir des échanges internationaux et culturels avec Eden Academy de l'australie dans l'intérêt des deux parties. Les activités futures de ce partenariat incluront le transfert d'étudiants, les formations du corps professoral et l'échange de professeurs.</p>
 						<div class="tool">
@@ -61,11 +61,11 @@
                                 <div class="our-campus clearfix">
                                 	<table>
                                 		<tr>
-                                			<td><a href="#" title="Bellevue College, Washington" target="_blank" style="heigth=50px;"><img src="<?=base_url("assets/statics/ecole/images/logo_noir.png")?>" heigth="100" width="100" style="heigth=50px;"></a></td>
+                                			<td><a href="#" title="Bellevue College, Washington" target="_blank" style="heigth=50px;"><img src="<?=base_url("assets/ecole/images/logo_noir.png")?>" heigth="100" width="100" style="heigth=50px;"></a></td>
                                 			<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                                			<td><a href="#" title="Explore BC: Take the new virtual tour of Bellevue College" target="_blank" style="heigth=50px;"><img src="<?=base_url("assets/statics/ecole/images/bg2.jpg")?>" heigth="200" width="200"></a></td>
+                                			<td><a href="#" title="Explore BC: Take the new virtual tour of Bellevue College" target="_blank" style="heigth=50px;"><img src="<?=base_url("assets/ecole/images/bg2.jpg")?>" heigth="200" width="200"></a></td>
 											<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-											<td><a href="#" title="Explore BC: Take the new virtual tour of Bellevue College" target="_blank" style="heigth=50px;"><img src="<?=base_url("assets/statics/ecole/images/logo.png")?>" heigth="100" width="100"></a></td>
+											<td><a href="#" title="Explore BC: Take the new virtual tour of Bellevue College" target="_blank" style="heigth=50px;"><img src="<?=base_url("assets/ecole/images/logo.png")?>" heigth="100" width="100"></a></td>
                                 		</tr>
                                 	</table>
                                 </div>

@@ -9,7 +9,7 @@
 			      		<ul class="rslides" id="slider4">
 
                             <?php
-                            $resultats = imgFromDir("ecole/images/admission");
+                            $resultats = imgFromDir("assets/ecole/images/admission");
                             foreach ($resultats as $resultat) {
                                 ?>
                             <li>
@@ -18,13 +18,13 @@
                                 <?php
                             }
                             ?>
-<!--								<img src="--><?//=base_url("assets/statics/ecole/images/admi-1.jpg")?><!--" alt="">-->
+<!--								<img src="--><?//=base_url("assets/ecole/images/admi-1.jpg")?><!--" alt="">-->
 						</li>
 <!--						<li>-->
-<!--							<img src="--><?//=base_url("assets/statics/ecole/images/admi-2.jpg")?><!--" alt="">-->
+<!--							<img src="--><?//=base_url("assets/ecole/images/admi-2.jpg")?><!--" alt="">-->
 <!--						</li>-->
 <!--						<li>-->
-<!--							<img src="--><?//=base_url("assets/statics/ecole/images/admi-3.jpg")?><!--" alt="">-->
+<!--							<img src="--><?//=base_url("assets/ecole/images/admi-3.jpg")?><!--" alt="">-->
 <!--						</li>-->
 			      </ul>
 			    </div>
@@ -127,7 +127,7 @@
 	</div>
 	<!--end-admissions-->
 	<!--Slider-Starts-Here-->
-			<script src="<?=base_url('assets/statics/ecole/js/responsiveslides.min.js')?>"></script>
+			<script src="<?=base_url('assets/ecole/js/responsiveslides.min.js')?>"></script>
 			 <script>
 			    // You can also use "$(window).load(function() {"
 			    $(function () {

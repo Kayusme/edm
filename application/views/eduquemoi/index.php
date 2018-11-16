@@ -5,11 +5,11 @@
 			<div class="col-md-6 col-sm-6 gallery-grids agileits w3layouts gallery-grids1 wow slideInLeft">
 				<div class="gallery-grid-images agileits w3layouts">
                     <?php
-                    $resultats = imgFromDir("eduquemoi/images/a/");
+                    $resultats = imgFromDir("assets/eduquemoi/images/a/");
                     foreach ($resultats as $resultat) {
                     ?>
 					<div class="col-md-4 col-sm-4 gallery-grid gallery-grid-1 history-grid-image">
-						<img src="<?=base_url($resultat)?>" alt="Agileits W3layouts" class="zoom-img">
+						<img src="<?=base_url($resultat)?>" alt="EduqueMoi" class="zoom-img">
 					</div>
                         <?php
                     }
@@ -93,9 +93,9 @@
 					 <div id="owl-demo2" class="owl-carousel">
                          <?php
                          $i=0;
-                         $nom[]="Ben Sulumu"; $nom[]="Noemie Campbell";
+                         $nom[]="Noemie Campbell"; $nom[]="Ben Sulumu";
                          $details[]='Parent d\'eleves'; $details[]='Encadreur';
-                         $resultats = imgFromDir("eduquemoi/images/testimonials/");
+                         $resultats = imgFromDir("assets/eduquemoi/images/testimonials/");
                          foreach ($resultats as $resultat) {
                          ?>
 							<div class="agile">

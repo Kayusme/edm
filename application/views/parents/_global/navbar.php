@@ -2,7 +2,7 @@
     <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom">
       <div class="container">
         <a class="navbar-brand mr-lg-5" href="parents/index.html">
-          <img src="<?=base_url("assets/statics/parents/images/logo_white.png")?>">
+          <img src="<?=base_url("assets/parents/images/logo_white.png")?>">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -12,7 +12,7 @@
             <div class="row">
               <div class="col-6 collapse-brand">
                 <a href="./index.html">
-                  <img src="<?=base_url("assets/statics/parents/images/logo.png")?>">
+                  <img src="<?=base_url("assets/parents/images/logo.png")?>">
                 </a>
               </div>
               <div class="col-6 collapse-close">
@@ -43,7 +43,7 @@
               </a>
             </li>
             <li class="nav-item d-none d-lg-block ml-lg-4">
-              <a href="https://play.google.com/store/apps/details?id=com.pbreakers.eduquemoi" target="_blank" class="btn btn-neutral btn-icon">
+              <a href="https://play.google.com/store/apps/details?id=com.pbreakers.edm" target="_blank" class="btn btn-neutral btn-icon">
                 <span class="btn-inner--icon">
                   <i class="fa fa-cloud-download mr-2"></i>
                 </span>

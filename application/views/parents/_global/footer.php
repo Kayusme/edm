@@ -36,16 +36,16 @@
     </div>
   </footer>
   <!-- Core -->
-  <script src="<?=base_url("assets/statics/parents/vendor/jquery/jquery.min.js")?>"></script>
-  <script src="<?=base_url("assets/statics/parents/vendor/popper/popper.min.js")?>"></script>
-  <script src="<?=base_url("assets/statics/parents/vendor/bootstrap/bootstrap.min.js")?>"></script>
-  <script src="<?=base_url("assets/statics/parents/vendor/headroom/headroom.min.js")?>"></script>
+  <script src="<?=base_url("assets/parents/vendor/jquery/jquery.min.js")?>"></script>
+  <script src="<?=base_url("assets/parents/vendor/popper/popper.min.js")?>"></script>
+  <script src="<?=base_url("assets/parents/vendor/bootstrap/bootstrap.min.js")?>"></script>
+  <script src="<?=base_url("assets/parents/vendor/headroom/headroom.min.js")?>"></script>
   <!-- Optional JS -->
-  <script src="<?=base_url("assets/statics/parents/vendor/onscreen/onscreen.min.js")?>"></script>
-  <script src="<?=base_url("assets/statics/parents/vendor/nouislider/js/nouislider.min.js")?>"></script>
-  <script src="<?=base_url("assets/statics/parents/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js")?>"></script>
+  <script src="<?=base_url("assets/parents/vendor/onscreen/onscreen.min.js")?>"></script>
+  <script src="<?=base_url("assets/parents/vendor/nouislider/js/nouislider.min.js")?>"></script>
+  <script src="<?=base_url("assets/parents/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js")?>"></script>
   <!-- Argon JS -->
-  <script src="<?=base_url("assets/statics/parents/js/argon.js?v=1.0.1")?>"></script>
+  <script src="<?=base_url("assets/parents/js/argon.js?v=1.0.1")?>"></script>
 </body>
 
 </html>

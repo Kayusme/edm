@@ -37,14 +37,14 @@
 
     echo meta($meta).
         '<!-- Icon-CSS -->'."\n".
-        link_tag("assets/statics/parents/images/icone.png",'icon').
+        link_tag("assets/parents/images/icone.png",'icon').
         '<!-- Argon-CSS -->'."\n".
-        link_tag("assets/statics/parents/css/argon.css?v=1.0.1").
+        link_tag("assets/parents/css/argon.css?v=1.0.1").
         '<!-- Font-awesome-CSS -->'."\n".
        '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>'."\n".
         '<!-- Docs-CSS -->'."\n".
-        link_tag("assets/statics/parents/css/docs.min.css.css").
-        link_tag("assets/statics/parents/css/nucleo.css").
+        link_tag("assets/parents/css/docs.min.css.css").
+        link_tag("assets/parents/css/nucleo.css").
         '<!--//web-fonts-->'."\n".
         link_tag("hhttps://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700")
   ?>

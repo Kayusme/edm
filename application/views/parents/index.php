@@ -19,15 +19,15 @@
           <div class="col px-0">
             <div class="row align-items-center justify-content-center">
               <div class="col-lg-6 text-center">
-                <img src="<?=base_url("assets/statics/parents/images/logo_white.png")?>" style="width: 200px;" class="img-fluid">
+                <img src="<?=base_url("assets/parents/images/logo_white.png")?>" style="width: 200px;" class="img-fluid">
                 <p class="lead text-white">Votre Enfant Peut Devenir Un Génie.</p>
                 <div class="btn-wrapper mt-5">
-                  <a href="https://play.google.com/store/apps/details?id=com.pbreakers.eduquemoi" class="btn btn-lg btn-white btn-icon mb-3 mb-sm-0">
+                  <a href="https://play.google.com/store/apps/details?id=com.pbreakers.edm" class="btn btn-lg btn-white btn-icon mb-3 mb-sm-0">
                     <span class="btn-inner--icon"><i class="fa fa-cloud-download"></i></span>
                     <span class="btn-inner--text">Download</span>
                   </a>
                   <a href="https://www.eduquemoi.org/contact.html" class="btn btn-lg btn-github btn-icon mb-3 mb-sm-0" target="_blank">
-                    <span class="btn-inner--icon"><img src="<?=base_url("assets/statics/parents/images/logo_white.png")?>"></span>
+                    <span class="btn-inner--icon"><img src="<?=base_url("assets/parents/images/logo_white.png")?>"></span>
                     <span class="btn-inner--text">
                       <span class="text-warning">Contactez-nous</span></span>
                   </a>
@@ -80,7 +80,7 @@
               <i class="icon fa fa-camera-retro"></i>
               <i class="icon fa fa-area-chart"></i>
             </div>
-            <span class="blur-hidden h5 text-default text-center"><img src="<?=base_url("assets/statics/parents/images/logo.png")?>" style="max-width: 300px;"> <br> Votre Enfant Peut Devenir Un Génie.</span>
+            <span class="blur-hidden h5 text-default text-center"><img src="<?=base_url("assets/parents/images/logo.png")?>" style="max-width: 300px;"> <br> Votre Enfant Peut Devenir Un Génie.</span>
           </a>
         </div>
       </div>
@@ -114,10 +114,10 @@ efficacement entre eux.</p>
                 </ol>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img class="img-fluid" src="<?=base_url("assets/statics/parents/images/bg2.jpg")?>" alt="First slide">
+                    <img class="img-fluid" src="<?=base_url("assets/parents/images/bg2.jpg")?>" alt="First slide">
                   </div>
                   <div class="carousel-item">
-                    <img class="img-fluid" src="<?=base_url("assets/statics/parents/images/bg.jpg")?>" alt="Second slide">
+                    <img class="img-fluid" src="<?=base_url("assets/parents/images/bg.jpg")?>" alt="Second slide">
                   </div>
                 </div>
                 <a class="carousel-control-prev" href="#carousel_example" role="button" data-slide="prev">
