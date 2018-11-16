@@ -43,7 +43,7 @@
               </a>
             </li>
             <li class="nav-item d-none d-lg-block ml-lg-4">
-              <a href="https://play.google.com/store/apps/details?id=com.pbreakers.eduquemoi" target="_blank" class="btn btn-neutral btn-icon">
+              <a href="https://play.google.com/store/apps/details?id=com.pbreakers.edm" target="_blank" class="btn btn-neutral btn-icon">
                 <span class="btn-inner--icon">
                   <i class="fa fa-cloud-download mr-2"></i>
                 </span>
