@@ -24,14 +24,15 @@ class Notifications_model extends CI_Model
     }
     public function readNotification($id)
     {
-        if($id != 0){
+        if($id != 0)
+        {
 
             $this->db->from('notifications');
             $this->db->update('read_n',1);
             $this->db->where('id',$id);
         }
-        
         return $this->db->get()->result_array();
         
     }
+
 }
