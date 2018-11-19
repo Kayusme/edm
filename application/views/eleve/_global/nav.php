@@ -63,10 +63,14 @@
                 <li class="dropdown-menu-header text-center">
                     <strong>Profil</strong>
                 </li>
-                <li class="m_2"><a href="<?=base_url("Eleve/inbox")?>"><i class="fa fa-bell-o count "></i> Notification 
+                <li class="m_2"><a href="<?=base_url("Eleve/inbox")?>" onclick="validation();"><i class="fa fa-bell-o"></i> 
+                Notification
+                 <span class="label label-info"><?=$count;?></span></a></li>
                 
-                <span class="label label-info "><?=$count?> </span></a></li> 
-            
+                <!--<input class="label label-info" id="note" ><?=$count;?></a></li>-->
+                <!-- this is a json for notification  -->
+
+
                 <li class="m_2"><a href="<?=base_url("Eleve/compose")?>"><i class="fa fa-envelope-o"></i> Messages <span class="label label-success">0</span></a></li>
                 <li class="m_2"><a href="<?=base_url("Eleve/devoir")?>"><i class="fa fa-tasks"></i> Devoirs <span class="label label-danger">2</span></a></li>
                     <br /><br /><strong style="margin-left: 40%">Settings</strong><br />
@@ -131,36 +135,10 @@
 </nav>
 
 <script>
-$(document).ready(function(){
-    function load_notification(view = '1')
-    {
-        $.ajax({
-            url:"applications/models/Notifications_models.php",
-            data:{view:view},
-            dataType:"json",
-            success:function(data)
-            {
-                $('.dropdown-menu').html(data.readnotification);
-                if(data.unreadnotifications > 0)
-                {
-                    $('.count').html(data.unreadnotifications);
-                }
-            }
-        });
-    }
-    load_notification();
-    
-    $(document).on('click','dropdown-menu',function(){
-        $('.count').html('');
-        load_notification(view = '2');
-    });
 
-    setInterval(function(){
-        load_notification();
-    }, 5000);
+function validation()
+{
+    swal('onclick on that button');
+}
 
-    $(" .bt").click(function(){
-        load_notification();
-    });
-});
 </script>
