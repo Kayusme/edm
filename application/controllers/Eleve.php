@@ -440,17 +440,8 @@ class Eleve  extends CI_Controller
     }
 
     public function inbox()
-    {
-<<<<<<< HEAD
-        $data['title'] = "Notifications";
-        $data['notifications'] = $this->notifications_model->selectNotifications();
-        $data['count'] = count($this->notifications_model->unreadNotifications());
-        
-        $this->load->view("eleve/_global/header",$data);
-        $this->load->view("eleve/_global/nav");
-        $this->load->view("eleve/inbox",$data);
-        $this->load->view("eleve/_global/footer");
-=======
+    {      
+
         if ($this->session->has_userdata('matricule')){
             $data['title'] = "Notifications";
             $data['notifications'] = $this->notifications_model->selectNotifications();
@@ -462,7 +453,7 @@ class Eleve  extends CI_Controller
         }else{
             redirect('eleve/login');
         }
->>>>>>> f31ee2c8a6ef251e7e5d46c3257001d7362501bd
+
     }
 
     public function horaire()
