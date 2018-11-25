@@ -10,15 +10,15 @@
             <small>(En ligne)</small>
             </h4>
             <div class="status-badge mrg10A">
-                <img class="img-circle" width="40" src="<?=base_url("/assets/statics/admin/images/1.png")?>" alt="">
+                <img class="img-circle" width="40" src="<?=base_url("/assets/eleve/images/1.png")?>" alt="">
                 <div class="small-badge bg-red"></div>
             </div>
             <div class="status-badge mrg10A">
-                <img class="img-circle" width="40" src="<?=base_url("/assets/statics/admin/images/2.png")?>" alt="">
+                <img class="img-circle" width="40" src="<?=base_url("/assets/eleve/images/2.png")?>" alt="">
                 <div class="small-badge bg-orange"></div>
             </div>
             <div class="status-badge mrg10A">
-                <img class="img-circle" width="40" src="<?=base_url("/assets/statics/eleve/images/3.png")?>" alt="">
+                <img class="img-circle" width="40" src="<?=base_url("/assets/eleve/images/3.png")?>" alt="">
                 <div class="small-badge bg-red"></div>
             </div>
           </div>
@@ -32,11 +32,11 @@
                     </div>
                     <div class="panel-body">
                         <hr>
-                        <label for="rec">Entrer le destinataire : </label>
+                        <label for="rec">Entrer le nom du destinataire : </label>
                         <input id="rec" name="receiver" type="text" class="form-control1 control3">
-                        <label for="sujet">Enter Subject :  </label>
+                        <label for="sujet">Entrer le sujet :  </label>
                         <input id="sujet" name="sujet" type="text" class="form-control1 control3">
-                        <label for="msg">Enter Message : </label>
+                        <label for="msg">Entrer le message : </label>
                         <textarea id="msg" name="msg" rows="6" class="form-control1 control2"></textarea>
                         <hr>
                         <button type="submit" class="btn btn-warning btn-warng1"><span class="glyphicon glyphicon-envelope tag_02"></span> Envoyer </button>&nbsp;

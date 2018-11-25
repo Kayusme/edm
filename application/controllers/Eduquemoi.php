@@ -16,6 +16,7 @@ class Eduquemoi extends CI_Controller
         $this->load->view('eduquemoi/_global/navbar');
         $this->load->view('eduquemoi/index',$data);
         $this->load->view("eduquemoi/liens");
+        $this->load->view("eduquemoi/register");
         $this->load->view('eduquemoi/_global/footer');
 
     }
@@ -40,7 +41,7 @@ class Eduquemoi extends CI_Controller
     }
     public function ecoles()
     {
-        $data['title'] = 'Lites d\'ecoles';
+        $data['title'] = 'Listes d\'ecoles';
         $this->load->view('eduquemoi/_global/header2',$data);
         $this->load->view('eduquemoi/ecoles',$data);
         $this->load->view('eduquemoi/_global/footer');

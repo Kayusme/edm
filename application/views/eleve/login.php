@@ -7,15 +7,15 @@
 <meta name="keywords" content="" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
  <!-- Bootstrap Core CSS -->
-<link href="<?= BASE_URL() ?>assets/statics/eleve/css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+<link href="<?= BASE_URL() ?>assets/eleve/css/bootstrap.min.css" rel='stylesheet' type='text/css' />
 <!-- Custom CSS -->
-<link href="<?= BASE_URL() ?>assets/statics/eleve/css/style.css" rel='stylesheet' type='text/css' />
+<link href="<?= BASE_URL() ?>assets/eleve/css/style.css" rel='stylesheet' type='text/css' />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- jQuery -->
 </head>
 <body id="login">
   <div class="login-logo">
-    <a href="index.html"><img src="<?= BASE_URL() ?>assets/statics/eleve/images/logo.png" alt="" style="max-height: 200px;"/></a>
+    <a href="index.html"><img src="<?= BASE_URL() ?>assets/eleve/images/logo.png" alt="" style="max-height: 100px;"/></a>
   </div>
   <h2 class="form-heading">connexion</h2>
   <div class="app-cam">
@@ -29,8 +29,8 @@
 		</ul>
 	</form>
   </div>
-  <script src="<?= BASE_URL() ?>assets/statics/eleve/js/jquery.min.js"></script>
+  <script src="<?= BASE_URL() ?>assets/eleve/js/jquery.min.js"></script>
   <!-- Bootstrap Core JavaScript -->
-  <script src="<?= BASE_URL() ?>assets/statics/eleve/js/bootstrap.min.js"></script>
+  <script src="<?= BASE_URL() ?>assets/eleve/js/bootstrap.min.js"></script>
 </body>
 </html>

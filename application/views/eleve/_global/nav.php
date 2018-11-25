@@ -24,7 +24,7 @@
                 </li>
                 <li class="avatar">
                     <a href="#">
-                        <img src="<?=base_url("assets/statics/eleve/images/1.png")?>" alt=""/>
+                        <img src="<?=base_url("assets/eleve/images/1.png")?>" alt=""/>
                         <div>Nouveau message</div>
                         <small>1 minute ago</small>
                         <span class="label label-info">Nouveau</span>
@@ -32,7 +32,7 @@
                 </li>
                 <li class="avatar">
                     <a href="#">
-                        <img src="<?=base_url("assets/statics/eleve/images/2.png")?>" alt=""/>
+                        <img src="<?=base_url("assets/eleve/images/2.png")?>" alt=""/>
                         <div>Nouveau message</div>
                         <small>1 minute ago</small>
                         <span class="label label-info">NEW</span>
@@ -40,14 +40,14 @@
                 </li>
                 <li class="avatar">
                     <a href="#">
-                        <img src="<?=base_url("assets/statics/eleve/images/3.png")?>" alt=""/>
+                        <img src="<?=base_url("assets/eleve/images/3.png")?>" alt=""/>
                         <div>Nouveau message</div>
                         <small>2 minutes ago</small>
                     </a>
                 </li>
                 <li class="avatar">
                     <a href="#">
-                        <img src="<?=base_url("assets/statics/eleve/images/4.png")?>" alt=""/>
+                        <img src="<?=base_url("assets/eleve/images/4.png")?>" alt=""/>
                         <div>Nouveau message</div>
                         <small>5 minutes ago</small>
                     </a>
@@ -78,7 +78,7 @@
                 <li class="m_2"><a href="<?=base_url("Eleve/profile")?>"><i class="fa fa-user"></i> Profile</a></li>
                 <!-- <li class="m_2"><a href="<?=base_url("Eleve/blog")?>"><i class="fa fa-users icon_1"></i> Blog <span class="label label-default">4</span></a></li> -->
                 <li class="divider"></li>
-                <li class="m_2"><a href="#"><i class="fa fa-shield"></i> Lock Profile</a></li>
+                <!-- <li class="m_2"><a href="#"><i class="fa fa-shield"></i> Lock Profile</a></li> -->
                 <li class="m_2"><a href="logout"><i class="fa fa-lock"></i> Logout</a></li>
             </ul>
         </li>
@@ -104,7 +104,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="#"><i class="fa fa-envelope nav_icon"></i>Messageries<span class="fa arrow"></span></a>
+                    <a href="#"><i class="fa fa-envelope nav_icon"></i>Messagerie<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li>
                             <?=anchor("eleve/inbox","Notifications")?>

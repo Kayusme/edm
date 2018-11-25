@@ -11,7 +11,7 @@
       				</ol>
       				<div class="carousel-inner">
       					<div class="item">
-      						<img data-src="holder.js/900x500/auto/#777:#7a7a7a/text:First slide" alt="First slide" src="<?=base_url("assets/statics/eleve/images/bg.jpg")?>">
+      						<img data-src="holder.js/900x500/auto/#777:#7a7a7a/text:First slide" alt="First slide" src="<?=base_url("assets/eleve/images/a3.jpg")?>">
       						<div class="container">
       							<div class="carousel-caption">
       								<h2>Education pour tous</h2>
@@ -19,7 +19,7 @@
       						</div>
       					</div>
       					<div class="item">
-      						<img data-src="holder.js/900x500/auto/#666:#6a6a6a/text:Second slide" alt="Second slide" src="<?=base_url("assets/statics/eleve/images/bg.jpg")?>">
+      						<img data-src="holder.js/900x500/auto/#666:#6a6a6a/text:Second slide" alt="Second slide" src="<?=base_url("assets/eleve/images/a1.jpg")?>">
       						<div class="container">
       							<div class="carousel-caption">
       								<h2>Travaillons main dans la main</h2>
@@ -27,7 +27,7 @@
       						</div>
       					</div>
       					<div class="item active">
-      						<img data-src="holder.js/900x500/auto/#555:#5a5a5a/text:Third slide" alt="Third slide" src="<?=base_url("assets/statics/eleve/images/bg.jpg")?>">
+      						<img data-src="holder.js/900x500/auto/#555:#5a5a5a/text:Third slide" alt="Third slide" src="<?=base_url("assets/eleve/images/bg.jpg")?>">
       						<div class="container">
       							<div class="carousel-caption">
       								<h2>Pour un Congo fort et prospère</h2>
@@ -42,11 +42,11 @@
 		    </div>
             <div class="clearfix"> </div>
 	    </div>
-	    <?=link_tag("assets/statics/eleve/css/clndr.css")?>
-			<script src="<?=base_url("assets/statics/eleve/js/underscore-min.js")?>" type="text/javascript"></script>
-			<script src= "<?=base_url("assets/statics/eleve/js/moment-2.2.1.js")?>" type="text/javascript"></script>
-			<script src="<?=base_url("assets/statics/eleve/js/clndr.js")?>" type="text/javascript"></script>
-			<script src="<?=base_url("assets/statics/eleve/js/site.js")?>" type="text/javascript"></script>
+	    <?=link_tag("assets/eleve/css/clndr.css")?>
+			<script src="<?=base_url("assets/eleve/js/underscore-min.js")?>" type="text/javascript"></script>
+			<script src= "<?=base_url("assets/eleve/js/moment-2.2.1.js")?>" type="text/javascript"></script>
+			<script src="<?=base_url("assets/eleve/js/clndr.js")?>" type="text/javascript"></script>
+			<script src="<?=base_url("assets/eleve/js/site.js")?>" type="text/javascript"></script>
 
             <div class="clearfix"></div>
             <h2 class="text-center">Notifications</h2>
@@ -58,7 +58,7 @@
 					<div class="col-md-12">
 						<h3 class="text-center"> <?= $notification['title']?></h3><br /><br />
 						<div class="col-md-2 col-xs-12">
-							<img src="<?=base_url("assets/statics/eleve/images/logo.jpg")?>" class="img-responsive img-thumbnail" style="">
+							<img src="<?=base_url("assets/eleve/images/logo.png")?>" class="img-responsive img-thumbnail" style="">
 						</div>
 						<div class="col-md-10  col-xs-12">
 						<?= $notification['message']?>.

@@ -24,7 +24,7 @@
 					</div>
 					<div class="col-xs-8 agile_contact_grid_right agileits_w3layouts_right">
 						<h4>Phone</h4>
-						<p>+243 991 888 702<span>+00 505 222 606</span></p>
+						<p>+243 991 888 702<span>+243 976 623 199</span></p>
 					</div>
 					<div class="clearfix"> </div>
 				</div>
@@ -34,8 +34,7 @@
 					</div>
 					<div class="col-xs-8 agile_contact_grid_right ">
 						<h4>Email</h4>
-						<p><a href="mailto:info@example.com">info@example1.com</a>
-							<span><a href="mailto:info@example.com">info@example2.com</a></span></p>
+						<p>ben.sulumu@eduquemoi.org<span>samy.kayombo@eduquemoi.org</span></p>
 					</div>
 					<div class="clearfix"> </div>
 				</div>
@@ -53,7 +52,7 @@
 						<span class="input input--akira">
 							<input class="input__field input__field--akira" type="email" id="input-23" name="Email" placeholder="" required="" />
 							<label class="input__label input__label--akira" for="input-23">
-								<span class="input__label-content input__label-content--akira">Email</span>
+								<span class="input__label-content input__label-content--akira">Votre adresse Email</span>
 							</label>
 						</span>
 						<span class="input input--akira">

@@ -4,12 +4,12 @@
 			<div class="admi-top">
 				<h3><?=ucfirst($title);?></h3>
 				<div class="admi-main">
-					<div class="col-md-7 admi-main-left">
+					<div class="col-md-5 admi-main-left">
 						<div  id="top" class="callbacks_container">
 			      		<ul class="rslides" id="slider4">
 
                             <?php
-                            $resultats = imgFromDir("ecole/images/admission");
+                            $resultats = imgFromDir("assets/ecole/images/admission");
                             foreach ($resultats as $resultat) {
                                 ?>
                             <li>
@@ -18,122 +18,116 @@
                                 <?php
                             }
                             ?>
-<!--								<img src="--><?//=base_url("assets/statics/ecole/images/admi-1.jpg")?><!--" alt="">-->
+<!--								<img src="--><?//=base_url("assets/ecole/images/admi-1.jpg")?><!--" alt="">-->
 						</li>
 <!--						<li>-->
-<!--							<img src="--><?//=base_url("assets/statics/ecole/images/admi-2.jpg")?><!--" alt="">-->
+<!--							<img src="--><?//=base_url("assets/ecole/images/admi-2.jpg")?><!--" alt="">-->
 <!--						</li>-->
 <!--						<li>-->
-<!--							<img src="--><?//=base_url("assets/statics/ecole/images/admi-3.jpg")?><!--" alt="">-->
+<!--							<img src="--><?//=base_url("assets/ecole/images/admi-3.jpg")?><!--" alt="">-->
 <!--						</li>-->
 			      </ul>
 			    </div>
+			    <style type="text/css">
+			    	input[type="text"]{
+			    		width: 75%;
+			    		padding: 1.5% 2%;
+			    	}
+			    	input[type="radio"]{
+			    		width: 5%;
+			    		padding: 1.5% 2%;
+			    	}
+			    	select[name="aa"] {
+			    		width: 15%;
+			    		padding: 1.5% 0.1%;
+			    	}
+			    	select[name="mm"], select[name="sex"] {
+			    		width: 16%;
+			    		padding: 1.5% 0.1%;
+			    	}
+			    	select[name="jj"] {
+			    		width: 8%;
+			    		padding: 1.5% 0.1%;
+			    	}
+			    	input[type="submit"] {
+			    		border: none;
+			    		background-color: rgb(0, 162, 232);
+			    		padding: 1.5% 2%;
+			    		width: 25%;
+			    		color: #fff;
+			    	}
+			    	input[type="reset"] {
+			    		position: absolute;
+			    		left: 48%;
+			    		border: none;
+			    		background-color: rgb(0, 162, 232);
+			    		padding: 1.5% 2%;
+			    		width: 25%;
+			    		color: #fff;
+			    	}
+			    	input[type="submit"]:hover, input[type="reset"]:hover
+			    	{
+			    		width: 23%;
+			    		border : solid;
+			    		border-color: rgb(0, 162, 232);
+			    		background-color: transparent;
+			    		color: rgb(0, 162, 232);
+			    	}
+			    </style>
 			    <div class="clearfix"> </div>
 					</div>
-                    <div class="col-md-5 admi-main-right">
-                        <h4>Annonces</h4>
-                        <div class="admi-right">
-                            <div class="admi-right-left">
-                                <h5>1</h5>
-                            </div>
-                            <div class="admi-right-right">
-                                <h6>Anniversaire de l'école.</h6>
-                                <p>Nov  29,2013</p>
-                            </div>
-                            <div class="clearfix"></div>
-                        </div>
-                        <div class="admi-right">
-                            <div class="admi-right-left">
-                                <h5>2</h5>
-                            </div>
-                            <div class="admi-right-right">
-                                <h6>Rentrée scolaire</h6>
-                                <p>oct  23,2013</p>
-                            </div>
-                            <div class="clearfix"></div>
-                        </div>
-                        <div class="admi-right">
-                            <div class="admi-right-left">
-                                <h5>3</h5>
-                            </div>
-                            <div class="admi-right-right">
-                                <h6>Debut des Vacances de Noël</h6>
-                                <p>dec  18,2013</p>
-                            </div>
-                            <div class="clearfix"></div>
-                        </div>
-                        <div class="admi-right">
-                            <div class="admi-right-left">
-                                <h5>4</h5>
-                            </div>
-                            <div class="admi-right-right">
-                                <h6>Debut des Vacances de Pâques</h6>
-                                <p>mar  13,2013</p>
-                            </div>
-                            <div class="clearfix"></div>
-                        </div>
-                        <div class="admi-right">
-                            <div class="admi-right-left">
-                                <h5>5</h5>
-                            </div>
-                            <div class="admi-right-right">
-                                <h6>Fête de Nouvels an avec les enseignants</h6>
-                                <p>jan  3,2013</p>
-                            </div>
-                            <div class="clearfix"></div>
-                        </div>
+                    <div class="col-md-7 admi-main-right">
+                        <h4>Formulaire de pre-inscription</h4><br>
+                                                <?php echo form_open('ecole/pre_inscription')?>
+                        	<input type="text" name="nom" placeholder="Nom : " required=""><br><br>
+                        	<input type="text" name="post_nom" placeholder="Post-nom : " required=""><br><br>
+                        	<input type="text" name="prenom" placeholder="Prenom : " required=""><br><br>
+                        	Genre :  <select name="sex">
+                        		<option>M</option>
+                        		<option>F</option>
+                        	</select><br><br>
+                        	Date de naissance : 
+                        	JJ <select name="jj">
+                        		<?php for($i = 1; $i <= 31; $i++) {?>
+                        		<option><?=$i ?></option>
+                        		<?php } ?>
+                        	</select>
+                        	MM <select  name="mm">
+                        		<option>janvier</option>
+                        		<option>fevrier</option>
+                        		<option>mars</option>
+                        		<option>avril</option>
+                        		<option>mai</option>
+                        		<option>juin</option>
+                        		<option>juillet</option>
+                        		<option>aout</option>
+                        		<option>octobre</option>
+                        		<option>novembre</option>
+                        		<option>decembre</option>
+                        	</select>
+                        	AA <select name="aa">
+                        		<?php for($i = 1900; $i <= date('Y'); $i++) {?>
+                        		<option><?=$i ?></option>
+                        		<?php } ?>
+                        	</select><br><br>
+                        	<input type="text" name="lieu" placeholder="Lieu de naissance : " required=""><br><br>
+                        	<input type="text" name="nationalite" placeholder="Nationalite : " required=""><br><br>
+                        	<input type="text" name="classe" placeholder="Classe : " required=""><br><br>
+                        	<input type="text" name="ecole_provenance" placeholder="Ecole de provenace : " required=""><br><br>
+                        	<input type="text" name="resultat" placeholder="Pourcentage obtenu : " required=""><br><br>
+                        	<input type="submit" value="valider">
+                        	<input type="reset" value="annuler">
+                        </form>
+                        
                     </div>
 					<div class="clearfix"></div>
 				</div>
-			</div>
-			<div class="admin-bottom">
-				<div class="col-md-3 admin-bottom-left">
-					<h4>Student's Area</h4>
-					<ul>
-						<li><a href="#">Student Profile</a></li>
-						<li><a href="#">Time Table</a></li>
-						<li><a href="#">Forms Download</a></li>
-						<li><a href="#">Extra Class Form</a></li>
-						<li><a href="#">Exam Seating Plan</a></li>
-					</ul>
-				</div>
-				<div class="col-md-3 admin-bottom-left">
-					<h4>Departments</h4>
-					<ul>
-						<li><a href="#">Computer Engineering</a></li>
-						<li><a href="#">Soft Engineering</a></li>
-						<li><a href="#">Management Science</a></li>
-						<li><a href="#">Earth & Environmental Science</a></li>
-						<li><a href="#">Computer Science</a></li>
-						<li><a href="#">Information Technology</a></li>
-						<li><a href="#">Electrical Engineering</a></li>
-					</ul>
-				</div>
-				<div class="col-md-3 admin-bottom-left">
-					<h4>Faculty Services</h4>
-					<ul>
-						<li><a href="#">Attendance System</a></li>
-						<li><a href="#">Employee Profile</a></li>
-						<li><a href="#">Employee Profile-Visiting Faculty</a></li>
-					</ul>
-				</div>
-				<div class="col-md-3 admin-bottom-left">
-					<h4>e-services</h4>
-					<ul>
-						<li><a href="#">e-classes</a></li>
-						<li><a href="#">e-admission</a></li>
-						<li><a href="#">e-alumni</a></li>
-						<li><a href="#">e-mail</a></li>
-						<li><a href="#">e-library</a></li>
-					</ul>
-				</div>
-				<div class="clearfix"></div>
 			</div>
 		</div>
 	</div>
 	<!--end-admissions-->
 	<!--Slider-Starts-Here-->
-			<script src="<?=base_url('assets/statics/ecole/js/responsiveslides.min.js')?>"></script>
+			<script src="<?=base_url('assets/ecole/js/responsiveslides.min.js')?>"></script>
 			 <script>
 			    // You can also use "$(window).load(function() {"
 			    $(function () {

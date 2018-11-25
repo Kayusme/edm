@@ -37,27 +37,35 @@
 		<h3 class="tittle-agileits-w3layouts">Nos <span>Partenaires</span></h3>
 	</div>
      <div class="agile-homes-w3l grid container">
-                <div class="col-md-3 home-agile-left">
+                <div class="col-md-2 home-agile-left">
 				   <figure class="">
-						<img src="../assets/statics/eduquemoi/images/logo.png" alt="Eduque-Moi" />
+						<img src="<?= base_url('assets/eduquemoi/images/logo.png')?>" alt="Eduque-Moi" class="img-responsive"/>
 						<figcaption>
 							<p><span>Eduque-Moi</span></p>
 						</figcaption>			
 					</figure>
 				</div>
-				<div class="col-md-3 home-agile-left">
+				<div class="col-md-2 col-md-offset-1 home-agile-left">
 				   <figure class="">
-						<img src="../assets/statics/eduquemoi/images/logopb.jpg" alt="P-breakers" />
+						<img src="<?= base_url('assets/eduquemoi/images/logo_noir.png')?>" alt="ZX-Connect" class="img-responsive"/>
 						<figcaption>
-							<p><span>P-breakers</span></p>
+							<p><span>ZX-Connect</span></p>
 						</figcaption>			
 					</figure>
 				</div>
-				<div class="col-md-3 home-agile-left">
+				<div class="col-md-2 col-md-offset-1 home-agile-left">
 				   <figure class="">
-						<img src="../assets/statics/eduquemoi/images/logo.png" alt="ZX-Connect" />
+						<img src="<?= base_url('assets/eduquemoi/images/logo.png')?>" alt="ZX-Connect" class="img-responsive"/>
 						<figcaption>
-							<p><span>ZX-Connect</span></p>
+							<p><span>eduquemoi</span></p>
+						</figcaption>			
+					</figure>
+				</div>
+				<div class="col-md-2 col-md-offset-1 home-agile-left">
+				   <figure class="">
+						<img src="<?= base_url('assets/eduquemoi/images/logo_noir.png')?>" alt="ZX-Connect" class="img-responsive"/>
+						<figcaption>
+							<p><span>Eduquemoi</span></p>
 						</figcaption>			
 					</figure>
 				</div>

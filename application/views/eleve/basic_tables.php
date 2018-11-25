@@ -90,11 +90,11 @@
           <div class="col-md-1 a">
             <h3>Max</h3>
             <?php
-              $totmax = 0;
+              $totmaxe = 0;
               foreach ($max as $maxim) {
             ?>
             <p><?=$maxim*2?></p><br>
-            <?php $totmaxe = $totmax + $maxim;
+            <?php $totmaxe = $totmaxe + $maxim*2;
              } ?>
           </div>
           <div class="col-md-1 b">
@@ -115,15 +115,28 @@
                 }
               }?> 
           </div>
+          <div class="col-md-1 a">
+            <h3>Max</h3>
+            <?php
+              $totmaxs = 0;
+              foreach ($max as $maxim) {
+            ?>
+            <p><?=$maxim*4?></p><br>
+            <?php $totmaxs = $totmaxs + $maxim*4;
+             } ?>
+          </div>
       </div>
       <?php if ($totcote1 != 0) {
               $pourc1 = ($totcote1 / $totmaxe) * 100;
+              $pourc1 = $pourc1 * 2;
             } else { $pourc1= 0;}
             if ($totcote2 != 0) {
               $pourc2 = ($totcote2 / $totmaxe) * 100;
+              $pourc2 = $pourc2 * 2;
             } else { $pourc2= 0;}
             if ($totcote3 != 0) {
               $pourc3 = ($totcote3 / $totmaxe) * 100;
+              $pourc3 = $pourc3 * 2;
             } else { $pourc3= 0;}
        ?>
       <div class="row">
@@ -145,6 +158,9 @@
         <div class="col-md-1 b">
           <p><b><?=$totcote3?></b></p>
         </div>
+        <div class="col-md-1 b">
+          <p><b><?=$totmaxs?></b></p>
+        </div>
       </div>
       <div class="row">
           <div class="col-md-4 b">
@@ -159,8 +175,6 @@
           </div>
           <div class="col-md-1 b" style="background:black;">-</div>
           <div class="col-md-1 b"><?php echo $pourc3." % "; ?></div>
+          <div class="col-md-1 b" style="background:black;">-</div>
       </div>
       <div class="clearfix"></div>
-         
-</body>
-</html>

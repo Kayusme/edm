@@ -9,7 +9,7 @@
 			<h3 class="tittle-agileits-w3layouts">Notre <span class="green-w3">Gallerie</span></h3>
 			<div class="w3layouts_gallery_grids">
                 <?php
-                $resultats = imgFromDir("eduquemoi/images/g/");
+                $resultats = imgFromDir("assets/eduquemoi/images/g/");
                 foreach ($resultats as $resultat) {
                 ?>
                     <div class="col-md-4 w3layouts_gallery_grid">

@@ -116,7 +116,7 @@
 	</div>
 	<!--end-admissions-->
 	<!--Slider-Starts-Here-->
-			<script src="<?=base_url("assets/statics/ecole/js/responsiveslides.min.js")?>"></script>
+			<script src="<?=base_url("assets/ecole/js/responsiveslides.min.js")?>"></script>
 			 <script>
 			    // You can also use "$(window).load(function() {"
 			    $(function () {

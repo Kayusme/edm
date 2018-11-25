@@ -53,9 +53,9 @@
 <!-- //smooth scrolling -->
 
 
-<script type="text/javascript" src="<?=base_url("assets/statics/eduquemoi/js/jquery-2.1.4.min.js")?>"></script>
+<script type="text/javascript" src="<?=base_url("assets/eduquemoi/js/jquery-2.1.4.min.js")?>"></script>
 <!-- flexSlider -->
-<script defer src="<?=base_url("assets/statics/eduquemoi/js/jquery.flexslider.js")?>"></script>
+<script defer src="<?=base_url("assets/eduquemoi/js/jquery.flexslider.js")?>"></script>
 <script type="text/javascript">
     $(window).load(function(){
         $('.flexslider').flexslider({
@@ -68,8 +68,8 @@
 </script>
 <!-- //flexSlider -->
 <?php if ($_SERVER['REQUEST_URI'] == "/eduquemoi/gallery.html"){?>
-    <script src="<?=base_url("assets/statics/eduquemoi/js/main.js")?>"></script>
-    <script src="<?=base_url("assets/statics/eduquemoi/js/lsb.min.js")?>"></script>
+    <script src="<?=base_url("assets/eduquemoi/js/main.js")?>"></script>
+    <script src="<?=base_url("assets/eduquemoi/js/lsb.min.js")?>"></script>
    <?php }?>
 <script>
     $(window).load(function() {
@@ -77,7 +77,7 @@
     });
 </script>
 <!-- responsiveslides -->
-<script src="<?=base_url("assets/statics/eduquemoi/js/responsiveslides.min.js")?>"></script>
+<script src="<?=base_url("assets/eduquemoi/js/responsiveslides.min.js")?>"></script>
 <script>
     // You can also use "$(window).load(function() {"
     $(function () {
@@ -99,7 +99,7 @@
 </script>
 <!-- //responsiveslides -->
 <!-- requried-jsfiles-for owl -->
-<script src="<?=base_url("assets/statics/eduquemoi/js/owl.carousel.js")?>"></script>
+<script src="<?=base_url("assets/eduquemoi/js/owl.carousel.js")?>"></script>
 <script>
     $(document).ready(function() {
         $("#owl-demo2").owlCarousel({
@@ -113,7 +113,7 @@
     });
 </script>
 <!-- //requried-jsfiles-for owl -->
-<script src="<?=base_url("assets/statics/eduquemoi/js/classie.js")?>"></script>
+<script src="<?=base_url("assets/eduquemoi/js/classie.js")?>"></script>
 <script>
     (function() {
         // trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
@@ -151,9 +151,9 @@
 </script>
 <!-- //contact-effect -->
 <!-- Countdown-Timer-JavaScript -->
-<script src="<?=base_url("assets/statics/eduquemoi/js/simplyCountdown.js")?>"></script>
+<script src="<?=base_url("assets/eduquemoi/js/simplyCountdown.js")?>"></script>
 <script>
-    var d = new Date(new Date().getTime() + 948 * 120 * 120 * 2000);
+    var d = new Date(new Date().getTime() + 948 * 120 * 2.3 * 2000);
 
     // default example
     simplyCountdown('.simply-countdown-one', {
@@ -182,13 +182,13 @@
 
 
 <!--search-bar-->
-<script src="<?=base_url("assets/statics/eduquemoi/js/main.js")?>"></script>
+<script src="<?=base_url("assets/eduquemoi/js/main.js")?>"></script>
 <!--//search-bar-->
 
 
 <!-- start-smoth-scrolling -->
-<script type="text/javascript" src="<?=base_url("assets/statics/eduquemoi/js/move-top.js")?>"></script>
-<script type="text/javascript" src="<?=base_url("assets/statics/eduquemoi/js/easing.js")?>"></script>
+<script type="text/javascript" src="<?=base_url("assets/eduquemoi/js/move-top.js")?>"></script>
+<script type="text/javascript" src="<?=base_url("assets/eduquemoi/js/easing.js")?>"></script>
 <script type="text/javascript">
     jQuery(document).ready(function($) {
         $(".scroll").click(function(event){
@@ -216,6 +216,6 @@
 </script>
 <!-- //here ends scrolling icon -->
 <!--js for bootstrap working-->
-<script src="<?=base_url("assets/statics/eduquemoi/js/bootstrap.js")?>"></script>
+<script src="<?=base_url("assets/eduquemoi/js/bootstrap.js")?>"></script>
 <!-- //for bootstrap working -->
 </html>
