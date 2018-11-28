@@ -6,6 +6,7 @@
         function hideURLbar(){ window.scrollTo(0,1); } </script>
     <!-- //Meta-Tags -->
     <!-- Custom-Stylesheet-Links -->
+    
     <?php
     header("Cache-Control: no-cache");
     header("Pragma: no-cache");
@@ -35,18 +36,20 @@
             'content'=>'width=device-width, initial-scale=1'
         )
     );
-
+    
     echo meta($meta).
+    '<!-- Icon-CSS -->'."\n".
+        link_tag("assets/eduquemoi/images/icone.png",'icon').
     '<!-- Bootstrap-CSS -->'."\n".
-        link_tag("assets/statics/eduquemoi/css/bootstrap.css").
+        link_tag("assets/eduquemoi/css/bootstrap.css").
     '<!-- Font-awesome-CSS -->'."\n".
         '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>'."\n".
     '<!-- Flex-slider-CSS -->'."\n".
-        link_tag("assets/statics/eduquemoi/css/flexslider.css").
+        link_tag("assets/eduquemoi/css/flexslider.css").
     '<!-- Owl-carousel-CSS -->'."\n".
-        link_tag("assets/statics/eduquemoi/css/owl.carousel.css").
+        link_tag("assets/eduquemoi/css/owl.carousel.css").
     '<!-- Index-Page-CSS -->'."\n".
-        link_tag("assets/statics/eduquemoi/css/style.css").
+        link_tag("assets/eduquemoi/css/style.css").
     '<!-- //Custom-Stylesheet-Links -->'."\n".
     '<!--web-fonts-->'."\n".
     '<!-- Headings-font -->'."\n".
@@ -61,13 +64,12 @@
 <div class="banner" id="home">
     <div class="banner-overlay-agileinfo">
         <div class="top-header-agile">
-            <h1><a class="col-md-4 navbar-brand" href="<?=site_url('eduquemoi/index')?>"><img src="<?= BASE_URL() ?>assets/statics/eduquemoi/images/logo.png" alt="" style="max-height: 75px;"/></a></h1>
+            <h1><a class="col-md-4 navbar-brand" href="<?=site_url('eduquemoi/index')?>"><img src="<?= base_url('assets/eduquemoi/images/logo_white.png') ?>" alt="Eduquemoi" style="max-height: 75px;"/></a></h1>
             <div class="col-md-4 top-header-agile-right">
                 <ul>
-                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+                    <li><a href="twitter.com/eduquemoi"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="facebook.com/eduquemoi"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="linkedin.com/eduquemoi"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                 </ul>
             </div>
             <div class="col-md-4 top-header-agile-left">
@@ -106,15 +108,8 @@
                         <ul class="nav navbar-nav">
                             <li class="active"><a href="<?=site_url('eduquemoi/index')?>" data-hover="Home">Accueil</a></li>
                             <li><a href="<?=site_url('eduquemoi/about')?>" data-hover="About Us">A Propos</a></li>
-                            <li><a href="<?=site_url('eduquemoi/gallery')?>" data-hover="Gallery">Gallerie</a></li>
-                            <li class="dropdown menu__item">
-                                <a href="#" class="dropdown-toggle menu__link"  data-toggle="dropdown" data-hover="Pages" role="button" aria-haspopup="true" aria-expanded="false">Pages<span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="<?=site_url('eduquemoi/codes')?>">Codes</a></li>
-                                    <li><a href="<?=site_url('eduquemoi/icons')?>">Icones</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="<?=site_url('eduquemoi/blog')?>" data-hover="Blog">Blog</a></li>
+                            <li><a href="<?=site_url('eduquemoi/gallery')?>" data-hover="Gallery">Galerie</a></li>
+                            <li><a href="<?=site_url('eduquemoi/ecoles')?>" data-hover="Ecoles">Ecoles</a></li>
                             <li><a href="<?=site_url('eduquemoi/contact')?>" data-hover="Mail Us">Contactez Nous</a></li>
                         </ul>
                     </nav>

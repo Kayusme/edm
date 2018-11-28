@@ -5,11 +5,11 @@
 			<div class="col-md-6 col-sm-6 gallery-grids agileits w3layouts gallery-grids1 wow slideInLeft">
 				<div class="gallery-grid-images agileits w3layouts">
                     <?php
-                    $resultats = imgFromDir("eduquemoi/images/a/");
+                    $resultats = imgFromDir("assets/eduquemoi/images/a/");
                     foreach ($resultats as $resultat) {
                     ?>
 					<div class="col-md-4 col-sm-4 gallery-grid gallery-grid-1 history-grid-image">
-						<img src="<?=base_url($resultat)?>" alt="Agileits W3layouts" class="zoom-img">
+						<img src="<?=base_url($resultat)?>" alt="EduqueMoi" class="zoom-img">
 					</div>
                         <?php
                     }
@@ -21,9 +21,9 @@
 			<div class="col-md-6 col-sm-6 gallery-grids agileits w3layouts gallery-grids2 wow slideInRight">
 				<h2 class="tittle-agileits-w3layouts">A Propos de Eduque-moi</h2>
 				<h5>Notre VISION</h5>
-				<p class="para-w3-agile">Etre reconnu comme chef de file de l’innovation dans les pratiques de modernisation de l’enseignement congolais.</p>
+				<p class="para-w3-agile">Être reconnu comme chef de file et de l’innovation par notre savoir-faire et nos pratiques de pointe de la modernisation dans l’enseignement congolais.</p><br>
                 <h5>Notre MISSION</h5>
-				<p class="para-w3-agile">Moderniser, développer la transmission des informations dans le secteur de l’enseignement.</p>
+				<p class="para-w3-agile">Développer, conditionner, transformer la transmission d'e l’information dans le secteur de l’enseignement en RDC.</p>
 				<a href="<?=site_url('eduquemoi/single')?>" class="button-w3layouts hvr-rectangle-out">en savoir plus</a>
 			</div>
 			<div class="clearfix"></div>
@@ -93,9 +93,9 @@
 					 <div id="owl-demo2" class="owl-carousel">
                          <?php
                          $i=0;
-                         $nom[]="Ben Sulumu"; $nom[]="Noemie Campbell";
+                         $nom[]="Noemie Campbell"; $nom[]="Ben Sulumu";
                          $details[]='Parent d\'eleves'; $details[]='Encadreur';
-                         $resultats = imgFromDir("eduquemoi/images/testimonials/");
+                         $resultats = imgFromDir("assets/eduquemoi/images/testimonials/");
                          foreach ($resultats as $resultat) {
                          ?>
 							<div class="agile">

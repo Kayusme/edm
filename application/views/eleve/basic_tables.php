@@ -1,486 +1,180 @@
 
 <div id="page-wrapper">
   <div class="col-md-12 graphs">
-      <div class="col-md-8">
+      <div class="row">
+          <div class="col-md-8">
           <table class="table">
             <tr>
               <th>
                 
-                  <p>Nom : YOMBO</p><br />
-                    <p>Post-nom : BOSEMWA</p><br />
-                    <p>Prenom : Jonathan</p><br />
-                    <p>Sexe : M</p><br />
-                    <p>Classe : 5 <sup>e</sup> Bio-Chimie</p><br />
-                    <p>Etablissement : KIZITO</p><br />
+                    <p>Nom : <?=strtoupper($el['nom'])?></p><br />
+                    <p>Post-nom : <?=strtoupper($el['postnom'])?></p><br />
+                    <p>Prenom : <?=strtoupper($el['prenom'])?></p><br />
+                    <p>matricule : <?=strtoupper($el['matricule'])?></p><br />
+                    <p>Sexe : <?=strtoupper($el['genre'])?></p><br />
+                    <p>Classe : <?=strtoupper($classe)?></p><br />
               </th>
             </tr>
           </table>
+        </div>
       </div>
-      <div class="col-md-4">
-          <img src="<?=base_url("assets/statics/eleve/images/index3.jpg")?>" alt="" class="img-circle img-responsive">
+      <style type="text/css">
+        .b {
+          border: solid 1px;
+        }
+        .b p, .a p, h3 {
+          text-align: center;
+        }
+        .a {
+          border-top: solid 1px;
+        }
+      </style>
+      <div class="row">
+          <h1></h1>
+          <div class="col-md-4 b">
+            <h3>Cours</h3>
+            <?php
+            $i=0;
+                foreach ($cours as $cour) {
+                  $i = $i + 1;
+            ?>
+            <p><?= strtoupper($cour['nomCours'])?></p><br>
+            <?php }?>
+          </div>
+          <div class="col-md-1 a">
+            <h3>Max</h3>
+            <?php
+              $totmax = 0;
+              foreach ($max as $maxim) {
+            ?>
+            <p><?=$maxim?></p><br>
+            <?php $totmax = $totmax + $maxim;
+             } ?>
+          </div>
+          <div class="col-md-1 b">
+            <h3>1e p</h3>
+            <?php
+              $totcote1= 0;
+              $a = $i;
+                if (empty($p1)) {
+                  while ($a != 0) {?>
+                    <p>-</p><br><?php
+                    $a = $a -1;
+                  }
+                }
+                else {
+                  foreach ($p1 as $cotes) {?> 
+                  <p><?=$cotes?></p><br>
+                  <?php $totcote1= $totcote1 + $cotes;
+                }
+              }?>
+          </div>
+          <div class="col-md-1 b">
+            <h3>2e p</h3>
+            <?php
+              $totcote2= 0;
+              $a = $i;
+              if (empty($p2)) {
+                  while ($a != 0) {?>
+                    <p>-</p><br><?php
+                    $a = $a -1;
+                  }
+                }
+                else {
+                  foreach ($p2 as $cotes) {?> 
+                  <p><?=$cotes?></p><br>
+                  <?php $totcote2= $totcote2 + $cotes;
+                }
+              }?>
+          </div>
+          <div class="col-md-1 a">
+            <h3>Max</h3>
+            <?php
+              $totmaxe = 0;
+              foreach ($max as $maxim) {
+            ?>
+            <p><?=$maxim*2?></p><br>
+            <?php $totmaxe = $totmaxe + $maxim*2;
+             } ?>
+          </div>
+          <div class="col-md-1 b">
+            <h3>ex 1</h3>
+            <?php
+              $totcote3= 0;
+              $a = $i;
+              if (empty($ex1)) {
+                  while ($a != 0) {?>
+                    <p>-</p><br><?php
+                    $a = $a -1;
+                  }
+                }
+                else {
+                  foreach ($ex1 as $cotes) {?> 
+                  <p><?=$cotes?></p><br>
+                  <?php $totcote3= $totcote3 + $cotes;
+                }
+              }?> 
+          </div>
+          <div class="col-md-1 a">
+            <h3>Max</h3>
+            <?php
+              $totmaxs = 0;
+              foreach ($max as $maxim) {
+            ?>
+            <p><?=$maxim*4?></p><br>
+            <?php $totmaxs = $totmaxs + $maxim*4;
+             } ?>
+          </div>
+      </div>
+      <?php if ($totcote1 != 0) {
+              $pourc1 = ($totcote1 / $totmaxe) * 100;
+              $pourc1 = $pourc1 * 2;
+            } else { $pourc1= 0;}
+            if ($totcote2 != 0) {
+              $pourc2 = ($totcote2 / $totmaxe) * 100;
+              $pourc2 = $pourc2 * 2;
+            } else { $pourc2= 0;}
+            if ($totcote3 != 0) {
+              $pourc3 = ($totcote3 / $totmaxe) * 100;
+              $pourc3 = $pourc3 * 2;
+            } else { $pourc3= 0;}
+       ?>
+      <div class="row">
+        <div class="col-md-4 b">
+          <p><b>Total</b></p>
+        </div>
+        <div class="col-md-1 b">
+          <p><b><?=$totmax?></b></p>
+        </div>
+        <div class="col-md-1 b">
+          <p><b><?=$totcote1?></b></p>
+        </div>
+        <div class="col-md-1 b">
+          <p><b><?=$totcote2?></b></p>
+        </div>
+        <div class="col-md-1 b">
+          <p><b><?=$totmaxe?></b></p>
+        </div>
+        <div class="col-md-1 b">
+          <p><b><?=$totcote3?></b></p>
+        </div>
+        <div class="col-md-1 b">
+          <p><b><?=$totmaxs?></b></p>
+        </div>
+      </div>
+      <div class="row">
+          <div class="col-md-4 b">
+            <p><b>Pourcentage</b></p>
+          </div>
+          <div class="col-md-1 b" style="background:black;">-</div>
+          <div class="col-md-1 b">
+            <p><b><?php echo $pourc1." % "; ?></b></p>
+          </div>
+          <div class="col-md-1 b">
+            <p><b><?php echo $pourc2." % "; ?></b></p>
+          </div>
+          <div class="col-md-1 b" style="background:black;">-</div>
+          <div class="col-md-1 b"><?php echo $pourc3." % "; ?></div>
+          <div class="col-md-1 b" style="background:black;">-</div>
       </div>
       <div class="clearfix"></div>
-          <div class="row"  style="margin-left: 16px; margin-right: 50px;">
-              <div class="col-lg-3" style="border: 1px solid #000;">
-                <div class="row" style="padding: 27px; margin-left: 65px;">Branches</div>
-                <div class="row" style="border: 0.5px solid #000;">
-                  <p style="margin-left: 6px;">MAXIMA</p>
-                </div>
-                <div class="row" style="border: 0.5px solid #000;">
-                  <p style="margin-left: 6px;">RELIGION</p>
-                </div>
-                 <div class="row" style="border: 0.5px solid #000;">
-                  <p style="margin-left: 6px;">ED. CIV & MOR</p>
-                </div>
-                 <div class="row" style="border: 0.5px solid #000;">
-                  <p style="margin-left: 6px;">ED A LA VIE</p>
-                </div>
-                <div class="row" style="border: 0.5px solid #000;">
-                  <p style="margin-left: 6px;">MAXIMA</p>
-                </div>
-                 <div class="row" style="border: 0.5px solid #000;">
-                  <p style="margin-left: 6px;">DESSIN</p>
-                </div>
-                 <div class="row" style="border: 0.5px solid #000;">
-                  <p style="margin-left: 6px;">ED. PHYSIQUE</p>
-                </div>
-                <div class="row" style="border: 0.5px solid #000;">
-                  <p style="margin-left: 6px;">GEOGRAPHIE</p>
-                </div>
-                <div class="row" style="border: 0.5px solid #000;">
-                  <p style="margin-left: 6px;">HISTOIRE</p>
-                </div>
-                <div class="row" style="border: 0.5px solid #000;">
-                  <p style="margin-left: 6px;">PHILOSOPHIE</p>
-                </div>
-                <div class="row" style="border: 0.5px solid #000;">
-                  <p style="margin-left: 6px;">MAXIMA</p>
-                </div>
-                <div class="row" style="border: 0.5px solid #000;">
-                  <p style="margin-left: 6px;">ANGLAIS</p>
-                </div>
-                <div class="row" style="border: 0.5px solid #000;">
-                  <p style="margin-left: 6px;">BIOLOGIE</p>
-                </div>
-                <div class="row" style="border: 0.5px solid #000;">
-                  <p style="margin-left: 6px;">CHIMIE</p>
-                </div>
-                <div class="row" style="border: 0.5px solid #000;">
-                  <p style="margin-left: 6px;">PHYSIQUE</p>
-                </div>
-                <div class="row" style="border: 0.5px solid #000;">
-                  <p style="margin-left: 6px;">MAXIMA</p>
-                </div>
-                <div class="row" style="border: 0.5px solid #000;">
-                  <p style="margin-left: 6px;">FRANCAIS</p>
-                </div>
-                <div class="row" style="border: 0.5px solid #000;">
-                  <p style="margin-left: 6px;">MATH</p>
-                </div>
-                 <div class="row" style="border: 0.5px solid #000;">
-                  <p style="margin-left: 6px;">MAXIMA GENERAL</p>
-                </div>
-                <div class="row" style="border: 0.5px solid #000;">
-                  <p style="margin-left: 6px;">TOTAUX</p>
-                </div>
-                <div class="row" style="border: 0.5px solid #000;">
-                  <p style="margin-left: 6px;">POURCENTAGE</p>
-                </div>
-                <div class="row" style="border: 0.5px solid #000;">
-                  <p style="margin-left: 6px;">PLACE NBRE ELEVES</p>
-                </div>
-                <div class="row" style="border: 0.5px solid #000;">
-                  <p style="margin-left: 6px;">APPLICATION</p>
-                </div>
-                <div class="row" style="border: 0.5px solid #000;">
-                  <p style="margin-left: 6px;">CONDUITE</p>
-                </div>
-              </div>
-              <div class="col-lg-4" style="border: 0.5px solid #000;">
-                <div class="row" style="border: 0.5px solid #000;">Premier Semestre</div>
-                <div class="row">
-                  <div class="col-lg-6" style="border: 0.5px solid #000;">
-                    <div class="row" style="border: 0.5px solid #000;">Periodes</div>
-                     <div class="row">
-                       <div class="col-lg-6" style="border: 0.5px solid #000;">1* P</div>
-                       <div class="col-lg-6" style="border: 0.5px solid #000;">2* P</div>
-                       <div class="col-lg-6" style="border: 0.5px solid #000;">10</div>
-                       <div class="col-lg-6" style="border: 0.5px solid #000;">10</div>
-                       <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                       <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                       <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                       <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                       <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                       <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                       <div class="col-lg-6" style="border: 0.5px solid #000;">20</div>
-                       <div class="col-lg-6" style="border: 0.5px solid #000;">20</div>
-                       <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                       <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                       <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                       <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                       <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                       <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                       <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                       <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                       <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                       <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                       <div class="col-lg-6" style="border: 0.5px solid #000;">40</div>
-                       <div class="col-lg-6" style="border: 0.5px solid #000;">40</div>
-                       <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                       <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                       <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                       <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                       <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                       <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                       <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                       <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                       <div class="col-lg-6" style="border: 0.5px solid #000;">50</div>
-                       <div class="col-lg-6" style="border: 0.5px solid #000;">50</div>
-                       <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                       <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                       <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                       <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                       <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                       <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                       <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                       <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                       <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                       <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                       <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                       <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                       <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                       <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                       <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                       <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                     </div>
-                  </div>
-                  <div class="col-lg-3">
-                    <div class="row" style="border: 0.5px solid #000; padding: 13.5px;">EXAM</div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">20</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">40</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">80</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">100</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;  background-color: black;">...</div>
-                    <div class="row"  style="border: 0.5px solid #000;  background-color: black;">...</div>
-                  </div>
-                  <div class="col-lg-3">
-                    <div class="row" style="border: 0.5px solid #000; padding: 13.5px;">TOT</div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">40</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">80</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">160</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">200</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;  background-color: black;">..</div>
-                    <div class="row"  style="border: 0.5px solid #000;  background-color: black;">..</div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4" style="border: 0.5px solid #000;">
-                <div class="row" style="border: 0.5px solid #000;">Second Semestre</div>
-                <div class="row">
-                  <div class="col-lg-6" style="border: 0.5px solid #000;">
-                     <div class="row" style="border: 0.5px solid #000;">Periodes</div>
-                      <div class="row">
-                        <div class="col-lg-6" style="border: 0.5px solid #000;">3* P</div>
-                        <div class="col-lg-6" style="border: 0.5px solid #000;">4* P</div>
-                        <div class="col-lg-6" style="border: 0.5px solid #000;">10</div>
-                        <div class="col-lg-6" style="border: 0.5px solid #000;">10</div>
-                        <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                        <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                        <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                        <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                        <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                        <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                        <div class="col-lg-6" style="border: 0.5px solid #000;">20</div>
-                        <div class="col-lg-6" style="border: 0.5px solid #000;">20</div>
-                        <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                        <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                        <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                        <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                        <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                        <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                        <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                        <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                        <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                        <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                        <div class="col-lg-6" style="border: 0.5px solid #000;">40</div>
-                        <div class="col-lg-6" style="border: 0.5px solid #000;">40</div>
-                        <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                        <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                        <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                        <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                        <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                        <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                        <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                        <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                        <div class="col-lg-6" style="border: 0.5px solid #000;">50</div>
-                        <div class="col-lg-6" style="border: 0.5px solid #000;">50</div>
-                        <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                        <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                        <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                        <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                        <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                        <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                        <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                        <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                        <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                        <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                        <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                        <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                        <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                        <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                        <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                        <div class="col-lg-6" style="border: 0.5px solid #000;">-</div>
-                      </div>
-                  </div>
-                  <div class="col-lg-3">
-                    <div class="row" style="border: 0.5px solid #000; padding: 13.5px;">EXAM</div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">20</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">40</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">80</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">100</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000; background-color: black;">...</div>
-                    <div class="row"  style="border: 0.5px solid #000; background-color: black;">...</div>
-                  </div>
-                  <div class="col-lg-3">
-                    <div class="row" style="border: 0.5px solid #000; padding: 13.5px;">TOT</div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">40</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">80</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">160</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">200</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;"><p style="margin-left: 26px;">-</p></div>
-                    <div class="row"  style="border: 0.5px solid #000;  background-color: black;">..</div>
-                    <div class="row"  style="border: 0.5px solid #000;  background-color: black;">..</div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-1" style="border: 1px solid #000;">
-                <div class="row"  style="padding: 27px; margin-right: 3px;">T.G</div>
-                  <div class="row" style="border: 0.5px solid #000;">
-                    <p style="margin-left: 30px;">80</p>
-                  </div>
-                  <div class="row" style="border: 0.5px solid #000;">
-                    <p style="margin-left: 30px;">-</p>
-                  </div>
-                   <div class="row" style="border: 0.5px solid #000;">
-                    <p style="margin-left: 30px;">-</p>
-                  </div>
-                   <div class="row" style="border: 0.5px solid #000;">
-                    <p style="margin-left: 30px;">-</p>
-                  </div>
-                  <div class="row" style="border: 0.5px solid #000;">
-                    <p style="margin-left: 30px;">160</p>
-                  </div>
-                  <div class="row" style="border: 0.5px solid #000;">
-                    <p style="margin-left: 30px;">-</p>
-                  </div>
-                  <div class="row" style="border: 0.5px solid #000;">
-                    <p style="margin-left: 30px;">-</p>
-                  </div>
-                   <div class="row" style="border: 0.5px solid #000;">
-                    <p style="margin-left: 30px;">-</p>
-                  </div>
-                  <div class="row" style="border: 0.5px solid #000;">
-                    <p style="margin-left: 30px;">-</p>
-                  </div>
-                   <div class="row" style="border: 0.5px solid #000;">
-                    <p style="margin-left: 30px;">-</p>
-                  </div>
-                   <div class="row" style="border: 0.5px solid #000;">
-                    <p style="margin-left: 30px;">320</p>
-                  </div>
-                  <div class="row" style="border: 0.5px solid #000;">
-                    <p style="margin-left: 30px;">-</p>
-                  </div>
-                   <div class="row" style="border: 0.5px solid #000;">
-                    <p style="margin-left: 30px;">-</p>
-                  </div>
-                  <div class="row" style="border: 0.5px solid #000;">
-                    <p style="margin-left: 30px;">-</p>
-                  </div>
-                  <div class="row" style="border: 0.5px solid #000;">
-                    <p style="margin-left: 30px;">-</p>
-                  </div>
-                  <div class="row" style="border: 0.5px solid #000;">
-                    <p style="margin-left: 30px;">400</p>
-                  </div>
-                  <div class="row" style="border: 0.5px solid #000;">
-                    <p style="margin-left: 30px;">-</p>
-                  </div>
-                   <div class="row" style="border: 0.5px solid #000;">
-                    <p style="margin-left: 30px;">-</p>
-                  </div>
-                  <div class="row" style="border: 0.5px solid #000;">
-                    <p style="margin-left: 30px;">-</p>
-                  </div>
-                  <div class="row" style="border: 0.5px solid #000;">
-                    <p style="margin-left: 30px;">-</p>
-                  </div>
-                  <div class="row" style="border: 0.5px solid #000;">
-                    <p style="margin-left: 30px;">-</p>
-                  </div>
-                   <div class="row" style="border: 0.5px solid #000;">
-                    <p style="margin-left: 30px;">-</p>
-                  </div>
-                  <div class="row" style="border: 0.5px solid #000; background-color: black;">..
-                  </div>
-                  <div class="row" style="border: 0.5px solid #000; background-color: black;">..
-                  </div>
-                </div>
-              </div>
-          </div>
-    <h3 class="text-center">Evolutions statistique</h3class>
-           <div class="graph_box1">
-
-              <div class="col-md-4 grid_2"><div class="grid_1">
-<!--                <h3>Bar</h3>-->
-                <canvas id="bar" height="300" width="400" style="width: 400px; height: 300px;"></canvas>
-              </div></div>
-              <div class="col-md-4 grid_2"><div class="grid_1">
-<!--                <h3>Pie</h3>-->
-                <canvas id="pie" height="300" width="400" style="width: 400px; height: 300px;"></canvas>
-              </div></div>
-              <div class="clearfix"> </div>
-            </div>
-            <script>
-    var barChartData = {
-      labels : ["Francais","Chimie","Histoire","Math","Geo","Physique","Anglais"],
-      datasets : [
-        {
-          fillColor : "#ef553a",
-          strokeColor : "#ef553a",
-          data : [65,59,90,81,56,55,40]
-        },
-        {
-          fillColor : "#00aced",
-          strokeColor : "#00aced",
-          data : [28,48,40,19,96,27,100]
-        }
-      ]
-      
-    };
-    var pieData = [
-        {
-            value: 30,
-            color:"#ef553a"
-        },
-        {
-            value : 50,
-            color : "#00aced"
-        },
-        {
-            value : 100,
-            color : "#69D2E7"
-        }
-
-    ];
-  var chartData = [
-      {
-        value : Math.random(),
-        color: "#D97041"
-      },
-      {
-        value : Math.random(),
-        color: "#C7604C"
-      },
-      {
-        value : Math.random(),
-        color: "#21323D"
-      },
-      {
-        value : Math.random(),
-        color: "#9D9B7F"
-      },
-      {
-        value : Math.random(),
-        color: "#7D4F6D"
-      },
-      {
-        value : Math.random(),
-        color: "#9358ac"
-      }
-    ];
-
-  new Chart(document.getElementById("bar").getContext("2d")).Bar(barChartData);
-  new Chart(document.getElementById("pie").getContext("2d")).Pie(pieData);
-  
-  </script>
-  </div>
-</div>
-<link href="<?=base_url("assets/statics/eleve/css/custom.css")?>" rel="stylesheet">
-<!-- Metis Menu Plugin JavaScript -->
-<script src="<?=base_url("assets/statics/eleve/js/metisMenu.min.js")?>"></script>
-<script src="<?=base_url("assets/statics/eleve/js/custom.js")?>"></script>
-<script src="<?=base_url("assets/statics/eleve/js/bootstrap.min.js")?>"></script>
-</body>
-</html>

@@ -5,7 +5,7 @@
 			<div class="welcome-main">
 				<div class="col-md-6 welcome-left">
 					<h1><?=ucfirst($title);?></h1>
-					<p>Bienvenue dans la page de notre ecole. Nous avons pour devise: "JUSTICE-PAIX-TRAVAIL".
+					<p>Bienvenue dans la page de notre ecole. Nous avons pour devise: <b>"TRAVAIL-QUALTE-EXCELLENCE"</b>.
                         Et au sein de notre institution votre enfant en ressort un genie. Merci!</p>
 					<div class="tool">
 						<a class="tooltips" href="#">

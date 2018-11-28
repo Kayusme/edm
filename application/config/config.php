@@ -23,7 +23,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://'.$_SERVER["SERVER_NAME"]."/";
+$config['base_url'] = 'http://'.$_SERVER["SERVER_NAME"]."/edm/";
+
 /*
 |--------------------------------------------------------------------------
 | Index File
@@ -75,7 +76,7 @@ $config['url_suffix'] = '.html';
 | than english.
 |
 */
-$config['language']	= 'french';
+$config['language']	= 'english';
 
 /*
 |--------------------------------------------------------------------------
@@ -270,7 +271,7 @@ $config['log_file_permissions'] = 0644;
 | codes to set your own date formatting
 |
 */
-$config['log_date_format'] = 'd-m-Y H:i:s';
+$config['log_date_format'] = 'Y-m-d H:i:s';
 
 /*
 |--------------------------------------------------------------------------
@@ -323,7 +324,7 @@ $config['cache_query_string'] = FALSE;
 | https://codeigniter.com/user_guide/libraries/encryption.html
 |
 */
-$config['encryption_key'] = 'L\'important n\'est pas ce que l\'on fais de vous mais ce que vous faites de ce que l\'on a fais de vous. Eduque-Moi';
+$config['encryption_key'] = '';
 
 /*
 |--------------------------------------------------------------------------
@@ -383,11 +384,6 @@ $config['sess_save_path'] = NULL;
 $config['sess_match_ip'] = FALSE;
 $config['sess_time_to_update'] = 300;
 $config['sess_regenerate_destroy'] = FALSE;
-$config['sess_expire_on_close'] = FALSE;
-$config['sess_encrypt_cookie']  = FALSE;
-//$config['sess_use_database']    = TRUE;
-//$config['sess_table_name']      = 'ci_sessions';
-$config['sess_match_useragent'] = FALSE;
 
 /*
 |--------------------------------------------------------------------------
@@ -404,11 +400,11 @@ $config['sess_match_useragent'] = FALSE;
 |       'cookie_httponly') will also affect sessions.
 |
 */
-$config['cookie_prefix']	= 'edm_';
-$config['cookie_domain']	= '.eduquemoi.org';
+$config['cookie_prefix']	= '';
+$config['cookie_domain']	= '';
 $config['cookie_path']		= '/';
-$config['cookie_secure']	= TRUE;
-$config['cookie_httponly'] 	= TRUE;
+$config['cookie_secure']	= FALSE;
+$config['cookie_httponly'] 	= FALSE;
 
 /*
 |--------------------------------------------------------------------------
@@ -453,8 +449,8 @@ $config['global_xss_filtering'] = FALSE;
 | 'csrf_exclude_uris' = Array of URIs which ignore CSRF checks
 */
 $config['csrf_protection'] = FALSE;
-$config['csrf_token_name'] = 'csrf_edm';
-$config['csrf_cookie_name'] = 'csrf_edm_cookie';
+$config['csrf_token_name'] = 'csrf_test_name';
+$config['csrf_cookie_name'] = 'csrf_cookie_name';
 $config['csrf_expire'] = 7200;
 $config['csrf_regenerate'] = TRUE;
 $config['csrf_exclude_uris'] = array();

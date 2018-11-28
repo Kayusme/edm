@@ -1,29 +1,23 @@
-<?php
-$idclass=1;
-$resultats = selectDevoir($idclass);
-//var_dump($resultats);die();
-?>
-
 <div id="page-wrapper">
     <div class="graphs">
-        <h2 class="text-center">Devoir</h2>
+        <h2 class="text-center"><?=$title?></h2>
         <div class="container-fluid">
             <?php
-                $idclass=1;
-                $resultats = selectDevoir($idclass);
                 foreach ($resultats as $resultat) {
             ?>
-            <div class="row">
-                <h3><?= $resultat['matiere.nom']?></h3><br /><br />
-                <div class="col-md-3">
-                    <p>Du <?= $resultat['devoir.date_debut']?> Au <?= $resultat['devoir.date_depot']?></p>
+                <div class="wid_blog-desc alert alert-success">
+		   	 		<div class="wid_blog-right">
+		   	 			<h2><?= ucfirst($resultat['nom']);?></h2>
+		   	 			<p style="color:black;"><?= ucfirst($resultat['questionnaire'])?></p>
+		   	 			<ul class="list-unstyled list-inline">
+                            <li><span href="#" class="text-muted"><sup>Du</sup> <?= $resultat['date_debut']?></span></li>
+                            <li><span href="#" class="text-muted"><sup>Au</sup> <?= $resultat['date_depot']?></span></li>
+                            <li><a href="#" class="text-muted"><?= $resultat['link']?></a></li>
+                       </ul>
+		   	 		</div>
+		   	 		<div class="clearfix"> </div>
                 </div>
-                <div class="col-md-9">
-                    <p><?= $resultat['devoir.questionnaire']?></p>
-                    <p><?= $resultat['devoir.link']?></p>
-                </div>
-            </div>
-            </br>
+                    <br>
             <?php }?>
     </div>
 
