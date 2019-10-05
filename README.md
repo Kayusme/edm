@@ -1,28 +1,7 @@
 
-# What is CodeIgniter
-
-
-CodeIgniter is an Application Development Framework - a toolkit - for people
-who build web sites using PHP. Its goal is to enable you to develop projects
-much faster than you could if you were writing code from scratch, by providing
-a rich set of libraries for commonly needed tasks, as well as a simple
-interface and logical structure to access these libraries. CodeIgniter lets
-you creatively focus on your project by minimizing the amount of code needed
-for a given task.
-
-
-### Release Information
-
-
-This repo contains in-development code for future releases. To download the
-latest stable release please visit the CodeIgniter Downloads page.
-
-### Changelog and New Features
-
-````
-You can find a list of all changes for each release in the `user
-guide change log <https://github.com/espacesis/site-espacesis/changelog.rst>`_.
-`````
+# Eduque-moi
+Eduque-Moi is a Digital program Using advanced technology characterized in the CTBT whose main purpose is to provide an innovative solution in the management of communication between the main actors of education to effectively communicate with each other, important news related to regular, unusual or even exceptional situations of school and extracurricular activities in real time and to support the EPSP in the follow-up of school compliance by schools.
+To do this, the Eduque-Moi project has 3 platforms, an administration center, a website and a mobile application.
 
 ### Server Requirements
 
@@ -35,30 +14,12 @@ issues, as well as missing features.
 ### Installation
 
 `````
-Please see the `installation section <https://codeigniter.com/user_guide/installation/index.html>`_
-of the CodeIgniter User Guide.
+`installation section 
+- git clone https://github.com/Savalone47/edm.git`
+  and launch your apache web server if you have linux do this: 
+- sudo lampp start
 ``````
 
-### License
-```````
-Please see the `license
-agreement <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst>`_.
-```````
+### Enjoy
 
-
-### Resources
-
-````````
--  `User Guide <https://codeigniter.com/docs>`_
--  `Language File Translations <https://github.com/bcit-ci/codeigniter3-translations>`_
--  `Community Forums <http://forum.codeigniter.com/>`_
--  `Community Wiki <https://github.com/bcit-ci/CodeIgniter/wiki>`_
--  `Community Slack Channel <https://codeigniterchat.slack.com>`_
-Report security issues to our `Security Panel <mailto:security@codeigniter.com>`_
-or via our `page on HackerOne <https://hackerone.com/codeigniter>`_, thank you.
-````````
-
-### Acknowledgement
-
-The CodeIgniter team would like to thank EllisLab, all the
-contributors to the CodeIgniter project and you, the CodeIgniter user.
+see you!
